@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "update": "TEST=true vite-node tools/update.ts",
     "test": "vitest --run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "check:build": "node tools/check-build.mjs",
+    "check:theme": "node tools/check-theme.mjs",
+    "smoke": "node tools/smoke-handle.mjs",
+    "selftest": "node tools/check-build.mjs --selftest && node tools/check-theme.mjs --selftest && node tools/smoke-handle.mjs --selftest"
   },
   "dependencies": {
     "@vueuse/core": "^15.0.0",
@@ -42,6 +46,10 @@
     "unplugin-vue-components": "^32.1.0",
     "vite": "^8.3.3",
     "vite-node": "^5.0.3",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.3",
+    "puppeteer-core": "^25.12.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   }
 }

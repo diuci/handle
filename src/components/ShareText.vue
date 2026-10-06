@@ -2,6 +2,7 @@
 import { t } from '~/i18n'
 import { answer, dayNoHanzi, isMobile, parseWord, testAnswer } from '~/state'
 import { meta, tries } from '~/storage'
+import { DEPLOY_HOST } from '~/logic/constants'
 
 const lines = computed(() => {
   const table = tries.value.map((word) => {
@@ -35,7 +36,7 @@ const lines = computed(() => {
     '',
     ...table,
     '',
-    'handle.antfu.me',
+    DEPLOY_HOST,
   ]
 })
 

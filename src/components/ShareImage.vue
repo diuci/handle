@@ -3,6 +3,7 @@ import { toPng } from 'html-to-image'
 import { saveAs } from 'file-saver'
 import { dayNoHanzi, isIOS, isMobile, useMask } from '~/state'
 import { tries } from '~/storage'
+import { DEPLOY_HOST } from '~/logic/constants'
 import { t } from '~/i18n'
 
 const el = ref<HTMLDivElement>()
@@ -58,7 +59,7 @@ async function download() {
     <div ref="el" flex="~ col" items-center p="x6 y4" bg-base relative text-center>
       <AppName w-full />
       <div w-full text-xs mt1 mb3 op50 ws-nowrap>
-        handle.antfu.me
+        {{ DEPLOY_HOST }}
       </div>
 
       <WordBlocks v-for="w, i of tries" :key="i" :word="w" :revealed="true" :animate="false" />

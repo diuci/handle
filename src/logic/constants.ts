@@ -3,5 +3,6 @@ export const TRIES_LIMIT = 10
 export const START_DATE = new Date(2022, 0, 0)
 export const RANDOM_SEED = 'handle'
 export const DAYS_PLAY_BACK = 3
-export const DEPLOY_HOST = 'handle.antfu.me'
-export const NETLIFY_FUNCTION_HOST = '/.netlify/functions'
+// 分享文案与分享图右下角的域名。上游这里是 handle.antfu.me ——
+// 不改的话，在本站猜完成语，分享出去的链接指向别人的站。
+export const DEPLOY_HOST = 'handle.diuci.com'
