@@ -4,20 +4,20 @@ import { defineConfig, presetAttributify, presetIcons, presetWind3 } from 'unocs
 export default defineConfig({
   shortcuts: [
     {
-      'btn': 'px-4 py-1 rounded inline-block bg-primary text-white cursor-pointer tracking-wide op90 hover:op100 disabled:cursor-default disabled:bg-gray-600 disabled:!op50 disabled:pointer-events-none',
+      'btn': 'px-4 py-1 rounded inline-block bg-primary text-[var(--on-accent)] cursor-pointer tracking-wide op90 hover:op100 disabled:cursor-default disabled:bg-[var(--ink-faint)] disabled:!op50 disabled:pointer-events-none',
       'icon-btn': 'text-1.2em cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-primary disabled:pointer-events-none',
-      'square-btn': 'flex flex-gap-2 items-center border border-base px2 py1 relative !outline-none',
+      'square-btn': 'flex flex-gap-2 items-center border border-base px2 py1 relative !outline-none rounded-[var(--radius)]',
       'square-btn-mark': 'absolute h-2 w-2 bg-primary -right-0.2rem -top-0.2rem',
 
-      'bg-base': 'bg-white dark:bg-[#121212]',
-      'bg-overlay': 'bg-[#eee]:50 dark:bg-[#222]:50',
-      'bg-header': 'bg-gray-500:5',
-      'bg-active': 'bg-gray-500:8',
-      'bg-hover': 'bg-gray-500:20',
-      'border-base': 'border-gray-400:10',
+      'bg-base': 'bg-[var(--paper)]',
+      'bg-overlay': 'bg-[var(--tag-bg)]',
+      'bg-header': 'bg-[var(--tag-bg)]',
+      'bg-active': 'bg-[var(--tag-bg)]',
+      'bg-hover': 'bg-[var(--tag-bg)]',
+      'border-base': 'border-[var(--line)]',
 
       'tab-button': 'font-light op50 hover:op80 h-full px-4',
-      'tab-button-active': 'op100 bg-gray-500:10',
+      'tab-button-active': 'op100 bg-[var(--tag-bg)]',
     },
     [/^(flex|grid)-center/g, () => 'justify-center items-center'],
     [/^(flex|grid)-x-center/g, () => 'justify-center'],
@@ -25,6 +25,8 @@ export default defineConfig({
   ],
   rules: [
     ['max-h-screen', { 'max-height': 'calc(var(--vh, 1vh) * 100)' }],
+    ['font-hanzi', { 'font-family': 'var(--brush)' }],
+    ['font-round', { 'font-family': 'var(--round)' }],
     ['h-screen', { height: 'calc(var(--vh, 1vh) * 100)' }],
   ],
   theme: <Theme>{

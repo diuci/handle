@@ -12,7 +12,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <main font-sans text="center gray-700 dark:gray-300" select-none :class="{ colorblind }">
+  <main class="dc-main" text="center" select-none :class="{ colorblind }">
     <NotTodayBanner v-if="dayNo < daySince" />
     <Navbar />
     <div p="4">
@@ -23,5 +23,6 @@ watchEffect(() => {
     </div>
     <ModalsLayer />
     <Confetti />
+    <TabBar />
   </main>
 </template>

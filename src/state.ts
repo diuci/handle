@@ -9,7 +9,22 @@ export const isMobile = isIOS || /iPad|iPhone|iPod|Android|Phone|webOS/i.test(na
 export const breakpoints = useBreakpoints(breakpointsTailwind)
 
 export const now = useNow({ interval: 1000 })
-export const isDark = useDark()
+// 主题与主站共用 localStorage['dc-theme']：在主站切到暗色，进汉兜仍是暗色。
+// 上游用 useDark()，它读写的是 'vueuse-color-scheme'，与 index.html 首帧脚本的键都不是一个。
+const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false
+export const theme = useStorage<'light' | 'dark'>('dc-theme', prefersDark ? 'dark' : 'light')
+export const isDark = computed(() => theme.value === 'dark')
+export function toggleTheme() {
+  theme.value = isDark.value ? 'light' : 'dark'
+}
+watchEffect(() => {
+  const dark = isDark.value
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+  document.documentElement.classList.toggle('dark', dark)
+  const meta = document.getElementById('metaTheme')
+  if (meta)
+    meta.setAttribute('content', dark ? '#17140f' : '#f4ede0')
+})
 export const showHint = ref(false)
 export const showSettings = ref(false)
 export const showHelp = ref(false)
@@ -37,7 +52,9 @@ export const daySince = useDebounce(computed(() => {
   return Math.floor((+adjustedNow - +START_DATE) / 86400000)
 }))
 export const dayNo = ref(+(params.get('d') || daySince.value))
-export const dayNoHanzi = computed(() => `${numberToHanzi(dayNo.value)}日`)
+// 期号用阿拉伯数字：numberToHanzi(1740) 出来是「千七百四十」（首位「一」被省），
+// 拼成「第千七百四十期」读不通，且日号已过千期，汉字数字反而难读。
+export const dayNoHanzi = computed(() => `第 ${dayNo.value} 期`)
 export const answer = computed(() =>
   params.get('word')
     ? {

@@ -47,8 +47,8 @@ const blockColor = computed(() => {
   if (!props.answer)
     return 'border-base'
   if (exact.value)
-    return 'border-transparent bg-ok text-white'
-  return 'border-transparent bg-gray-400/8'
+    return 'border-transparent bg-ok text-[var(--on-accent)]'
+  return 'border-transparent bg-[var(--tag-bg)]'
 })
 
 const toneCharLocation = computed(() => {
@@ -81,16 +81,16 @@ const partTwo = computed(() => {
 
 <template>
   <div
-    h-20 w-20 border-2
+    h-20 w-20 border-2 rounded-[var(--radius)]
     flex="~ center" relative
-    leading-1em font-serif
+    leading-1em font-hanzi
     :class="blockColor"
   >
     <template v-if="char?.char?.trim()">
       <!-- Zhuyin -->
       <template v-if="inputMode === 'zy'">
         <div
-          absolute text-3xl leading-1em flex items-center text-center
+          absolute text-3xl leading-1em flex items-center text-center font-hanzi
           top-0 bottom-0
           :class="[getColor(parsed?.char, true), useMask ? 'left-3' : 'left-4']"
         >
@@ -119,7 +119,7 @@ const partTwo = computed(() => {
       <!-- Pinyin or Shuangpin -->
       <template v-else>
         <div
-          absolute text-3xl leading-1em
+          absolute text-3xl leading-1em font-hanzi
           :class="[getColor(parsed?.char, true), useMask ? 'top-8.5' : 'top-8']"
         >
           {{ char.char }}

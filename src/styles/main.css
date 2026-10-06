@@ -1,75 +1,206 @@
-html,
-body,
-#app {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+/*
+   汉兜 · 丢词夺理复刻站样式
+   语义色与主站 _deploy/index.html 的 :root / :root[data-theme="dark"] 逐值一致。
+   改任何一个值之前先想清楚：这四个站共用一套视觉语言，不一致比难看更糟。
+*/
+
+:root{
+  --paper:#f4ede0;
+  --paper-2:#eae0cd;
+  --ink:#241f1a;
+  --ink-soft:#5b5147;
+  --ink-faint:#8a7f72;
+  --cinnabar:#c8442e;
+  --cinnabar-deep:#a33524;
+  --celadon:#5f8d7d;
+  --indigo:#3c5a78;
+  --gold:#c08a2e;
+  --line:#d8cbb4;
+  --shadow:0 2px 0 rgba(36,31,26,.06), 0 12px 32px -12px rgba(36,31,26,.18);
+  --radius:14px;
+  --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun","STSong",serif;
+  --round:"ZCOOL KuaiLe","Noto Serif SC","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+  --brush:"ZCOOL XiaoWei","Noto Serif SC","Kaiti SC","STKaiti","KaiTi",serif;
+  --card-grad:linear-gradient(168deg,#fdf8ec,#f3e9d5);
+  --card-grad-2:linear-gradient(168deg,#fdf9ef,#f2e8d4);
+  --surface:rgba(255,253,247,.62);
+  --surface-2:rgba(255,253,247,.55);
+  --surface-3:rgba(244,237,224,.66);
+  --surface-hi:#fdf9ef;
+  --nav-bg:rgba(244,237,224,.82);
+  --wash-1:rgba(192,138,46,.10);
+  --wash-2:rgba(200,68,46,.07);
+  --wash-3:rgba(60,90,120,.06);
+  --tag-bg:rgba(36,31,26,.07);
+  --grain-op:.5;
+  --on-accent:#fdf8ee;
+  color-scheme:light;
+
+  /* handle 自己的语义名，指向上面的主站色 */
+  --c-primary:var(--cinnabar);
+  --c-primary-deep:var(--cinnabar-deep);
+  --c-ok:var(--celadon);
+  --c-mis:var(--gold);
 }
 
-html.dark {
-  background: #121212;
+/* 夜墨：宣纸翻到背面。双选择器是防首帧漏配：data-theme 由脚本写，html.dark 由 UnoCSS 的 dark: 变体用 */
+:root[data-theme="dark"],
+html.dark{
+  --paper:#17140f;
+  --paper-2:#241f18;
+  --ink:#f0e7d6;
+  --ink-soft:#c3b8a5;
+  --ink-faint:#948a79;
+  --cinnabar:#e2694c;
+  --cinnabar-deep:#f07f61;
+  --celadon:#7fae9c;
+  --indigo:#7d9dc0;
+  --gold:#d3a44a;
+  --line:#3b342a;
+  --shadow:0 2px 0 rgba(0,0,0,.2), 0 14px 36px -14px rgba(0,0,0,.6);
+  --card-grad:linear-gradient(168deg,#2b2519,#1d1811);
+  --card-grad-2:linear-gradient(168deg,#292319,#1b1610);
+  --surface:rgba(52,45,35,.5);
+  --surface-2:rgba(48,42,33,.55);
+  --surface-3:rgba(38,33,26,.6);
+  --surface-hi:#28221a;
+  --nav-bg:rgba(23,20,15,.86);
+  --wash-1:rgba(211,164,74,.09);
+  --wash-2:rgba(226,105,76,.08);
+  --wash-3:rgba(125,157,192,.07);
+  --tag-bg:rgba(240,231,214,.09);
+  --grain-op:.24;
+  --on-accent:#1a1610;
+  color-scheme:dark;
 }
 
-:root {
-  --c-primary: #0d828e;
-  --c-primary-deep: #08606a;
-  --c-ok: #1d9c9c;
-  --c-mis: #de7525;
-}
-.dark {
-  --c-ok: #0d8e8e;
+html,body,#app{height:100%;margin:0;padding:0}
+
+body{
+  font-family:var(--serif);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  transition:background-color .45s ease,color .45s ease;
 }
 
-p {
-  text-align: left;
+/* 宣纸纹理：多层噪声 + 三组角落晕染。fixed 是因为 handle 的 html/body/#app 都是 height:100% */
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  opacity:var(--grain-op);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+  transition:opacity .45s ease;
+}
+body::after{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -8%, var(--wash-1), transparent 62%),
+    radial-gradient(ellipse 70% 50% at 100% 8%, var(--wash-2), transparent 60%),
+    radial-gradient(ellipse 60% 45% at 0% 30%, var(--wash-3), transparent 62%);
 }
 
-.colorblind {
-  --c-ok:#5ba554;
-  --c-mis: #ff46ff;
-  --c-primary:#5ba554;
+/* 内容层压在纹理之上 */
+.dc-main{position:relative;z-index:1;min-height:100%}
+
+/* ── 顶栏：与主站同款毛玻璃 ── */
+.dc-nav{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:var(--nav-bg);
+  border-bottom:1px solid var(--line);
+  transition:background-color .45s ease,border-color .45s ease;
+}
+.dc-nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px;max-width:640px;margin:0 auto;padding:0 14px}
+.dc-brand{display:flex;align-items:center;gap:11px}
+.seal{
+  width:40px;height:40px;flex:0 0 40px;border-radius:9px;
+  background:linear-gradient(155deg,var(--cinnabar),var(--cinnabar-deep));
+  color:var(--on-accent);display:grid;place-items:center;
+  font-family:var(--round);font-size:23px;line-height:1;
+  box-shadow:0 3px 10px -2px rgba(200,68,46,.5);
+  transform:rotate(-4deg);
+}
+.brand-t{font-family:var(--round);font-size:22px;line-height:1.15;color:var(--ink)}
+.brand-s{font-family:var(--round);font-size:9px;letter-spacing:.2em;color:var(--ink-faint);line-height:1}
+.dc-nav-btns{display:flex;align-items:center}
+
+/* 主题按钮：主站同款太阳/月亮互换 */
+.theme-btn{
+  width:38px;height:38px;flex:0 0 38px;border:none;background:transparent;cursor:pointer;
+  color:var(--ink-soft);border-radius:10px;display:grid;place-items:center;
+  transition:transform .2s,color .2s;
+}
+.theme-btn:hover{color:var(--cinnabar);transform:rotate(18deg) scale(1.08)}
+.theme-btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.theme-btn .moon{display:none}
+html.dark .theme-btn .sun{display:none}
+html.dark .theme-btn .moon{display:block}
+
+/* ── 底部标签栏：参数与主站 / K12 完全一致 ── */
+.dc-tabbar{display:none}
+@media(max-width:768px){
+  .dc-nav-in{height:56px}
+  .seal{width:34px;height:34px;flex:0 0 34px;font-size:20px;border-radius:8px}
+  .brand-t{font-size:18px}
+  .theme-btn{width:34px;height:34px;flex:0 0 34px}
+  .theme-btn svg{width:17px;height:17px}
+
+  /* 注意 top:auto —— 没有它，fixed 元素同时带 top 与 bottom 会被拉到页面顶部 */
+  .dc-tabbar{
+    display:flex;position:fixed;left:0;right:0;bottom:0;top:auto;z-index:70;
+    height:calc(58px + env(safe-area-inset-bottom,0px));
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    background:var(--nav-bg);
+    backdrop-filter:blur(18px) saturate(1.4);
+    -webkit-backdrop-filter:blur(18px) saturate(1.4);
+    border-top:1px solid var(--line);
+    box-shadow:0 -2px 18px -8px rgba(36,31,26,.28);
+  }
+  .dc-tab{
+    flex:1 1 0;min-width:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+    text-decoration:none;color:var(--ink-faint);
+    transition:color .2s,transform .12s;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .dc-tab:active{transform:scale(.9)}
+  .dc-tab .ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .dc-tab .tx{font-family:var(--round);font-size:10.5px;letter-spacing:.06em;line-height:1}
+  .dc-tab.on{color:var(--cinnabar)}
+  .dc-tab.on .ic{stroke-width:2}
+  body{padding-bottom:calc(58px + env(safe-area-inset-bottom,0px))}
 }
 
-ul {
-  list-style: disc;
+p{text-align:left}
+ul{list-style:disc}
+
+/* 色彩增强模式：青瓷/哑金对红绿色盲不友好，换成靛青/哑金（蓝黄对比） */
+.colorblind{
+  --c-ok:var(--indigo);
+  --c-mis:var(--gold);
+  --c-primary:var(--indigo);
 }
 
 /* Transition */
-.fade-in-enter-active {
-  transition: all 1s ease;
-}
-.fade-out-leave-active {
-  transition: all 0.5s ease;
-}
+.fade-in-enter-active{transition:all 1s ease}
+.fade-out-leave-active{transition:all .5s ease}
+.fade-out-leave-to,.fade-in-enter-from{transform:translateY(10px);opacity:0}
 
-.fade-out-leave-to,
-.fade-in-enter-from {
-  transform: translateY(10px);
-  opacity: 0;
-}
+/* 抽屉面板：贴边那一侧保持直角，另一侧收圆角 */
+.dc-modal.border-b{border-bottom-left-radius:var(--radius);border-bottom-right-radius:var(--radius)}
+.dc-modal.border-t{border-top-left-radius:var(--radius);border-top-right-radius:var(--radius)}
+.dc-modal.border-l{border-top-right-radius:var(--radius);border-bottom-right-radius:var(--radius)}
+.dc-modal.border-r{border-top-left-radius:var(--radius);border-bottom-left-radius:var(--radius)}
 
 /* Animation */
-.shake {
-  animation: shake 0.4s;
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px);
-  }
-  20% {
-    transform: translate(-2px);
-  }
-  40% {
-    transform: translate(2px);
-  }
-  60% {
-    transform: translate(-2px);
-  }
-  80% {
-    transform: translate(2px);
-  }
-  100% {
-    transform: translate(-1px);
-  }
+.shake{animation:shake .4s}
+@keyframes shake{
+  0%{transform:translate(1px)}
+  20%{transform:translate(-2px)}
+  40%{transform:translate(2px)}
+  60%{transform:translate(-2px)}
+  80%{transform:translate(2px)}
+  100%{transform:translate(-1px)}
 }

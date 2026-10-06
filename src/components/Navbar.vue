@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { isDark, showDashboard, showHelp, showSettings, useMask } from '~/state'
+import { showDashboard, showHelp, showSettings, toggleTheme, useMask } from '~/state'
 import { gamesCount } from '~/storage'
 
-const toggleDark = useToggle(isDark)
 const toggleSettings = useToggle(showSettings)
 const toggleDashboard = useToggle(showDashboard)
 
@@ -13,25 +12,27 @@ function openHelp() {
 </script>
 
 <template>
-  <nav border="b base" relative>
-    <div absolute font-serif text-2xl left-0 right-0 top-0 bottom-0 z--1 tracking-2 flex>
-      <AppName ma />
-    </div>
-    <div flex items-center justify-between md:max-w-md ma py4 px2>
-      <div flex items-center>
-        <button icon-btn mx2 @click="openHelp()">
+  <nav class="dc-nav">
+    <div class="dc-nav-in">
+      <AppName />
+      <div class="dc-nav-btns">
+        <button icon-btn mx2 title="玩法说明" @click="openHelp()">
           <div i-carbon-help />
         </button>
-        <button v-if="gamesCount" icon-btn mx2 @click="toggleDashboard()">
+        <button v-if="gamesCount" icon-btn mx2 title="战绩" @click="toggleDashboard()">
           <div i-carbon-catalog />
         </button>
-      </div>
-      <div flex items-center>
-        <button icon-btn mx2 @click="toggleSettings()">
+        <button icon-btn mx2 title="设置" @click="toggleSettings()">
           <div i-carbon-settings />
         </button>
-        <button icon-btn mx2 @click="toggleDark()">
-          <div i-carbon-sun dark:i-carbon-moon />
+        <button class="theme-btn" type="button" aria-label="切换深色模式" title="切换深色模式" @click="toggleTheme()">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.4v2.1M12 19.5v2.1M2.4 12h2.1M19.5 12h2.1M5.2 5.2l1.5 1.5M17.3 17.3l1.5 1.5M18.8 5.2l-1.5 1.5M6.7 17.3l-1.5 1.5"/>
+          </svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8z"/>
+          </svg>
         </button>
       </div>
     </div>

@@ -92,7 +92,7 @@ watchEffect(() => {
 
       <Transition name="fade-out">
         <div v-if="!isFinished" flex="~ col gap-2" items-center>
-          <div relative border="2 base rounded-0">
+          <div relative border="2 base rounded-[var(--radius)]">
             <input
               ref="el"
               v-model="inputValue"

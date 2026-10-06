@@ -14,6 +14,21 @@
   <meta property="og:description" content="每天一个成语，用声母、韵母、声调十次机会把它猜出来。">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://handle.diuci.com/og.png">
+  <meta name="theme-color" content="#f4ede0" id="metaTheme">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  <script>
+    /* 首次绘制前定色，避免暗色用户看到白色闪屏。键与主站 / K12 一致：dc-theme */
+    (function(){
+      try{
+        var s=localStorage.getItem('dc-theme');
+        var t=s||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+        document.documentElement.dataset.theme=t;
+        if(t==='dark')document.documentElement.classList.add('dark');
+      }catch(e){}
+    })();
+  </script>
 </head>
 <body>
   <div id="app"></div>
