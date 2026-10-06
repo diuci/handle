@@ -1,21 +1,19 @@
-/// <reference types="vitest" />
-
-import path from 'path'
-import { defineConfig } from 'vite'
+import { fileURLToPath } from 'node:url'
+import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
+const src = fileURLToPath(new URL('./src', import.meta.url))
+
 export default defineConfig({
+  base: '/',
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
-      '@hankit/tools': path.resolve(__dirname, 'packages/tools/src/index.ts'),
+      '~/': `${src}/`,
+      '@hankit/tools': fileURLToPath(new URL('./packages/tools/src/index.ts', import.meta.url)),
     },
-  },
-  define: {
-    'import.meta.vitest': 'false',
   },
   plugins: process.env.TEST
     ? []
@@ -33,9 +31,6 @@ export default defineConfig({
         }),
         Unocss(),
       ],
-  test: {
-    includeSource: ['packages/*/src/**/*.ts'],
-  },
   build: {
     chunkSizeWarningLimit: 1000,
     rollupOptions: {

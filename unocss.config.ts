@@ -1,5 +1,5 @@
 import type { Theme } from '@unocss/preset-mini'
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetWind3 } from 'unocss'
 
 export default defineConfig({
   shortcuts: [
@@ -36,7 +36,9 @@ export default defineConfig({
     },
   },
   presets: [
-    presetUno(),
+    // 上游用的 presetUno 在 UnoCSS 66 里改名为 presetWind3。
+    // dark 显式写死 class：主题由 html[data-theme] / html.dark 控制，不能跟系统偏好走。
+    presetWind3({ dark: 'class' }),
     presetAttributify(),
     presetIcons({
       scale: 1.2,
