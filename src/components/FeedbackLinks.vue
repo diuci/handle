@@ -9,19 +9,19 @@ import { t } from '~/i18n'
   <div flex>
     <a
       square-btn mx2 flex-gap-1
-      href="https://weibo.com/7485197193/Li2WLFosw"
+      href="https://github.com/diuci/handle/issues"
       target="_blank"
     >
-      <div i-ri-weibo-line />
-      {{ t('weibo-topic') }}
+      <div i-carbon-logo-github />
+      {{ t('report-issue') }}
     </a>
     <a
       square-btn mx2 flex-gap-1
-      href="https://twitter.com/antfu7/status/1499342397956067329"
+      href="https://github.com/antfu/handle"
       target="_blank"
     >
-      <div i-ri-twitter-line />
-      {{ t('twitter-community') }}
+      <div i-carbon-document />
+      {{ t('upstream') }}
     </a>
   </div>
 </template>

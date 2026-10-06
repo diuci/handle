@@ -1,0 +1,54 @@
+# NOTICE · 汉兜复刻站
+
+本站 `handle.diuci.com` 是 [丢词夺理](https://diuci.com/) 维护的**非官方复刻站**，
+玩法、词库与实现基于开源项目 **汉兜 Handle**。
+
+## 上游
+
+- 原始仓库：https://github.com/antfu/handle
+- 复刻基线：commit `2003b777f507ed18c1c80304fd6894280c56ad58`（2025-02-12，`feat: replace picocolors with ansis (#98)`）
+- 原始作者：[Anthony Fu](https://github.com/antfu) 与 Inès；玩法灵感来自 [Wordle](https://www.powerlanguage.co.uk/wordle/)
+- 许可：MIT，版权归 **Anthony Fu**，`LICENSE` 文件自上游原样保留、未作任何修改
+
+上游 README 明确要求：
+
+> 仓库以 MIT 协议开放，在注明原始仓库与作者的条件下，欢迎 Fork 与修改。
+
+本文件与页面底部的署名即为该条件的履行。MIT 另要求：在软件的副本中保留版权声明与许可声明——
+`LICENSE` 随仓库分发，构建产物不含它，故页面底部同时给出上游链接与本仓库链接。
+
+## 词库来源
+
+见 `src/data/README.md`：
+
+- `idioms.txt` / `polyphones.json`：整理自 [pwxcoo/chinese-xinhua](https://github.com/pwxcoo/chinese-xinhua) 的 `idiom.json`
+- `t2s.json`：整理自 [mollykannn/translate-big5-gbk](https://github.com/mollykannn/translate-big5-gbk)
+- `extra.json`：来自用户提交
+
+词库的勘误流程（`src/data/new.txt` + `npm run update` 抓取[汉典](https://www.zdic.net/)）沿自上游，未改。
+
+## 本站相对上游的改动
+
+1. **依赖与工具链**：不换框架，只升版本（Vite 4→8、UnoCSS 0.47→66、Vitest 0.25→5、TS 4.9→5.9、VueUse 9→15）；
+   包管理从 pnpm 换成 npm；删除 Netlify 配置与已 EOL 的 eslint 8 配置。
+2. **视觉**：配色、字体、纹理、顶栏、底部标签栏、圆角与阴影全部对齐主站 diuci.com 的设计语言；
+   语义色逐值取自主站的 `:root` / `:root[data-theme="dark"]`。
+3. **主题**：改用主站的 `localStorage['dc-theme']` + `<html data-theme>`，与主站、K12 互通。
+4. **域名与身份**：`CNAME` 为 `handle.diuci.com`；标题、og、favicon、og 图全部换成本站。
+5. **测试**：Vitest 3 起移除内联测试（`import.meta.vitest`），三组内联测试原样搬入 `test/`，断言与快照未改。
+6. **期号显示**：「第一千七百四十日」改为「第 1740 期」。
+7. **外部链接**：上游作者的个人微博 / Twitter 入口换成本站的入口。
+
+玩法逻辑、题库、出题算法（`seedrandom('day-N')`）、答案冻结日期、遮罩分享、注音 / 双拼 / 繁体的开关
+**均未改动**。
+
+## 未采用上游的部分
+
+- `netlify.toml` 与 `@netlify/functions`：本站由 GitHub Pages + GitHub Actions 部署。
+- `public/tiger.svg`：全仓 0 引用。
+- 上游 `public/og.png` 与上游 favicon：属上游品牌资产，已替换。
+- `axios` / `nanoid` / `lru-cache` / `jsdom` / `@vue/test-utils` / `@iconify-json/noto-v1`：grep 确认全仓未使用。
+
+## 名称
+
+「汉兜」是上游游戏的名称，本站沿用它是为了说明玩法来源，不代表上游授权或背书。

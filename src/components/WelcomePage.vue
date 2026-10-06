@@ -78,15 +78,19 @@ const final = computed(() => ({ py: 'uo', zy: 'ㄨㄛ', sp: 'o' }[inputMode.valu
       {{ t('other-variants') }}
     </button>
     <div>
-      <span op40>inspired by </span><a href="https://www.powerlanguage.co.uk/wordle/" target="_blank" op50 hover:op80>Wordle</a>
-      <span op40>, made by </span>
-      <a op50 hover:op80 href="https://twitter.com/antfu7" target="_blank">Anthony</a>
-      <span op40> & </span>
-      <a op50 hover:op80 href="https://twitter.com/iiiiiiines_____" target="_blank">Inès</a>
+      <span op40>玩法与词库来自 </span>
+      <a op50 hover:op80 href="https://github.com/antfu/handle" target="_blank">汉兜 Handle</a>
+      <span op40> · Anthony Fu &amp; Inès · inspired by </span>
+      <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank" op50 hover:op80>Wordle</a>
     </div>
-    <a href="https://github.com/antfu/handle" target="_blank" flex="~ center gap-1" op50 hover:op80>
+    <div>
+      <span op40>本站是 </span>
+      <a op50 hover:op80 href="https://diuci.com/" target="_blank">丢词夺理</a>
+      <span op40> 的非官方复刻，基于 MIT 授权</span>
+    </div>
+    <a href="https://github.com/diuci/handle" target="_blank" flex="~ center gap-1" op50 hover:op80>
       <div i-carbon-logo-github />
-      Source Code
+      {{ t('source-code') }}
     </a>
   </div>
 </template>
