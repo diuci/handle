@@ -115,7 +115,7 @@ watchEffect(() => {
               bg-transparent w-full max-w-86 p3 outline-none text-center
               type="text"
               autocomplete="false"
-              :placeholder="kind === 'idiom' ? t('input-placeholder') : t('input-placeholder-' + kind)"
+              :placeholder="t('input-placeholder-' + kind)"
               :disabled="isFinished"
               :class="{ shake }"
               @input="handleInput"

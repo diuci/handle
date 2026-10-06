@@ -53,7 +53,7 @@ const verseDemo = computed(() => kind.value === 'qiyan'
       <p>{{ t('intro-verse-2') }}</p>
     </template>
 
-    <p>{{ t('intro-1') }} <b text-ok>{{ isIdiom ? t('intro-2') : t('target-' + kind) }}</b>。</p>
+    <p>{{ t('intro-1') }} <b text-ok>{{ t('target-' + kind) }}</b>。</p>
     <p>{{ t('intro-3') }}</p>
     <div h-1px w-10 border="b base" m4 />
 
