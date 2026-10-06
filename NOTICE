@@ -42,6 +42,10 @@
 玩法逻辑、题库、出题算法（`seedrandom('day-N')`）、答案冻结日期、遮罩分享、注音 / 双拼 / 繁体的开关
 **均未改动**。
 
+另有一条**决定不做**的优化记录在 [docs/phase2-pinyin.md](./docs/phase2-pinyin.md)：
+「离线预生成拼音表、去掉运行时 `pinyin` 字典」——实测之后确认它省不了体积（反而多 17 KB gz）、
+也只省 3–33 ms，已降级为按需触发。写在这里是为了不让后来的人再把它当成待办性能优化。
+
 ## 未采用上游的部分
 
 - `netlify.toml` 与 `@netlify/functions`：本站由 GitHub Pages + GitHub Actions 部署。
