@@ -5,7 +5,9 @@ import { answers } from './answers/list'
 import { START_DATE } from './logic/constants'
 import { tryFixAnswer } from './logic/answer-fix'
 
-useTitle(computed(() => `${t('name')} - ${t('description')}`))
+// 浏览器标签上的标题。上游这里是「汉兜 - 汉字 Wordle」，会把站点身份覆盖掉：
+// index.html 里写好的「… | 丢词夺理」在 JS 跑起来之后就被替换了。
+useTitle(computed(() => `${t('name')} - ${t('description')} | ${t('site')}`))
 
 if (!initialized.value)
   showHelp.value = true
