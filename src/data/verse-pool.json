@@ -1,0 +1,3197 @@
+{
+  "contentVersion": "2026.10.02",
+  "frozen": {
+    "wuyan": {
+      "count": 226,
+      "sha256": "a2e22e34a45dfdf4e1f523cd0bef3db280b623b7788222ed7d0154efac571f84"
+    },
+    "qiyan": {
+      "count": 410,
+      "sha256": "edfa1cf5d891a04009a7b1ffbf30a94c09951445ac6f2007426cb56c8d066ac5"
+    }
+  },
+  "wuyan": [
+    {
+      "word": "小娃撑小艇",
+      "source": "唐·白居易《池上》",
+      "poemId": "chishang"
+    },
+    {
+      "word": "偷采白莲回",
+      "source": "唐·白居易《池上》",
+      "poemId": "chishang"
+    },
+    {
+      "word": "不解藏踪迹",
+      "source": "唐·白居易《池上》",
+      "poemId": "chishang"
+    },
+    {
+      "word": "浮萍一道开",
+      "source": "唐·白居易《池上》",
+      "poemId": "chishang"
+    },
+    {
+      "word": "国破山河在",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "城春草木深",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "感时花溅泪",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "恨别鸟惊心",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "烽火连三月",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "家书抵万金",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "白头搔更短",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "浑欲不胜簪",
+      "source": "唐·杜甫《春望》",
+      "poemId": "chunwang"
+    },
+    {
+      "word": "春眠不觉晓",
+      "source": "唐·孟浩然《春晓》",
+      "poemId": "chunxiao"
+    },
+    {
+      "word": "处处闻啼鸟",
+      "source": "唐·孟浩然《春晓》",
+      "poemId": "chunxiao"
+    },
+    {
+      "word": "夜来风雨声",
+      "source": "唐·孟浩然《春晓》",
+      "poemId": "chunxiao"
+    },
+    {
+      "word": "花落知多少",
+      "source": "唐·孟浩然《春晓》",
+      "poemId": "chunxiao"
+    },
+    {
+      "word": "好雨知时节",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "当春乃发生",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "随风潜入夜",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "润物细无声",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "野径云俱黑",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "江船火独明",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "晓看红湿处",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "花重锦官城",
+      "source": "唐·杜甫《春夜喜雨》",
+      "poemId": "chunyexiyu"
+    },
+    {
+      "word": "客路青山外",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "行舟绿水前",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "潮平两岸阔",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "风正一帆悬",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "海日生残夜",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "江春入旧年",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "乡书何处达",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "归雁洛阳边",
+      "source": "唐·王湾《次北固山下》",
+      "poemId": "cibeigushanxia"
+    },
+    {
+      "word": "白日依山尽",
+      "source": "唐·王之涣《登鹳雀楼》",
+      "poemId": "dengguanquelou"
+    },
+    {
+      "word": "黄河入海流",
+      "source": "唐·王之涣《登鹳雀楼》",
+      "poemId": "dengguanquelou"
+    },
+    {
+      "word": "欲穷千里目",
+      "source": "唐·王之涣《登鹳雀楼》",
+      "poemId": "dengguanquelou"
+    },
+    {
+      "word": "更上一层楼",
+      "source": "唐·王之涣《登鹳雀楼》",
+      "poemId": "dengguanquelou"
+    },
+    {
+      "word": "昔闻洞庭水",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "今上岳阳楼",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "吴楚东南坼",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "乾坤日夜浮",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "亲朋无一字",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "老病有孤舟",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "戎马关山北",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "凭轩涕泗流",
+      "source": "唐·杜甫《登岳阳楼》",
+      "poemId": "dengyueyanglou"
+    },
+    {
+      "word": "众鸟高飞尽",
+      "source": "唐·李白《独坐敬亭山》",
+      "poemId": "duzuojingting"
+    },
+    {
+      "word": "孤云独去闲",
+      "source": "唐·李白《独坐敬亭山》",
+      "poemId": "duzuojingting"
+    },
+    {
+      "word": "相看两不厌",
+      "source": "唐·李白《独坐敬亭山》",
+      "poemId": "duzuojingting"
+    },
+    {
+      "word": "只有敬亭山",
+      "source": "唐·李白《独坐敬亭山》",
+      "poemId": "duzuojingting"
+    },
+    {
+      "word": "解落三秋叶",
+      "source": "唐·李峤《风》",
+      "poemId": "feng"
+    },
+    {
+      "word": "能开二月花",
+      "source": "唐·李峤《风》",
+      "poemId": "feng"
+    },
+    {
+      "word": "过江千尺浪",
+      "source": "唐·李峤《风》",
+      "poemId": "feng"
+    },
+    {
+      "word": "入竹万竿斜",
+      "source": "唐·李峤《风》",
+      "poemId": "feng"
+    },
+    {
+      "word": "少无适俗韵",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "性本爱丘山",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "误落尘网中",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "一去三十年",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "羁鸟恋旧林",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "池鱼思故渊",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "开荒南野际",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "守拙归园田",
+      "source": "晋·陶潜《归园田居》",
+      "poemId": "guiyuantianju"
+    },
+    {
+      "word": "小时不识月",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "呼作白玉盘",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "又疑瑶台镜",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "飞在青云端",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "仙人垂两足",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "桂树何团团",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "白兔捣药成",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "问言与谁餐",
+      "source": "唐·李白《古朗月行》",
+      "poemId": "gulangyuexing"
+    },
+    {
+      "word": "故人具鸡黍",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "邀我至田家",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "绿树村边合",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "青山郭外斜",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "开轩面场圃",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "把酒话桑麻",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "待到重阳日",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "还来就菊花",
+      "source": "唐·孟浩然《过故人庄》",
+      "poemId": "guogurenzhuang"
+    },
+    {
+      "word": "离离原上草",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "一岁一枯荣",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "野火烧不尽",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "春风吹又生",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "远芳侵古道",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "晴翠接荒城",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "又送王孙去",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "萋萋满别情",
+      "source": "唐·白居易《赋得古原草送别》",
+      "poemId": "guyuancao"
+    },
+    {
+      "word": "远看山有色",
+      "source": "唐·王维《画》",
+      "poemId": "hua"
+    },
+    {
+      "word": "近听水无声",
+      "source": "唐·王维《画》",
+      "poemId": "hua"
+    },
+    {
+      "word": "春去花还在",
+      "source": "唐·王维《画》",
+      "poemId": "hua"
+    },
+    {
+      "word": "人来鸟不惊",
+      "source": "唐·王维《画》",
+      "poemId": "hua"
+    },
+    {
+      "word": "江上往来人",
+      "source": "宋·范仲淹《江上渔者》",
+      "poemId": "jiangshangyuzhe"
+    },
+    {
+      "word": "但爱鲈鱼美",
+      "source": "宋·范仲淹《江上渔者》",
+      "poemId": "jiangshangyuzhe"
+    },
+    {
+      "word": "君看一叶舟",
+      "source": "宋·范仲淹《江上渔者》",
+      "poemId": "jiangshangyuzhe"
+    },
+    {
+      "word": "出没风波里",
+      "source": "宋·范仲淹《江上渔者》",
+      "poemId": "jiangshangyuzhe"
+    },
+    {
+      "word": "千山鸟飞绝",
+      "source": "唐·柳宗元《江雪》",
+      "poemId": "jiangxue"
+    },
+    {
+      "word": "万径人踪灭",
+      "source": "唐·柳宗元《江雪》",
+      "poemId": "jiangxue"
+    },
+    {
+      "word": "孤舟蓑笠翁",
+      "source": "唐·柳宗元《江雪》",
+      "poemId": "jiangxue"
+    },
+    {
+      "word": "独钓寒江雪",
+      "source": "唐·柳宗元《江雪》",
+      "poemId": "jiangxue"
+    },
+    {
+      "word": "床前明月光",
+      "source": "唐·李白《静夜思》",
+      "poemId": "jingyesi"
+    },
+    {
+      "word": "疑是地上霜",
+      "source": "唐·李白《静夜思》",
+      "poemId": "jingyesi"
+    },
+    {
+      "word": "举头望明月",
+      "source": "唐·李白《静夜思》",
+      "poemId": "jingyesi"
+    },
+    {
+      "word": "低头思故乡",
+      "source": "唐·李白《静夜思》",
+      "poemId": "jingyesi"
+    },
+    {
+      "word": "迟日江山丽",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-chiri"
+    },
+    {
+      "word": "春风花草香",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-chiri"
+    },
+    {
+      "word": "泥融飞燕子",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-chiri"
+    },
+    {
+      "word": "沙暖睡鸳鸯",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-chiri"
+    },
+    {
+      "word": "空山不见人",
+      "source": "唐·王维《鹿柴》",
+      "poemId": "luchai"
+    },
+    {
+      "word": "但闻人语响",
+      "source": "唐·王维《鹿柴》",
+      "poemId": "luchai"
+    },
+    {
+      "word": "返景入深林",
+      "source": "唐·王维《鹿柴》",
+      "poemId": "luchai"
+    },
+    {
+      "word": "复照青苔上",
+      "source": "唐·王维《鹿柴》",
+      "poemId": "luchai"
+    },
+    {
+      "word": "大漠沙如雪",
+      "source": "唐·李贺《马诗》",
+      "poemId": "mashi"
+    },
+    {
+      "word": "燕山月似钩",
+      "source": "唐·李贺《马诗》",
+      "poemId": "mashi"
+    },
+    {
+      "word": "何当金络脑",
+      "source": "唐·李贺《马诗》",
+      "poemId": "mashi"
+    },
+    {
+      "word": "快走踏清秋",
+      "source": "唐·李贺《马诗》",
+      "poemId": "mashi"
+    },
+    {
+      "word": "墙角数枝梅",
+      "source": "宋·王安石《梅花》",
+      "poemId": "meihua"
+    },
+    {
+      "word": "凌寒独自开",
+      "source": "宋·王安石《梅花》",
+      "poemId": "meihua"
+    },
+    {
+      "word": "遥知不是雪",
+      "source": "宋·王安石《梅花》",
+      "poemId": "meihua"
+    },
+    {
+      "word": "为有暗香来",
+      "source": "宋·王安石《梅花》",
+      "poemId": "meihua"
+    },
+    {
+      "word": "春种一粒粟",
+      "source": "唐·李绅《悯农其一》",
+      "poemId": "minnong1"
+    },
+    {
+      "word": "秋收万颗子",
+      "source": "唐·李绅《悯农其一》",
+      "poemId": "minnong1"
+    },
+    {
+      "word": "四海无闲田",
+      "source": "唐·李绅《悯农其一》",
+      "poemId": "minnong1"
+    },
+    {
+      "word": "农夫犹饿死",
+      "source": "唐·李绅《悯农其一》",
+      "poemId": "minnong1"
+    },
+    {
+      "word": "锄禾日当午",
+      "source": "唐·李绅《悯农其二》",
+      "poemId": "minnong2"
+    },
+    {
+      "word": "汗滴禾下土",
+      "source": "唐·李绅《悯农其二》",
+      "poemId": "minnong2"
+    },
+    {
+      "word": "谁知盘中餐",
+      "source": "唐·李绅《悯农其二》",
+      "poemId": "minnong2"
+    },
+    {
+      "word": "粒粒皆辛苦",
+      "source": "唐·李绅《悯农其二》",
+      "poemId": "minnong2"
+    },
+    {
+      "word": "人闲桂花落",
+      "source": "唐·王维《鸟鸣涧》",
+      "poemId": "niaomingjian"
+    },
+    {
+      "word": "夜静春山空",
+      "source": "唐·王维《鸟鸣涧》",
+      "poemId": "niaomingjian"
+    },
+    {
+      "word": "月出惊山鸟",
+      "source": "唐·王维《鸟鸣涧》",
+      "poemId": "niaomingjian"
+    },
+    {
+      "word": "时鸣春涧中",
+      "source": "唐·王维《鸟鸣涧》",
+      "poemId": "niaomingjian"
+    },
+    {
+      "word": "月黑雁飞高",
+      "source": "唐·卢纶《塞下曲》",
+      "poemId": "saixiaqu"
+    },
+    {
+      "word": "单于夜遁逃",
+      "source": "唐·卢纶《塞下曲》",
+      "poemId": "saixiaqu"
+    },
+    {
+      "word": "欲将轻骑逐",
+      "source": "唐·卢纶《塞下曲》",
+      "poemId": "saixiaqu"
+    },
+    {
+      "word": "大雪满弓刀",
+      "source": "唐·卢纶《塞下曲》",
+      "poemId": "saixiaqu"
+    },
+    {
+      "word": "空山新雨后",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "天气晚来秋",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "明月松间照",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "清泉石上流",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "竹喧归浣女",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "莲动下渔舟",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "随意春芳歇",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "王孙自可留",
+      "source": "唐·王维《山居秋暝》",
+      "poemId": "shanjuqiuming"
+    },
+    {
+      "word": "单车欲问边",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "属国过居延",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "征蓬出汉塞",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "归雁入胡天",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "大漠孤烟直",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "长河落日圆",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "萧关逢候骑",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "都护在燕然",
+      "source": "唐·王维《使至塞上》",
+      "poemId": "shizhuisai"
+    },
+    {
+      "word": "城阙辅三秦",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "风烟望五津",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "与君离别意",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "同是宦游人",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "海内存知己",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "天涯若比邻",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "无为在歧路",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "儿女共沾巾",
+      "source": "唐·王勃《送杜少府之任蜀州》",
+      "poemId": "songshaoshu"
+    },
+    {
+      "word": "移舟泊烟渚",
+      "source": "唐·孟浩然《宿建德江》",
+      "poemId": "sujiandejiang"
+    },
+    {
+      "word": "日暮客愁新",
+      "source": "唐·孟浩然《宿建德江》",
+      "poemId": "sujiandejiang"
+    },
+    {
+      "word": "野旷天低树",
+      "source": "唐·孟浩然《宿建德江》",
+      "poemId": "sujiandejiang"
+    },
+    {
+      "word": "江清月近人",
+      "source": "唐·孟浩然《宿建德江》",
+      "poemId": "sujiandejiang"
+    },
+    {
+      "word": "牧童骑黄牛",
+      "source": "清·袁枚《所见》",
+      "poemId": "suojian"
+    },
+    {
+      "word": "歌声振林樾",
+      "source": "清·袁枚《所见》",
+      "poemId": "suojian"
+    },
+    {
+      "word": "意欲捕鸣蝉",
+      "source": "清·袁枚《所见》",
+      "poemId": "suojian"
+    },
+    {
+      "word": "忽然闭口立",
+      "source": "清·袁枚《所见》",
+      "poemId": "suojian"
+    },
+    {
+      "word": "迢迢牵牛星",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "皎皎河汉女",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "纤纤擢素手",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "札札弄机杼",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "终日不成章",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "泣涕零如雨",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "河汉清且浅",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "相去复几许",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "盈盈一水间",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "脉脉不得语",
+      "source": "汉·佚名《迢迢牵牛星》",
+      "poemId": "tiaotiaoqianniuxing"
+    },
+    {
+      "word": "岱宗夫如何",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "齐鲁青未了",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "造化钟神秀",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "阴阳割昏晓",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "荡胸生曾云",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "决眦入归鸟",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "会当凌绝顶",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "一览众山小",
+      "source": "唐·杜甫《望岳》",
+      "poemId": "wangyue"
+    },
+    {
+      "word": "红豆生南国",
+      "source": "唐·王维《相思》",
+      "poemId": "xiangsi"
+    },
+    {
+      "word": "春来发几枝",
+      "source": "唐·王维《相思》",
+      "poemId": "xiangsi"
+    },
+    {
+      "word": "愿君多采撷",
+      "source": "唐·王维《相思》",
+      "poemId": "xiangsi"
+    },
+    {
+      "word": "此物最相思",
+      "source": "唐·王维《相思》",
+      "poemId": "xiangsi"
+    },
+    {
+      "word": "生当作人杰",
+      "source": "宋·李清照《夏日绝句》",
+      "poemId": "xiarijueju"
+    },
+    {
+      "word": "死亦为鬼雄",
+      "source": "宋·李清照《夏日绝句》",
+      "poemId": "xiarijueju"
+    },
+    {
+      "word": "至今思项羽",
+      "source": "宋·李清照《夏日绝句》",
+      "poemId": "xiarijueju"
+    },
+    {
+      "word": "不肯过江东",
+      "source": "宋·李清照《夏日绝句》",
+      "poemId": "xiarijueju"
+    },
+    {
+      "word": "松下问童子",
+      "source": "唐·贾岛《寻隐者不遇》",
+      "poemId": "xunyinzhe"
+    },
+    {
+      "word": "言师采药去",
+      "source": "唐·贾岛《寻隐者不遇》",
+      "poemId": "xunyinzhe"
+    },
+    {
+      "word": "只在此山中",
+      "source": "唐·贾岛《寻隐者不遇》",
+      "poemId": "xunyinzhe"
+    },
+    {
+      "word": "云深不知处",
+      "source": "唐·贾岛《寻隐者不遇》",
+      "poemId": "xunyinzhe"
+    },
+    {
+      "word": "危楼高百尺",
+      "source": "唐·李白《夜宿山寺》",
+      "poemId": "yesushansi"
+    },
+    {
+      "word": "手可摘星辰",
+      "source": "唐·李白《夜宿山寺》",
+      "poemId": "yesushansi"
+    },
+    {
+      "word": "不敢高声语",
+      "source": "唐·李白《夜宿山寺》",
+      "poemId": "yesushansi"
+    },
+    {
+      "word": "恐惊天上人",
+      "source": "唐·李白《夜宿山寺》",
+      "poemId": "yesushansi"
+    },
+    {
+      "word": "东皋薄暮望",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "徙倚欲何依",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "树树皆秋色",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "山山唯落晖",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "牧人驱犊返",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "猎马带禽归",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "相顾无相识",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "长歌怀采薇",
+      "source": "唐·王绩《野望》",
+      "poemId": "yewang"
+    },
+    {
+      "word": "结庐在人境",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "而无车马喧",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "问君何能尔",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "心远地自偏",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "采菊东篱下",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "悠然见南山",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "山气日夕佳",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "飞鸟相与还",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "此中有真意",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "欲辨已忘言",
+      "source": "晋·陶潜《饮酒》",
+      "poemId": "yinjiujiusan"
+    },
+    {
+      "word": "白毛浮绿水",
+      "source": "唐·骆宾王《咏鹅》",
+      "poemId": "yonge"
+    },
+    {
+      "word": "红掌拨清波",
+      "source": "唐·骆宾王《咏鹅》",
+      "poemId": "yonge"
+    },
+    {
+      "word": "月黑见渔灯",
+      "source": "清·查慎行《舟夜书所见》",
+      "poemId": "zhouyeshujian"
+    },
+    {
+      "word": "孤光一点萤",
+      "source": "清·查慎行《舟夜书所见》",
+      "poemId": "zhouyeshujian"
+    },
+    {
+      "word": "微微风簇浪",
+      "source": "清·查慎行《舟夜书所见》",
+      "poemId": "zhouyeshujian"
+    },
+    {
+      "word": "散作满河星",
+      "source": "清·查慎行《舟夜书所见》",
+      "poemId": "zhouyeshujian"
+    },
+    {
+      "word": "独坐幽篁里",
+      "source": "唐·王维《竹里馆》",
+      "poemId": "zhuliguan"
+    },
+    {
+      "word": "弹琴复长啸",
+      "source": "唐·王维《竹里馆》",
+      "poemId": "zhuliguan"
+    },
+    {
+      "word": "深林人不知",
+      "source": "唐·王维《竹里馆》",
+      "poemId": "zhuliguan"
+    },
+    {
+      "word": "明月来相照",
+      "source": "唐·王维《竹里馆》",
+      "poemId": "zhuliguan"
+    }
+  ],
+  "qiyan": [
+    {
+      "word": "北风卷地白草折",
+      "source": "唐·岑参《白雪歌送武判官归京》",
+      "poemId": "baixuege"
+    },
+    {
+      "word": "胡天八月即飞雪",
+      "source": "唐·岑参《白雪歌送武判官归京》",
+      "poemId": "baixuege"
+    },
+    {
+      "word": "忽如一夜春风来",
+      "source": "唐·岑参《白雪歌送武判官归京》",
+      "poemId": "baixuege"
+    },
+    {
+      "word": "千树万树梨花开",
+      "source": "唐·岑参《白雪歌送武判官归京》",
+      "poemId": "baixuege"
+    },
+    {
+      "word": "轮台东门送君去",
+      "source": "唐·岑参《白雪歌送武判官归京》",
+      "poemId": "baixuege"
+    },
+    {
+      "word": "去时雪满天山路",
+      "source": "唐·岑参《白雪歌送武判官归京》",
+      "poemId": "baixuege"
+    },
+    {
+      "word": "千里黄云白日曛",
+      "source": "唐·高适《别董大》",
+      "poemId": "biedongda"
+    },
+    {
+      "word": "北风吹雁雪纷纷",
+      "source": "唐·高适《别董大》",
+      "poemId": "biedongda"
+    },
+    {
+      "word": "莫愁前路无知己",
+      "source": "唐·高适《别董大》",
+      "poemId": "biedongda"
+    },
+    {
+      "word": "天下谁人不识君",
+      "source": "唐·高适《别董大》",
+      "poemId": "biedongda"
+    },
+    {
+      "word": "京口瓜洲一水间",
+      "source": "宋·王安石《泊船瓜洲》",
+      "poemId": "bochuanguazhou"
+    },
+    {
+      "word": "钟山只隔数重山",
+      "source": "宋·王安石《泊船瓜洲》",
+      "poemId": "bochuanguazhou"
+    },
+    {
+      "word": "春风又绿江南岸",
+      "source": "宋·王安石《泊船瓜洲》",
+      "poemId": "bochuanguazhou"
+    },
+    {
+      "word": "明月何时照我还",
+      "source": "宋·王安石《泊船瓜洲》",
+      "poemId": "bochuanguazhou"
+    },
+    {
+      "word": "烟笼寒水月笼沙",
+      "source": "唐·杜牧《泊秦淮》",
+      "poemId": "boqinhuai"
+    },
+    {
+      "word": "夜泊秦淮近酒家",
+      "source": "唐·杜牧《泊秦淮》",
+      "poemId": "boqinhuai"
+    },
+    {
+      "word": "商女不知亡国恨",
+      "source": "唐·杜牧《泊秦淮》",
+      "poemId": "boqinhuai"
+    },
+    {
+      "word": "隔江犹唱后庭花",
+      "source": "唐·杜牧《泊秦淮》",
+      "poemId": "boqinhuai"
+    },
+    {
+      "word": "荷叶罗裙一色裁",
+      "source": "唐·王昌龄《采莲曲》",
+      "poemId": "cailianqu"
+    },
+    {
+      "word": "芙蓉向脸两边开",
+      "source": "唐·王昌龄《采莲曲》",
+      "poemId": "cailianqu"
+    },
+    {
+      "word": "乱入池中看不见",
+      "source": "唐·王昌龄《采莲曲》",
+      "poemId": "cailianqu"
+    },
+    {
+      "word": "闻歌始觉有人来",
+      "source": "唐·王昌龄《采莲曲》",
+      "poemId": "cailianqu"
+    },
+    {
+      "word": "云母屏风烛影深",
+      "source": "唐·李商隐《嫦娥》",
+      "poemId": "change"
+    },
+    {
+      "word": "长河渐落晓星沉",
+      "source": "唐·李商隐《嫦娥》",
+      "poemId": "change"
+    },
+    {
+      "word": "嫦娥应悔偷灵药",
+      "source": "唐·李商隐《嫦娥》",
+      "poemId": "change"
+    },
+    {
+      "word": "碧海青天夜夜心",
+      "source": "唐·李商隐《嫦娥》",
+      "poemId": "change"
+    },
+    {
+      "word": "折戟沉沙铁未销",
+      "source": "唐·杜牧《赤壁》",
+      "poemId": "chibi"
+    },
+    {
+      "word": "自将磨洗认前朝",
+      "source": "唐·杜牧《赤壁》",
+      "poemId": "chibi"
+    },
+    {
+      "word": "东风不与周郎便",
+      "source": "唐·杜牧《赤壁》",
+      "poemId": "chibi"
+    },
+    {
+      "word": "铜雀春深锁二乔",
+      "source": "唐·杜牧《赤壁》",
+      "poemId": "chibi"
+    },
+    {
+      "word": "巴山楚水凄凉地",
+      "source": "唐·刘禹锡《酬乐天扬州初逢席上见赠》",
+      "poemId": "choulitian"
+    },
+    {
+      "word": "二十三年弃置身",
+      "source": "唐·刘禹锡《酬乐天扬州初逢席上见赠》",
+      "poemId": "choulitian"
+    },
+    {
+      "word": "怀旧空吟闻笛赋",
+      "source": "唐·刘禹锡《酬乐天扬州初逢席上见赠》",
+      "poemId": "choulitian"
+    },
+    {
+      "word": "到乡翻似烂柯人",
+      "source": "唐·刘禹锡《酬乐天扬州初逢席上见赠》",
+      "poemId": "choulitian"
+    },
+    {
+      "word": "沉舟侧畔千帆过",
+      "source": "唐·刘禹锡《酬乐天扬州初逢席上见赠》",
+      "poemId": "choulitian"
+    },
+    {
+      "word": "病树前头万木春",
+      "source": "唐·刘禹锡《酬乐天扬州初逢席上见赠》",
+      "poemId": "choulitian"
+    },
+    {
+      "word": "春江潮水连海平",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "海上明月共潮生",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "滟滟随波千万里",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "何处春江无月明",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "今人不见古时月",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "今月曾经照古人",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "胜日寻芳泗水滨",
+      "source": "宋·朱熹《春日》",
+      "poemId": "chunri"
+    },
+    {
+      "word": "无边光景一时新",
+      "source": "宋·朱熹《春日》",
+      "poemId": "chunri"
+    },
+    {
+      "word": "等闲识得东风面",
+      "source": "宋·朱熹《春日》",
+      "poemId": "chunri"
+    },
+    {
+      "word": "万紫千红总是春",
+      "source": "宋·朱熹《春日》",
+      "poemId": "chunri"
+    },
+    {
+      "word": "谁家玉笛暗飞声",
+      "source": "唐·李白《春夜洛城闻笛》",
+      "poemId": "chunyeluocheng"
+    },
+    {
+      "word": "散入春风满洛城",
+      "source": "唐·李白《春夜洛城闻笛》",
+      "poemId": "chunyeluocheng"
+    },
+    {
+      "word": "此夜曲中闻折柳",
+      "source": "唐·李白《春夜洛城闻笛》",
+      "poemId": "chunyeluocheng"
+    },
+    {
+      "word": "何人不起故园情",
+      "source": "唐·李白《春夜洛城闻笛》",
+      "poemId": "chunyeluocheng"
+    },
+    {
+      "word": "秦时明月汉时关",
+      "source": "唐·王昌龄《出塞》",
+      "poemId": "chusai"
+    },
+    {
+      "word": "万里长征人未还",
+      "source": "唐·王昌龄《出塞》",
+      "poemId": "chusai"
+    },
+    {
+      "word": "但使龙城飞将在",
+      "source": "唐·王昌龄《出塞》",
+      "poemId": "chusai"
+    },
+    {
+      "word": "不教胡马度阴山",
+      "source": "唐·王昌龄《出塞》",
+      "poemId": "chusai"
+    },
+    {
+      "word": "独怜幽草涧边生",
+      "source": "唐·韦应物《滁州西涧》",
+      "poemId": "chuzhouxijian"
+    },
+    {
+      "word": "上有黄鹂深树鸣",
+      "source": "唐·韦应物《滁州西涧》",
+      "poemId": "chuzhouxijian"
+    },
+    {
+      "word": "春潮带雨晚来急",
+      "source": "唐·韦应物《滁州西涧》",
+      "poemId": "chuzhouxijian"
+    },
+    {
+      "word": "野渡无人舟自横",
+      "source": "唐·韦应物《滁州西涧》",
+      "poemId": "chuzhouxijian"
+    },
+    {
+      "word": "青海长云暗雪山",
+      "source": "唐·王昌龄《从军行》",
+      "poemId": "congjunxing"
+    },
+    {
+      "word": "孤城遥望玉门关",
+      "source": "唐·王昌龄《从军行》",
+      "poemId": "congjunxing"
+    },
+    {
+      "word": "黄沙百战穿金甲",
+      "source": "唐·王昌龄《从军行》",
+      "poemId": "congjunxing"
+    },
+    {
+      "word": "不破楼兰终不还",
+      "source": "唐·王昌龄《从军行》",
+      "poemId": "congjunxing"
+    },
+    {
+      "word": "草长莺飞二月天",
+      "source": "清·高鼎《村居》",
+      "poemId": "cunju"
+    },
+    {
+      "word": "拂堤杨柳醉春烟",
+      "source": "清·高鼎《村居》",
+      "poemId": "cunju"
+    },
+    {
+      "word": "儿童散学归来早",
+      "source": "清·高鼎《村居》",
+      "poemId": "cunju"
+    },
+    {
+      "word": "忙趁东风放纸鸢",
+      "source": "清·高鼎《村居》",
+      "poemId": "cunju"
+    },
+    {
+      "word": "草满池塘水满陂",
+      "source": "宋·雷震《村晚》",
+      "poemId": "cunwan"
+    },
+    {
+      "word": "山衔落日浸寒漪",
+      "source": "宋·雷震《村晚》",
+      "poemId": "cunwan"
+    },
+    {
+      "word": "牧童归去横牛背",
+      "source": "宋·雷震《村晚》",
+      "poemId": "cunwan"
+    },
+    {
+      "word": "短笛无腔信口吹",
+      "source": "宋·雷震《村晚》",
+      "poemId": "cunwan"
+    },
+    {
+      "word": "人间四月芳菲尽",
+      "source": "唐·白居易《大林寺桃花》",
+      "poemId": "dalinsitaohua"
+    },
+    {
+      "word": "山寺桃花始盛开",
+      "source": "唐·白居易《大林寺桃花》",
+      "poemId": "dalinsitaohua"
+    },
+    {
+      "word": "长恨春归无觅处",
+      "source": "唐·白居易《大林寺桃花》",
+      "poemId": "dalinsitaohua"
+    },
+    {
+      "word": "不知转入此中来",
+      "source": "唐·白居易《大林寺桃花》",
+      "poemId": "dalinsitaohua"
+    },
+    {
+      "word": "飞来山上千寻塔",
+      "source": "宋·王安石《登飞来峰》",
+      "poemId": "dengfeilaifeng"
+    },
+    {
+      "word": "闻说鸡鸣见日升",
+      "source": "宋·王安石《登飞来峰》",
+      "poemId": "dengfeilaifeng"
+    },
+    {
+      "word": "不畏浮云遮望眼",
+      "source": "宋·王安石《登飞来峰》",
+      "poemId": "dengfeilaifeng"
+    },
+    {
+      "word": "自缘身在最高层",
+      "source": "宋·王安石《登飞来峰》",
+      "poemId": "dengfeilaifeng"
+    },
+    {
+      "word": "风急天高猿啸哀",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "渚清沙白鸟飞回",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "无边落木萧萧下",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "不尽长江滚滚来",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "万里悲秋常作客",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "百年多病独登台",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "艰难苦恨繁霜鬓",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "潦倒新停浊酒杯",
+      "source": "唐·杜甫《登高》",
+      "poemId": "denggao"
+    },
+    {
+      "word": "痴儿了却公家事",
+      "source": "宋·黄庭坚《登快阁》",
+      "poemId": "dengkuai-ge"
+    },
+    {
+      "word": "快阁东西倚晚晴",
+      "source": "宋·黄庭坚《登快阁》",
+      "poemId": "dengkuai-ge"
+    },
+    {
+      "word": "落木千山天远大",
+      "source": "宋·黄庭坚《登快阁》",
+      "poemId": "dengkuai-ge"
+    },
+    {
+      "word": "澄江一道月分明",
+      "source": "宋·黄庭坚《登快阁》",
+      "poemId": "dengkuai-ge"
+    },
+    {
+      "word": "朱弦已为佳人绝",
+      "source": "宋·黄庭坚《登快阁》",
+      "poemId": "dengkuai-ge"
+    },
+    {
+      "word": "青眼聊因美酒横",
+      "source": "宋·黄庭坚《登快阁》",
+      "poemId": "dengkuai-ge"
+    },
+    {
+      "word": "不论平地与山尖",
+      "source": "唐·罗隐《蜂》",
+      "poemId": "feng-mi"
+    },
+    {
+      "word": "无限风光尽被占",
+      "source": "唐·罗隐《蜂》",
+      "poemId": "feng-mi"
+    },
+    {
+      "word": "采得百花成蜜后",
+      "source": "唐·罗隐《蜂》",
+      "poemId": "feng-mi"
+    },
+    {
+      "word": "为谁辛苦为谁甜",
+      "source": "唐·罗隐《蜂》",
+      "poemId": "feng-mi"
+    },
+    {
+      "word": "月落乌啼霜满天",
+      "source": "唐·张继《枫桥夜泊》",
+      "poemId": "fengqiaoyebo"
+    },
+    {
+      "word": "江枫渔火对愁眠",
+      "source": "唐·张继《枫桥夜泊》",
+      "poemId": "fengqiaoyebo"
+    },
+    {
+      "word": "姑苏城外寒山寺",
+      "source": "唐·张继《枫桥夜泊》",
+      "poemId": "fengqiaoyebo"
+    },
+    {
+      "word": "夜半钟声到客船",
+      "source": "唐·张继《枫桥夜泊》",
+      "poemId": "fengqiaoyebo"
+    },
+    {
+      "word": "故园东望路漫漫",
+      "source": "唐·岑参《逢入京使》",
+      "poemId": "fengrujinshi"
+    },
+    {
+      "word": "双袖龙钟泪不干",
+      "source": "唐·岑参《逢入京使》",
+      "poemId": "fengrujinshi"
+    },
+    {
+      "word": "马上相逢无纸笔",
+      "source": "唐·岑参《逢入京使》",
+      "poemId": "fengrujinshi"
+    },
+    {
+      "word": "凭君传语报平安",
+      "source": "唐·岑参《逢入京使》",
+      "poemId": "fengrujinshi"
+    },
+    {
+      "word": "寒雨连江夜入吴",
+      "source": "唐·王昌龄《芙蓉楼送辛渐》",
+      "poemId": "furonglou"
+    },
+    {
+      "word": "平明送客楚山孤",
+      "source": "唐·王昌龄《芙蓉楼送辛渐》",
+      "poemId": "furonglou"
+    },
+    {
+      "word": "洛阳亲友如相问",
+      "source": "唐·王昌龄《芙蓉楼送辛渐》",
+      "poemId": "furonglou"
+    },
+    {
+      "word": "一片冰心在玉壶",
+      "source": "唐·王昌龄《芙蓉楼送辛渐》",
+      "poemId": "furonglou"
+    },
+    {
+      "word": "半亩方塘一鉴开",
+      "source": "宋·朱熹《观书有感》",
+      "poemId": "guanshu"
+    },
+    {
+      "word": "天光云影共徘徊",
+      "source": "宋·朱熹《观书有感》",
+      "poemId": "guanshu"
+    },
+    {
+      "word": "问渠那得清如许",
+      "source": "宋·朱熹《观书有感》",
+      "poemId": "guanshu"
+    },
+    {
+      "word": "为有源头活水来",
+      "source": "宋·朱熹《观书有感》",
+      "poemId": "guanshu"
+    },
+    {
+      "word": "辛苦遭逢起一经",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "干戈寥落四周星",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "山河破碎风飘絮",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "身世浮沉雨打萍",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "惶恐滩头说惶恐",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "零丁洋里叹零丁",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "人生自古谁无死",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "留取丹心照汗青",
+      "source": "宋·文天祥《过零丁洋》",
+      "poemId": "guolingyang"
+    },
+    {
+      "word": "春城无处不飞花",
+      "source": "唐·韩翃《寒食》",
+      "poemId": "hanshi"
+    },
+    {
+      "word": "寒食东风御柳斜",
+      "source": "唐·韩翃《寒食》",
+      "poemId": "hanshi"
+    },
+    {
+      "word": "日暮汉宫传蜡烛",
+      "source": "唐·韩翃《寒食》",
+      "poemId": "hanshi"
+    },
+    {
+      "word": "轻烟散入五侯家",
+      "source": "唐·韩翃《寒食》",
+      "poemId": "hanshi"
+    },
+    {
+      "word": "头上红冠不用裁",
+      "source": "明·唐寅《画鸡》",
+      "poemId": "huaji"
+    },
+    {
+      "word": "满身雪白走将来",
+      "source": "明·唐寅《画鸡》",
+      "poemId": "huaji"
+    },
+    {
+      "word": "平生不敢轻言语",
+      "source": "明·唐寅《画鸡》",
+      "poemId": "huaji"
+    },
+    {
+      "word": "一叫千门万户开",
+      "source": "明·唐寅《画鸡》",
+      "poemId": "huaji"
+    },
+    {
+      "word": "故人西辞黄鹤楼",
+      "source": "唐·李白《黄鹤楼送孟浩然之广陵》",
+      "poemId": "huanghelou"
+    },
+    {
+      "word": "烟花三月下扬州",
+      "source": "唐·李白《黄鹤楼送孟浩然之广陵》",
+      "poemId": "huanghelou"
+    },
+    {
+      "word": "孤帆远影碧空尽",
+      "source": "唐·李白《黄鹤楼送孟浩然之广陵》",
+      "poemId": "huanghelou"
+    },
+    {
+      "word": "唯见长江天际流",
+      "source": "唐·李白《黄鹤楼送孟浩然之广陵》",
+      "poemId": "huanghelou"
+    },
+    {
+      "word": "昔人已乘黄鹤去",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "此地空余黄鹤楼",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "黄鹤一去不复返",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "白云千载空悠悠",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "晴川历历汉阳树",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "芳草萋萋鹦鹉洲",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "日暮乡关何处是",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "烟波江上使人愁",
+      "source": "唐·崔颢《黄鹤楼》",
+      "poemId": "huanghelou-cuiheng"
+    },
+    {
+      "word": "竹外桃花三两枝",
+      "source": "宋·苏轼《惠崇春江晚景》",
+      "poemId": "huichongchunjiang"
+    },
+    {
+      "word": "春江水暖鸭先知",
+      "source": "宋·苏轼《惠崇春江晚景》",
+      "poemId": "huichongchunjiang"
+    },
+    {
+      "word": "蒌蒿满地芦芽短",
+      "source": "宋·苏轼《惠崇春江晚景》",
+      "poemId": "huichongchunjiang"
+    },
+    {
+      "word": "正是河豚欲上时",
+      "source": "宋·苏轼《惠崇春江晚景》",
+      "poemId": "huichongchunjiang"
+    },
+    {
+      "word": "少小离家老大回",
+      "source": "唐·贺知章《回乡偶书》",
+      "poemId": "huixiangyoushu"
+    },
+    {
+      "word": "乡音无改鬓毛衰",
+      "source": "唐·贺知章《回乡偶书》",
+      "poemId": "huixiangyoushu"
+    },
+    {
+      "word": "儿童相见不相识",
+      "source": "唐·贺知章《回乡偶书》",
+      "poemId": "huixiangyoushu"
+    },
+    {
+      "word": "笑问客从何处来",
+      "source": "唐·贺知章《回乡偶书》",
+      "poemId": "huixiangyoushu"
+    },
+    {
+      "word": "千里莺啼绿映红",
+      "source": "唐·杜牧《江南春》",
+      "poemId": "jiangnanchun"
+    },
+    {
+      "word": "水村山郭酒旗风",
+      "source": "唐·杜牧《江南春》",
+      "poemId": "jiangnanchun"
+    },
+    {
+      "word": "南朝四百八十寺",
+      "source": "唐·杜牧《江南春》",
+      "poemId": "jiangnanchun"
+    },
+    {
+      "word": "多少楼台烟雨中",
+      "source": "唐·杜牧《江南春》",
+      "poemId": "jiangnanchun"
+    },
+    {
+      "word": "黄师塔前江水东",
+      "source": "唐·杜甫《江畔独步寻花》",
+      "poemId": "jiangpan"
+    },
+    {
+      "word": "春光懒困倚微风",
+      "source": "唐·杜甫《江畔独步寻花》",
+      "poemId": "jiangpan"
+    },
+    {
+      "word": "桃花一簇开无主",
+      "source": "唐·杜甫《江畔独步寻花》",
+      "poemId": "jiangpan"
+    },
+    {
+      "word": "可爱深红爱浅红",
+      "source": "唐·杜甫《江畔独步寻花》",
+      "poemId": "jiangpan"
+    },
+    {
+      "word": "九州生气恃风雷",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai"
+    },
+    {
+      "word": "万马齐喑究可哀",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai"
+    },
+    {
+      "word": "我劝天公重抖擞",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai"
+    },
+    {
+      "word": "不拘一格降人才",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai"
+    },
+    {
+      "word": "浩荡离愁白日斜",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai-jimao"
+    },
+    {
+      "word": "吟鞭东指即天涯",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai-jimao"
+    },
+    {
+      "word": "落红不是无情物",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai-jimao"
+    },
+    {
+      "word": "化作春泥更护花",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai-jimao"
+    },
+    {
+      "word": "毕竟西湖六月中",
+      "source": "宋·杨万里《晓出净慈寺送林子方》",
+      "poemId": "jingcisi"
+    },
+    {
+      "word": "风光不与四时同",
+      "source": "宋·杨万里《晓出净慈寺送林子方》",
+      "poemId": "jingcisi"
+    },
+    {
+      "word": "接天莲叶无穷碧",
+      "source": "宋·杨万里《晓出净慈寺送林子方》",
+      "poemId": "jingcisi"
+    },
+    {
+      "word": "映日荷花别样红",
+      "source": "宋·杨万里《晓出净慈寺送林子方》",
+      "poemId": "jingcisi"
+    },
+    {
+      "word": "庄生晓梦迷蝴蝶",
+      "source": "唐·李商隐《锦瑟》",
+      "poemId": "jinse"
+    },
+    {
+      "word": "望帝春心托杜鹃",
+      "source": "唐·李商隐《锦瑟》",
+      "poemId": "jinse"
+    },
+    {
+      "word": "沧海月明珠有泪",
+      "source": "唐·李商隐《锦瑟》",
+      "poemId": "jinse"
+    },
+    {
+      "word": "蓝田日暖玉生烟",
+      "source": "唐·李商隐《锦瑟》",
+      "poemId": "jinse"
+    },
+    {
+      "word": "此情可待成追忆",
+      "source": "唐·李商隐《锦瑟》",
+      "poemId": "jinse"
+    },
+    {
+      "word": "只是当时已惘然",
+      "source": "唐·李商隐《锦瑟》",
+      "poemId": "jinse"
+    },
+    {
+      "word": "独在异乡为异客",
+      "source": "唐·王维《九月九日忆山东兄弟》",
+      "poemId": "jiuyuejiuri"
+    },
+    {
+      "word": "每逢佳节倍思亲",
+      "source": "唐·王维《九月九日忆山东兄弟》",
+      "poemId": "jiuyuejiuri"
+    },
+    {
+      "word": "遥知兄弟登高处",
+      "source": "唐·王维《九月九日忆山东兄弟》",
+      "poemId": "jiuyuejiuri"
+    },
+    {
+      "word": "遍插茱萸少一人",
+      "source": "唐·王维《九月九日忆山东兄弟》",
+      "poemId": "jiuyuejiuri"
+    },
+    {
+      "word": "两个黄鹂鸣翠柳",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-huangli"
+    },
+    {
+      "word": "一行白鹭上青天",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-huangli"
+    },
+    {
+      "word": "窗含西岭千秋雪",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-huangli"
+    },
+    {
+      "word": "门泊东吴万里船",
+      "source": "唐·杜甫《绝句》",
+      "poemId": "jueju-huangli"
+    },
+    {
+      "word": "舍南舍北皆春水",
+      "source": "唐·杜甫《客至》",
+      "poemId": "kezhi"
+    },
+    {
+      "word": "但见群鸥日日来",
+      "source": "唐·杜甫《客至》",
+      "poemId": "kezhi"
+    },
+    {
+      "word": "花径不曾缘客扫",
+      "source": "唐·杜甫《客至》",
+      "poemId": "kezhi"
+    },
+    {
+      "word": "蓬门今始为君开",
+      "source": "唐·杜甫《客至》",
+      "poemId": "kezhi"
+    },
+    {
+      "word": "肯与邻翁相对饮",
+      "source": "唐·杜甫《客至》",
+      "poemId": "kezhi"
+    },
+    {
+      "word": "隔篱呼取尽余杯",
+      "source": "唐·杜甫《客至》",
+      "poemId": "kezhi"
+    },
+    {
+      "word": "葡萄美酒夜光杯",
+      "source": "唐·王翰《凉州词》",
+      "poemId": "liangzhou-wanghan"
+    },
+    {
+      "word": "欲饮琵琶马上催",
+      "source": "唐·王翰《凉州词》",
+      "poemId": "liangzhou-wanghan"
+    },
+    {
+      "word": "醉卧沙场君莫笑",
+      "source": "唐·王翰《凉州词》",
+      "poemId": "liangzhou-wanghan"
+    },
+    {
+      "word": "古来征战几人回",
+      "source": "唐·王翰《凉州词》",
+      "poemId": "liangzhou-wanghan"
+    },
+    {
+      "word": "世味年来薄似纱",
+      "source": "宋·陆游《临安春雨初霁》",
+      "poemId": "linanchunyu"
+    },
+    {
+      "word": "谁令骑马客京华",
+      "source": "宋·陆游《临安春雨初霁》",
+      "poemId": "linanchunyu"
+    },
+    {
+      "word": "小楼一夜听春雨",
+      "source": "宋·陆游《临安春雨初霁》",
+      "poemId": "linanchunyu"
+    },
+    {
+      "word": "深巷明朝卖杏花",
+      "source": "宋·陆游《临安春雨初霁》",
+      "poemId": "linanchunyu"
+    },
+    {
+      "word": "素衣莫起风尘叹",
+      "source": "宋·陆游《临安春雨初霁》",
+      "poemId": "linanchunyu"
+    },
+    {
+      "word": "犹及清明可到家",
+      "source": "宋·陆游《临安春雨初霁》",
+      "poemId": "linanchunyu"
+    },
+    {
+      "word": "十二门前融冷光",
+      "source": "唐·李贺《李凭箜篌引》",
+      "poemId": "lipeng"
+    },
+    {
+      "word": "二十三丝动紫皇",
+      "source": "唐·李贺《李凭箜篌引》",
+      "poemId": "lipeng"
+    },
+    {
+      "word": "昆山玉碎凤凰叫",
+      "source": "唐·李贺《李凭箜篌引》",
+      "poemId": "lipeng"
+    },
+    {
+      "word": "芙蓉泣露香兰笑",
+      "source": "唐·李贺《李凭箜篌引》",
+      "poemId": "lipeng"
+    },
+    {
+      "word": "女娲炼石补天处",
+      "source": "唐·李贺《李凭箜篌引》",
+      "poemId": "lipeng"
+    },
+    {
+      "word": "石破天惊逗秋雨",
+      "source": "唐·李贺《李凭箜篌引》",
+      "poemId": "lipeng"
+    },
+    {
+      "word": "横看成岭侧成峰",
+      "source": "宋·苏轼《题西林壁》",
+      "poemId": "longpo"
+    },
+    {
+      "word": "远近高低各不同",
+      "source": "宋·苏轼《题西林壁》",
+      "poemId": "longpo"
+    },
+    {
+      "word": "不识庐山真面目",
+      "source": "宋·苏轼《题西林壁》",
+      "poemId": "longpo"
+    },
+    {
+      "word": "只缘身在此山中",
+      "source": "宋·苏轼《题西林壁》",
+      "poemId": "longpo"
+    },
+    {
+      "word": "可怜身上衣正单",
+      "source": "唐·白居易《卖炭翁》",
+      "poemId": "maotanshangwu"
+    },
+    {
+      "word": "心忧炭贱愿天寒",
+      "source": "唐·白居易《卖炭翁》",
+      "poemId": "maotanshangwu"
+    },
+    {
+      "word": "卖炭得钱何所营",
+      "source": "唐·白居易《卖炭翁》",
+      "poemId": "maotanshangwu"
+    },
+    {
+      "word": "身上衣裳口中食",
+      "source": "唐·白居易《卖炭翁》",
+      "poemId": "maotanshangwu"
+    },
+    {
+      "word": "我家洗砚池头树",
+      "source": "元·王冕《墨梅》",
+      "poemId": "momei"
+    },
+    {
+      "word": "朵朵花开淡墨痕",
+      "source": "元·王冕《墨梅》",
+      "poemId": "momei"
+    },
+    {
+      "word": "不要人夸好颜色",
+      "source": "元·王冕《墨梅》",
+      "poemId": "momei"
+    },
+    {
+      "word": "只留清气满乾坤",
+      "source": "元·王冕《墨梅》",
+      "poemId": "momei"
+    },
+    {
+      "word": "一道残阳铺水中",
+      "source": "唐·白居易《暮江吟》",
+      "poemId": "mujiangyin"
+    },
+    {
+      "word": "半江瑟瑟半江红",
+      "source": "唐·白居易《暮江吟》",
+      "poemId": "mujiangyin"
+    },
+    {
+      "word": "可怜九月初三夜",
+      "source": "唐·白居易《暮江吟》",
+      "poemId": "mujiangyin"
+    },
+    {
+      "word": "露似真珠月似弓",
+      "source": "唐·白居易《暮江吟》",
+      "poemId": "mujiangyin"
+    },
+    {
+      "word": "孤山寺北贾亭西",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "水面初平云脚低",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "几处早莺争暖树",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "谁家新燕啄春泥",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "乱花渐欲迷人眼",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "浅草才能没马蹄",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "最爱湖东行不足",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "绿杨阴里白沙堤",
+      "source": "唐·白居易《钱塘湖春行》",
+      "poemId": "qiantanghuchunxing"
+    },
+    {
+      "word": "清明时节雨纷纷",
+      "source": "唐·杜牧《清明》",
+      "poemId": "qingming"
+    },
+    {
+      "word": "路上行人欲断魂",
+      "source": "唐·杜牧《清明》",
+      "poemId": "qingming"
+    },
+    {
+      "word": "借问酒家何处有",
+      "source": "唐·杜牧《清明》",
+      "poemId": "qingming"
+    },
+    {
+      "word": "牧童遥指杏花村",
+      "source": "唐·杜牧《清明》",
+      "poemId": "qingming"
+    },
+    {
+      "word": "七夕今宵看碧霄",
+      "source": "唐·林杰《乞巧》",
+      "poemId": "qiqiao"
+    },
+    {
+      "word": "牵牛织女渡河桥",
+      "source": "唐·林杰《乞巧》",
+      "poemId": "qiqiao"
+    },
+    {
+      "word": "家家乞巧望秋月",
+      "source": "唐·林杰《乞巧》",
+      "poemId": "qiqiao"
+    },
+    {
+      "word": "穿尽红丝几万条",
+      "source": "唐·林杰《乞巧》",
+      "poemId": "qiqiao"
+    },
+    {
+      "word": "三万里河东入海",
+      "source": "宋·陆游《秋夜将晓出篱门迎凉有感》",
+      "poemId": "qiuyejiangxiao"
+    },
+    {
+      "word": "五千仞岳上摩天",
+      "source": "宋·陆游《秋夜将晓出篱门迎凉有感》",
+      "poemId": "qiuyejiangxiao"
+    },
+    {
+      "word": "遗民泪尽胡尘里",
+      "source": "宋·陆游《秋夜将晓出篱门迎凉有感》",
+      "poemId": "qiuyejiangxiao"
+    },
+    {
+      "word": "南望王师又一年",
+      "source": "宋·陆游《秋夜将晓出篱门迎凉有感》",
+      "poemId": "qiuyejiangxiao"
+    },
+    {
+      "word": "梅子黄时日日晴",
+      "source": "宋·曾几《三衢道中》",
+      "poemId": "sanqudaozhong"
+    },
+    {
+      "word": "小溪泛尽却山行",
+      "source": "宋·曾几《三衢道中》",
+      "poemId": "sanqudaozhong"
+    },
+    {
+      "word": "绿阴不减来时路",
+      "source": "宋·曾几《三衢道中》",
+      "poemId": "sanqudaozhong"
+    },
+    {
+      "word": "添得黄鹂四五声",
+      "source": "宋·曾几《三衢道中》",
+      "poemId": "sanqudaozhong"
+    },
+    {
+      "word": "远上寒山石径斜",
+      "source": "唐·杜牧《山行》",
+      "poemId": "shanxing"
+    },
+    {
+      "word": "白云生处有人家",
+      "source": "唐·杜牧《山行》",
+      "poemId": "shanxing"
+    },
+    {
+      "word": "停车坐爱枫林晚",
+      "source": "唐·杜牧《山行》",
+      "poemId": "shanxing"
+    },
+    {
+      "word": "霜叶红于二月花",
+      "source": "唐·杜牧《山行》",
+      "poemId": "shanxing"
+    },
+    {
+      "word": "死去元知万事空",
+      "source": "宋·陆游《示儿》",
+      "poemId": "shier"
+    },
+    {
+      "word": "但悲不见九州同",
+      "source": "宋·陆游《示儿》",
+      "poemId": "shier"
+    },
+    {
+      "word": "王师北定中原日",
+      "source": "宋·陆游《示儿》",
+      "poemId": "shier"
+    },
+    {
+      "word": "家祭无忘告乃翁",
+      "source": "宋·陆游《示儿》",
+      "poemId": "shier"
+    },
+    {
+      "word": "千锤万凿出深山",
+      "source": "明·于谦《石灰吟》",
+      "poemId": "shihuiyin"
+    },
+    {
+      "word": "烈火焚烧若等闲",
+      "source": "明·于谦《石灰吟》",
+      "poemId": "shihuiyin"
+    },
+    {
+      "word": "粉骨碎身浑不怕",
+      "source": "明·于谦《石灰吟》",
+      "poemId": "shihuiyin"
+    },
+    {
+      "word": "要留清白在人间",
+      "source": "明·于谦《石灰吟》",
+      "poemId": "shihuiyin"
+    },
+    {
+      "word": "中庭地白树栖鸦",
+      "source": "唐·王建《十五夜望月》",
+      "poemId": "shiyiwangyue"
+    },
+    {
+      "word": "冷露无声湿桂花",
+      "source": "唐·王建《十五夜望月》",
+      "poemId": "shiyiwangyue"
+    },
+    {
+      "word": "今夜月明人尽望",
+      "source": "唐·王建《十五夜望月》",
+      "poemId": "shiyiwangyue"
+    },
+    {
+      "word": "不知秋思落谁家",
+      "source": "唐·王建《十五夜望月》",
+      "poemId": "shiyiwangyue"
+    },
+    {
+      "word": "早岁那知世事艰",
+      "source": "宋·陆游《书愤》",
+      "poemId": "shufen"
+    },
+    {
+      "word": "中原北望气如山",
+      "source": "宋·陆游《书愤》",
+      "poemId": "shufen"
+    },
+    {
+      "word": "楼船夜雪瓜洲渡",
+      "source": "宋·陆游《书愤》",
+      "poemId": "shufen"
+    },
+    {
+      "word": "铁马秋风大散关",
+      "source": "宋·陆游《书愤》",
+      "poemId": "shufen"
+    },
+    {
+      "word": "出师一表真名世",
+      "source": "宋·陆游《书愤》",
+      "poemId": "shufen"
+    },
+    {
+      "word": "千载谁堪伯仲间",
+      "source": "宋·陆游《书愤》",
+      "poemId": "shufen"
+    },
+    {
+      "word": "茅檐长扫净无苔",
+      "source": "宋·王安石《书湖阴先生壁》",
+      "poemId": "shuhuyin"
+    },
+    {
+      "word": "花木成畦手自栽",
+      "source": "宋·王安石《书湖阴先生壁》",
+      "poemId": "shuhuyin"
+    },
+    {
+      "word": "一水护田将绿绕",
+      "source": "宋·王安石《书湖阴先生壁》",
+      "poemId": "shuhuyin"
+    },
+    {
+      "word": "两山排闼送青来",
+      "source": "宋·王安石《书湖阴先生壁》",
+      "poemId": "shuhuyin"
+    },
+    {
+      "word": "丞相祠堂何处寻",
+      "source": "唐·杜甫《蜀相》",
+      "poemId": "shuxiang"
+    },
+    {
+      "word": "锦官城外柏森森",
+      "source": "唐·杜甫《蜀相》",
+      "poemId": "shuxiang"
+    },
+    {
+      "word": "三顾频烦天下计",
+      "source": "唐·杜甫《蜀相》",
+      "poemId": "shuxiang"
+    },
+    {
+      "word": "两朝开济老臣心",
+      "source": "唐·杜甫《蜀相》",
+      "poemId": "shuxiang"
+    },
+    {
+      "word": "出师未捷身先死",
+      "source": "唐·杜甫《蜀相》",
+      "poemId": "shuxiang"
+    },
+    {
+      "word": "长使英雄泪满襟",
+      "source": "唐·杜甫《蜀相》",
+      "poemId": "shuxiang"
+    },
+    {
+      "word": "梅子金黄杏子肥",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-25"
+    },
+    {
+      "word": "麦花雪白菜花稀",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-25"
+    },
+    {
+      "word": "日长篱落无人过",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-25"
+    },
+    {
+      "word": "惟有蜻蜓蛱蝶飞",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-25"
+    },
+    {
+      "word": "昼出耘田夜绩麻",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-31"
+    },
+    {
+      "word": "村庄儿女各当家",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-31"
+    },
+    {
+      "word": "童孙未解供耕织",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-31"
+    },
+    {
+      "word": "也傍桑阴学种瓜",
+      "source": "宋·范成大《四时田园杂兴》",
+      "poemId": "sishitianyuan-31"
+    },
+    {
+      "word": "渭城朝雨浥轻尘",
+      "source": "唐·王维《送元二使安西》",
+      "poemId": "songyuaner"
+    },
+    {
+      "word": "客舍青青柳色新",
+      "source": "唐·王维《送元二使安西》",
+      "poemId": "songyuaner"
+    },
+    {
+      "word": "劝君更尽一杯酒",
+      "source": "唐·王维《送元二使安西》",
+      "poemId": "songyuaner"
+    },
+    {
+      "word": "西出阳关无故人",
+      "source": "唐·王维《送元二使安西》",
+      "poemId": "songyuaner"
+    },
+    {
+      "word": "篱落疏疏一径深",
+      "source": "宋·杨万里《宿新市徐公店》",
+      "poemId": "suxinshi"
+    },
+    {
+      "word": "树头新绿未成阴",
+      "source": "宋·杨万里《宿新市徐公店》",
+      "poemId": "suxinshi"
+    },
+    {
+      "word": "儿童急走追黄蝶",
+      "source": "宋·杨万里《宿新市徐公店》",
+      "poemId": "suxinshi"
+    },
+    {
+      "word": "飞入菜花无处寻",
+      "source": "宋·杨万里《宿新市徐公店》",
+      "poemId": "suxinshi"
+    },
+    {
+      "word": "山外青山楼外楼",
+      "source": "宋·林升《题临安邸》",
+      "poemId": "tilinandi"
+    },
+    {
+      "word": "西湖歌舞几时休",
+      "source": "宋·林升《题临安邸》",
+      "poemId": "tilinandi"
+    },
+    {
+      "word": "暖风熏得游人醉",
+      "source": "宋·林升《题临安邸》",
+      "poemId": "tilinandi"
+    },
+    {
+      "word": "直把杭州作汴州",
+      "source": "宋·林升《题临安邸》",
+      "poemId": "tilinandi"
+    },
+    {
+      "word": "草树知春不久归",
+      "source": "唐·韩愈《晚春》",
+      "poemId": "wanchun"
+    },
+    {
+      "word": "百般红紫斗芳菲",
+      "source": "唐·韩愈《晚春》",
+      "poemId": "wanchun"
+    },
+    {
+      "word": "杨花榆荚无才思",
+      "source": "唐·韩愈《晚春》",
+      "poemId": "wanchun"
+    },
+    {
+      "word": "惟解漫天作雪飞",
+      "source": "唐·韩愈《晚春》",
+      "poemId": "wanchun"
+    },
+    {
+      "word": "湖光秋月两相和",
+      "source": "唐·刘禹锡《望洞庭》",
+      "poemId": "wangdongting"
+    },
+    {
+      "word": "潭面无风镜未磨",
+      "source": "唐·刘禹锡《望洞庭》",
+      "poemId": "wangdongting"
+    },
+    {
+      "word": "遥望洞庭山水翠",
+      "source": "唐·刘禹锡《望洞庭》",
+      "poemId": "wangdongting"
+    },
+    {
+      "word": "白银盘里一青螺",
+      "source": "唐·刘禹锡《望洞庭》",
+      "poemId": "wangdongting"
+    },
+    {
+      "word": "黑云翻墨未遮山",
+      "source": "宋·苏轼《六月二十七日望湖楼醉书》",
+      "poemId": "wanghulou"
+    },
+    {
+      "word": "白雨跳珠乱入船",
+      "source": "宋·苏轼《六月二十七日望湖楼醉书》",
+      "poemId": "wanghulou"
+    },
+    {
+      "word": "卷地风来忽吹散",
+      "source": "宋·苏轼《六月二十七日望湖楼醉书》",
+      "poemId": "wanghulou"
+    },
+    {
+      "word": "望湖楼下水如天",
+      "source": "宋·苏轼《六月二十七日望湖楼醉书》",
+      "poemId": "wanghulou"
+    },
+    {
+      "word": "日照香炉生紫烟",
+      "source": "唐·李白《望庐山瀑布》",
+      "poemId": "wanglushanpubu"
+    },
+    {
+      "word": "遥看瀑布挂前川",
+      "source": "唐·李白《望庐山瀑布》",
+      "poemId": "wanglushanpubu"
+    },
+    {
+      "word": "飞流直下三千尺",
+      "source": "唐·李白《望庐山瀑布》",
+      "poemId": "wanglushanpubu"
+    },
+    {
+      "word": "疑是银河落九天",
+      "source": "唐·李白《望庐山瀑布》",
+      "poemId": "wanglushanpubu"
+    },
+    {
+      "word": "天门中断楚江开",
+      "source": "唐·李白《望天门山》",
+      "poemId": "wangtianmenshan"
+    },
+    {
+      "word": "碧水东流至此回",
+      "source": "唐·李白《望天门山》",
+      "poemId": "wangtianmenshan"
+    },
+    {
+      "word": "两岸青山相对出",
+      "source": "唐·李白《望天门山》",
+      "poemId": "wangtianmenshan"
+    },
+    {
+      "word": "孤帆一片日边来",
+      "source": "唐·李白《望天门山》",
+      "poemId": "wangtianmenshan"
+    },
+    {
+      "word": "剑外忽传收蓟北",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "初闻涕泪满衣裳",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "却看妻子愁何在",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "漫卷诗书喜欲狂",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "白日放歌须纵酒",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "青春作伴好还乡",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "即从巴峡穿巫峡",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "便下襄阳向洛阳",
+      "source": "唐·杜甫《闻官军收河南河北》",
+      "poemId": "wenguanjun"
+    },
+    {
+      "word": "杨花落尽子规啼",
+      "source": "唐·李白《闻王昌龄左迁龙标遥有此寄》",
+      "poemId": "wenwangchangling"
+    },
+    {
+      "word": "闻道龙标过五溪",
+      "source": "唐·李白《闻王昌龄左迁龙标遥有此寄》",
+      "poemId": "wenwangchangling"
+    },
+    {
+      "word": "我寄愁心与明月",
+      "source": "唐·李白《闻王昌龄左迁龙标遥有此寄》",
+      "poemId": "wenwangchangling"
+    },
+    {
+      "word": "随君直到夜郎西",
+      "source": "唐·李白《闻王昌龄左迁龙标遥有此寄》",
+      "poemId": "wenwangchangling"
+    },
+    {
+      "word": "相见时难别亦难",
+      "source": "唐·李商隐《无题》",
+      "poemId": "wuti"
+    },
+    {
+      "word": "东风无力百花残",
+      "source": "唐·李商隐《无题》",
+      "poemId": "wuti"
+    },
+    {
+      "word": "春蚕到死丝方尽",
+      "source": "唐·李商隐《无题》",
+      "poemId": "wuti"
+    },
+    {
+      "word": "蜡炬成灰泪始干",
+      "source": "唐·李商隐《无题》",
+      "poemId": "wuti"
+    },
+    {
+      "word": "绿遍山原白满川",
+      "source": "宋·翁卷《乡村四月》",
+      "poemId": "xiangcunsiyue"
+    },
+    {
+      "word": "子规声里雨如烟",
+      "source": "宋·翁卷《乡村四月》",
+      "poemId": "xiangcunsiyue"
+    },
+    {
+      "word": "乡村四月闲人少",
+      "source": "宋·翁卷《乡村四月》",
+      "poemId": "xiangcunsiyue"
+    },
+    {
+      "word": "才了蚕桑又插田",
+      "source": "宋·翁卷《乡村四月》",
+      "poemId": "xiangcunsiyue"
+    },
+    {
+      "word": "泉眼无声惜细流",
+      "source": "宋·杨万里《小池》",
+      "poemId": "xiaochi"
+    },
+    {
+      "word": "树阴照水爱晴柔",
+      "source": "宋·杨万里《小池》",
+      "poemId": "xiaochi"
+    },
+    {
+      "word": "小荷才露尖尖角",
+      "source": "宋·杨万里《小池》",
+      "poemId": "xiaochi"
+    },
+    {
+      "word": "早有蜻蜓立上头",
+      "source": "宋·杨万里《小池》",
+      "poemId": "xiaochi"
+    },
+    {
+      "word": "蓬头稚子学垂纶",
+      "source": "唐·胡令能《小儿垂钓》",
+      "poemId": "xiaoerchuidiao"
+    },
+    {
+      "word": "侧坐莓苔草映身",
+      "source": "唐·胡令能《小儿垂钓》",
+      "poemId": "xiaoerchuidiao"
+    },
+    {
+      "word": "路人借问遥招手",
+      "source": "唐·胡令能《小儿垂钓》",
+      "poemId": "xiaoerchuidiao"
+    },
+    {
+      "word": "怕得鱼惊不应人",
+      "source": "唐·胡令能《小儿垂钓》",
+      "poemId": "xiaoerchuidiao"
+    },
+    {
+      "word": "梅雪争春未肯降",
+      "source": "宋·卢梅坡《雪梅》",
+      "poemId": "xuemei"
+    },
+    {
+      "word": "骚人搁笔费评章",
+      "source": "宋·卢梅坡《雪梅》",
+      "poemId": "xuemei"
+    },
+    {
+      "word": "梅须逊雪三分白",
+      "source": "宋·卢梅坡《雪梅》",
+      "poemId": "xuemei"
+    },
+    {
+      "word": "雪却输梅一段香",
+      "source": "宋·卢梅坡《雪梅》",
+      "poemId": "xuemei"
+    },
+    {
+      "word": "黑云压城城欲摧",
+      "source": "唐·李贺《雁门太守行》",
+      "poemId": "yanmenshiweixing"
+    },
+    {
+      "word": "甲光向日金鳞开",
+      "source": "唐·李贺《雁门太守行》",
+      "poemId": "yanmenshiweixing"
+    },
+    {
+      "word": "角声满天秋色里",
+      "source": "唐·李贺《雁门太守行》",
+      "poemId": "yanmenshiweixing"
+    },
+    {
+      "word": "塞上燕脂凝夜紫",
+      "source": "唐·李贺《雁门太守行》",
+      "poemId": "yanmenshiweixing"
+    },
+    {
+      "word": "半卷红旗临易水",
+      "source": "唐·李贺《雁门太守行》",
+      "poemId": "yanmenshiweixing"
+    },
+    {
+      "word": "霜重鼓寒声不起",
+      "source": "唐·李贺《雁门太守行》",
+      "poemId": "yanmenshiweixing"
+    },
+    {
+      "word": "萧萧梧叶送寒声",
+      "source": "宋·叶绍翁《夜书所见》",
+      "poemId": "yeshusuojian"
+    },
+    {
+      "word": "江上秋风动客情",
+      "source": "宋·叶绍翁《夜书所见》",
+      "poemId": "yeshusuojian"
+    },
+    {
+      "word": "知有儿童挑促织",
+      "source": "宋·叶绍翁《夜书所见》",
+      "poemId": "yeshusuojian"
+    },
+    {
+      "word": "夜深篱落一灯明",
+      "source": "宋·叶绍翁《夜书所见》",
+      "poemId": "yeshusuojian"
+    },
+    {
+      "word": "君问归期未有期",
+      "source": "唐·李商隐《夜雨寄北》",
+      "poemId": "yeyujibei"
+    },
+    {
+      "word": "巴山夜雨涨秋池",
+      "source": "唐·李商隐《夜雨寄北》",
+      "poemId": "yeyujibei"
+    },
+    {
+      "word": "何当共剪西窗烛",
+      "source": "唐·李商隐《夜雨寄北》",
+      "poemId": "yeyujibei"
+    },
+    {
+      "word": "却话巴山夜雨时",
+      "source": "唐·李商隐《夜雨寄北》",
+      "poemId": "yeyujibei"
+    },
+    {
+      "word": "水光潋滟晴方好",
+      "source": "宋·苏轼《饮湖上初晴后雨》",
+      "poemId": "yinhushang"
+    },
+    {
+      "word": "山色空蒙雨亦奇",
+      "source": "宋·苏轼《饮湖上初晴后雨》",
+      "poemId": "yinhushang"
+    },
+    {
+      "word": "欲把西湖比西子",
+      "source": "宋·苏轼《饮湖上初晴后雨》",
+      "poemId": "yinhushang"
+    },
+    {
+      "word": "淡妆浓抹总相宜",
+      "source": "宋·苏轼《饮湖上初晴后雨》",
+      "poemId": "yinhushang"
+    },
+    {
+      "word": "碧玉妆成一树高",
+      "source": "唐·贺知章《咏柳》",
+      "poemId": "yongliu"
+    },
+    {
+      "word": "万条垂下绿丝绦",
+      "source": "唐·贺知章《咏柳》",
+      "poemId": "yongliu"
+    },
+    {
+      "word": "不知细叶谁裁出",
+      "source": "唐·贺知章《咏柳》",
+      "poemId": "yongliu"
+    },
+    {
+      "word": "二月春风似剪刀",
+      "source": "唐·贺知章《咏柳》",
+      "poemId": "yongliu"
+    },
+    {
+      "word": "莫笑农家腊酒浑",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "丰年留客足鸡豚",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "山重水复疑无路",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "柳暗花明又一村",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "箫鼓追随春社近",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "衣冠简朴古风存",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "从今若许闲乘月",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "拄杖无时夜叩门",
+      "source": "宋·陆游《游山西村》",
+      "poemId": "youshanxincun"
+    },
+    {
+      "word": "应怜屐齿印苍苔",
+      "source": "宋·叶绍翁《游园不值》",
+      "poemId": "youyuanbuzhi"
+    },
+    {
+      "word": "小扣柴扉久不开",
+      "source": "宋·叶绍翁《游园不值》",
+      "poemId": "youyuanbuzhi"
+    },
+    {
+      "word": "春色满园关不住",
+      "source": "宋·叶绍翁《游园不值》",
+      "poemId": "youyuanbuzhi"
+    },
+    {
+      "word": "一枝红杏出墙来",
+      "source": "宋·叶绍翁《游园不值》",
+      "poemId": "youyuanbuzhi"
+    },
+    {
+      "word": "爆竹声中一岁除",
+      "source": "宋·王安石《元日》",
+      "poemId": "yuanri"
+    },
+    {
+      "word": "春风送暖入屠苏",
+      "source": "宋·王安石《元日》",
+      "poemId": "yuanri"
+    },
+    {
+      "word": "千门万户曈曈日",
+      "source": "宋·王安石《元日》",
+      "poemId": "yuanri"
+    },
+    {
+      "word": "总把新桃换旧符",
+      "source": "宋·王安石《元日》",
+      "poemId": "yuanri"
+    },
+    {
+      "word": "天街小雨润如酥",
+      "source": "唐·韩愈《早春呈水部张十八员外》",
+      "poemId": "zaochun"
+    },
+    {
+      "word": "草色遥看近却无",
+      "source": "唐·韩愈《早春呈水部张十八员外》",
+      "poemId": "zaochun"
+    },
+    {
+      "word": "最是一年春好处",
+      "source": "唐·韩愈《早春呈水部张十八员外》",
+      "poemId": "zaochun"
+    },
+    {
+      "word": "绝胜烟柳满皇都",
+      "source": "唐·韩愈《早春呈水部张十八员外》",
+      "poemId": "zaochun"
+    },
+    {
+      "word": "朝辞白帝彩云间",
+      "source": "唐·李白《早发白帝城》",
+      "poemId": "zaofabaidicheng"
+    },
+    {
+      "word": "千里江陵一日还",
+      "source": "唐·李白《早发白帝城》",
+      "poemId": "zaofabaidicheng"
+    },
+    {
+      "word": "两岸猿声啼不住",
+      "source": "唐·李白《早发白帝城》",
+      "poemId": "zaofabaidicheng"
+    },
+    {
+      "word": "轻舟已过万重山",
+      "source": "唐·李白《早发白帝城》",
+      "poemId": "zaofabaidicheng"
+    },
+    {
+      "word": "荷尽已无擎雨盖",
+      "source": "宋·苏轼《赠刘景文》",
+      "poemId": "zengliujingwen"
+    },
+    {
+      "word": "菊残犹有傲霜枝",
+      "source": "宋·苏轼《赠刘景文》",
+      "poemId": "zengliujingwen"
+    },
+    {
+      "word": "一年好景君须记",
+      "source": "宋·苏轼《赠刘景文》",
+      "poemId": "zengliujingwen"
+    },
+    {
+      "word": "正是橙黄橘绿时",
+      "source": "宋·苏轼《赠刘景文》",
+      "poemId": "zengliujingwen"
+    },
+    {
+      "word": "李白乘舟将欲行",
+      "source": "唐·李白《赠汪伦》",
+      "poemId": "zengwanglun"
+    },
+    {
+      "word": "忽闻岸上踏歌声",
+      "source": "唐·李白《赠汪伦》",
+      "poemId": "zengwanglun"
+    },
+    {
+      "word": "桃花潭水深千尺",
+      "source": "唐·李白《赠汪伦》",
+      "poemId": "zengwanglun"
+    },
+    {
+      "word": "不及汪伦送我情",
+      "source": "唐·李白《赠汪伦》",
+      "poemId": "zengwanglun"
+    },
+    {
+      "word": "稚子金盆脱晓冰",
+      "source": "宋·杨万里《稚子弄冰》",
+      "poemId": "zhizibing"
+    },
+    {
+      "word": "彩丝穿取当银铮",
+      "source": "宋·杨万里《稚子弄冰》",
+      "poemId": "zhizibing"
+    },
+    {
+      "word": "敲成玉磬穿林响",
+      "source": "宋·杨万里《稚子弄冰》",
+      "poemId": "zhizibing"
+    },
+    {
+      "word": "忽作玻璃碎地声",
+      "source": "宋·杨万里《稚子弄冰》",
+      "poemId": "zhizibing"
+    },
+    {
+      "word": "咬定青山不放松",
+      "source": "清·郑燮《竹石》",
+      "poemId": "zhushi"
+    },
+    {
+      "word": "立根原在破岩中",
+      "source": "清·郑燮《竹石》",
+      "poemId": "zhushi"
+    },
+    {
+      "word": "千磨万击还坚劲",
+      "source": "清·郑燮《竹石》",
+      "poemId": "zhushi"
+    },
+    {
+      "word": "任尔东西南北风",
+      "source": "清·郑燮《竹石》",
+      "poemId": "zhushi"
+    }
+  ]
+}

@@ -21,6 +21,7 @@ declare module 'vue' {
     FailedPage: typeof import('./src/components/FailedPage.vue')['default']
     FeedbackLinks: typeof import('./src/components/FeedbackLinks.vue')['default']
     Hint: typeof import('./src/components/Hint.vue')['default']
+    KindSwitch: typeof import('./src/components/KindSwitch.vue')['default']
     Modal: typeof import('./src/components/Modal.vue')['default']
     ModalsLayer: typeof import('./src/components/ModalsLayer.vue')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']

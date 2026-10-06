@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import DashboardItem from './DashboardItem.vue'
 import { t } from '~/i18n'
-import { showDashboard } from '~/state'
-import { averageDurations, gamesCount, history, historyTriesCount, noHintPassedCount, passedCount, passedTries } from '~/storage'
-import { checkValidIdiom } from '~/logic'
+import { kind, showDashboard } from '~/state'
+import { averageDurations, gamesCount, historyForKind, historyTriesCount, noHintPassedCount, passedCount, passedTries } from '~/storage'
+import { checkValidIdiom, checkValidVerse } from '~/logic'
 
 const triesMap = computed(() => {
   const map = new Map<number, number>()
@@ -38,8 +38,11 @@ function close() {
   showDashboard.value = false
 }
 
-const allWords = computed(() => Array.from(new Set(Object.values(history.value).flatMap(i => i.tries).filter(Boolean) as string[])))
-const validWords = computed(() => allWords.value.filter(i => checkValidIdiom(i, true)))
+const allWords = computed(() => Array.from(new Set(Object.values(historyForKind.value).flatMap(i => i.tries).filter(Boolean) as string[])))
+// 「用过的词里有多少是真实存在的」这个统计，也要按当前玩法查对应的词库
+const validWords = computed(() => allWords.value.filter(i =>
+  kind.value === 'idiom' ? checkValidIdiom(i, true) : checkValidVerse(i, kind.value, true),
+))
 </script>
 
 <template>
@@ -75,8 +78,8 @@ const validWords = computed(() => allWords.value.filter(i => checkValidIdiom(i, 
       <DashboardItem :value="`${Math.round(passedCount / gamesCount * 100)}%`" :text="t('win-rate')" />
     </div>
     <div flex="~ wrap gap-4" justify-center min-w-100px py2>
-      <DashboardItem :value="allWords.length" :text="t('used-words')" />
-      <DashboardItem :value="`${Math.round(validWords.length / allWords.length * 100)}%`" :text="t('valid-words-rate')" />
+      <DashboardItem :value="allWords.length" :text="kind === 'idiom' ? t('used-words') : t('used-words-verse')" />
+      <DashboardItem :value="`${Math.round(validWords.length / allWords.length * 100)}%`" :text="kind === 'idiom' ? t('valid-words-rate') : t('valid-words-rate-verse')" />
     </div>
     <div flex="~ wrap gap-4" justify-center min-w-100px py2>
       <DashboardItem :value="(historyTriesCount / gamesCount).toFixed(1)" :text="t('average-tries-count')" />

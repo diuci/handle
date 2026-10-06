@@ -42,6 +42,8 @@ export default defineConfig({
             return 'idioms'
           if (id.includes('polyphones.json'))
             return 'polyphones'
+          if (id.includes('verse-pool.json') || id.includes('verse-readings.json'))
+            return 'verse'
           if (id.includes('node_modules') && !id.endsWith('.css'))
             return 'vendor'
         },

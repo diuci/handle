@@ -1,10 +1,10 @@
-import { TRIES_LIMIT } from './constants'
+import { KIND_TRIES, type Kind } from './kinds'
 import { history } from '~/storage'
 import { getAnswerOfDay } from '~/answers'
 
-export function tryFixAnswer(day: number) {
-  const meta = history.value[day]
-  const answer = getAnswerOfDay(day)
+export function tryFixAnswer(day: number, kind: Kind) {
+  const meta = history.value[kind]?.[day]
+  const answer = getAnswerOfDay(day, kind)
   if (!meta)
     return
   if (!meta.answer && !meta.failed && !meta.passed)
@@ -17,7 +17,7 @@ export function tryFixAnswer(day: number) {
 
   const newTries = tries.slice(0, index + 1)
   meta.tries = newTries
-  if (index <= TRIES_LIMIT) {
+  if (index <= KIND_TRIES[kind]) {
     meta.passed = true
     meta.failed = false
     meta.answer = false

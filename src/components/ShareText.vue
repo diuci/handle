@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { t } from '~/i18n'
-import { answer, dayNoHanzi, isMobile, parseWord, testAnswer } from '~/state'
+import { answer, dayNoHanzi, isMobile, kind, parseWord, testAnswer } from '~/state'
 import { meta, tries } from '~/storage'
 import { DEPLOY_HOST } from '~/logic/constants'
+import { KIND_LABEL_KEY } from '~/logic'
 
 const lines = computed(() => {
   const table = tries.value.map((word) => {
@@ -29,6 +30,7 @@ const lines = computed(() => {
   return [
     [
       t('name'),
+      t(KIND_LABEL_KEY[kind.value]),
       dayNoHanzi.value,
       meta.value.strict ? t('strict-mode').slice(0, 2) : '',
       !meta.value.hint ? t('hint-level-none') : '',

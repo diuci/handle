@@ -45,11 +45,13 @@ export function checkBuild(dist) {
 
   let js = 0
   let css = 0
+  let hasVerseData = false
   for (const f of files) {
     if (!/\.(html|css|js|txt|svg)$/.test(f)) continue
     const body = fs.readFileSync(f, 'utf8')
     if (f.endsWith('.js')) js++
     if (f.endsWith('.css')) css++
+    if (f.endsWith('.js') && body.includes('poemId:')) hasVerseData = true
 
     const bad = FORBIDDEN.filter(k => body.includes(k))
     if (bad.length)
@@ -59,6 +61,7 @@ export function checkBuild(dist) {
       problems.push(path.relative(dist, f) + ' 含 U+FFFD（编码在中途被换过一次）')
   }
   if (!js) problems.push('产物里没有一个 .js')
+  if (!hasVerseData) problems.push('产物里找不到诗句词库（没有 poemId 字段）——五言 / 七言会是空的')
   if (!css) problems.push('产物里没有一个 .css')
 
   const htmlPath = path.join(dist, 'index.html')
@@ -97,7 +100,7 @@ function selftest() {
     fs.writeFileSync(path.join(dir, 'og.png'), 'png')
     fs.writeFileSync(path.join(dir, 'robots.txt'), 'User-agent: *\n')
     fs.writeFileSync(path.join(dir, 'assets/a.css'), ':root{--paper:#f4ede0}')
-    fs.writeFileSync(path.join(dir, 'assets/a.js'), 'console.log(1)')
+    fs.writeFileSync(path.join(dir, 'assets/a.js'), 'console.log(1);const x=[{poemId:"a"}]')
 
     const good = checkBuild(dir)
     if (good.length) {
@@ -109,11 +112,12 @@ function selftest() {
 
     fs.writeFileSync(path.join(dir, 'CNAME'), 'handle.antfu.me\n')
     fs.writeFileSync(path.join(dir, 'assets/a.js'), 'fetch("https://handle.antfu.me/x") // antfu7')
+    fs.writeFileSync(path.join(dir, 'assets/b.js'), 'console.log(1)')
     fs.writeFileSync(path.join(dir, 'index.html'), '<!DOCTYPE html><html lang="en"><script src="/assets/missing.js"></script></html>')
     fs.writeFileSync(path.join(dir, 'assets/a.css'), 'a{content:"\uFFFD"}')
 
     const bad = checkBuild(dir)
-    const want = ['CNAME', '上游痕迹', 'U+FFFD', '不存在的产物', 'lang', 'dc-theme']
+    const want = ['CNAME', '上游痕迹', 'U+FFFD', '不存在的产物', 'lang', 'dc-theme', '诗句词库']
     const hit = want.filter(w => bad.some(b => b.includes(w)))
     if (hit.length < want.length) {
       ok = false

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { parseWord, parsedAnswer, testAnswer, answer as todayAnswer } from '~/state'
-import { WORD_LENGTH } from '~/logic'
+import { parseWord, parsedAnswer, testAnswer, answer as todayAnswer, wordLength } from '~/state'
 
 const props = withDefaults(
   defineProps<{
@@ -36,10 +35,9 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div flex>
+  <div class="row" flex>
     <div
-      v-for="c, i in parseWord(word.padEnd(WORD_LENGTH, ' '), answer || todayAnswer.word)" :key="i"
-      w-20 h-20 m1
+      v-for="c, i in parseWord(word.padEnd(wordLength, ' '), answer || todayAnswer.word)" :key="i"
       class="tile" :class="[flip ? 'revealed' : '']"
     >
       <template v-if="animate">
@@ -47,15 +45,15 @@ watchEffect(() => {
           class="front"
           :char="c"
           :active="active"
-          :style="{ transitionDelay: `${i * (300 + Math.random() * 50)}ms` }"
+          :style="{ transitionDelay: `` + i * (300 + Math.random() * 50) + `ms` }"
         />
         <CharBlock
           class="back"
           :char="c"
           :answer="result[i]"
           :style="{
-            transitionDelay: `${i * (300 + Math.random() * 50)}ms`,
-            animationDelay: `${i * (100 + Math.random() * 50)}ms`,
+            transitionDelay: `` + i * (300 + Math.random() * 50) + `ms`,
+            animationDelay: `` + i * (100 + Math.random() * 50) + `ms`,
           }"
         />
       </template>
@@ -71,9 +69,18 @@ watchEffect(() => {
 </template>
 
 <style scoped>
+.row {
+  flex-wrap: nowrap;
+}
 .tile {
   user-select: none;
   position: relative;
+  /* flex: none —— 不许 flex 把格子压扁。压扁时 scrollWidth 恰好等于 clientWidth，
+     体检的「不溢出」检查会被蒙混过关，格子却会挤成一条（梨、万 首当其冲）。 */
+  flex: none;
+  width: var(--tile, 5rem);
+  height: var(--tile, 5rem);
+  margin: var(--tile-gap, 0.25rem);
 }
 .tile .front,
 .tile .back {

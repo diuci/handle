@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { filterNonChineseChars } from '@hankit/tools'
-import { answer, dayNo, isDev, isFailed, isFinished, showCheatSheet, showFailed, showHelp, showHint } from '~/state'
+import { answer, dayNo, isDev, isFailed, isFinished, kind, showCheatSheet, showFailed, showHelp, showHint, triesLimit, wordLength } from '~/state'
 import { markStart, meta, tries, useNoHint, useStrictMode } from '~/storage'
 import { t } from '~/i18n'
-import { TRIES_LIMIT, WORD_LENGTH, checkValidIdiom } from '~/logic'
+import { checkValidIdiom, checkValidVerse, filterNonChineseChars } from '~/logic'
 
 const el = ref<HTMLInputElement>()
 const input = ref('')
@@ -13,10 +12,17 @@ const shake = autoResetRef(false, 500)
 
 const isFinishedDelay = debouncedRef(isFinished, 800)
 
+/** 校验按玩法分：成语查成语库，诗句查诗句库，宽松模式下都只查字数。 */
+function valid(word: string) {
+  return kind.value === 'idiom'
+    ? checkValidIdiom(word, useStrictMode.value)
+    : checkValidVerse(word, kind.value, useStrictMode.value)
+}
+
 function enter() {
-  if (input.value.length !== WORD_LENGTH)
+  if (input.value.length !== wordLength.value)
     return
-  if (!checkValidIdiom(input.value, useStrictMode.value)) {
+  if (!valid(input.value)) {
     showToast.value = true
     shake.value = true
     return false
@@ -35,7 +41,7 @@ function reset() {
 }
 function handleInput(e: Event) {
   const el = (e.target! as HTMLInputElement)
-  input.value = filterNonChineseChars(el.value).slice(0, 4)
+  input.value = filterNonChineseChars(el.value, wordLength.value)
   markStart()
 }
 function focus() {
@@ -49,6 +55,14 @@ function hint() {
 }
 function sheet() {
   showCheatSheet.value = !showCheatSheet.value
+}
+function onKindChange() {
+  input.value = ''
+  inputValue.value = ''
+  showFailed.value = false
+  showHint.value = false
+  showCheatSheet.value = false
+  focus()
 }
 
 watchEffect(() => {
@@ -69,6 +83,8 @@ watchEffect(() => {
 <template>
   <div>
     <div flex="~ col" pt4 items-center>
+      <KindSwitch @change="onKindChange()" />
+
       <WordBlocks v-for="w, i of tries" :key="i" :word="w" :revealed="true" @click="focus()" />
 
       <template v-if="meta.answer">
@@ -96,10 +112,10 @@ watchEffect(() => {
             <input
               ref="el"
               v-model="inputValue"
-              bg-transparent w-86 p3 outline-none text-center
+              bg-transparent w-full max-w-86 p3 outline-none text-center
               type="text"
               autocomplete="false"
-              :placeholder="t('input-placeholder')"
+              :placeholder="kind === 'idiom' ? t('input-placeholder') : t('input-placeholder-' + kind)"
               :disabled="isFinished"
               :class="{ shake }"
               @input="handleInput"
@@ -113,20 +129,20 @@ watchEffect(() => {
               :class="showToast ? '' : 'op0 translate-y--1'"
             >
               <span tracking-1 pl1>
-                {{ t('invalid-idiom') }}
+                {{ kind === 'idiom' ? t('invalid-idiom') : t('invalid-verse') }}
               </span>
             </div>
           </div>
           <button
             mt3
             btn p="x6 y2"
-            :disabled="input.length !== WORD_LENGTH"
+            :disabled="input.length !== wordLength"
             @click="enter"
           >
             {{ t('ok-spaced') }}
           </button>
           <div v-if="tries.length > 4 && !isFailed" op50>
-            {{ t('tries-rest', TRIES_LIMIT - tries.length) }}
+            {{ t('tries-rest', triesLimit - tries.length) }}
           </div>
           <button v-if="isFailed" square-btn @click="showFailed = true">
             <div i-mdi-emoticon-devil-outline /> {{ t('view-answer') }}
@@ -157,7 +173,7 @@ watchEffect(() => {
         <div flex gap2>
           <a
             class="btn"
-            :href="`/?dev=hey&d=${dayNo - 1}`"
+            :href="`/?dev=hey&mode=` + kind + `&d=` + (dayNo - 1)"
           >
             上一天
           </a>
@@ -169,7 +185,7 @@ watchEffect(() => {
           </button>
           <a
             class="btn"
-            :href="`/?dev=hey&d=${dayNo + 1}`"
+            :href="`/?dev=hey&mode=` + kind + `&d=` + (dayNo + 1)"
           >
             下一天
           </a>

@@ -36,9 +36,20 @@ jobs:
           node tools/check-build.mjs --selftest
           node tools/check-theme.mjs --selftest
           node tools/smoke-handle.mjs --selftest
+          node tools/verse-lib.mjs --selftest
+          node tools/sync-poems.mjs --selftest
+          node tools/build-verse.mjs --selftest
+          node tools/audit-verse.mjs --selftest
+          node tools/check-verse.mjs --selftest
 
       - name: 单元测试
         run: npm run test
+
+      - name: 诗句产物体检
+        # 不联网：查已提交的诗库快照、词库、钉死读音是否自洽，历史答案有没有被动过
+        run: |
+          npm run check:verse
+          npm run audit:verse -- --check
 
       - name: 构建
         run: npm run build

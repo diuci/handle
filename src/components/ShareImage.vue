@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { toPng } from 'html-to-image'
 import { saveAs } from 'file-saver'
-import { dayNoHanzi, isIOS, isMobile, useMask } from '~/state'
+import { dayNoHanzi, isIOS, isMobile, kind, useMask } from '~/state'
 import { tries } from '~/storage'
 import { DEPLOY_HOST } from '~/logic/constants'
+import { KIND_LABEL_KEY } from '~/logic'
 import { t } from '~/i18n'
 
 const el = ref<HTMLDivElement>()
@@ -33,7 +34,7 @@ async function render() {
 onMounted(() => render())
 
 async function download() {
-  saveAs(dataUrl.value, `${t('name')} ${dayNoHanzi.value}${useMask.value ? ' 遮罩' : ''}.png`)
+  saveAs(dataUrl.value, `${t('name')} ${t(KIND_LABEL_KEY[kind.value])} ${dayNoHanzi.value}${useMask.value ? ' 遮罩' : ''}.png`)
 }
 </script>
 
@@ -59,7 +60,7 @@ async function download() {
     <div ref="el" flex="~ col" items-center p="x6 y4" bg-base relative text-center>
       <AppName w-full />
       <div w-full text-xs mt1 mb3 op50 ws-nowrap>
-        {{ DEPLOY_HOST }}
+        {{ DEPLOY_HOST }} · {{ t(KIND_LABEL_KEY[kind]) }}
       </div>
 
       <WordBlocks v-for="w, i of tries" :key="i" :word="w" :revealed="true" :animate="false" />

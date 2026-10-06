@@ -1,5 +1,5 @@
 import { initialized, markEnd, markStart, meta, pauseTimer } from './storage'
-import { answer, dayNo, daySince, isDev, isFinished, isPassed, showCheatSheet, showHelp } from './state'
+import { answer, dayNo, daySince, isDev, isFinished, isPassed, kind, showCheatSheet, showHelp } from './state'
 import { t } from './i18n'
 import { answers } from './answers/list'
 import { START_DATE } from './logic/constants'
@@ -58,13 +58,13 @@ nextTick(() => {
   // if (acceptCollecting.value)
   //   sendAnalytics()
 
-  tryFixAnswer(dayNo.value)
+  tryFixAnswer(dayNo.value, kind.value)
 })
 
 if (isDev || import.meta.hot) {
   const theDate = new Date(+START_DATE + dayNo.value * 86400000)
   // eslint-disable-next-line no-console
-  console.log(`D${dayNo.value}`, theDate.toLocaleDateString(), answer.value.word, answer.value.hint)
+  console.log(`D${dayNo.value}`, kind.value, theDate.toLocaleDateString(), answer.value.word, answer.value.hint)
 }
 
 if (import.meta.hot) {

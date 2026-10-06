@@ -28,7 +28,7 @@ const parsed = computed(() => {
 
 function getColor(result?: MatchType, isChar = false) {
   const pre = useMask.value
-    ? `bg-current ${isChar ? ' !op70' : '!op40'} border border-current`
+    ? `bg-current ` + (isChar ? ' !op70' : '!op40') + ` border border-current`
     : ''
 
   if (!result || exact.value)
@@ -40,7 +40,7 @@ function getColor(result?: MatchType, isChar = false) {
     none: isChar ? 'op80' : 'op35',
     deleted: inputMode.value === 'zy' ? 'op30' : 'line-through op30',
   }
-  return `${pre} ${colors[result]}`
+  return `` + pre + ` ` + colors[result]
 }
 
 const blockColor = computed(() => {
@@ -74,14 +74,23 @@ const partTwo = computed(() => {
   const index = toneCharLocation.value
   // replace i with dot less for tone symbol
   if (!useNumberTone.value && two[index] === 'i')
-    return `${two.slice(0, index)}ı${two.slice(index + 1)}`
+    return `` + two.slice(0, index) + `ı` + two.slice(index + 1)
   return two
 })
+
+// 格子尺寸跟着玩法走：成语 4 格、五言 5 格、七言 7 格，
+// 上游写死的 5rem 在七言下是 7 × 88 = 616px，414px 的手机放不下。
+// 所有内部偏移都改成 --tile 的倍数（或拼音行内的 em），换尺寸才不会散架。
+const tile = `var(--tile, 5rem)`
+const hanziTop = computed(() => `calc(` + tile + ` * ` + (useMask.value ? 0.425 : 0.4) + `)`)
+const zyLeft = computed(() => `calc(` + tile + ` * ` + (useMask.value ? 0.15 : 0.2) + `)`)
+const pinyinTop = computed(() => `calc(` + tile + ` * ` + (useMask.value ? 0.175 : 0.1375) + `)`)
 </script>
 
 <template>
   <div
-    h-20 w-20 border-2 rounded-[var(--radius)]
+    class="block"
+    border="2" rounded="[var(--radius)]"
     flex="~ center" relative
     leading-1em font-hanzi
     :class="blockColor"
@@ -90,18 +99,20 @@ const partTwo = computed(() => {
       <!-- Zhuyin -->
       <template v-if="inputMode === 'zy'">
         <div
-          absolute text-3xl leading-1em flex items-center text-center font-hanzi
+          class="hanzi"
+          absolute leading-1em flex items-center text-center font-hanzi
           top-0 bottom-0
-          :class="[getColor(parsed?.char, true), useMask ? 'left-3' : 'left-4']"
+          :class="getColor(parsed?.char, true)"
+          :style="{ left: zyLeft }"
         >
           {{ char.char }}
         </div>
         <div
           absolute flex items-center text-center
           top-0 bottom-0
-          right="2.5" w="5"
+          :style="{ right: `calc(` + tile + ` * 0.125)`, width: `calc(` + tile + ` * 0.25)` }"
         >
-          <div flex="~ center" text-xs style="writing-mode: vertical-rl">
+          <div flex="~ center" class="small" style="writing-mode: vertical-rl">
             <span v-if="char._1" :class="getColor(parsed?._1)">
               {{ char._1 }}
             </span>
@@ -119,15 +130,18 @@ const partTwo = computed(() => {
       <!-- Pinyin or Shuangpin -->
       <template v-else>
         <div
-          absolute text-3xl leading-1em font-hanzi
-          :class="[getColor(parsed?.char, true), useMask ? 'top-8.5' : 'top-8']"
+          class="hanzi"
+          absolute leading-1em font-hanzi
+          :class="getColor(parsed?.char, true)"
+          :style="{ top: hanziTop }"
         >
           {{ char.char }}
         </div>
         <div
+          class="pinyin"
           absolute font-mono
           text-center left-0 right-0 font-100 flex flex-col items-center
-          :class="[useMask ? 'top-14px' : 'top-11px']"
+          :style="{ top: pinyinTop }"
         >
           <div
             relative ma items-start
@@ -144,7 +158,7 @@ const partTwo = computed(() => {
                 <VDots
                   v-if="!useMask && idx === vLocation && inputMode === 'py'"
                   :class="getColor(parsed?._2)"
-                  absolute w="87%" left="8%" bottom="0.76rem"
+                  absolute w="87%" left="8%" style="bottom: 0.76em"
                 />
                 <ToneSymbol
                   v-if="!useNumberTone && idx === toneCharLocation"
@@ -153,18 +167,19 @@ const partTwo = computed(() => {
                   absolute w="86%" left="8%"
                   :style="{
                     bottom: useMask
-                      ? '1.25rem'
+                      ? '1.25em'
                       : w === 'v'
-                        ? '0.85rem'
-                        : '0.78rem',
+                        ? '0.85em'
+                        : '0.78em',
                   }"
                 />
               </div>
             </div>
             <div
               v-if="useNumberTone"
+              class="small"
               :class="getColor(parsed?.tone)"
-              text-xs leading-1em mr--3 mt--1 ml-1px
+              leading-1em mr--3 mt--1 ml-1px
             >
               {{ char.tone }}
             </div>
@@ -174,3 +189,23 @@ const partTwo = computed(() => {
     </template>
   </div>
 </template>
+
+<style scoped>
+.block {
+  width: var(--tile, 5rem);
+  height: var(--tile, 5rem);
+}
+/* 上游是 text-3xl（1.875rem）配 5rem 的格子，比例 0.375 */
+.hanzi {
+  font-size: calc(var(--tile, 5rem) * 0.375);
+  line-height: 1em;
+}
+/* 拼音行原本吃正文的 1rem，占格子的 0.2；格子缩到 45px 时 0.2 只剩 9px，
+   所以夹一个 9px 的下限，七言在手机上还能读得清。 */
+.pinyin {
+  font-size: clamp(9px, calc(var(--tile, 5rem) * 0.2), 16px);
+}
+.small {
+  font-size: 0.75em;
+}
+</style>

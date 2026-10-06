@@ -1,0 +1,11 @@
+{
+  "contentVersion": "2026.10.02",
+  "sha256": "fd6ca80dd451b6e41b48f14cab89a2430c24f00ff0594c78a75036aa67b86797",
+  "forms": [
+    "五言",
+    "七言"
+  ],
+  "poems": 136,
+  "lines": 329,
+  "splittable": 328
+}

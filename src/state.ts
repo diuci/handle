@@ -1,6 +1,6 @@
 import { breakpointsTailwind } from '@vueuse/core'
 import type { MatchType, ParsedChar } from './logic'
-import { START_DATE, TRIES_LIMIT, WORD_LENGTH, parseWord as _parseWord, testAnswer as _testAnswer, checkPass, getHint, isDstObserved, numberToHanzi } from './logic'
+import { KIND_LENGTH, KIND_TRIES, START_DATE, type Kind, checkPass, getHint, isDstObserved, isKind, parseWord as _parseWord, testAnswer as _testAnswer } from './logic'
 import { useNumberTone as _useNumberTone, inputMode, meta, spMode, tries } from './storage'
 import { getAnswerOfDay } from './answers'
 
@@ -46,6 +46,21 @@ export const useNumberTone = computed(() => {
 
 const params = new URLSearchParams(window.location.search)
 export const isDev = import.meta.hot || params.get('dev') === 'hey'
+
+/**
+ * 当前玩法。URL 的 ?mode= 优先于本地记忆，默认成语——
+ * 老玩家点开链接看到的还是成语，不会因为多了两个玩法就换了题。
+ */
+const storedKind = useStorage<Kind>('handle-kind', 'idiom')
+const urlKind = params.get('mode')
+export const kind = ref<Kind>(isKind(urlKind) ? urlKind : storedKind.value)
+watch(kind, (v) => {
+  storedKind.value = v
+})
+
+export const wordLength = computed(() => KIND_LENGTH[kind.value])
+export const triesLimit = computed(() => KIND_TRIES[kind.value])
+
 export const daySince = useDebounce(computed(() => {
   // Adjust date for daylight saving time, assuming START_DATE is not in DST
   const adjustedNow = isDstObserved(now.value) ? new Date(+now.value + 3600000) : now.value
@@ -54,21 +69,24 @@ export const daySince = useDebounce(computed(() => {
 export const dayNo = ref(+(params.get('d') || daySince.value))
 // 期号用阿拉伯数字：numberToHanzi(1740) 出来是「千七百四十」（首位「一」被省），
 // 拼成「第千七百四十期」读不通，且日号已过千期，汉字数字反而难读。
-export const dayNoHanzi = computed(() => `第 ${dayNo.value} 期`)
-export const answer = computed(() =>
-  params.get('word')
-    ? {
-        word: params.get('word')!,
-        hint: getHint(params.get('word')!),
-      }
-    : getAnswerOfDay(dayNo.value),
-)
+export const dayNoHanzi = computed(() => `第 ` + dayNo.value + ` 期`)
+
+/**
+ * ?word= 是调试用的强制答案。长度必须等于当前玩法的长度，
+ * 否则「大漠孤烟直」打到成语玩法上就是 5 个格子对 4 个格子，整页错位。
+ */
+export const answer = computed(() => {
+  const forced = params.get('word')
+  if (forced && Array.from(forced).length === KIND_LENGTH[kind.value])
+    return { word: forced, hint: getHint(forced) }
+  return getAnswerOfDay(dayNo.value, kind.value)
+})
 
 export const hint = computed(() => answer.value.hint)
 export const parsedAnswer = computed(() => parseWord(answer.value.word))
 
 export const isPassed = computed(() => meta.value.passed || (tries.value.length && checkPass(testAnswer(parseWord(tries.value[tries.value.length - 1])))))
-export const isFailed = computed(() => !isPassed.value && tries.value.length >= TRIES_LIMIT)
+export const isFailed = computed(() => !isPassed.value && tries.value.length >= triesLimit.value)
 export const isFinished = computed(() => isPassed.value || meta.value.answer)
 
 export function parseWord(word: string, _ans = answer.value.word, mode = inputMode.value, spM = spMode.value) {
@@ -91,7 +109,7 @@ export const parsedTries = computed(() => tries.value.map((i) => {
 export function getSymbolState(symbol?: string | number, key?: '_1' | '_2' | 'tone') {
   const results: MatchType[] = []
   for (const t of parsedTries.value) {
-    for (let i = 0; i < WORD_LENGTH; i++) {
+    for (let i = 0; i < wordLength.value; i++) {
       const w = t.word[i]
       const r = t.result[i]
       if (key) {

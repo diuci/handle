@@ -6,6 +6,10 @@
 
 汉字版 [Wordle](https://www.powerlanguage.co.uk/wordle/)：每天一个成语，用声母、韵母、声调的颜色提示，十次机会猜出来。
 
+本站在成语之外还有两个玩法：**五言**（五个字的诗句）与**七言**（七个字的诗句），
+题目取自[丢词夺理 K12 诗词库](https://github.com/diuci/k12-chinese-poetry)。页面顶部切换玩法，
+也可以用 `?mode=wuyan` / `?mode=qiyan` 直接进入。
+
 本站是 [丢词夺理](https://diuci.com/) 的**非官方复刻**，玩法与词库来自开源项目
 [汉兜 Handle](https://github.com/antfu/handle)（© Anthony Fu，MIT）。
 许可与署名见 **[NOTICE](./NOTICE)**，上游许可原文见 [LICENSE](./LICENSE)（未作修改）。
@@ -41,6 +45,23 @@ npm run test     # vitest --run
 如遇成语缺失或发音错误，编辑 [./src/data/new.txt](./src/data/new.txt)，一行一词，然后执行 `npm run update`，
 脚本会自动抓取[汉典](https://www.zdic.net/)的数据更新数据库。汉典也缺失的成语会留在 `new.txt` 里，需要人工判断。
 
+## 五言 / 七言
+
+题目来自内容仓 [diuci/k12-chinese-poetry](https://github.com/diuci/k12-chinese-poetry)，
+本站只带快照，不带上游仓库：
+
+`bash
+npm run sync:poems    # 从本地 ../k12-chinese-poetry 抽取（--remote 则现拉内容仓）
+npm run build:verse   # 拆联 → 去重 → 追加进词库 → 生成钉死读音
+npm run audit:verse   # 多音字裁决进度（--report 写报告，--check 供 CI）
+npm run check:verse   # 已提交产物的自洽体检，含「历史答案没被动过」
+`
+
+规则：十字联拆成两个五言、十四字联拆成两个七言，其它长度跳过；词库**只追加**，
+`verse-pool.json` 里的 `frozen` 前缀哈希一变就拒绝构建——昨天的答案今天不会变。
+答案的读音走 `verse-readings.json`（人工裁决过的多音字），不走运行时字典。
+细节见 [src/data/README.md](./src/data/README.md)。
+
 ## 技术栈
 
 - [Vue 3](https://v3.vuejs.org/) + [Vite](https://vitejs.dev/)
@@ -53,3 +74,5 @@ npm run test     # vitest --run
 
 - 上游代码：[MIT](./LICENSE) © 2021-PRESENT [Anthony Fu](https://github.com/antfu)
 - 本站的改动与站点内容：同样按 MIT 分发，署名与来源见 [NOTICE](./NOTICE)
+- 五言 / 七言的题目内容：诗文原文属公有领域；选篇编排与注音来自
+  [k12-chinese-poetry](https://github.com/diuci/k12-chinese-poetry)，按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 授权
