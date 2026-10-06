@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <title>汉兜 - 汉字 Wordle</title>
-  <meta name="description" content="汉兜 - 汉字 Wordle">
-  <meta property="og:image" content="https://handle.antfu.me/og.png"/>
-  <meta property="og:title" content="汉兜"/>
-  <meta property="og:description" content="汉兜 - 汉字 Wordle"/>
-  <meta name="twitter:image" content="https://handle.antfu.me/og.png"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:creator" content="antfu7"/>
+  <title>汉兜 · 汉字 Wordle | 丢词夺理</title>
+  <meta name="description" content="汉兜：每天一个成语，用声母、韵母、声调十次机会把它猜出来。汉字 Wordle 的丢词夺理复刻站。">
+  <meta name="author" content="丢词夺理 diuci.com；玩法与词库基于 汉兜 Handle © Anthony Fu (MIT)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://handle.diuci.com/">
+  <meta property="og:image" content="https://handle.diuci.com/og.png">
+  <meta property="og:title" content="汉兜 · 汉字 Wordle">
+  <meta property="og:description" content="每天一个成语，用声母、韵母、声调十次机会把它猜出来。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://handle.diuci.com/og.png">
 </head>
 <body>
   <div id="app"></div>
-  <script>
-    (function() {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      const setting = localStorage.getItem('color-schema') || 'auto'
-      if (setting === 'dark' || (prefersDark && setting !== 'light'))
-        document.documentElement.classList.toggle('dark', true)
-    })()
-  </script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
