@@ -30,8 +30,11 @@ const TAB_COUNT = 6
 const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']
 // 顶栏六个乐园：五个外链 + 本站那一项（汉兜，href 是 /，带 aria-current）。
 const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'github.com/diuci/k12-chinese-poetry']
-// 六个乐园的名字与顺序：主站、古诗文库、连词成句、汉兜四站的顶栏与页脚都该是这一串。
-const PARK_LABELS = ['古诗文', '连词成句', '丢词大作战', '遗失月冕', '汉兜', '内容仓库']
+// 顶栏第一项是回主站的「首页」，href 必须精确等于这个，不能用 includes 判
+// ——k12.diuci.com 里也含着 diuci.com，includes 会假通过。
+const HOME_LINK = 'https://diuci.com/'
+// 六个乐园的名字与顺序：主站、学古诗、连词成句、汉兜四站的顶栏与页脚都该是这一串。
+const PARK_LABELS = ['学古诗', '连词成句', '丢词大作战', '遗失月冕', '汉兜', '内容仓库']
 
 function findChrome() {
   const cands = process.platform === 'win32'
@@ -171,16 +174,20 @@ export async function runSmoke(puppeteer, url) {
     // display:none 不移除 DOM，所以窄屏也能核对到。
     const navLinks = await page.$$eval('.dc-nav-links a', els => els.map(e => e.getAttribute('href')))
       .catch(() => [])
-    if (navLinks.length !== NAV_LINKS.length + 1)
-      problems.push('顶栏乐园入口有 ' + navLinks.length + ' 项，应为 ' + (NAV_LINKS.length + 1) + ' 项（五个乐园 + 本站）')
+    if (navLinks.length !== NAV_LINKS.length + 2)
+      problems.push('顶栏入口有 ' + navLinks.length + ' 项，应为 ' + (NAV_LINKS.length + 2) + ' 项（首页 + 五个乐园 + 本站）')
     else {
       for (const need of NAV_LINKS) {
         if (!navLinks.some(h => (h || '').includes(need)))
           problems.push('顶栏缺 ' + need)
       }
+      if (!navLinks.some(h => (h || '') === HOME_LINK))
+        problems.push('顶栏缺回主站的「首页」（href 应为 ' + HOME_LINK + '）')
+      if ((navLinks[0] || '') !== HOME_LINK)
+        problems.push('顶栏第一项应是「首页」，实际 href 是 ' + navLinks[0])
     }
 
-    // 本站那一项必须在顶栏里并标成当前页（和 k12 的「古诗文」同理）
+    // 本站那一项必须在顶栏里并标成当前页（和 k12 的「学古诗」同理）
     const current = await page.$$eval('.dc-nav-links a[aria-current="page"]', els => els.map(e => (e.textContent || '').trim()))
       .catch(() => [])
     if (current.length !== 1)
@@ -278,7 +285,7 @@ async function selftest(puppeteer) {
   const port = server.address().port
   try {
     const problems = await runSmoke(puppeteer, 'http://127.0.0.1:' + port)
-    const want = ['正文是空', '没有输入框', '标签栏', '顶栏乐园', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮']
+    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮']
     const hit = want.filter(w => problems.some(x => x.includes(w)))
     if (hit.length < want.length) {
       console.log('[!!] 自检失败：坏页面只抓到 ' + hit.length + '/' + want.length + ' 类问题')
@@ -320,7 +327,7 @@ async function main() {
     for (const q of problems) console.log('  - ' + q)
     return 1
   }
-  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏乐园 ' + (NAV_LINKS.length + 1) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
+  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏入口 ' + (NAV_LINKS.length + 2) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
   return 0
 }
 

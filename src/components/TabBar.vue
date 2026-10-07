@@ -18,7 +18,7 @@
         <path d="M4 5.2A1.4 1.4 0 0 1 5.4 3.8H11a2 2 0 0 1 2 2v13a1.6 1.6 0 0 0-1.6-1.4H4z"/>
         <path d="M20 5.2a1.4 1.4 0 0 0-1.4-1.4H15a2 2 0 0 0-2 2v13a1.6 1.6 0 0 1 1.6-1.4H20z"/>
       </svg>
-      <span class="tx">古诗文</span>
+      <span class="tx">学古诗</span>
     </a>
     <a class="dc-tab" href="https://lian.diuci.com/">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">

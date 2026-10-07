@@ -7,7 +7,7 @@
  * 一旦开始玩就再也够不着。别的站页脚都有，这里缺一条。
  */
 const PARKS = [
-  { href: 'https://k12.diuci.com/', label: '古诗文' },
+  { href: 'https://k12.diuci.com/', label: '学古诗' },
   { href: 'https://lian.diuci.com/', label: '连词成句' },
   { href: 'https://ink.diuci.com/', label: '丢词大作战' },
   { href: 'https://moon.diuci.com/', label: '遗失月冕' },
