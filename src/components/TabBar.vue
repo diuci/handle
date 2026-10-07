@@ -29,6 +29,15 @@
       </svg>
       <span class="tx">古诗文</span>
     </a>
+    <a class="dc-tab" href="https://lian.diuci.com/">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="5.4" cy="6.6" r="2.3"/>
+        <circle cx="12" cy="12" r="2.3"/>
+        <circle cx="18.6" cy="17.4" r="2.3"/>
+        <path d="M7.1 8.3l3.5 2.4M13.4 13.3l3.5 2.4"/>
+      </svg>
+      <span class="tx">连句</span>
+    </a>
     <a class="dc-tab" href="https://ink.diuci.com/">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M14.2 3.6H20a.4.4 0 0 1 .4.4v5.8"/>

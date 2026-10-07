@@ -21,6 +21,11 @@ const KINDS = [
   { kind: 'qiyan', len: 7, label: '七言' },
 ]
 
+// 底部标签栏应有几项：断言与成功文案读同一个数。
+// 之前成功文案里硬写着「5 项」，加了一项后检查改成 6、文案还在说 5 ——
+// 「通过」这句话本身在撒谎。加入口时只改这一处。
+const TAB_COUNT = 6
+
 function findChrome() {
   const cands = process.platform === 'win32'
     ? [
@@ -146,10 +151,10 @@ export async function runSmoke(puppeteer, url) {
 
     const tabs = await page.$$eval('.dc-tabbar a', els => els.map(e => e.getAttribute('href')))
       .catch(() => [])
-    if (tabs.length !== 5)
-      problems.push('底部标签栏有 ' + tabs.length + ' 项，应为 5 项')
+    if (tabs.length !== TAB_COUNT)
+      problems.push('底部标签栏有 ' + tabs.length + ' 项，应为 ' + TAB_COUNT + ' 项')
     else {
-      for (const need of ['diuci.com', 'k12.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']) {
+      for (const need of ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']) {
         if (!tabs.some(h => (h || '').includes(need)))
           problems.push('底部标签栏缺 ' + need)
       }
@@ -276,7 +281,7 @@ async function main() {
     for (const q of problems) console.log('  - ' + q)
     return 1
   }
-  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 5 项、署名在、主题开关三处同步')
+  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、署名在、主题开关三处同步')
   return 0
 }
 
