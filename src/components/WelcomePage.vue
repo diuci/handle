@@ -120,6 +120,16 @@ const verseDemo = computed(() => kind.value === 'qiyan'
       <span op40> 的非官方复刻，与上游无关联</span>
     </div>
     <div>
+      <span op40>同一批课文的其他玩法：</span>
+      <a op50 hover:op80 href="https://k12.diuci.com/" target="_blank">古诗文</a>
+      <span op40> · </span>
+      <a op50 hover:op80 href="https://lian.diuci.com/" target="_blank">连词成句</a>
+      <span op40> · </span>
+      <a op50 hover:op80 href="https://ink.diuci.com/" target="_blank">丢词大作战</a>
+      <span op40> · </span>
+      <a op50 hover:op80 href="https://moon.diuci.com/" target="_blank">遗失月冕</a>
+    </div>
+    <div>
       <a op50 hover:op80 href="https://k12.diuci.com/legal/" target="_blank">{{ t('legal-link') }}</a>
       <span op40> · <a op50 hover:op80 href="mailto:hi@diuci.com">hi@diuci.com</a></span>
     </div>

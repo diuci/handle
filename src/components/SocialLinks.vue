@@ -17,6 +17,14 @@ import { t } from '~/i18n'
     </a>
     <a
       square-btn mx2 flex-gap-1
+      href="https://lian.diuci.com/"
+      target="_blank"
+    >
+      <div i-carbon-flow-activity />
+      连词成句
+    </a>
+    <a
+      square-btn mx2 flex-gap-1
       href="https://github.com/diuci/handle/issues"
       target="_blank"
     >

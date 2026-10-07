@@ -125,6 +125,15 @@ body::after{
 .brand-t{font-family:var(--round);font-size:22px;line-height:1.15;color:var(--ink)}
 .brand-s{font-family:var(--round);font-size:9px;letter-spacing:.2em;color:var(--ink-faint);line-height:1}
 .dc-nav-btns{display:flex;align-items:center}
+/* 顶栏的乐园入口：与主站同一套文字链（衬线 14px、悬停转朱砂）。
+   窄屏由底部标签栏接管，这里让位。 */
+.dc-nav-links{display:flex;gap:16px;margin-left:auto}
+.dc-nav-links a{
+  font-family:var(--serif);font-size:14px;letter-spacing:.02em;
+  color:var(--ink-soft);text-decoration:none;opacity:.72;white-space:nowrap;
+  transition:color .2s,opacity .2s;
+}
+.dc-nav-links a:hover{color:var(--cinnabar);opacity:1}
 
 /* 主题按钮：主站同款太阳/月亮互换 */
 .theme-btn{
@@ -141,6 +150,7 @@ html.dark .theme-btn .moon{display:block}
 /* ── 底部标签栏：参数与主站 / K12 完全一致 ── */
 .dc-tabbar{display:none}
 @media(max-width:768px){
+  .dc-nav-links{display:none}
   .dc-nav-in{height:56px}
   .seal{width:34px;height:34px;flex:0 0 34px;font-size:20px;border-radius:8px}
   .brand-t{font-size:18px}

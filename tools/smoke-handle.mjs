@@ -26,6 +26,10 @@ const KINDS = [
 // 「通过」这句话本身在撒谎。加入口时只改这一处。
 const TAB_COUNT = 6
 
+// 全站互相链接的域名：底部标签栏六项、顶栏四项（本站自己不必再链自己）
+const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']
+const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com']
+
 function findChrome() {
   const cands = process.platform === 'win32'
     ? [
@@ -154,9 +158,22 @@ export async function runSmoke(puppeteer, url) {
     if (tabs.length !== TAB_COUNT)
       problems.push('底部标签栏有 ' + tabs.length + ' 项，应为 ' + TAB_COUNT + ' 项')
     else {
-      for (const need of ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']) {
+      for (const need of SITE_LINKS) {
         if (!tabs.some(h => (h || '').includes(need)))
           problems.push('底部标签栏缺 ' + need)
+      }
+    }
+
+    // 顶栏的乐园入口（桌面文字链）：全站统一靠这一条兜住。
+    // display:none 不移除 DOM，所以窄屏也能核对到。
+    const navLinks = await page.$$eval('.dc-nav-links a', els => els.map(e => e.getAttribute('href')))
+      .catch(() => [])
+    if (navLinks.length !== NAV_LINKS.length)
+      problems.push('顶栏乐园入口有 ' + navLinks.length + ' 项，应为 ' + NAV_LINKS.length + ' 项')
+    else {
+      for (const need of NAV_LINKS) {
+        if (!navLinks.some(h => (h || '').includes(need)))
+          problems.push('顶栏缺 ' + need)
       }
     }
 
@@ -281,7 +298,7 @@ async function main() {
     for (const q of problems) console.log('  - ' + q)
     return 1
   }
-  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、署名在、主题开关三处同步')
+  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏乐园 ' + NAV_LINKS.length + ' 项、署名在、主题开关三处同步')
   return 0
 }
 

@@ -15,6 +15,12 @@ function openHelp() {
   <nav class="dc-nav">
     <div class="dc-nav-in">
       <AppName />
+      <div class="dc-nav-links" aria-label="其他乐园">
+        <a href="https://k12.diuci.com/" target="_blank">古诗文</a>
+        <a href="https://lian.diuci.com/" target="_blank">连词成句</a>
+        <a href="https://ink.diuci.com/" target="_blank">丢词大作战</a>
+        <a href="https://moon.diuci.com/" target="_blank">遗失月冕</a>
+      </div>
       <div class="dc-nav-btns">
         <button icon-btn mx2 title="玩法说明" @click="openHelp()">
           <div i-carbon-help />
