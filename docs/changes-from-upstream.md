@@ -1,0 +1,48 @@
+# 本站相对上游的改动
+
+上游：[antfu/handle](https://github.com/antfu/handle)，MIT，版权归 Anthony Fu。
+复刻基线 commit `2003b777f507ed18c1c80304fd6894280c56ad58`（2025-02-12，
+`feat: replace picocolors with ansis (#98)`）。
+
+法律层面的署名与许可见 [NOTICE](../NOTICE) 与 [LICENSE](../LICENSE)。
+这份文件只记录**工程改动**，给后来接手的人看。
+
+## 改了什么
+
+1. **依赖与工具链**：不换框架，只升版本（Vite 4→8、UnoCSS 0.47→66、Vitest 0.25→5、
+   TS 4.9→5.9、VueUse 9→15）；包管理从 pnpm 换成 npm；删除 Netlify 配置与已 EOL 的 eslint 8 配置。
+2. **视觉**：配色、字体、纹理、顶栏、底部标签栏、圆角与阴影全部对齐主站 diuci.com 的设计语言；
+   语义色逐值取自主站的 `:root` / `:root[data-theme="dark"]`。
+3. **主题**：改用主站的 `localStorage['dc-theme']` + `<html data-theme>`，与主站、K12 站点互通。
+4. **域名与身份**：`CNAME` 为 `handle.diuci.com`；标题、og、favicon、og 图换成本站的。
+5. **测试**：Vitest 3 起移除内联测试（`import.meta.vitest`），三组内联测试原样搬入 `test/`，
+   断言与快照未改。
+6. **期号显示**：「第一千七百四十日」改为「第 1740 期」。
+7. **外部链接**：上游作者的个人微博 / Twitter 入口换成本站的入口。
+8. **三个玩法**：在成语之外加了五言、七言两个玩法，页面顶部可切换，
+   格子尺寸按字数自适应（七言在 375px 宽下每格 45px）。
+
+玩法逻辑、题库、出题算法（`seedrandom('day-N')`）、答案冻结日期、遮罩分享、
+注音 / 双拼 / 繁体的开关**均未改动**。
+
+## 五言 / 七言玩法（本站新增，与上游无关）
+
+- 内容来源：[diuci/k12-chinese-poetry](https://github.com/diuci/k12-chinese-poetry)，
+  经 `tools/sync-poems.mjs` 抽取，`src/data/poems-snapshot.json` 留下来源指纹（sha256 + contentVersion）。
+- 上游没有的东西：诗句词库、拆联规则（十字联拆两个五言、十四字联拆两个七言）、
+  钉死读音表 `verse-readings.json` 与勘误表 `verse-fix.json`、按玩法分开的每日答案与战绩。
+- 上游玩法逻辑未改：`parseWord` / `testAnswer` / `checkPass` / `getHint` 照旧，
+  只是把「四字」参数化成 `KIND_LENGTH`，把 `handle-tries-meta` 按玩法分桶（带一次性迁移）。
+
+## 未采用上游的部分
+
+- `netlify.toml` 与 `@netlify/functions`：本站由 GitHub Pages + GitHub Actions 部署。
+- `public/tiger.svg`：全仓 0 引用。
+- 上游 `public/og.png` 与上游 favicon：属上游品牌资产，已替换。
+- `axios` / `nanoid` / `lru-cache` / `jsdom` / `@vue/test-utils` / `@iconify-json/noto-v1`：grep 确认全仓未使用。
+
+## 决定不做的优化
+
+见 [docs/phase2-pinyin.md](./phase2-pinyin.md)：「离线预生成拼音表、去掉运行时 `pinyin` 字典」
+——实测之后确认它省不了体积（反而多 17 KB gz）、也只省 3–33 ms，已降级为按需触发。
+写在这里是为了不让后来的人再把它当成待办性能优化。

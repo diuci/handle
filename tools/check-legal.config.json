@@ -1,0 +1,17 @@
+{
+  "name": "handle-site",
+  "upstreamCopyrights": [
+    "Anthony Fu"
+  ],
+  "vendorDirs": [],
+  "corpusFiles": [],
+  "contactEmail": "hi@diuci.com",
+  "legalLink": "k12.diuci.com/legal",
+  "phraseScan": [
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "docs/",
+    "src/data/README.md"
+  ]
+}

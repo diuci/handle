@@ -17,7 +17,8 @@
     "check:verse": "node tools/check-verse.mjs",
     "check:theme": "node tools/check-theme.mjs",
     "smoke": "node tools/smoke-handle.mjs",
-    "selftest": "node tools/check-build.mjs --selftest && node tools/check-theme.mjs --selftest && node tools/smoke-handle.mjs --selftest && node tools/verse-lib.mjs --selftest && node tools/sync-poems.mjs --selftest && node tools/build-verse.mjs --selftest && node tools/audit-verse.mjs --selftest && node tools/check-verse.mjs --selftest"
+    "check:legal": "node tools/check-legal.mjs",
+    "selftest": "node tools/check-legal.mjs --selftest && node tools/check-build.mjs --selftest && node tools/check-theme.mjs --selftest && node tools/smoke-handle.mjs --selftest && node tools/verse-lib.mjs --selftest && node tools/sync-poems.mjs --selftest && node tools/build-verse.mjs --selftest && node tools/audit-verse.mjs --selftest && node tools/check-verse.mjs --selftest"
   },
   "dependencies": {
     "@vueuse/core": "^15.0.0",

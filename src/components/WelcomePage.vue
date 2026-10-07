@@ -109,8 +109,7 @@ const verseDemo = computed(() => kind.value === 'qiyan'
     <div>
       <span op40>玩法与词库来自 </span>
       <a op50 hover:op80 href="https://github.com/antfu/handle" target="_blank">汉兜 Handle</a>
-      <span op40> · Anthony Fu &amp; Inès · inspired by </span>
-      <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank" op50 hover:op80>Wordle</a>
+      <span op40> · Anthony Fu &amp; Inès · MIT</span>
     </div>
     <div>
       <span op40>{{ t('verse-attribution') }}</span>
@@ -118,7 +117,11 @@ const verseDemo = computed(() => kind.value === 'qiyan'
     <div>
       <span op40>本站是 </span>
       <a op50 hover:op80 href="https://diuci.com/" target="_blank">丢词夺理</a>
-      <span op40> 的非官方复刻，基于 MIT 授权</span>
+      <span op40> 的非官方复刻，与上游无关联</span>
+    </div>
+    <div>
+      <a op50 hover:op80 href="https://k12.diuci.com/legal/" target="_blank">{{ t('legal-link') }}</a>
+      <span op40> · <a op50 hover:op80 href="mailto:hi@diuci.com">hi@diuci.com</a></span>
     </div>
     <a href="https://github.com/diuci/handle" target="_blank" flex="~ center gap-1" op50 hover:op80>
       <div i-carbon-logo-github />

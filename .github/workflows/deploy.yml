@@ -33,6 +33,7 @@ jobs:
       - name: 体检脚本自检
         # 先证明检查本身会失败。空过的检查比没有检查更危险。
         run: |
+          node tools/check-legal.mjs --selftest
           node tools/check-build.mjs --selftest
           node tools/check-theme.mjs --selftest
           node tools/smoke-handle.mjs --selftest
@@ -53,6 +54,9 @@ jobs:
 
       - name: 构建
         run: npm run build
+
+      - name: 法律护栏
+        run: npm run check:legal
 
       - name: 产物体检
         run: npm run check:build

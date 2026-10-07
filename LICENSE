@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2021-PRESENT Anthony Fu
+Copyright (c) 2026 丢词大作战 (Diuci Games) and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+上面的 MIT 覆盖本站的代码与界面。以下内容不在 MIT 范围内：
+
+- **成语词库**：整理自 pwxcoo/chinese-xinhua（MIT）等，逐条见 src/data/README.md。
+- **诗文原文**（五言 / 七言玩法）：公有领域。判定规则是作者卒年 ≤ 当前年 − 50，
+  逐篇的证据在内容仓 diuci/k12-chinese-poetry 的 authorDied 字段。
+- **选篇、拆联、注音与多音字勘误**：CC BY 4.0，署名「来源：k12-chinese-poetry / 丢词大作战」。
+- **汉字读音**：Unicode Unihan 数据库 kMandarin 字段，Unicode License（unicode.org/license.txt）。
+
+上游出处与本站改动清单见 NOTICE。侵权通知：hi@diuci.com。
