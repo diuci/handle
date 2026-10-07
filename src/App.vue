@@ -43,4 +43,7 @@ watchEffect(() => {
     <Confetti />
     <TabBar />
   </main>
+  <!-- 页脚在 .dc-main 之外：main 是 100% 高的应用外壳，
+       棋盘那几个 absolute 层铺满整屏，页脚放在里面会被棋盘盖住。 -->
+  <SiteFooter />
 </template>

@@ -112,7 +112,9 @@ body::after{
   border-bottom:1px solid var(--line);
   transition:background-color .45s ease,border-color .45s ease;
 }
-.dc-nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px;max-width:640px;margin:0 auto;padding:0 14px}
+/* 主站的 .wrap 是 1160px / 24px 内边距。之前这里 640px，整条顶栏缩在屏幕
+   中间一块，牌子不贴左边缘，和主站一眼就能看出差别。 */
+.dc-nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px;max-width:1160px;margin:0 auto;padding:0 24px}
 .dc-brand{display:flex;align-items:center;gap:11px}
 .seal{
   width:40px;height:40px;flex:0 0 40px;border-radius:9px;
@@ -127,21 +129,30 @@ body::after{
 .dc-nav-btns{display:flex;align-items:center}
 /* 顶栏的乐园入口：与主站同一套文字链（衬线 14px、悬停转朱砂）。
    窄屏由底部标签栏接管，这里让位。 */
-.dc-nav-links{display:flex;gap:16px;margin-left:auto}
+.dc-nav-links{display:flex;gap:26px;margin-left:auto}
 .dc-nav-links a{
-  font-family:var(--serif);font-size:14px;letter-spacing:.02em;
-  color:var(--ink-soft);text-decoration:none;opacity:.72;white-space:nowrap;
-  transition:color .2s,opacity .2s;
+  font-family:var(--serif);font-size:14.5px;letter-spacing:.02em;
+  color:var(--ink-soft);text-decoration:none;white-space:nowrap;
+  position:relative;padding:4px 0;transition:color .22s;
 }
-.dc-nav-links a:hover{color:var(--cinnabar);opacity:1}
+.dc-nav-links a::after{
+  content:'';position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:var(--cinnabar);transition:width .28s cubic-bezier(.4,0,.2,1);
+}
+.dc-nav-links a:hover{color:var(--cinnabar)}
+.dc-nav-links a:hover::after{width:100%}
+/* 当前站：主站把当前项标朱砂（k12 的「古诗文」同理） */
+.dc-nav-links a.on{color:var(--cinnabar)}
+.dc-nav-links a.on::after{width:100%}
 
 /* 主题按钮：主站同款太阳/月亮互换 */
 .theme-btn{
-  width:38px;height:38px;flex:0 0 38px;border:none;background:transparent;cursor:pointer;
-  color:var(--ink-soft);border-radius:10px;display:grid;place-items:center;
-  transition:transform .2s,color .2s;
+  width:38px;height:38px;flex:0 0 38px;border-radius:50%;cursor:pointer;padding:0;
+  background:var(--surface);border:1px solid var(--line);
+  color:var(--ink);display:grid;place-items:center;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .25s,border-color .25s,color .25s;
 }
-.theme-btn:hover{color:var(--cinnabar);transform:rotate(18deg) scale(1.08)}
+.theme-btn:hover{color:var(--cinnabar);border-color:var(--cinnabar);transform:rotate(18deg) scale(1.08)}
 .theme-btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .theme-btn .moon{display:none}
 html.dark .theme-btn .sun{display:none}

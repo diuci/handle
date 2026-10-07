@@ -13,15 +13,6 @@
       </svg>
       <span class="tx">首页</span>
     </a>
-    <a class="dc-tab on" href="https://handle.diuci.com/" aria-current="page">
-      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="3.6" y="3.6" width="7.6" height="7.6" rx="2"/>
-        <rect x="12.8" y="3.6" width="7.6" height="7.6" rx="2"/>
-        <rect x="3.6" y="12.8" width="7.6" height="7.6" rx="2"/>
-        <rect x="12.8" y="12.8" width="7.6" height="7.6" rx="2"/>
-      </svg>
-      <span class="tx">汉兜</span>
-    </a>
     <a class="dc-tab" href="https://k12.diuci.com/">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M4 5.2A1.4 1.4 0 0 1 5.4 3.8H11a2 2 0 0 1 2 2v13a1.6 1.6 0 0 0-1.6-1.4H4z"/>
@@ -52,6 +43,15 @@
         <path d="M17.6 3.2 16.8 5M20.8 6.4 18.6 6.9M14.6 2.4l.5 1.8"/>
       </svg>
       <span class="tx">月光</span>
+    </a>
+    <a class="dc-tab on" href="https://handle.diuci.com/" aria-current="page">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3.6" y="3.6" width="7.6" height="7.6" rx="2"/>
+        <rect x="12.8" y="3.6" width="7.6" height="7.6" rx="2"/>
+        <rect x="3.6" y="12.8" width="7.6" height="7.6" rx="2"/>
+        <rect x="12.8" y="12.8" width="7.6" height="7.6" rx="2"/>
+      </svg>
+      <span class="tx">汉兜</span>
     </a>
   </nav>
 </template>

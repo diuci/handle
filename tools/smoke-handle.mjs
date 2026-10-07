@@ -28,7 +28,10 @@ const TAB_COUNT = 6
 
 // 全站互相链接的域名：底部标签栏六项、顶栏四项（本站自己不必再链自己）
 const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']
-const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com']
+// 顶栏六个乐园：五个外链 + 本站那一项（汉兜，href 是 /，带 aria-current）。
+const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'github.com/diuci/k12-chinese-poetry']
+// 六个乐园的名字与顺序：主站、古诗文库、连词成句、汉兜四站的顶栏与页脚都该是这一串。
+const PARK_LABELS = ['古诗文', '连词成句', '丢词大作战', '遗失月冕', '汉兜', '内容仓库']
 
 function findChrome() {
   const cands = process.platform === 'win32'
@@ -168,14 +171,33 @@ export async function runSmoke(puppeteer, url) {
     // display:none 不移除 DOM，所以窄屏也能核对到。
     const navLinks = await page.$$eval('.dc-nav-links a', els => els.map(e => e.getAttribute('href')))
       .catch(() => [])
-    if (navLinks.length !== NAV_LINKS.length)
-      problems.push('顶栏乐园入口有 ' + navLinks.length + ' 项，应为 ' + NAV_LINKS.length + ' 项')
+    if (navLinks.length !== NAV_LINKS.length + 1)
+      problems.push('顶栏乐园入口有 ' + navLinks.length + ' 项，应为 ' + (NAV_LINKS.length + 1) + ' 项（五个乐园 + 本站）')
     else {
       for (const need of NAV_LINKS) {
         if (!navLinks.some(h => (h || '').includes(need)))
           problems.push('顶栏缺 ' + need)
       }
     }
+
+    // 本站那一项必须在顶栏里并标成当前页（和 k12 的「古诗文」同理）
+    const current = await page.$$eval('.dc-nav-links a[aria-current="page"]', els => els.map(e => (e.textContent || '').trim()))
+      .catch(() => [])
+    if (current.length !== 1)
+      problems.push('顶栏里标成当前页的乐园有 ' + current.length + ' 项，应为 1 项')
+    else if (current[0] !== '汉兜')
+      problems.push('顶栏当前页标的是「' + current[0] + '」，本站应为「汉兜」')
+
+    // 页脚：主站那两块——六个乐园一排 + 指向法律页的链接
+    const footLinks = await page.$$eval('.dc-foot nav a', els => els.map(e => (e.textContent || '').trim()))
+      .catch(() => [])
+    if (footLinks.length !== PARK_LABELS.length)
+      problems.push('页脚乐园入口有 ' + footLinks.length + ' 项，应为 ' + PARK_LABELS.length + ' 项')
+    else if (footLinks.join('') !== PARK_LABELS.join(''))
+      problems.push('页脚乐园的名字或顺序不对：' + footLinks.join(' / ') + '（应为 ' + PARK_LABELS.join(' / ') + '）')
+    const footLegal = await page.$$eval('.dc-foot a[href*="/legal"]', els => els.length).catch(() => 0)
+    if (!footLegal)
+      problems.push('页脚没有指向法律页的链接')
 
     const attribution = await page.evaluate(() => document.body.innerText)
     if (!attribution.includes('汉兜 Handle'))
@@ -256,7 +278,7 @@ async function selftest(puppeteer) {
   const port = server.address().port
   try {
     const problems = await runSmoke(puppeteer, 'http://127.0.0.1:' + port)
-    const want = ['正文是空', '没有输入框', '标签栏', '署名', '玩法切换', 'dev 开关', '主题按钮']
+    const want = ['正文是空', '没有输入框', '标签栏', '顶栏乐园', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮']
     const hit = want.filter(w => problems.some(x => x.includes(w)))
     if (hit.length < want.length) {
       console.log('[!!] 自检失败：坏页面只抓到 ' + hit.length + '/' + want.length + ' 类问题')
@@ -298,7 +320,7 @@ async function main() {
     for (const q of problems) console.log('  - ' + q)
     return 1
   }
-  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏乐园 ' + NAV_LINKS.length + ' 项、署名在、主题开关三处同步')
+  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏乐园 ' + (NAV_LINKS.length + 1) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
   return 0
 }
 
