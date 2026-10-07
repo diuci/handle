@@ -34,10 +34,9 @@ function openHelp() {
         <a href="https://diuci.com/" target="_blank">首页</a>
         <a href="https://k12.diuci.com/" target="_blank">学古诗</a>
         <a href="https://lian.diuci.com/" target="_blank">连词成句</a>
-        <a href="https://ink.diuci.com/" target="_blank">丢词大作战</a>
-        <a href="https://moon.diuci.com/" target="_blank">遗失月冕</a>
         <a href="/" aria-current="page" class="on">汉兜</a>
-        <a href="https://github.com/diuci/k12-chinese-poetry" target="_blank">内容仓库</a>
+        <a href="https://moon.diuci.com/" target="_blank">遗失月冕</a>
+        <a href="https://ink.diuci.com/" target="_blank">丢词大作战</a>
       </div>
       <button class="theme-btn" type="button" aria-label="切换深色模式" title="切换深色模式" @click="toggleTheme()">
           <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">

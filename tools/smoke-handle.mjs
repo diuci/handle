@@ -29,12 +29,13 @@ const TAB_COUNT = 6
 // 全站互相链接的域名：底部标签栏六项、顶栏四项（本站自己不必再链自己）
 const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']
 // 顶栏六个乐园：五个外链 + 本站那一项（汉兜，href 是 /，带 aria-current）。
-const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'github.com/diuci/k12-chinese-poetry']
+// 顶栏不再挂开源仓库：那是给开发者找源码的，孩子用不上，页脚里有。
+const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com']
 // 顶栏第一项是回主站的「首页」，href 必须精确等于这个，不能用 includes 判
 // ——k12.diuci.com 里也含着 diuci.com，includes 会假通过。
 const HOME_LINK = 'https://diuci.com/'
 // 六个乐园的名字与顺序：主站、学古诗、连词成句、汉兜四站的顶栏与页脚都该是这一串。
-const PARK_LABELS = ['学古诗', '连词成句', '丢词大作战', '遗失月冕', '汉兜', '内容仓库']
+const PARK_LABELS = ['学古诗', '连词成句', '汉兜', '遗失月冕', '丢词大作战', '内容仓库']
 
 function findChrome() {
   const cands = process.platform === 'win32'
@@ -175,7 +176,7 @@ export async function runSmoke(puppeteer, url) {
     const navLinks = await page.$$eval('.dc-nav-links a', els => els.map(e => e.getAttribute('href')))
       .catch(() => [])
     if (navLinks.length !== NAV_LINKS.length + 2)
-      problems.push('顶栏入口有 ' + navLinks.length + ' 项，应为 ' + (NAV_LINKS.length + 2) + ' 项（首页 + 五个乐园 + 本站）')
+      problems.push('顶栏入口有 ' + navLinks.length + ' 项，应为 ' + (NAV_LINKS.length + 2) + ' 项（首页 + 四个乐园 + 本站）')
     else {
       for (const need of NAV_LINKS) {
         if (!navLinks.some(h => (h || '').includes(need)))

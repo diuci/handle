@@ -129,7 +129,8 @@ body::after{
 .brand-t{display:block;font-family:var(--round);font-size:21px;letter-spacing:.04em;line-height:1.25;color:var(--ink)}
 /* 主站的 brand-s 不写 line-height，跟着正文走（衬线 normal ≈1.8）。
    之前这里 line-height:1，两行总高差 8px，牌子在栏里偏下 4px。 */
-.brand-s{display:block;font-size:10px;letter-spacing:.24em;color:var(--ink-faint);margin-top:1px}
+/* DIUCI 跟着站名同一只笔：圆体 ZCOOL KuaiLe，四站的副标都是这一款。 */
+.brand-s{display:block;font-family:var(--round);font-size:10px;letter-spacing:.24em;color:var(--ink-faint);margin-top:1px}
 .dc-nav-btns{display:flex;align-items:center}
 /* 顶栏的乐园入口：与主站同一套文字链（衬线 14px、悬停转朱砂）。
    窄屏由底部标签栏接管，这里让位。 */

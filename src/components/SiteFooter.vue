@@ -9,9 +9,9 @@
 const PARKS = [
   { href: 'https://k12.diuci.com/', label: '学古诗' },
   { href: 'https://lian.diuci.com/', label: '连词成句' },
-  { href: 'https://ink.diuci.com/', label: '丢词大作战' },
-  { href: 'https://moon.diuci.com/', label: '遗失月冕' },
   { href: '/', label: '汉兜' },
+  { href: 'https://moon.diuci.com/', label: '遗失月冕' },
+  { href: 'https://ink.diuci.com/', label: '丢词大作战' },
   { href: 'https://github.com/diuci/k12-chinese-poetry', label: '内容仓库' },
 ]
 </script>
