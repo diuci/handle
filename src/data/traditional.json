@@ -6460,11 +6460,11 @@
  ],
  "source": {
   "poemCount": 252,
-  "poemsJsonSha256": "531e1cb21e004b3de0b2c4551cd466f6c9c4bbea7e7a544ffc081387da9f7d2c",
+  "poemsJsonSha256": "f6a5f4a3bf6256daffe4d3c8fd83226fa52feae142f14db0dc307aeae57fdf27",
   "repo": "diuci/k12-chinese-poetry",
   "tradPending": 0,
   "tradPendingApparatus": 0,
-  "traditionalJsonSha256": "7f3543821bc8d68093666dbb7afdfd7de158a800702b4a6f53e5026a29809496"
+  "traditionalJsonSha256": "831c14744755abe7727d7efbd13ffb306dab25811c50bae9499c5596843c5546"
  },
  "verse": {
   "一去三十年": {
@@ -6971,7 +6971,7 @@
    "at": 5,
    "line": 1,
    "poemId": "hua",
-   "sourceTrad": "唐·王維《畫》",
+   "sourceTrad": "唐·佚名《畫》",
    "trad": "人來鳥不驚"
   },
   "人生自古谁无死": {
@@ -8701,7 +8701,7 @@
    "at": 0,
    "line": 1,
    "poemId": "hua",
-   "sourceTrad": "唐·王維《畫》",
+   "sourceTrad": "唐·佚名《畫》",
    "trad": "春去花還在"
   },
   "春城无处不飞花": {
@@ -10521,7 +10521,7 @@
    "at": 5,
    "line": 0,
    "poemId": "hua",
-   "sourceTrad": "唐·王維《畫》",
+   "sourceTrad": "唐·佚名《畫》",
    "trad": "近聽水無聲"
   },
   "返景入深林": {
@@ -10549,7 +10549,7 @@
    "at": 0,
    "line": 0,
    "poemId": "hua",
-   "sourceTrad": "唐·王維《畫》",
+   "sourceTrad": "唐·佚名《畫》",
    "trad": "遠看山有色"
   },
   "远芳侵古道": {
