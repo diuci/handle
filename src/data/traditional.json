@@ -1,0 +1,11060 @@
+{
+ "answers": {
+  "一决雌雄": {
+   "forks": [
+    {
+     "cands": [
+      "決"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "决"
+    }
+   ],
+   "trad": "一決雌雄"
+  },
+  "一本正经": {
+   "forks": [
+    {
+     "cands": [
+      "經"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "经"
+    }
+   ],
+   "trad": "一本正經"
+  },
+  "一步登天": {
+   "forks": [],
+   "trad": "一步登天"
+  },
+  "一诺无辞": {
+   "forks": [
+    {
+     "cands": [
+      "諾"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "诺"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    },
+    {
+     "cands": [
+      "辭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辞"
+    }
+   ],
+   "trad": "一諾無辭"
+  },
+  "一蹶不振": {
+   "forks": [],
+   "trad": "一蹶不振"
+  },
+  "万事如意": {
+   "forks": [
+    {
+     "cands": [
+      "萬事如意"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "万事如意"
+    }
+   ],
+   "trad": "萬事如意"
+  },
+  "万代千秋": {
+   "forks": [
+    {
+     "cands": [
+      "萬代千秋"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "万代千秋"
+    }
+   ],
+   "trad": "萬代千秋"
+  },
+  "万无一失": {
+   "forks": [
+    {
+     "cands": [
+      "萬無一失"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "万无一失"
+    }
+   ],
+   "trad": "萬無一失"
+  },
+  "上蹿下跳": {
+   "forks": [
+    {
+     "cands": [
+      "躥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "蹿"
+    }
+   ],
+   "trad": "上躥下跳"
+  },
+  "不可理喻": {
+   "forks": [],
+   "trad": "不可理喻"
+  },
+  "不同凡响": {
+   "forks": [
+    {
+     "cands": [
+      "不同凡響"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "不同凡响"
+    }
+   ],
+   "trad": "不同凡響"
+  },
+  "不堪回首": {
+   "forks": [],
+   "trad": "不堪回首"
+  },
+  "不寒而栗": {
+   "forks": [
+    {
+     "cands": [
+      "不寒而栗",
+      "不寒而慄"
+     ],
+     "decision": "rule",
+     "pick": "不寒而慄",
+     "simp": "不寒而栗"
+    }
+   ],
+   "trad": "不寒而慄"
+  },
+  "不期而遇": {
+   "forks": [],
+   "trad": "不期而遇"
+  },
+  "不求甚解": {
+   "forks": [],
+   "trad": "不求甚解"
+  },
+  "不由自主": {
+   "forks": [],
+   "trad": "不由自主"
+  },
+  "不翼而飞": {
+   "forks": [
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    }
+   ],
+   "trad": "不翼而飛"
+  },
+  "不耻下问": {
+   "forks": [
+    {
+     "cands": [
+      "恥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "耻"
+    },
+    {
+     "cands": [
+      "問"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "问"
+    }
+   ],
+   "trad": "不恥下問"
+  },
+  "不言而喻": {
+   "forks": [],
+   "trad": "不言而喻"
+  },
+  "不辞而别": {
+   "forks": [
+    {
+     "cands": [
+      "不辭而別"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "不辞而别"
+    }
+   ],
+   "trad": "不辭而別"
+  },
+  "与世无争": {
+   "forks": [
+    {
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "与"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    },
+    {
+     "cands": [
+      "爭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "争"
+    }
+   ],
+   "trad": "與世無爭"
+  },
+  "与时俱进": {
+   "forks": [
+    {
+     "cands": [
+      "與"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "与"
+    },
+    {
+     "cands": [
+      "時"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "时"
+    },
+    {
+     "cands": [
+      "進"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "进"
+    }
+   ],
+   "trad": "與時俱進"
+  },
+  "中流砥柱": {
+   "forks": [],
+   "trad": "中流砥柱"
+  },
+  "临危不惧": {
+   "forks": [
+    {
+     "cands": [
+      "臨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "临"
+    },
+    {
+     "cands": [
+      "懼"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "惧"
+    }
+   ],
+   "trad": "臨危不懼"
+  },
+  "举一反三": {
+   "forks": [
+    {
+     "cands": [
+      "舉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "举"
+    }
+   ],
+   "trad": "舉一反三"
+  },
+  "举世无双": {
+   "forks": [
+    {
+     "cands": [
+      "舉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "举"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    },
+    {
+     "cands": [
+      "雙"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "双"
+    }
+   ],
+   "trad": "舉世無雙"
+  },
+  "举世闻名": {
+   "forks": [
+    {
+     "cands": [
+      "舉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "举"
+    },
+    {
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "闻"
+    }
+   ],
+   "trad": "舉世聞名"
+  },
+  "举手之劳": {
+   "forks": [
+    {
+     "cands": [
+      "舉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "举"
+    },
+    {
+     "cands": [
+      "勞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "劳"
+    }
+   ],
+   "trad": "舉手之勞"
+  },
+  "举棋不定": {
+   "forks": [
+    {
+     "cands": [
+      "舉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "举"
+    }
+   ],
+   "trad": "舉棋不定"
+  },
+  "久别重逢": {
+   "forks": [
+    {
+     "cands": [
+      "久別重逢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "久别重逢"
+    }
+   ],
+   "trad": "久別重逢"
+  },
+  "义结金兰": {
+   "forks": [
+    {
+     "cands": [
+      "義"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "义"
+    },
+    {
+     "cands": [
+      "結"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "结"
+    },
+    {
+     "cands": [
+      "蘭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "兰"
+    }
+   ],
+   "trad": "義結金蘭"
+  },
+  "乌合之众": {
+   "forks": [
+    {
+     "cands": [
+      "烏合之衆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "乌合之众"
+    }
+   ],
+   "trad": "烏合之衆"
+  },
+  "乐不思蜀": {
+   "forks": [
+    {
+     "cands": [
+      "樂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "乐"
+    }
+   ],
+   "trad": "樂不思蜀"
+  },
+  "九霄云外": {
+   "forks": [
+    {
+     "cands": [
+      "九霄雲外"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "九霄云外"
+    }
+   ],
+   "trad": "九霄雲外"
+  },
+  "书香世家": {
+   "forks": [
+    {
+     "cands": [
+      "書"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "书"
+    },
+    {
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "家"
+    }
+   ],
+   "trad": "書香世家"
+  },
+  "云淡风轻": {
+   "forks": [
+    {
+     "cands": [
+      "雲淡風輕"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "云淡风轻"
+    }
+   ],
+   "trad": "雲淡風輕"
+  },
+  "人老珠黄": {
+   "forks": [
+    {
+     "cands": [
+      "黃"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "黄"
+    }
+   ],
+   "trad": "人老珠黃"
+  },
+  "人面兽心": {
+   "forks": [
+    {
+     "cands": [
+      "人面獸心"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "人面兽心"
+    }
+   ],
+   "trad": "人面獸心"
+  },
+  "今非昔比": {
+   "forks": [],
+   "trad": "今非昔比"
+  },
+  "以卵击石": {
+   "forks": [
+    {
+     "cands": [
+      "擊"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "击"
+    }
+   ],
+   "trad": "以卵擊石"
+  },
+  "以己度人": {
+   "forks": [],
+   "trad": "以己度人"
+  },
+  "众目睽睽": {
+   "forks": [
+    {
+     "cands": [
+      "衆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "众"
+    }
+   ],
+   "trad": "衆目睽睽"
+  },
+  "众矢之的": {
+   "forks": [
+    {
+     "cands": [
+      "衆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "众"
+    }
+   ],
+   "trad": "衆矢之的"
+  },
+  "伤天害理": {
+   "forks": [
+    {
+     "cands": [
+      "傷"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "伤"
+    }
+   ],
+   "trad": "傷天害理"
+  },
+  "保家卫国": {
+   "forks": [
+    {
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "家"
+    },
+    {
+     "cands": [
+      "衛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "卫"
+    },
+    {
+     "cands": [
+      "國"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "国"
+    }
+   ],
+   "trad": "保家衛國"
+  },
+  "信口雌黄": {
+   "forks": [
+    {
+     "cands": [
+      "黃"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "黄"
+    }
+   ],
+   "trad": "信口雌黃"
+  },
+  "信手拈来": {
+   "forks": [
+    {
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "来"
+    }
+   ],
+   "trad": "信手拈來"
+  },
+  "做贼心虚": {
+   "forks": [
+    {
+     "cands": [
+      "賊"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "贼"
+    },
+    {
+     "cands": [
+      "虛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "虚"
+    }
+   ],
+   "trad": "做賊心虛"
+  },
+  "先入为主": {
+   "forks": [
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    }
+   ],
+   "trad": "先入爲主"
+  },
+  "光阴似箭": {
+   "forks": [
+    {
+     "cands": [
+      "陰"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "阴"
+    }
+   ],
+   "trad": "光陰似箭"
+  },
+  "入不敷出": {
+   "forks": [],
+   "trad": "入不敷出"
+  },
+  "入土为安": {
+   "forks": [
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    }
+   ],
+   "trad": "入土爲安"
+  },
+  "入木三分": {
+   "forks": [],
+   "trad": "入木三分"
+  },
+  "八仙过海": {
+   "forks": [
+    {
+     "cands": [
+      "過"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "过"
+    }
+   ],
+   "trad": "八仙過海"
+  },
+  "冰清玉洁": {
+   "forks": [
+    {
+     "cands": [
+      "潔"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "洁"
+    }
+   ],
+   "trad": "冰清玉潔"
+  },
+  "凤毛麟角": {
+   "forks": [
+    {
+     "cands": [
+      "鳳"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "凤"
+    }
+   ],
+   "trad": "鳳毛麟角"
+  },
+  "出人头地": {
+   "forks": [
+    {
+     "cands": [
+      "出人頭地"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "出人头地"
+    }
+   ],
+   "trad": "出人頭地"
+  },
+  "出其不意": {
+   "forks": [],
+   "trad": "出其不意"
+  },
+  "切肤之痛": {
+   "forks": [
+    {
+     "cands": [
+      "膚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "肤"
+    }
+   ],
+   "trad": "切膚之痛"
+  },
+  "别具匠心": {
+   "forks": [
+    {
+     "cands": [
+      "別具匠心"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "别具匠心"
+    }
+   ],
+   "trad": "別具匠心"
+  },
+  "刻不容缓": {
+   "forks": [
+    {
+     "cands": [
+      "緩"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "缓"
+    }
+   ],
+   "trad": "刻不容緩"
+  },
+  "前仆后继": {
+   "forks": [
+    {
+     "cands": [
+      "前仆後繼"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "前仆后继"
+    }
+   ],
+   "trad": "前仆後繼"
+  },
+  "前功尽弃": {
+   "forks": [
+    {
+     "cands": [
+      "前功盡棄"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "前功尽弃"
+    }
+   ],
+   "trad": "前功盡棄"
+  },
+  "前赴后继": {
+   "forks": [
+    {
+     "cands": [
+      "前赴後繼"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "前赴后继"
+    }
+   ],
+   "trad": "前赴後繼"
+  },
+  "功成名就": {
+   "forks": [],
+   "trad": "功成名就"
+  },
+  "勉为其难": {
+   "forks": [
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    },
+    {
+     "cands": [
+      "難"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "难"
+    }
+   ],
+   "trad": "勉爲其難"
+  },
+  "十指连心": {
+   "forks": [
+    {
+     "cands": [
+      "連"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "连"
+    }
+   ],
+   "trad": "十指連心"
+  },
+  "十有八九": {
+   "forks": [],
+   "trad": "十有八九"
+  },
+  "千姿百态": {
+   "forks": [
+    {
+     "cands": [
+      "千姿百態"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "千姿百态"
+    }
+   ],
+   "trad": "千姿百態"
+  },
+  "千里迢迢": {
+   "forks": [],
+   "trad": "千里迢迢"
+  },
+  "半信半疑": {
+   "forks": [],
+   "trad": "半信半疑"
+  },
+  "南辕北辙": {
+   "forks": [
+    {
+     "cands": [
+      "轅"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辕"
+    },
+    {
+     "cands": [
+      "轍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辙"
+    }
+   ],
+   "trad": "南轅北轍"
+  },
+  "博大精深": {
+   "forks": [],
+   "trad": "博大精深"
+  },
+  "卧虎藏龙": {
+   "forks": [
+    {
+     "cands": [
+      "臥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "卧"
+    },
+    {
+     "cands": [
+      "龍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "龙"
+    }
+   ],
+   "trad": "臥虎藏龍"
+  },
+  "双喜临门": {
+   "forks": [
+    {
+     "cands": [
+      "雙"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "双"
+    },
+    {
+     "cands": [
+      "臨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "临"
+    },
+    {
+     "cands": [
+      "門"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "门"
+    }
+   ],
+   "trad": "雙喜臨門"
+  },
+  "口是心非": {
+   "forks": [],
+   "trad": "口是心非"
+  },
+  "口耳相传": {
+   "forks": [
+    {
+     "cands": [
+      "傳"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "传"
+    }
+   ],
+   "trad": "口耳相傳"
+  },
+  "吃喝玩乐": {
+   "forks": [
+    {
+     "cands": [
+      "喫",
+      "吃"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "吃"
+    },
+    {
+     "cands": [
+      "玩",
+      "翫"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "玩"
+    },
+    {
+     "cands": [
+      "樂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "乐"
+    }
+   ],
+   "trad": "喫喝玩樂"
+  },
+  "吃里爬外": {
+   "forks": [
+    {
+     "cands": [
+      "喫",
+      "吃"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "吃"
+    },
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    }
+   ],
+   "trad": "喫裏爬外"
+  },
+  "吉光片羽": {
+   "forks": [],
+   "trad": "吉光片羽"
+  },
+  "同归于尽": {
+   "forks": [
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    },
+    {
+     "cands": [
+      "歸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "归"
+    },
+    {
+     "cands": [
+      "於盡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "于尽"
+    }
+   ],
+   "trad": "同歸於盡"
+  },
+  "同甘共苦": {
+   "forks": [
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    }
+   ],
+   "trad": "同甘共苦"
+  },
+  "名不虚传": {
+   "forks": [
+    {
+     "cands": [
+      "虛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "虚"
+    },
+    {
+     "cands": [
+      "傳"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "传"
+    }
+   ],
+   "trad": "名不虛傳"
+  },
+  "后羿射日": {
+   "forks": [
+    {
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "后"
+    }
+   ],
+   "trad": "後羿射日"
+  },
+  "否极泰来": {
+   "forks": [
+    {
+     "cands": [
+      "極",
+      "极"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "极"
+    },
+    {
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "来"
+    }
+   ],
+   "trad": "否極泰來"
+  },
+  "含辛茹苦": {
+   "forks": [],
+   "trad": "含辛茹苦"
+  },
+  "吹毛求疵": {
+   "forks": [],
+   "trad": "吹毛求疵"
+  },
+  "呆若木鸡": {
+   "forks": [
+    {
+     "cands": [
+      "呆",
+      "待"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "呆"
+    },
+    {
+     "cands": [
+      "雞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸡"
+    }
+   ],
+   "trad": "呆若木雞"
+  },
+  "呼朋唤友": {
+   "forks": [
+    {
+     "cands": [
+      "喚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "唤"
+    }
+   ],
+   "trad": "呼朋喚友"
+  },
+  "和蔼可亲": {
+   "forks": [
+    {
+     "cands": [
+      "藹"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "蔼"
+    },
+    {
+     "cands": [
+      "親"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "亲"
+    }
+   ],
+   "trad": "和藹可親"
+  },
+  "和颜悦色": {
+   "forks": [
+    {
+     "cands": [
+      "顏"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "颜"
+    },
+    {
+     "cands": [
+      "悅"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "悦"
+    }
+   ],
+   "trad": "和顏悅色"
+  },
+  "唯命是从": {
+   "forks": [
+    {
+     "cands": [
+      "從"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "从"
+    }
+   ],
+   "trad": "唯命是從"
+  },
+  "喜出望外": {
+   "forks": [
+    {
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "出"
+    }
+   ],
+   "trad": "喜出望外"
+  },
+  "四分五裂": {
+   "forks": [],
+   "trad": "四分五裂"
+  },
+  "四大皆空": {
+   "forks": [],
+   "trad": "四大皆空"
+  },
+  "四平八稳": {
+   "forks": [
+    {
+     "cands": [
+      "穩"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "稳"
+    }
+   ],
+   "trad": "四平八穩"
+  },
+  "回天乏术": {
+   "forks": [
+    {
+     "cands": [
+      "回",
+      "迴"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "回"
+    },
+    {
+     "cands": [
+      "術",
+      "朮"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "术"
+    }
+   ],
+   "trad": "回天乏術"
+  },
+  "因噎废食": {
+   "forks": [
+    {
+     "cands": [
+      "廢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "废"
+    }
+   ],
+   "trad": "因噎廢食"
+  },
+  "因时制宜": {
+   "forks": [
+    {
+     "cands": [
+      "時"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "时"
+    },
+    {
+     "cands": [
+      "制",
+      "製"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "制"
+    }
+   ],
+   "trad": "因時制宜"
+  },
+  "囫囵吞枣": {
+   "forks": [
+    {
+     "cands": [
+      "圇"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "囵"
+    },
+    {
+     "cands": [
+      "棗"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "枣"
+    }
+   ],
+   "trad": "囫圇吞棗"
+  },
+  "国泰民安": {
+   "forks": [
+    {
+     "cands": [
+      "國"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "国"
+    }
+   ],
+   "trad": "國泰民安"
+  },
+  "地久天长": {
+   "forks": [
+    {
+     "cands": [
+      "長"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "长"
+    }
+   ],
+   "trad": "地久天長"
+  },
+  "地广人稀": {
+   "forks": [
+    {
+     "cands": [
+      "廣",
+      "广"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "广"
+    }
+   ],
+   "trad": "地廣人稀"
+  },
+  "坐享其成": {
+   "forks": [
+    {
+     "cands": [
+      "坐",
+      "座"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "坐"
+    }
+   ],
+   "trad": "坐享其成"
+  },
+  "坐吃山空": {
+   "forks": [
+    {
+     "cands": [
+      "坐",
+      "座"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "坐"
+    },
+    {
+     "cands": [
+      "喫",
+      "吃"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "吃"
+    }
+   ],
+   "trad": "坐喫山空"
+  },
+  "坐立不安": {
+   "forks": [
+    {
+     "cands": [
+      "坐",
+      "座"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "坐"
+    }
+   ],
+   "trad": "坐立不安"
+  },
+  "垂头丧气": {
+   "forks": [
+    {
+     "cands": [
+      "頭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "头"
+    },
+    {
+     "cands": [
+      "喪"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "丧"
+    },
+    {
+     "cands": [
+      "氣"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "气"
+    }
+   ],
+   "trad": "垂頭喪氣"
+  },
+  "塞翁失马": {
+   "forks": [
+    {
+     "cands": [
+      "馬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "马"
+    }
+   ],
+   "trad": "塞翁失馬"
+  },
+  "声名鹊起": {
+   "forks": [
+    {
+     "cands": [
+      "聲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "声"
+    },
+    {
+     "cands": [
+      "鵲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鹊"
+    }
+   ],
+   "trad": "聲名鵲起"
+  },
+  "声情并茂": {
+   "forks": [
+    {
+     "cands": [
+      "聲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "声"
+    },
+    {
+     "cands": [
+      "並",
+      "併",
+      "幷"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "并"
+    }
+   ],
+   "trad": "聲情並茂"
+  },
+  "夜半三更": {
+   "forks": [],
+   "trad": "夜半三更"
+  },
+  "大义凛然": {
+   "forks": [
+    {
+     "cands": [
+      "義"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "义"
+    },
+    {
+     "cands": [
+      "凜"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "凛"
+    }
+   ],
+   "trad": "大義凜然"
+  },
+  "大张旗鼓": {
+   "forks": [
+    {
+     "cands": [
+      "張"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "张"
+    }
+   ],
+   "trad": "大張旗鼓"
+  },
+  "大智若愚": {
+   "forks": [],
+   "trad": "大智若愚"
+  },
+  "大浪淘沙": {
+   "forks": [],
+   "trad": "大浪淘沙"
+  },
+  "天方夜谭": {
+   "forks": [
+    {
+     "cands": [
+      "譚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "谭"
+    }
+   ],
+   "trad": "天方夜譚"
+  },
+  "天马行空": {
+   "forks": [
+    {
+     "cands": [
+      "馬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "马"
+    }
+   ],
+   "trad": "天馬行空"
+  },
+  "夫唱妇随": {
+   "forks": [
+    {
+     "cands": [
+      "夫",
+      "伕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "夫"
+    },
+    {
+     "cands": [
+      "婦"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "妇"
+    },
+    {
+     "cands": [
+      "隨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "随"
+    }
+   ],
+   "trad": "夫唱婦隨"
+  },
+  "头晕目眩": {
+   "forks": [
+    {
+     "cands": [
+      "頭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "头"
+    },
+    {
+     "cands": [
+      "暈"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "晕"
+    }
+   ],
+   "trad": "頭暈目眩"
+  },
+  "如坐针毡": {
+   "forks": [
+    {
+     "cands": [
+      "坐",
+      "座"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "坐"
+    },
+    {
+     "cands": [
+      "針",
+      "鍼"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "针"
+    },
+    {
+     "cands": [
+      "氈"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "毡"
+    }
+   ],
+   "trad": "如坐針氈"
+  },
+  "如履薄冰": {
+   "forks": [],
+   "trad": "如履薄冰"
+  },
+  "如愿以偿": {
+   "forks": [
+    {
+     "cands": [
+      "願",
+      "愿"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "愿"
+    },
+    {
+     "cands": [
+      "償"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "偿"
+    }
+   ],
+   "trad": "如願以償"
+  },
+  "如痴如醉": {
+   "forks": [
+    {
+     "cands": [
+      "癡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "痴"
+    }
+   ],
+   "trad": "如癡如醉"
+  },
+  "如雷贯耳": {
+   "forks": [
+    {
+     "cands": [
+      "貫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "贯"
+    }
+   ],
+   "trad": "如雷貫耳"
+  },
+  "妙笔生花": {
+   "forks": [
+    {
+     "cands": [
+      "筆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "笔"
+    }
+   ],
+   "trad": "妙筆生花"
+  },
+  "姹紫嫣红": {
+   "forks": [
+    {
+     "cands": [
+      "奼"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "姹"
+    },
+    {
+     "cands": [
+      "紅"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "红"
+    }
+   ],
+   "trad": "奼紫嫣紅"
+  },
+  "婀娜多姿": {
+   "forks": [],
+   "trad": "婀娜多姿"
+  },
+  "子虚乌有": {
+   "forks": [
+    {
+     "cands": [
+      "虛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "虚"
+    },
+    {
+     "cands": [
+      "烏"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "乌"
+    }
+   ],
+   "trad": "子虛烏有"
+  },
+  "孜孜不倦": {
+   "forks": [],
+   "trad": "孜孜不倦"
+  },
+  "宁死不屈": {
+   "forks": [
+    {
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "宁"
+    }
+   ],
+   "trad": "寧死不屈"
+  },
+  "守株待兔": {
+   "forks": [],
+   "trad": "守株待兔"
+  },
+  "安然无恙": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "安然無恙"
+  },
+  "家喻户晓": {
+   "forks": [
+    {
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "家"
+    },
+    {
+     "cands": [
+      "戶"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "户"
+    },
+    {
+     "cands": [
+      "曉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "晓"
+    }
+   ],
+   "trad": "家喻戶曉"
+  },
+  "寂然无声": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    },
+    {
+     "cands": [
+      "聲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "声"
+    }
+   ],
+   "trad": "寂然無聲"
+  },
+  "寄人篱下": {
+   "forks": [
+    {
+     "cands": [
+      "籬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "篱"
+    }
+   ],
+   "trad": "寄人籬下"
+  },
+  "富甲一方": {
+   "forks": [],
+   "trad": "富甲一方"
+  },
+  "将心比心": {
+   "forks": [
+    {
+     "cands": [
+      "將"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "将"
+    }
+   ],
+   "trad": "將心比心"
+  },
+  "尊师重道": {
+   "forks": [
+    {
+     "cands": [
+      "師"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "师"
+    }
+   ],
+   "trad": "尊師重道"
+  },
+  "尽力而为": {
+   "forks": [
+    {
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "尽"
+    },
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    }
+   ],
+   "trad": "盡力而爲"
+  },
+  "层出不穷": {
+   "forks": [
+    {
+     "cands": [
+      "層"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "层"
+    },
+    {
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "出"
+    },
+    {
+     "cands": [
+      "窮"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "穷"
+    }
+   ],
+   "trad": "層出不窮"
+  },
+  "居安思危": {
+   "forks": [],
+   "trad": "居安思危"
+  },
+  "屡试不爽": {
+   "forks": [
+    {
+     "cands": [
+      "屢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "屡"
+    },
+    {
+     "cands": [
+      "試"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "试"
+    }
+   ],
+   "trad": "屢試不爽"
+  },
+  "山高水长": {
+   "forks": [
+    {
+     "cands": [
+      "長"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "长"
+    }
+   ],
+   "trad": "山高水長"
+  },
+  "峰回路转": {
+   "forks": [
+    {
+     "cands": [
+      "峯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "峰"
+    },
+    {
+     "cands": [
+      "回",
+      "迴"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "回"
+    },
+    {
+     "cands": [
+      "轉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "转"
+    }
+   ],
+   "trad": "峯回路轉"
+  },
+  "左邻右舍": {
+   "forks": [
+    {
+     "cands": [
+      "鄰"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "邻"
+    },
+    {
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "舍"
+    }
+   ],
+   "trad": "左鄰右舍"
+  },
+  "左顾右盼": {
+   "forks": [
+    {
+     "cands": [
+      "顧"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "顾"
+    }
+   ],
+   "trad": "左顧右盼"
+  },
+  "巧言令色": {
+   "forks": [],
+   "trad": "巧言令色"
+  },
+  "差强人意": {
+   "forks": [
+    {
+     "cands": [
+      "強"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "强"
+    }
+   ],
+   "trad": "差強人意"
+  },
+  "平步青云": {
+   "forks": [
+    {
+     "cands": [
+      "雲",
+      "云"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "云"
+    }
+   ],
+   "trad": "平步青雲"
+  },
+  "建功立业": {
+   "forks": [
+    {
+     "cands": [
+      "業"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "业"
+    }
+   ],
+   "trad": "建功立業"
+  },
+  "异口同声": {
+   "forks": [
+    {
+     "cands": [
+      "異"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "异"
+    },
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    },
+    {
+     "cands": [
+      "聲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "声"
+    }
+   ],
+   "trad": "異口同聲"
+  },
+  "异曲同工": {
+   "forks": [
+    {
+     "cands": [
+      "異"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "异"
+    },
+    {
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "曲"
+    },
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    }
+   ],
+   "trad": "異曲同工"
+  },
+  "引经据典": {
+   "forks": [
+    {
+     "cands": [
+      "經"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "经"
+    },
+    {
+     "cands": [
+      "據",
+      "据"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "据"
+    }
+   ],
+   "trad": "引經據典"
+  },
+  "张牙舞爪": {
+   "forks": [
+    {
+     "cands": [
+      "張"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "张"
+    }
+   ],
+   "trad": "張牙舞爪"
+  },
+  "形影不离": {
+   "forks": [
+    {
+     "cands": [
+      "離"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "离"
+    }
+   ],
+   "trad": "形影不離"
+  },
+  "彬彬有礼": {
+   "forks": [
+    {
+     "cands": [
+      "禮"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "礼"
+    }
+   ],
+   "trad": "彬彬有禮"
+  },
+  "得天独厚": {
+   "forks": [
+    {
+     "cands": [
+      "獨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "独"
+    }
+   ],
+   "trad": "得天獨厚"
+  },
+  "循序渐进": {
+   "forks": [
+    {
+     "cands": [
+      "漸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "渐"
+    },
+    {
+     "cands": [
+      "進"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "进"
+    }
+   ],
+   "trad": "循序漸進"
+  },
+  "循规蹈矩": {
+   "forks": [
+    {
+     "cands": [
+      "規"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "规"
+    },
+    {
+     "cands": [
+      "矩",
+      "榘"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "矩"
+    }
+   ],
+   "trad": "循規蹈矩"
+  },
+  "微不足道": {
+   "forks": [],
+   "trad": "微不足道"
+  },
+  "德高望重": {
+   "forks": [],
+   "trad": "德高望重"
+  },
+  "心不在焉": {
+   "forks": [],
+   "trad": "心不在焉"
+  },
+  "心宽体胖": {
+   "forks": [
+    {
+     "cands": [
+      "寬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "宽"
+    },
+    {
+     "cands": [
+      "體"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "体"
+    }
+   ],
+   "trad": "心寬體胖"
+  },
+  "心有灵犀": {
+   "forks": [
+    {
+     "cands": [
+      "靈"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "灵"
+    }
+   ],
+   "trad": "心有靈犀"
+  },
+  "心灰意冷": {
+   "forks": [],
+   "trad": "心灰意冷"
+  },
+  "心甘情愿": {
+   "forks": [
+    {
+     "cands": [
+      "願",
+      "愿"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "愿"
+    }
+   ],
+   "trad": "心甘情願"
+  },
+  "心花怒放": {
+   "forks": [],
+   "trad": "心花怒放"
+  },
+  "忐忑不安": {
+   "forks": [],
+   "trad": "忐忑不安"
+  },
+  "志同道合": {
+   "forks": [
+    {
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "志"
+    },
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    },
+    {
+     "cands": [
+      "合",
+      "閤"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "合"
+    }
+   ],
+   "trad": "志同道合"
+  },
+  "志在千里": {
+   "forks": [
+    {
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "志"
+    }
+   ],
+   "trad": "志在千里"
+  },
+  "志在必得": {
+   "forks": [
+    {
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "志"
+    }
+   ],
+   "trad": "志在必得"
+  },
+  "快马加鞭": {
+   "forks": [
+    {
+     "cands": [
+      "馬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "马"
+    }
+   ],
+   "trad": "快馬加鞭"
+  },
+  "怒发冲冠": {
+   "forks": [
+    {
+     "cands": [
+      "發",
+      "髮"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "发"
+    },
+    {
+     "cands": [
+      "衝冠"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "冲冠"
+    }
+   ],
+   "trad": "怒發衝冠"
+  },
+  "急转直下": {
+   "forks": [
+    {
+     "cands": [
+      "轉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "转"
+    }
+   ],
+   "trad": "急轉直下"
+  },
+  "恩将仇报": {
+   "forks": [
+    {
+     "cands": [
+      "將"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "将"
+    },
+    {
+     "cands": [
+      "仇",
+      "讎"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "仇"
+    },
+    {
+     "cands": [
+      "報"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "报"
+    }
+   ],
+   "trad": "恩將仇報"
+  },
+  "恬不知耻": {
+   "forks": [
+    {
+     "cands": [
+      "恥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "耻"
+    }
+   ],
+   "trad": "恬不知恥"
+  },
+  "悲天悯人": {
+   "forks": [
+    {
+     "cands": [
+      "憫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "悯"
+    }
+   ],
+   "trad": "悲天憫人"
+  },
+  "情窦初开": {
+   "forks": [
+    {
+     "cands": [
+      "竇"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "窦"
+    },
+    {
+     "cands": [
+      "開"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "开"
+    }
+   ],
+   "trad": "情竇初開"
+  },
+  "惊世骇俗": {
+   "forks": [
+    {
+     "cands": [
+      "驚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "惊"
+    },
+    {
+     "cands": [
+      "駭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "骇"
+    }
+   ],
+   "trad": "驚世駭俗"
+  },
+  "惊弓之鸟": {
+   "forks": [
+    {
+     "cands": [
+      "驚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "惊"
+    },
+    {
+     "cands": [
+      "鳥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸟"
+    }
+   ],
+   "trad": "驚弓之鳥"
+  },
+  "惟妙惟肖": {
+   "forks": [],
+   "trad": "惟妙惟肖"
+  },
+  "意广才疏": {
+   "forks": [
+    {
+     "cands": [
+      "廣",
+      "广"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "广"
+    },
+    {
+     "cands": [
+      "才",
+      "纔"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "才"
+    }
+   ],
+   "trad": "意廣才疏"
+  },
+  "感人肺腑": {
+   "forks": [],
+   "trad": "感人肺腑"
+  },
+  "感同身受": {
+   "forks": [
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    }
+   ],
+   "trad": "感同身受"
+  },
+  "愤世嫉俗": {
+   "forks": [
+    {
+     "cands": [
+      "憤"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "愤"
+    }
+   ],
+   "trad": "憤世嫉俗"
+  },
+  "成王败寇": {
+   "forks": [
+    {
+     "cands": [
+      "敗"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "败"
+    }
+   ],
+   "trad": "成王敗寇"
+  },
+  "戴罪立功": {
+   "forks": [],
+   "trad": "戴罪立功"
+  },
+  "手足无措": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "手足無措"
+  },
+  "投其所好": {
+   "forks": [],
+   "trad": "投其所好"
+  },
+  "抽丝剥茧": {
+   "forks": [
+    {
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "丝"
+    },
+    {
+     "cands": [
+      "剝"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "剥"
+    },
+    {
+     "cands": [
+      "繭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "茧"
+    }
+   ],
+   "trad": "抽絲剝繭"
+  },
+  "拖泥带水": {
+   "forks": [
+    {
+     "cands": [
+      "帶"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "带"
+    }
+   ],
+   "trad": "拖泥帶水"
+  },
+  "拭目以待": {
+   "forks": [],
+   "trad": "拭目以待"
+  },
+  "拾金不昧": {
+   "forks": [],
+   "trad": "拾金不昧"
+  },
+  "按部就班": {
+   "forks": [],
+   "trad": "按部就班"
+  },
+  "挺身而出": {
+   "forks": [
+    {
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "出"
+    }
+   ],
+   "trad": "挺身而出"
+  },
+  "捉襟见肘": {
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    }
+   ],
+   "trad": "捉襟見肘"
+  },
+  "捕风捉影": {
+   "forks": [
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    }
+   ],
+   "trad": "捕風捉影"
+  },
+  "排山倒海": {
+   "forks": [],
+   "trad": "排山倒海"
+  },
+  "掩耳盗铃": {
+   "forks": [
+    {
+     "cands": [
+      "盜"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "盗"
+    },
+    {
+     "cands": [
+      "鈴"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "铃"
+    }
+   ],
+   "trad": "掩耳盜鈴"
+  },
+  "改过自新": {
+   "forks": [
+    {
+     "cands": [
+      "過"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "过"
+    }
+   ],
+   "trad": "改過自新"
+  },
+  "放荡不羁": {
+   "forks": [
+    {
+     "cands": [
+      "蕩",
+      "盪"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "荡"
+    },
+    {
+     "cands": [
+      "羈"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "羁"
+    }
+   ],
+   "trad": "放蕩不羈"
+  },
+  "敬而远之": {
+   "forks": [
+    {
+     "cands": [
+      "遠"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "远"
+    }
+   ],
+   "trad": "敬而遠之"
+  },
+  "旁门左道": {
+   "forks": [
+    {
+     "cands": [
+      "門"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "门"
+    }
+   ],
+   "trad": "旁門左道"
+  },
+  "无中生有": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "無中生有"
+  },
+  "无声无息": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    },
+    {
+     "cands": [
+      "聲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "声"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "無聲無息"
+  },
+  "无往不利": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "無往不利"
+  },
+  "无所事事": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "無所事事"
+  },
+  "无济于事": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    },
+    {
+     "cands": [
+      "濟"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "济"
+    },
+    {
+     "cands": [
+      "於事"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "于事"
+    }
+   ],
+   "trad": "無濟於事"
+  },
+  "既往不咎": {
+   "forks": [],
+   "trad": "既往不咎"
+  },
+  "日新月异": {
+   "forks": [
+    {
+     "cands": [
+      "異"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "异"
+    }
+   ],
+   "trad": "日新月異"
+  },
+  "日理万机": {
+   "forks": [
+    {
+     "cands": [
+      "萬機"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "万机"
+    }
+   ],
+   "trad": "日理萬機"
+  },
+  "昏天黑地": {
+   "forks": [],
+   "trad": "昏天黑地"
+  },
+  "昙花一现": {
+   "forks": [
+    {
+     "cands": [
+      "曇"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "昙"
+    },
+    {
+     "cands": [
+      "現"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "现"
+    }
+   ],
+   "trad": "曇花一現"
+  },
+  "春风化雨": {
+   "forks": [
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    }
+   ],
+   "trad": "春風化雨"
+  },
+  "春风满面": {
+   "forks": [
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    },
+    {
+     "cands": [
+      "滿"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "满"
+    },
+    {
+     "cands": [
+      "面",
+      "麪"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "面"
+    }
+   ],
+   "trad": "春風滿面"
+  },
+  "普天同庆": {
+   "forks": [
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    },
+    {
+     "cands": [
+      "慶"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "庆"
+    }
+   ],
+   "trad": "普天同慶"
+  },
+  "晴天霹雳": {
+   "forks": [
+    {
+     "cands": [
+      "靂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "雳"
+    }
+   ],
+   "trad": "晴天霹靂"
+  },
+  "暮鼓晨钟": {
+   "forks": [
+    {
+     "cands": [
+      "鍾",
+      "鐘",
+      "鈡"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "钟"
+    }
+   ],
+   "trad": "暮鼓晨鍾"
+  },
+  "暴殄天物": {
+   "forks": [],
+   "trad": "暴殄天物"
+  },
+  "曲水流觞": {
+   "forks": [
+    {
+     "cands": [
+      "曲",
+      "麴"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "曲"
+    },
+    {
+     "cands": [
+      "觴"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "觞"
+    }
+   ],
+   "trad": "曲水流觴"
+  },
+  "有备无患": {
+   "forks": [
+    {
+     "cands": [
+      "備"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "备"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "有備無患"
+  },
+  "有心无力": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "有心無力"
+  },
+  "未雨绸缪": {
+   "forks": [
+    {
+     "cands": [
+      "綢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "绸"
+    },
+    {
+     "cands": [
+      "繆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "缪"
+    }
+   ],
+   "trad": "未雨綢繆"
+  },
+  "机关算尽": {
+   "forks": [
+    {
+     "cands": [
+      "機"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "机"
+    },
+    {
+     "cands": [
+      "關"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "关"
+    },
+    {
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "尽"
+    }
+   ],
+   "trad": "機關算盡"
+  },
+  "杯弓蛇影": {
+   "forks": [
+    {
+     "cands": [
+      "杯",
+      "盃"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "杯"
+    }
+   ],
+   "trad": "杯弓蛇影"
+  },
+  "杯水车薪": {
+   "forks": [
+    {
+     "cands": [
+      "杯",
+      "盃"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "杯"
+    },
+    {
+     "cands": [
+      "車"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "车"
+    }
+   ],
+   "trad": "杯水車薪"
+  },
+  "根深蒂固": {
+   "forks": [],
+   "trad": "根深蒂固"
+  },
+  "欲盖弥彰": {
+   "forks": [
+    {
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "欲"
+    },
+    {
+     "cands": [
+      "蓋"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "盖"
+    },
+    {
+     "cands": [
+      "彌",
+      "瀰"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "弥"
+    }
+   ],
+   "trad": "欲蓋彌彰"
+  },
+  "正大光明": {
+   "forks": [],
+   "trad": "正大光明"
+  },
+  "步步为营": {
+   "forks": [
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    },
+    {
+     "cands": [
+      "營"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "营"
+    }
+   ],
+   "trad": "步步爲營"
+  },
+  "死而后已": {
+   "forks": [
+    {
+     "cands": [
+      "後",
+      "后"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "后"
+    }
+   ],
+   "trad": "死而後已"
+  },
+  "殊途同归": {
+   "forks": [
+    {
+     "cands": [
+      "同",
+      "衕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "同"
+    },
+    {
+     "cands": [
+      "歸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "归"
+    }
+   ],
+   "trad": "殊途同歸"
+  },
+  "民不聊生": {
+   "forks": [],
+   "trad": "民不聊生"
+  },
+  "水天一色": {
+   "forks": [],
+   "trad": "水天一色"
+  },
+  "水性杨花": {
+   "forks": [
+    {
+     "cands": [
+      "楊"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "杨"
+    }
+   ],
+   "trad": "水性楊花"
+  },
+  "水涨船高": {
+   "forks": [
+    {
+     "cands": [
+      "漲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "涨"
+    }
+   ],
+   "trad": "水漲船高"
+  },
+  "永无止境": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "永無止境"
+  },
+  "求之不得": {
+   "forks": [],
+   "trad": "求之不得"
+  },
+  "江河日下": {
+   "forks": [],
+   "trad": "江河日下"
+  },
+  "泰然自若": {
+   "forks": [],
+   "trad": "泰然自若"
+  },
+  "洛阳纸贵": {
+   "forks": [
+    {
+     "cands": [
+      "陽"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "阳"
+    },
+    {
+     "cands": [
+      "紙"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "纸"
+    },
+    {
+     "cands": [
+      "貴"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "贵"
+    }
+   ],
+   "trad": "洛陽紙貴"
+  },
+  "浅尝辄止": {
+   "forks": [
+    {
+     "cands": [
+      "淺"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "浅"
+    },
+    {
+     "cands": [
+      "嘗",
+      "嚐"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "尝"
+    },
+    {
+     "cands": [
+      "輒"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辄"
+    }
+   ],
+   "trad": "淺嘗輒止"
+  },
+  "浑水摸鱼": {
+   "forks": [
+    {
+     "cands": [
+      "渾"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "浑"
+    },
+    {
+     "cands": [
+      "魚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鱼"
+    }
+   ],
+   "trad": "渾水摸魚"
+  },
+  "浪子回头": {
+   "forks": [
+    {
+     "cands": [
+      "回",
+      "迴"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "回"
+    },
+    {
+     "cands": [
+      "頭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "头"
+    }
+   ],
+   "trad": "浪子回頭"
+  },
+  "海纳百川": {
+   "forks": [
+    {
+     "cands": [
+      "納"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "纳"
+    }
+   ],
+   "trad": "海納百川"
+  },
+  "淋漓尽致": {
+   "forks": [
+    {
+     "cands": [
+      "漓",
+      "灕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "漓"
+    },
+    {
+     "cands": [
+      "盡",
+      "儘"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "尽"
+    },
+    {
+     "cands": [
+      "致",
+      "緻"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "致"
+    }
+   ],
+   "trad": "淋漓盡致"
+  },
+  "游手好闲": {
+   "forks": [
+    {
+     "cands": [
+      "遊",
+      "游"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "游"
+    },
+    {
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "闲"
+    }
+   ],
+   "trad": "遊手好閒"
+  },
+  "滔滔不绝": {
+   "forks": [
+    {
+     "cands": [
+      "絕"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "绝"
+    }
+   ],
+   "trad": "滔滔不絕"
+  },
+  "滚瓜烂熟": {
+   "forks": [
+    {
+     "cands": [
+      "滾"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "滚"
+    },
+    {
+     "cands": [
+      "爛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "烂"
+    }
+   ],
+   "trad": "滾瓜爛熟"
+  },
+  "满目疮痍": {
+   "forks": [
+    {
+     "cands": [
+      "滿"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "满"
+    },
+    {
+     "cands": [
+      "瘡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "疮"
+    }
+   ],
+   "trad": "滿目瘡痍"
+  },
+  "火上浇油": {
+   "forks": [
+    {
+     "cands": [
+      "澆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "浇"
+    }
+   ],
+   "trad": "火上澆油"
+  },
+  "火烧眉毛": {
+   "forks": [
+    {
+     "cands": [
+      "燒"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "烧"
+    }
+   ],
+   "trad": "火燒眉毛"
+  },
+  "燃眉之急": {
+   "forks": [],
+   "trad": "燃眉之急"
+  },
+  "物竞天择": {
+   "forks": [
+    {
+     "cands": [
+      "競"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "竞"
+    },
+    {
+     "cands": [
+      "擇"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "择"
+    }
+   ],
+   "trad": "物競天擇"
+  },
+  "独一无二": {
+   "forks": [
+    {
+     "cands": [
+      "獨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "独"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "獨一無二"
+  },
+  "独具匠心": {
+   "forks": [
+    {
+     "cands": [
+      "獨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "独"
+    },
+    {
+     "cands": [
+      "具",
+      "俱"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "具"
+    }
+   ],
+   "trad": "獨具匠心"
+  },
+  "独有千秋": {
+   "forks": [
+    {
+     "cands": [
+      "獨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "独"
+    }
+   ],
+   "trad": "獨有千秋"
+  },
+  "独树一帜": {
+   "forks": [
+    {
+     "cands": [
+      "獨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "独"
+    },
+    {
+     "cands": [
+      "樹"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "树"
+    },
+    {
+     "cands": [
+      "幟"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "帜"
+    }
+   ],
+   "trad": "獨樹一幟"
+  },
+  "狼心狗肺": {
+   "forks": [],
+   "trad": "狼心狗肺"
+  },
+  "猴年马月": {
+   "forks": [
+    {
+     "cands": [
+      "馬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "马"
+    }
+   ],
+   "trad": "猴年馬月"
+  },
+  "玉石俱焚": {
+   "forks": [],
+   "trad": "玉石俱焚"
+  },
+  "玩世不恭": {
+   "forks": [
+    {
+     "cands": [
+      "玩",
+      "翫"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "玩"
+    }
+   ],
+   "trad": "玩世不恭"
+  },
+  "琳琅满目": {
+   "forks": [
+    {
+     "cands": [
+      "琅",
+      "瑯"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "琅"
+    },
+    {
+     "cands": [
+      "滿"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "满"
+    }
+   ],
+   "trad": "琳琅滿目"
+  },
+  "瓜田李下": {
+   "forks": [],
+   "trad": "瓜田李下"
+  },
+  "甘之如饴": {
+   "forks": [
+    {
+     "cands": [
+      "飴"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "饴"
+    }
+   ],
+   "trad": "甘之如飴"
+  },
+  "疑神疑鬼": {
+   "forks": [],
+   "trad": "疑神疑鬼"
+  },
+  "痴人说梦": {
+   "forks": [
+    {
+     "cands": [
+      "癡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "痴"
+    },
+    {
+     "cands": [
+      "說"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "说"
+    },
+    {
+     "cands": [
+      "夢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "梦"
+    }
+   ],
+   "trad": "癡人說夢"
+  },
+  "白雪皑皑": {
+   "forks": [
+    {
+     "cands": [
+      "皚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "皑"
+    },
+    {
+     "cands": [
+      "皚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "皑"
+    }
+   ],
+   "trad": "白雪皚皚"
+  },
+  "百口莫辩": {
+   "forks": [
+    {
+     "cands": [
+      "辯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辩"
+    }
+   ],
+   "trad": "百口莫辯"
+  },
+  "百家争鸣": {
+   "forks": [
+    {
+     "cands": [
+      "家",
+      "傢"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "家"
+    },
+    {
+     "cands": [
+      "爭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "争"
+    },
+    {
+     "cands": [
+      "鳴"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸣"
+    }
+   ],
+   "trad": "百家爭鳴"
+  },
+  "百年树人": {
+   "forks": [
+    {
+     "cands": [
+      "樹"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "树"
+    }
+   ],
+   "trad": "百年樹人"
+  },
+  "百里挑一": {
+   "forks": [
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    }
+   ],
+   "trad": "百裏挑一"
+  },
+  "相见恨晚": {
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    }
+   ],
+   "trad": "相見恨晚"
+  },
+  "眼高手低": {
+   "forks": [],
+   "trad": "眼高手低"
+  },
+  "矢志不渝": {
+   "forks": [
+    {
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "志"
+    }
+   ],
+   "trad": "矢志不渝"
+  },
+  "破烂不堪": {
+   "forks": [
+    {
+     "cands": [
+      "爛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "烂"
+    }
+   ],
+   "trad": "破爛不堪"
+  },
+  "破釜沉舟": {
+   "forks": [],
+   "trad": "破釜沉舟"
+  },
+  "破镜重圆": {
+   "forks": [
+    {
+     "cands": [
+      "鏡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "镜"
+    },
+    {
+     "cands": [
+      "圓"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "圆"
+    }
+   ],
+   "trad": "破鏡重圓"
+  },
+  "神乎其技": {
+   "forks": [],
+   "trad": "神乎其技"
+  },
+  "神出鬼没": {
+   "forks": [
+    {
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "出"
+    },
+    {
+     "cands": [
+      "沒"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "没"
+    }
+   ],
+   "trad": "神出鬼沒"
+  },
+  "祸起萧墙": {
+   "forks": [
+    {
+     "cands": [
+      "禍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "祸"
+    },
+    {
+     "cands": [
+      "蕭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "萧"
+    },
+    {
+     "cands": [
+      "牆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "墙"
+    }
+   ],
+   "trad": "禍起蕭牆"
+  },
+  "称心如意": {
+   "forks": [
+    {
+     "cands": [
+      "稱"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "称"
+    }
+   ],
+   "trad": "稱心如意"
+  },
+  "稀里糊涂": {
+   "forks": [
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    },
+    {
+     "cands": [
+      "糊",
+      "餬"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "糊"
+    },
+    {
+     "cands": [
+      "塗",
+      "涂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "涂"
+    }
+   ],
+   "trad": "稀裏糊塗"
+  },
+  "穷困潦倒": {
+   "forks": [
+    {
+     "cands": [
+      "窮"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "穷"
+    },
+    {
+     "cands": [
+      "困",
+      "睏"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "困"
+    }
+   ],
+   "trad": "窮困潦倒"
+  },
+  "穷奢极欲": {
+   "forks": [
+    {
+     "cands": [
+      "窮"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "穷"
+    },
+    {
+     "cands": [
+      "極",
+      "极"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "极"
+    },
+    {
+     "cands": [
+      "欲",
+      "慾"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "欲"
+    }
+   ],
+   "trad": "窮奢極欲"
+  },
+  "空中楼阁": {
+   "forks": [
+    {
+     "cands": [
+      "樓"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "楼"
+    },
+    {
+     "cands": [
+      "閣"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "阁"
+    }
+   ],
+   "trad": "空中樓閣"
+  },
+  "立竿见影": {
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    }
+   ],
+   "trad": "立竿見影"
+  },
+  "笑里藏刀": {
+   "forks": [
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    }
+   ],
+   "trad": "笑裏藏刀"
+  },
+  "笨鸟先飞": {
+   "forks": [
+    {
+     "cands": [
+      "鳥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸟"
+    },
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    }
+   ],
+   "trad": "笨鳥先飛"
+  },
+  "答非所问": {
+   "forks": [
+    {
+     "cands": [
+      "問"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "问"
+    }
+   ],
+   "trad": "答非所問"
+  },
+  "精益求精": {
+   "forks": [],
+   "trad": "精益求精"
+  },
+  "纷纷扰扰": {
+   "forks": [
+    {
+     "cands": [
+      "紛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "纷"
+    },
+    {
+     "cands": [
+      "紛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "纷"
+    },
+    {
+     "cands": [
+      "擾"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "扰"
+    },
+    {
+     "cands": [
+      "擾"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "扰"
+    }
+   ],
+   "trad": "紛紛擾擾"
+  },
+  "纸上谈兵": {
+   "forks": [
+    {
+     "cands": [
+      "紙"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "纸"
+    },
+    {
+     "cands": [
+      "談"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "谈"
+    }
+   ],
+   "trad": "紙上談兵"
+  },
+  "细水长流": {
+   "forks": [
+    {
+     "cands": [
+      "細"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "细"
+    },
+    {
+     "cands": [
+      "長"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "长"
+    }
+   ],
+   "trad": "細水長流"
+  },
+  "绝世佳人": {
+   "forks": [
+    {
+     "cands": [
+      "絕"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "绝"
+    }
+   ],
+   "trad": "絕世佳人"
+  },
+  "缘木求鱼": {
+   "forks": [
+    {
+     "cands": [
+      "緣"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "缘"
+    },
+    {
+     "cands": [
+      "魚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鱼"
+    }
+   ],
+   "trad": "緣木求魚"
+  },
+  "羽化登仙": {
+   "forks": [],
+   "trad": "羽化登仙"
+  },
+  "老态龙钟": {
+   "forks": [
+    {
+     "cands": [
+      "態"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "态"
+    },
+    {
+     "cands": [
+      "龍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "龙"
+    },
+    {
+     "cands": [
+      "鍾",
+      "鐘",
+      "鈡"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "钟"
+    }
+   ],
+   "trad": "老態龍鍾"
+  },
+  "耳目一新": {
+   "forks": [],
+   "trad": "耳目一新"
+  },
+  "耿耿于怀": {
+   "forks": [
+    {
+     "cands": [
+      "於懷"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "于怀"
+    }
+   ],
+   "trad": "耿耿於懷"
+  },
+  "胆大包天": {
+   "forks": [
+    {
+     "cands": [
+      "膽"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "胆"
+    }
+   ],
+   "trad": "膽大包天"
+  },
+  "胆战心惊": {
+   "forks": [
+    {
+     "cands": [
+      "膽"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "胆"
+    },
+    {
+     "cands": [
+      "戰"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "战"
+    },
+    {
+     "cands": [
+      "驚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "惊"
+    }
+   ],
+   "trad": "膽戰心驚"
+  },
+  "背井离乡": {
+   "forks": [
+    {
+     "cands": [
+      "背",
+      "揹"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "背"
+    },
+    {
+     "cands": [
+      "離"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "离"
+    },
+    {
+     "cands": [
+      "鄉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "乡"
+    }
+   ],
+   "trad": "背井離鄉"
+  },
+  "胡思乱想": {
+   "forks": [
+    {
+     "cands": [
+      "胡",
+      "鬍",
+      "衚"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "胡"
+    },
+    {
+     "cands": [
+      "亂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "乱"
+    }
+   ],
+   "trad": "胡思亂想"
+  },
+  "脱口而出": {
+   "forks": [
+    {
+     "cands": [
+      "脫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "脱"
+    },
+    {
+     "cands": [
+      "出",
+      "齣"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "出"
+    }
+   ],
+   "trad": "脫口而出"
+  },
+  "腥风血雨": {
+   "forks": [
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    }
+   ],
+   "trad": "腥風血雨"
+  },
+  "腰缠万贯": {
+   "forks": [
+    {
+     "cands": [
+      "纏"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "缠"
+    },
+    {
+     "cands": [
+      "萬貫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "万贯"
+    }
+   ],
+   "trad": "腰纏萬貫"
+  },
+  "自不量力": {
+   "forks": [],
+   "trad": "自不量力"
+  },
+  "舍本逐末": {
+   "forks": [
+    {
+     "cands": [
+      "舍",
+      "捨"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "舍"
+    }
+   ],
+   "trad": "舍本逐末"
+  },
+  "良药苦口": {
+   "forks": [
+    {
+     "cands": [
+      "藥",
+      "葯"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "药"
+    }
+   ],
+   "trad": "良藥苦口"
+  },
+  "艰苦卓绝": {
+   "forks": [
+    {
+     "cands": [
+      "艱"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "艰"
+    },
+    {
+     "cands": [
+      "絕"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "绝"
+    }
+   ],
+   "trad": "艱苦卓絕"
+  },
+  "花前月下": {
+   "forks": [],
+   "trad": "花前月下"
+  },
+  "花容月貌": {
+   "forks": [],
+   "trad": "花容月貌"
+  },
+  "花开富贵": {
+   "forks": [
+    {
+     "cands": [
+      "開"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "开"
+    },
+    {
+     "cands": [
+      "貴"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "贵"
+    }
+   ],
+   "trad": "花開富貴"
+  },
+  "花拳绣腿": {
+   "forks": [
+    {
+     "cands": [
+      "繡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "绣"
+    }
+   ],
+   "trad": "花拳繡腿"
+  },
+  "若无其事": {
+   "forks": [
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "若無其事"
+  },
+  "若隐若现": {
+   "forks": [
+    {
+     "cands": [
+      "隱"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "隐"
+    },
+    {
+     "cands": [
+      "現"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "现"
+    }
+   ],
+   "trad": "若隱若現"
+  },
+  "苦口婆心": {
+   "forks": [],
+   "trad": "苦口婆心"
+  },
+  "英姿飒爽": {
+   "forks": [
+    {
+     "cands": [
+      "颯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飒"
+    }
+   ],
+   "trad": "英姿颯爽"
+  },
+  "茕茕孑立": {
+   "forks": [
+    {
+     "cands": [
+      "煢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "茕"
+    },
+    {
+     "cands": [
+      "煢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "茕"
+    }
+   ],
+   "trad": "煢煢孑立"
+  },
+  "荡然无存": {
+   "forks": [
+    {
+     "cands": [
+      "蕩",
+      "盪"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "荡"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "蕩然無存"
+  },
+  "莺歌燕舞": {
+   "forks": [
+    {
+     "cands": [
+      "鶯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "莺"
+    }
+   ],
+   "trad": "鶯歌燕舞"
+  },
+  "落叶归根": {
+   "forks": [
+    {
+     "cands": [
+      "葉",
+      "叶"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "叶"
+    },
+    {
+     "cands": [
+      "歸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "归"
+    }
+   ],
+   "trad": "落葉歸根"
+  },
+  "蓬荜生辉": {
+   "forks": [
+    {
+     "cands": [
+      "蓽"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "荜"
+    },
+    {
+     "cands": [
+      "輝"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辉"
+    }
+   ],
+   "trad": "蓬蓽生輝"
+  },
+  "藕断丝连": {
+   "forks": [
+    {
+     "cands": [
+      "斷"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "断"
+    },
+    {
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "丝"
+    },
+    {
+     "cands": [
+      "連"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "连"
+    }
+   ],
+   "trad": "藕斷絲連"
+  },
+  "虎啸风生": {
+   "forks": [
+    {
+     "cands": [
+      "嘯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "啸"
+    },
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    }
+   ],
+   "trad": "虎嘯風生"
+  },
+  "虎虎生威": {
+   "forks": [],
+   "trad": "虎虎生威"
+  },
+  "虎视眈眈": {
+   "forks": [
+    {
+     "cands": [
+      "視"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "视"
+    }
+   ],
+   "trad": "虎視眈眈"
+  },
+  "蝇头小利": {
+   "forks": [
+    {
+     "cands": [
+      "蠅"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "蝇"
+    },
+    {
+     "cands": [
+      "頭"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "头"
+    }
+   ],
+   "trad": "蠅頭小利"
+  },
+  "行尸走肉": {
+   "forks": [
+    {
+     "cands": [
+      "屍",
+      "尸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "尸"
+    }
+   ],
+   "trad": "行屍走肉"
+  },
+  "衣冠禽兽": {
+   "forks": [
+    {
+     "cands": [
+      "獸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "兽"
+    }
+   ],
+   "trad": "衣冠禽獸"
+  },
+  "装疯卖傻": {
+   "forks": [
+    {
+     "cands": [
+      "裝"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "装"
+    },
+    {
+     "cands": [
+      "瘋"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "疯"
+    },
+    {
+     "cands": [
+      "賣"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "卖"
+    }
+   ],
+   "trad": "裝瘋賣傻"
+  },
+  "见义勇为": {
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    },
+    {
+     "cands": [
+      "義"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "义"
+    },
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    }
+   ],
+   "trad": "見義勇爲"
+  },
+  "见仁见智": {
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    },
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    }
+   ],
+   "trad": "見仁見智"
+  },
+  "见缝插针": {
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    },
+    {
+     "cands": [
+      "縫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "缝"
+    },
+    {
+     "cands": [
+      "針",
+      "鍼"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "针"
+    }
+   ],
+   "trad": "見縫插針"
+  },
+  "视若无睹": {
+   "forks": [
+    {
+     "cands": [
+      "視"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "视"
+    },
+    {
+     "cands": [
+      "無"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "无"
+    }
+   ],
+   "trad": "視若無睹"
+  },
+  "触类旁通": {
+   "forks": [
+    {
+     "cands": [
+      "觸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "触"
+    },
+    {
+     "cands": [
+      "類"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "类"
+    }
+   ],
+   "trad": "觸類旁通"
+  },
+  "言行不一": {
+   "forks": [],
+   "trad": "言行不一"
+  },
+  "误人子弟": {
+   "forks": [
+    {
+     "cands": [
+      "誤"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "误"
+    }
+   ],
+   "trad": "誤人子弟"
+  },
+  "谈笑风生": {
+   "forks": [
+    {
+     "cands": [
+      "談"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "谈"
+    },
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    }
+   ],
+   "trad": "談笑風生"
+  },
+  "谈虎色变": {
+   "forks": [
+    {
+     "cands": [
+      "談"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "谈"
+    },
+    {
+     "cands": [
+      "變"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "变"
+    }
+   ],
+   "trad": "談虎色變"
+  },
+  "财运亨通": {
+   "forks": [
+    {
+     "cands": [
+      "財"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "财"
+    },
+    {
+     "cands": [
+      "運"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "运"
+    }
+   ],
+   "trad": "財運亨通"
+  },
+  "败兴而归": {
+   "forks": [
+    {
+     "cands": [
+      "敗"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "败"
+    },
+    {
+     "cands": [
+      "興"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "兴"
+    },
+    {
+     "cands": [
+      "歸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "归"
+    }
+   ],
+   "trad": "敗興而歸"
+  },
+  "货真价实": {
+   "forks": [
+    {
+     "cands": [
+      "貨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "货"
+    },
+    {
+     "cands": [
+      "價",
+      "价"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "价"
+    },
+    {
+     "cands": [
+      "實"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "实"
+    }
+   ],
+   "trad": "貨真價實"
+  },
+  "走马观花": {
+   "forks": [
+    {
+     "cands": [
+      "馬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "马"
+    },
+    {
+     "cands": [
+      "觀"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "观"
+    }
+   ],
+   "trad": "走馬觀花"
+  },
+  "起早贪黑": {
+   "forks": [
+    {
+     "cands": [
+      "貪"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "贪"
+    }
+   ],
+   "trad": "起早貪黑"
+  },
+  "路不拾遗": {
+   "forks": [
+    {
+     "cands": [
+      "遺"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "遗"
+    }
+   ],
+   "trad": "路不拾遺"
+  },
+  "身临其境": {
+   "forks": [
+    {
+     "cands": [
+      "臨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "临"
+    }
+   ],
+   "trad": "身臨其境"
+  },
+  "轻声细语": {
+   "forks": [
+    {
+     "cands": [
+      "輕"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "轻"
+    },
+    {
+     "cands": [
+      "聲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "声"
+    },
+    {
+     "cands": [
+      "細"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "细"
+    },
+    {
+     "cands": [
+      "語"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "语"
+    }
+   ],
+   "trad": "輕聲細語"
+  },
+  "过河拆桥": {
+   "forks": [
+    {
+     "cands": [
+      "過"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "过"
+    },
+    {
+     "cands": [
+      "橋"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "桥"
+    }
+   ],
+   "trad": "過河拆橋"
+  },
+  "返老还童": {
+   "forks": [
+    {
+     "cands": [
+      "還"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "还"
+    }
+   ],
+   "trad": "返老還童"
+  },
+  "适得其反": {
+   "forks": [
+    {
+     "cands": [
+      "適",
+      "适"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "适"
+    }
+   ],
+   "trad": "適得其反"
+  },
+  "逢凶化吉": {
+   "forks": [
+    {
+     "cands": [
+      "兇",
+      "凶"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "凶"
+    }
+   ],
+   "trad": "逢兇化吉"
+  },
+  "逢场作戏": {
+   "forks": [
+    {
+     "cands": [
+      "場"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "场"
+    },
+    {
+     "cands": [
+      "戲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "戏"
+    }
+   ],
+   "trad": "逢場作戲"
+  },
+  "道貌岸然": {
+   "forks": [],
+   "trad": "道貌岸然"
+  },
+  "邯郸学步": {
+   "forks": [
+    {
+     "cands": [
+      "鄲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "郸"
+    },
+    {
+     "cands": [
+      "學"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "学"
+    }
+   ],
+   "trad": "邯鄲學步"
+  },
+  "郁郁寡欢": {
+   "forks": [
+    {
+     "cands": [
+      "鬱",
+      "郁"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "郁"
+    },
+    {
+     "cands": [
+      "鬱",
+      "郁"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "郁"
+    },
+    {
+     "cands": [
+      "歡"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "欢"
+    }
+   ],
+   "trad": "鬱鬱寡歡"
+  },
+  "酒虎诗龙": {
+   "forks": [
+    {
+     "cands": [
+      "詩"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "诗"
+    },
+    {
+     "cands": [
+      "龍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "龙"
+    }
+   ],
+   "trad": "酒虎詩龍"
+  },
+  "酣畅淋漓": {
+   "forks": [
+    {
+     "cands": [
+      "暢"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "畅"
+    },
+    {
+     "cands": [
+      "漓",
+      "灕"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "漓"
+    }
+   ],
+   "trad": "酣暢淋漓"
+  },
+  "里里外外": {
+   "forks": [
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    },
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    }
+   ],
+   "trad": "裏裏外外"
+  },
+  "重蹈覆辙": {
+   "forks": [
+    {
+     "cands": [
+      "轍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "辙"
+    }
+   ],
+   "trad": "重蹈覆轍"
+  },
+  "金榜题名": {
+   "forks": [
+    {
+     "cands": [
+      "題"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "题"
+    }
+   ],
+   "trad": "金榜題名"
+  },
+  "金玉良缘": {
+   "forks": [
+    {
+     "cands": [
+      "緣"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "缘"
+    }
+   ],
+   "trad": "金玉良緣"
+  },
+  "金盆洗手": {
+   "forks": [],
+   "trad": "金盆洗手"
+  },
+  "金石为开": {
+   "forks": [
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    },
+    {
+     "cands": [
+      "開"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "开"
+    }
+   ],
+   "trad": "金石爲開"
+  },
+  "金蝉脱壳": {
+   "forks": [
+    {
+     "cands": [
+      "蟬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "蝉"
+    },
+    {
+     "cands": [
+      "脫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "脱"
+    },
+    {
+     "cands": [
+      "殼"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "壳"
+    }
+   ],
+   "trad": "金蟬脫殼"
+  },
+  "釜底抽薪": {
+   "forks": [],
+   "trad": "釜底抽薪"
+  },
+  "铁石心肠": {
+   "forks": [
+    {
+     "cands": [
+      "鐵"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "铁"
+    },
+    {
+     "cands": [
+      "腸"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "肠"
+    }
+   ],
+   "trad": "鐵石心腸"
+  },
+  "错综复杂": {
+   "forks": [
+    {
+     "cands": [
+      "錯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "错"
+    },
+    {
+     "cands": [
+      "綜"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "综"
+    },
+    {
+     "cands": [
+      "復",
+      "複",
+      "覆"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "复"
+    },
+    {
+     "cands": [
+      "雜"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "杂"
+    }
+   ],
+   "trad": "錯綜復雜"
+  },
+  "锦上添花": {
+   "forks": [
+    {
+     "cands": [
+      "錦"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "锦"
+    }
+   ],
+   "trad": "錦上添花"
+  },
+  "闭月羞花": {
+   "forks": [
+    {
+     "cands": [
+      "閉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "闭"
+    }
+   ],
+   "trad": "閉月羞花"
+  },
+  "闭门造车": {
+   "forks": [
+    {
+     "cands": [
+      "閉"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "闭"
+    },
+    {
+     "cands": [
+      "門"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "门"
+    },
+    {
+     "cands": [
+      "車"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "车"
+    }
+   ],
+   "trad": "閉門造車"
+  },
+  "闲情逸致": {
+   "forks": [
+    {
+     "cands": [
+      "閒",
+      "閑"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "闲"
+    },
+    {
+     "cands": [
+      "致",
+      "緻"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "致"
+    }
+   ],
+   "trad": "閒情逸致"
+  },
+  "闻所未闻": {
+   "forks": [
+    {
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "闻"
+    },
+    {
+     "cands": [
+      "聞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "闻"
+    }
+   ],
+   "trad": "聞所未聞"
+  },
+  "阴差阳错": {
+   "forks": [
+    {
+     "cands": [
+      "陰"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "阴"
+    },
+    {
+     "cands": [
+      "陽"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "阳"
+    },
+    {
+     "cands": [
+      "錯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "错"
+    }
+   ],
+   "trad": "陰差陽錯"
+  },
+  "陈词滥调": {
+   "forks": [
+    {
+     "cands": [
+      "陳"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "陈"
+    },
+    {
+     "cands": [
+      "詞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "词"
+    },
+    {
+     "cands": [
+      "濫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "滥"
+    },
+    {
+     "cands": [
+      "調"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "调"
+    }
+   ],
+   "trad": "陳詞濫調"
+  },
+  "隔墙有耳": {
+   "forks": [
+    {
+     "cands": [
+      "牆"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "墙"
+    }
+   ],
+   "trad": "隔牆有耳"
+  },
+  "难兄难弟": {
+   "forks": [
+    {
+     "cands": [
+      "難"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "难"
+    },
+    {
+     "cands": [
+      "難"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "难"
+    }
+   ],
+   "trad": "難兄難弟"
+  },
+  "雄心壮志": {
+   "forks": [
+    {
+     "cands": [
+      "壯"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "壮"
+    },
+    {
+     "cands": [
+      "志",
+      "誌"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "志"
+    }
+   ],
+   "trad": "雄心壯志"
+  },
+  "集思广益": {
+   "forks": [
+    {
+     "cands": [
+      "廣",
+      "广"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "广"
+    }
+   ],
+   "trad": "集思廣益"
+  },
+  "雪中送炭": {
+   "forks": [],
+   "trad": "雪中送炭"
+  },
+  "雾里看花": {
+   "forks": [
+    {
+     "cands": [
+      "霧"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "雾"
+    },
+    {
+     "cands": [
+      "裏",
+      "里",
+      "哩"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "里"
+    }
+   ],
+   "trad": "霧裏看花"
+  },
+  "青红皂白": {
+   "forks": [
+    {
+     "cands": [
+      "紅"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "红"
+    },
+    {
+     "cands": [
+      "皁",
+      "皂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "皂"
+    }
+   ],
+   "trad": "青紅皁白"
+  },
+  "顶天立地": {
+   "forks": [
+    {
+     "cands": [
+      "頂"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "顶"
+    }
+   ],
+   "trad": "頂天立地"
+  },
+  "颐指气使": {
+   "forks": [
+    {
+     "cands": [
+      "頤"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "颐"
+    },
+    {
+     "cands": [
+      "氣"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "气"
+    }
+   ],
+   "trad": "頤指氣使"
+  },
+  "颠三倒四": {
+   "forks": [
+    {
+     "cands": [
+      "顛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "颠"
+    }
+   ],
+   "trad": "顛三倒四"
+  },
+  "颠倒是非": {
+   "forks": [
+    {
+     "cands": [
+      "顛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "颠"
+    }
+   ],
+   "trad": "顛倒是非"
+  },
+  "风调雨顺": {
+   "forks": [
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    },
+    {
+     "cands": [
+      "調"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "调"
+    },
+    {
+     "cands": [
+      "順"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "顺"
+    }
+   ],
+   "trad": "風調雨順"
+  },
+  "风起云涌": {
+   "forks": [
+    {
+     "cands": [
+      "風"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "风"
+    },
+    {
+     "cands": [
+      "雲湧"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "云涌"
+    }
+   ],
+   "trad": "風起雲湧"
+  },
+  "飞来横祸": {
+   "forks": [
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    },
+    {
+     "cands": [
+      "來"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "来"
+    },
+    {
+     "cands": [
+      "橫"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "横"
+    },
+    {
+     "cands": [
+      "禍"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "祸"
+    }
+   ],
+   "trad": "飛來橫禍"
+  },
+  "飞檐走壁": {
+   "forks": [
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    }
+   ],
+   "trad": "飛檐走壁"
+  },
+  "飞蛾扑火": {
+   "forks": [
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    },
+    {
+     "cands": [
+      "撲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "扑"
+    }
+   ],
+   "trad": "飛蛾撲火"
+  },
+  "首当其冲": {
+   "forks": [
+    {
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "当"
+    },
+    {
+     "cands": [
+      "衝",
+      "沖"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "冲"
+    }
+   ],
+   "trad": "首當其衝"
+  },
+  "马不停蹄": {
+   "forks": [
+    {
+     "cands": [
+      "馬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "马"
+    }
+   ],
+   "trad": "馬不停蹄"
+  },
+  "骄奢淫逸": {
+   "forks": [
+    {
+     "cands": [
+      "驕"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "骄"
+    }
+   ],
+   "trad": "驕奢淫逸"
+  },
+  "骑虎难下": {
+   "forks": [
+    {
+     "cands": [
+      "騎"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "骑"
+    },
+    {
+     "cands": [
+      "難"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "难"
+    }
+   ],
+   "trad": "騎虎難下"
+  },
+  "高深莫测": {
+   "forks": [
+    {
+     "cands": [
+      "測"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "测"
+    }
+   ],
+   "trad": "高深莫測"
+  },
+  "鬼斧神工": {
+   "forks": [],
+   "trad": "鬼斧神工"
+  },
+  "鱼目混珠": {
+   "forks": [
+    {
+     "cands": [
+      "魚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鱼"
+    }
+   ],
+   "trad": "魚目混珠"
+  },
+  "鲜为人知": {
+   "forks": [
+    {
+     "cands": [
+      "鮮"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鲜"
+    },
+    {
+     "cands": [
+      "爲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "为"
+    }
+   ],
+   "trad": "鮮爲人知"
+  },
+  "鳏寡孤独": {
+   "forks": [
+    {
+     "cands": [
+      "鰥"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鳏"
+    },
+    {
+     "cands": [
+      "獨"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "独"
+    }
+   ],
+   "trad": "鰥寡孤獨"
+  },
+  "鸡犬不宁": {
+   "forks": [
+    {
+     "cands": [
+      "雞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸡"
+    },
+    {
+     "cands": [
+      "寧",
+      "甯"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "宁"
+    }
+   ],
+   "trad": "雞犬不寧"
+  },
+  "鸡飞狗跳": {
+   "forks": [
+    {
+     "cands": [
+      "雞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸡"
+    },
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    }
+   ],
+   "trad": "雞飛狗跳"
+  },
+  "鸡飞蛋打": {
+   "forks": [
+    {
+     "cands": [
+      "雞"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鸡"
+    },
+    {
+     "cands": [
+      "飛"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "飞"
+    }
+   ],
+   "trad": "雞飛蛋打"
+  },
+  "鹏程万里": {
+   "forks": [
+    {
+     "cands": [
+      "鵬"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "鹏"
+    },
+    {
+     "cands": [
+      "萬里"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "万里"
+    }
+   ],
+   "trad": "鵬程萬里"
+  },
+  "黯然失色": {
+   "forks": [],
+   "trad": "黯然失色"
+  },
+  "鼠目寸光": {
+   "forks": [],
+   "trad": "鼠目寸光"
+  }
+ },
+ "counts": {
+  "answers": 407,
+  "forks": 554,
+  "ruled": 1,
+  "verse": 644
+ },
+ "engine": "diuci/k12-chinese-poetry · tools/build-traditional.py",
+ "rules": [
+  {
+   "pick": "不寒而慄",
+   "simp": "不寒而栗",
+   "why": "词组表给整条成语的繁体形就是「不寒而慄」，被单字表挡了下来（单字表认为「栗」照抄——那是栗子的栗）。这里的「栗」是战栗义，繁体作「慄」。"
+  }
+ ],
+ "source": {
+  "poemCount": 252,
+  "poemsJsonSha256": "531e1cb21e004b3de0b2c4551cd466f6c9c4bbea7e7a544ffc081387da9f7d2c",
+  "repo": "diuci/k12-chinese-poetry",
+  "tradPending": 0,
+  "tradPendingApparatus": 0,
+  "traditionalJsonSha256": "7f3543821bc8d68093666dbb7afdfd7de158a800702b4a6f53e5026a29809496"
+ },
+ "verse": {
+  "一去三十年": {
+   "at": 5,
+   "line": 1,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "一去三十年"
+  },
+  "一叫千门万户开": {
+   "at": 7,
+   "line": 1,
+   "poemId": "huaji",
+   "sourceTrad": "明·唐寅《畫雞》",
+   "trad": "一叫千門萬戶開"
+  },
+  "一岁一枯荣": {
+   "at": 5,
+   "line": 0,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "一歲一枯榮"
+  },
+  "一年好景君须记": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zengliujingwen",
+   "sourceTrad": "宋·蘇軾《贈劉景文》",
+   "trad": "一年好景君須記"
+  },
+  "一枝红杏出墙来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "youyuanbuzhi",
+   "sourceTrad": "宋·葉紹翁《遊園不值》",
+   "trad": "一枝紅杏出牆來"
+  },
+  "一水护田将绿绕": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shuhuyin",
+   "sourceTrad": "宋·王安石《書湖陰先生壁》",
+   "trad": "一水護田將綠繞"
+  },
+  "一片冰心在玉壶": {
+   "at": 7,
+   "line": 1,
+   "poemId": "furonglou",
+   "sourceTrad": "唐·王昌齡《芙蓉樓送辛漸》",
+   "trad": "一片冰心在玉壺"
+  },
+  "一片孤城万仞山": {
+   "at": 7,
+   "line": 0,
+   "poemId": "liangzhouci-wangzhihuan",
+   "sourceTrad": "唐·王之渙《涼州詞》",
+   "trad": "一片孤城萬仞山"
+  },
+  "一行白鹭上青天": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jueju-huangli",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "一行白鷺上青天"
+  },
+  "一览众山小": {
+   "at": 5,
+   "line": 3,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "一覽衆山小"
+  },
+  "一道残阳铺水中": {
+   "at": 0,
+   "line": 0,
+   "poemId": "mujiangyin",
+   "sourceTrad": "唐·白居易《暮江吟》",
+   "trad": "一道殘陽鋪水中"
+  },
+  "七夕今宵看碧霄": {
+   "at": 0,
+   "line": 0,
+   "poemId": "qiqiao",
+   "sourceTrad": "唐·林傑《乞巧》",
+   "trad": "七夕今宵看碧霄"
+  },
+  "万径人踪灭": {
+   "at": 5,
+   "line": 0,
+   "poemId": "jiangxue",
+   "sourceTrad": "唐·柳宗元《江雪》",
+   "trad": "萬徑人蹤滅"
+  },
+  "万条垂下绿丝绦": {
+   "at": 7,
+   "line": 0,
+   "poemId": "yongliu",
+   "sourceTrad": "唐·賀知章《詠柳》",
+   "trad": "萬條垂下綠絲絛"
+  },
+  "万紫千红总是春": {
+   "at": 7,
+   "line": 1,
+   "poemId": "chunri",
+   "sourceTrad": "宋·朱熹《春日》",
+   "trad": "萬紫千紅總是春"
+  },
+  "万里悲秋常作客": {
+   "at": 0,
+   "line": 2,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "萬里悲秋常作客"
+  },
+  "万里长征人未还": {
+   "at": 7,
+   "line": 0,
+   "poemId": "chusai",
+   "sourceTrad": "唐·王昌齡《出塞》",
+   "trad": "萬里長征人未還"
+  },
+  "万马齐喑究可哀": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jihai",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "萬馬齊喑究可哀"
+  },
+  "三万里河东入海": {
+   "at": 0,
+   "line": 0,
+   "poemId": "qiuyejiangxiao",
+   "sourceTrad": "宋·陸遊《秋夜將曉出籬門迎涼有感》",
+   "trad": "三萬里河東入海"
+  },
+  "三顾频烦天下计": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shuxiang",
+   "sourceTrad": "唐·杜甫《蜀相》",
+   "trad": "三顧頻煩天下計"
+  },
+  "上有黄鹂深树鸣": {
+   "at": 7,
+   "line": 0,
+   "poemId": "chuzhouxijian",
+   "sourceTrad": "唐·韋應物《滁州西澗》",
+   "trad": "上有黃鸝深樹鳴"
+  },
+  "不及汪伦送我情": {
+   "at": 7,
+   "line": 1,
+   "poemId": "zengwanglun",
+   "sourceTrad": "唐·李白《贈汪倫》",
+   "trad": "不及汪倫送我情"
+  },
+  "不尽长江滚滚来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "不盡長江滾滾來"
+  },
+  "不拘一格降人才": {
+   "at": -1,
+   "derive": "table",
+   "forks": [],
+   "line": -1,
+   "poemId": "jihai",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "不拘一格降人才",
+   "why": "这一句是本篇的通行异文：内容仓《己亥杂诗》正文作「不拘一格降人材」（教材版），词库里另有一条作「降人才」。两句都保留为历史答案，但繁体形不能按教材那一行取字（那一行是「材」），只能过繁简表派生。"
+  },
+  "不拘一格降人材": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jihai",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "不拘一格降人材"
+  },
+  "不教胡马度阴山": {
+   "at": 7,
+   "line": 1,
+   "poemId": "chusai",
+   "sourceTrad": "唐·王昌齡《出塞》",
+   "trad": "不教胡馬度陰山"
+  },
+  "不敢高声语": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yesushansi",
+   "sourceTrad": "唐·李白《夜宿山寺》",
+   "trad": "不敢高聲語"
+  },
+  "不畏浮云遮望眼": {
+   "at": 0,
+   "line": 1,
+   "poemId": "dengfeilaifeng",
+   "sourceTrad": "宋·王安石《登飛來峯》",
+   "trad": "不畏浮雲遮望眼"
+  },
+  "不知秋思落谁家": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shiyiwangyue",
+   "sourceTrad": "唐·王建《十五夜望月》",
+   "trad": "不知秋思落誰家"
+  },
+  "不知细叶谁裁出": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yongliu",
+   "sourceTrad": "唐·賀知章《詠柳》",
+   "trad": "不知細葉誰裁出"
+  },
+  "不知转入此中来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "dalinsitaohua",
+   "sourceTrad": "唐·白居易《大林寺桃花》",
+   "trad": "不知轉入此中來"
+  },
+  "不破楼兰终不还": {
+   "at": 7,
+   "line": 1,
+   "poemId": "congjunxing",
+   "sourceTrad": "唐·王昌齡《從軍行》",
+   "trad": "不破樓蘭終不還"
+  },
+  "不肯过江东": {
+   "at": 5,
+   "line": 1,
+   "poemId": "xiarijueju",
+   "sourceTrad": "宋·李清照《夏日絕句》",
+   "trad": "不肯過江東"
+  },
+  "不要人夸好颜色": {
+   "at": 0,
+   "line": 1,
+   "poemId": "momei",
+   "sourceTrad": "元·王冕《墨梅》",
+   "trad": "不要人誇好顏色"
+  },
+  "不解藏踪迹": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chishang",
+   "sourceTrad": "唐·白居易《池上》",
+   "trad": "不解藏蹤跡"
+  },
+  "不论平地与山尖": {
+   "at": 0,
+   "line": 0,
+   "poemId": "feng-mi",
+   "sourceTrad": "唐·羅隱《蜂》",
+   "trad": "不論平地與山尖"
+  },
+  "不识庐山真面目": {
+   "at": 0,
+   "line": 1,
+   "poemId": "longpo",
+   "sourceTrad": "宋·蘇軾《題西林壁》",
+   "trad": "不識廬山真面目"
+  },
+  "与君离别意": {
+   "at": 0,
+   "line": 1,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "與君離別意"
+  },
+  "世味年来薄似纱": {
+   "at": 0,
+   "line": 0,
+   "poemId": "linanchunyu",
+   "sourceTrad": "宋·陸遊《臨安春雨初霽》",
+   "trad": "世味年來薄似紗"
+  },
+  "东皋薄暮望": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "東皋薄暮望"
+  },
+  "东风不与周郎便": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chibi-du",
+   "sourceTrad": "唐·杜牧《赤壁》",
+   "trad": "東風不與周郎便"
+  },
+  "东风无力百花残": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wuti",
+   "sourceTrad": "唐·李商隱《無題》",
+   "trad": "東風無力百花殘"
+  },
+  "丞相祠堂何处寻": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shuxiang",
+   "sourceTrad": "唐·杜甫《蜀相》",
+   "trad": "丞相祠堂何處尋"
+  },
+  "两个黄鹂鸣翠柳": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jueju-huangli",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "兩個黃鸝鳴翠柳"
+  },
+  "两山排闼送青来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shuhuyin",
+   "sourceTrad": "宋·王安石《書湖陰先生壁》",
+   "trad": "兩山排闥送青來"
+  },
+  "两岸猿声啼不住": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zaofabaidicheng",
+   "sourceTrad": "唐·李白《早發白帝城》",
+   "trad": "兩岸猿聲啼不住"
+  },
+  "两岸青山相对出": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wangtianmenshan",
+   "sourceTrad": "唐·李白《望天門山》",
+   "trad": "兩岸青山相對出"
+  },
+  "两朝开济老臣心": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shuxiang",
+   "sourceTrad": "唐·杜甫《蜀相》",
+   "trad": "兩朝開濟老臣心"
+  },
+  "中原北望气如山": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shufen",
+   "sourceTrad": "宋·陸遊《書憤》",
+   "trad": "中原北望氣如山"
+  },
+  "中庭地白树栖鸦": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shiyiwangyue",
+   "sourceTrad": "唐·王建《十五夜望月》",
+   "trad": "中庭地白樹棲鴉"
+  },
+  "丰年留客足鸡豚": {
+   "at": 7,
+   "line": 0,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "豐年留客足雞豚"
+  },
+  "为有暗香来": {
+   "at": 5,
+   "line": 1,
+   "poemId": "meihua",
+   "sourceTrad": "宋·王安石《梅花》",
+   "trad": "爲有暗香來"
+  },
+  "为有源头活水来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "guanshu",
+   "sourceTrad": "宋·朱熹《觀書有感》",
+   "trad": "爲有源頭活水來"
+  },
+  "为谁辛苦为谁甜": {
+   "at": 7,
+   "line": 1,
+   "poemId": "feng-mi",
+   "sourceTrad": "唐·羅隱《蜂》",
+   "trad": "爲誰辛苦爲誰甜"
+  },
+  "举头望明月": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jingyesi",
+   "sourceTrad": "唐·李白《靜夜思》",
+   "trad": "舉頭望明月"
+  },
+  "九州生气恃风雷": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jihai",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "九州生氣恃風雷"
+  },
+  "也傍桑阴学种瓜": {
+   "at": 7,
+   "line": 1,
+   "poemId": "sishitianyuan-31",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "也傍桑陰學種瓜"
+  },
+  "乡书何处达": {
+   "at": 0,
+   "line": 3,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "鄉書何處達"
+  },
+  "乡村四月闲人少": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xiangcunsiyue",
+   "sourceTrad": "宋·翁卷《鄉村四月》",
+   "trad": "鄉村四月閒人少"
+  },
+  "乡音无改鬓毛衰": {
+   "at": 7,
+   "line": 0,
+   "poemId": "huixiangyoushu",
+   "sourceTrad": "唐·賀知章《回鄉偶書》",
+   "trad": "鄉音無改鬢毛衰"
+  },
+  "乱入池中看不见": {
+   "at": 0,
+   "line": 1,
+   "poemId": "cailianqu",
+   "sourceTrad": "唐·王昌齡《采蓮曲》",
+   "trad": "亂入池中看不見"
+  },
+  "乱花渐欲迷人眼": {
+   "at": 0,
+   "line": 2,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "亂花漸欲迷人眼"
+  },
+  "乾坤日夜浮": {
+   "at": 5,
+   "line": 1,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "乾坤日夜浮"
+  },
+  "二十三丝动紫皇": {
+   "at": 7,
+   "line": 3,
+   "poemId": "lipeng",
+   "sourceTrad": "唐·李賀《李憑箜篌引》",
+   "trad": "二十三絲動紫皇"
+  },
+  "二十三年弃置身": {
+   "at": 7,
+   "line": 0,
+   "poemId": "choulitian",
+   "sourceTrad": "唐·劉禹錫《酬樂天揚州初逢席上見贈》",
+   "trad": "二十三年棄置身"
+  },
+  "二月春风似剪刀": {
+   "at": 7,
+   "line": 1,
+   "poemId": "yongliu",
+   "sourceTrad": "唐·賀知章《詠柳》",
+   "trad": "二月春風似剪刀"
+  },
+  "云母屏风烛影深": {
+   "at": 0,
+   "line": 0,
+   "poemId": "change",
+   "sourceTrad": "唐·李商隱《嫦娥》",
+   "trad": "雲母屏風燭影深"
+  },
+  "云深不知处": {
+   "at": 5,
+   "line": 1,
+   "poemId": "xunyinzhe",
+   "sourceTrad": "唐·賈島《尋隱者不遇》",
+   "trad": "雲深不知處"
+  },
+  "五千仞岳上摩天": {
+   "at": 7,
+   "line": 0,
+   "poemId": "qiuyejiangxiao",
+   "sourceTrad": "宋·陸遊《秋夜將曉出籬門迎涼有感》",
+   "trad": "五千仞嶽上摩天"
+  },
+  "京口瓜洲一水间": {
+   "at": 0,
+   "line": 0,
+   "poemId": "bochuanguazhou",
+   "sourceTrad": "宋·王安石《泊船瓜洲》",
+   "trad": "京口瓜洲一水間"
+  },
+  "亲朋无一字": {
+   "at": 0,
+   "line": 2,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "親朋無一字"
+  },
+  "人来鸟不惊": {
+   "at": 5,
+   "line": 1,
+   "poemId": "hua",
+   "sourceTrad": "唐·王維《畫》",
+   "trad": "人來鳥不驚"
+  },
+  "人生自古谁无死": {
+   "at": 0,
+   "line": 3,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "人生自古誰無死"
+  },
+  "人闲桂花落": {
+   "at": 0,
+   "line": 0,
+   "poemId": "niaomingjian",
+   "sourceTrad": "唐·王維《鳥鳴澗》",
+   "trad": "人閑桂花落"
+  },
+  "人间四月芳菲尽": {
+   "at": 0,
+   "line": 0,
+   "poemId": "dalinsitaohua",
+   "sourceTrad": "唐·白居易《大林寺桃花》",
+   "trad": "人間四月芳菲盡"
+  },
+  "今上岳阳楼": {
+   "at": 5,
+   "line": 0,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "今上岳陽樓"
+  },
+  "今人不见古时月": {
+   "at": -1,
+   "derive": "table",
+   "forks": [
+    {
+     "cands": [
+      "見"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "见"
+    },
+    {
+     "cands": [
+      "時"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "时"
+    }
+   ],
+   "line": -1,
+   "poemId": "outside:bajiujiaowenyue",
+   "sourceTrad": "唐·李白《把酒問月》",
+   "trad": "今人不見古時月",
+   "why": "内容仓《春江花月夜》页的勘误记着：这一句是李白《把酒问月》里的，不在张若虚《春江花月夜》里（poems/高中/选择性必修上册/春江花月夜.md 的勘误节，docs/annotation-quotes.md 也登记了这条引文的出处）。词库前缀冻结，这一句作为历史答案保留，出处改认到《把酒问月》。《把酒问月》不在 252 篇台账里，所以繁体形不按教材繁体行取字，走繁简表派生。"
+  },
+  "今夜月明人尽望": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shiyiwangyue",
+   "sourceTrad": "唐·王建《十五夜望月》",
+   "trad": "今夜月明人盡望"
+  },
+  "今月曾经照古人": {
+   "at": -1,
+   "derive": "table",
+   "forks": [
+    {
+     "cands": [
+      "經"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "经"
+    }
+   ],
+   "line": -1,
+   "poemId": "outside:bajiujiaowenyue",
+   "sourceTrad": "唐·李白《把酒問月》",
+   "trad": "今月曾經照古人",
+   "why": "同上：这一句与「今人不见古时月」是一对，内容仓《春江花月夜》页的勘误明确它出自李白《把酒问月》。"
+  },
+  "从今若许闲乘月": {
+   "at": 0,
+   "line": 3,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "從今若許閒乘月"
+  },
+  "仙人垂两足": {
+   "at": 0,
+   "line": 2,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "仙人垂兩足"
+  },
+  "任尔东西南北风": {
+   "at": 7,
+   "line": 1,
+   "poemId": "zhushi",
+   "sourceTrad": "清·鄭燮《竹石》",
+   "trad": "任爾東西南北風"
+  },
+  "众鸟高飞尽": {
+   "at": 0,
+   "line": 0,
+   "poemId": "duzuojingting",
+   "sourceTrad": "唐·李白《獨坐敬亭山》",
+   "trad": "衆鳥高飛盡"
+  },
+  "会当凌绝顶": {
+   "at": 0,
+   "line": 3,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "會當凌絕頂"
+  },
+  "但使龙城飞将在": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chusai",
+   "sourceTrad": "唐·王昌齡《出塞》",
+   "trad": "但使龍城飛將在"
+  },
+  "但悲不见九州同": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shier",
+   "sourceTrad": "宋·陸遊《示兒》",
+   "trad": "但悲不見九州同"
+  },
+  "但爱鲈鱼美": {
+   "at": 5,
+   "line": 0,
+   "poemId": "jiangshangyuzhe",
+   "sourceTrad": "宋·範仲淹《江上漁者》",
+   "trad": "但愛鱸魚美"
+  },
+  "但见群鸥日日来": {
+   "at": 0,
+   "line": 1,
+   "poemId": "kezhi",
+   "sourceTrad": "唐·杜甫《客至》",
+   "trad": "但見羣鷗日日來"
+  },
+  "但闻人语响": {
+   "at": 5,
+   "line": 0,
+   "poemId": "luchai",
+   "sourceTrad": "唐·王維《鹿柴》",
+   "trad": "但聞人語響"
+  },
+  "低头思故乡": {
+   "at": 5,
+   "line": 1,
+   "poemId": "jingyesi",
+   "sourceTrad": "唐·李白《靜夜思》",
+   "trad": "低頭思故鄉"
+  },
+  "何人不起故园情": {
+   "at": 7,
+   "line": 1,
+   "poemId": "chunyeluocheng",
+   "sourceTrad": "唐·李白《春夜洛城聞笛》",
+   "trad": "何人不起故園情"
+  },
+  "何处春江无月明": {
+   "at": 7,
+   "line": 1,
+   "poemId": "chunjianghuayue",
+   "sourceTrad": "唐·張若虛《春江花月夜》",
+   "trad": "何處春江無月明"
+  },
+  "何当共剪西窗烛": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yeyujibei",
+   "sourceTrad": "唐·李商隱《夜雨寄北》",
+   "trad": "何當共剪西窗燭"
+  },
+  "何当金络脑": {
+   "at": 0,
+   "line": 1,
+   "poemId": "mashi",
+   "sourceTrad": "唐·李賀《馬詩》",
+   "trad": "何當金絡腦"
+  },
+  "侧坐莓苔草映身": {
+   "at": 7,
+   "line": 0,
+   "poemId": "xiaoerchuidiao",
+   "sourceTrad": "唐·胡令能《小兒垂釣》",
+   "trad": "側坐莓苔草映身"
+  },
+  "便下襄阳向洛阳": {
+   "at": 7,
+   "line": 3,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "便下襄陽向洛陽"
+  },
+  "借问酒家何处有": {
+   "at": 0,
+   "line": 1,
+   "poemId": "qingming",
+   "sourceTrad": "唐·杜牧《清明》",
+   "trad": "借問酒家何處有"
+  },
+  "停车坐爱枫林晚": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shanxing",
+   "sourceTrad": "唐·杜牧《山行》",
+   "trad": "停車坐愛楓林晚"
+  },
+  "偷采白莲回": {
+   "at": 5,
+   "line": 0,
+   "poemId": "chishang",
+   "sourceTrad": "唐·白居易《池上》",
+   "trad": "偷采白蓮回"
+  },
+  "儿女共沾巾": {
+   "at": 5,
+   "line": 3,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "兒女共沾巾"
+  },
+  "儿童急走追黄蝶": {
+   "at": 0,
+   "line": 1,
+   "poemId": "suxinshi",
+   "sourceTrad": "宋·楊萬里《宿新市徐公店》",
+   "trad": "兒童急走追黃蝶"
+  },
+  "儿童散学归来早": {
+   "at": 0,
+   "line": 1,
+   "poemId": "cunju",
+   "sourceTrad": "清·高鼎《村居》",
+   "trad": "兒童散學歸來早"
+  },
+  "儿童相见不相识": {
+   "at": 0,
+   "line": 1,
+   "poemId": "huixiangyoushu",
+   "sourceTrad": "唐·賀知章《回鄉偶書》",
+   "trad": "兒童相見不相識"
+  },
+  "入竹万竿斜": {
+   "at": 5,
+   "line": 1,
+   "poemId": "feng",
+   "sourceTrad": "唐·李嶠《風》",
+   "trad": "入竹萬竿斜"
+  },
+  "农夫犹饿死": {
+   "at": 5,
+   "line": 1,
+   "poemId": "minnong1",
+   "sourceTrad": "唐·李紳《憫農其一》",
+   "trad": "農夫猶餓死"
+  },
+  "决眦入归鸟": {
+   "at": 5,
+   "line": 2,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "決眥入歸鳥"
+  },
+  "冷露无声湿桂花": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shiyiwangyue",
+   "sourceTrad": "唐·王建《十五夜望月》",
+   "trad": "冷露無聲溼桂花"
+  },
+  "凌寒独自开": {
+   "at": 5,
+   "line": 0,
+   "poemId": "meihua",
+   "sourceTrad": "宋·王安石《梅花》",
+   "trad": "凌寒獨自開"
+  },
+  "几处早莺争暖树": {
+   "at": 0,
+   "line": 1,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "幾處早鶯爭暖樹"
+  },
+  "凭君传语报平安": {
+   "at": 7,
+   "line": 1,
+   "poemId": "fengrujinshi",
+   "sourceTrad": "唐·岑參《逢入京使》",
+   "trad": "憑君傳語報平安"
+  },
+  "凭轩涕泗流": {
+   "at": 5,
+   "line": 3,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "憑軒涕泗流"
+  },
+  "出师一表真名世": {
+   "at": 0,
+   "line": 3,
+   "poemId": "shufen",
+   "sourceTrad": "宋·陸遊《書憤》",
+   "trad": "出師一表真名世"
+  },
+  "出师未捷身先死": {
+   "at": 0,
+   "line": 2,
+   "poemId": "shuxiang",
+   "sourceTrad": "唐·杜甫《蜀相》",
+   "trad": "出師未捷身先死"
+  },
+  "出没风波里": {
+   "at": 5,
+   "line": 1,
+   "poemId": "jiangshangyuzhe",
+   "sourceTrad": "宋·範仲淹《江上漁者》",
+   "trad": "出沒風波裏"
+  },
+  "初闻涕泪满衣裳": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "初聞涕淚滿衣裳"
+  },
+  "到乡翻似烂柯人": {
+   "at": 7,
+   "line": 1,
+   "poemId": "choulitian",
+   "sourceTrad": "唐·劉禹錫《酬樂天揚州初逢席上見贈》",
+   "trad": "到鄉翻似爛柯人"
+  },
+  "剑外忽传收蓟北": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "劍外忽傳收薊北"
+  },
+  "劝君更尽一杯酒": {
+   "at": 0,
+   "line": 1,
+   "poemId": "songyuaner",
+   "sourceTrad": "唐·王維《送元二使安西》",
+   "trad": "勸君更盡一杯酒"
+  },
+  "化作春泥更护花": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jihai-jimao",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "化作春泥更護花"
+  },
+  "北风卷地白草折": {
+   "at": 0,
+   "line": 0,
+   "poemId": "baixuege",
+   "sourceTrad": "唐·岑參《白雪歌送武判官歸京》",
+   "trad": "北風卷地白草折"
+  },
+  "北风吹雁雪纷纷": {
+   "at": 7,
+   "line": 0,
+   "poemId": "biedongda",
+   "sourceTrad": "唐·高適《別董大》",
+   "trad": "北風吹雁雪紛紛"
+  },
+  "十二门前融冷光": {
+   "at": 0,
+   "line": 3,
+   "poemId": "lipeng",
+   "sourceTrad": "唐·李賀《李憑箜篌引》",
+   "trad": "十二門前融冷光"
+  },
+  "千山鸟飞绝": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jiangxue",
+   "sourceTrad": "唐·柳宗元《江雪》",
+   "trad": "千山鳥飛絕"
+  },
+  "千树万树梨花开": {
+   "at": 7,
+   "line": 1,
+   "poemId": "baixuege",
+   "sourceTrad": "唐·岑參《白雪歌送武判官歸京》",
+   "trad": "千樹萬樹梨花開"
+  },
+  "千磨万击还坚劲": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zhushi",
+   "sourceTrad": "清·鄭燮《竹石》",
+   "trad": "千磨萬擊還堅勁"
+  },
+  "千载谁堪伯仲间": {
+   "at": 7,
+   "line": 3,
+   "poemId": "shufen",
+   "sourceTrad": "宋·陸遊《書憤》",
+   "trad": "千載誰堪伯仲間"
+  },
+  "千里江陵一日还": {
+   "at": 7,
+   "line": 0,
+   "poemId": "zaofabaidicheng",
+   "sourceTrad": "唐·李白《早發白帝城》",
+   "trad": "千里江陵一日還"
+  },
+  "千里莺啼绿映红": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jiangnanchun",
+   "sourceTrad": "唐·杜牧《江南春》",
+   "trad": "千里鶯啼綠映紅"
+  },
+  "千里黄云白日曛": {
+   "at": 0,
+   "line": 0,
+   "poemId": "biedongda",
+   "sourceTrad": "唐·高適《別董大》",
+   "trad": "千里黃雲白日曛"
+  },
+  "千锤万凿出深山": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shihuiyin",
+   "sourceTrad": "明·于謙《石灰吟》",
+   "trad": "千錘萬鑿出深山"
+  },
+  "千门万户曈曈日": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yuanri",
+   "sourceTrad": "宋·王安石《元日》",
+   "trad": "千門萬戶曈曈日"
+  },
+  "半亩方塘一鉴开": {
+   "at": 0,
+   "line": 0,
+   "poemId": "guanshu",
+   "sourceTrad": "宋·朱熹《觀書有感》",
+   "trad": "半畝方塘一鑑開"
+  },
+  "半卷红旗临易水": {
+   "at": 0,
+   "line": 2,
+   "poemId": "yanmenshiweixing",
+   "sourceTrad": "唐·李賀《雁門太守行》",
+   "trad": "半卷紅旗臨易水"
+  },
+  "半江瑟瑟半江红": {
+   "at": 7,
+   "line": 0,
+   "poemId": "mujiangyin",
+   "sourceTrad": "唐·白居易《暮江吟》",
+   "trad": "半江瑟瑟半江紅"
+  },
+  "单于夜遁逃": {
+   "at": 5,
+   "line": 0,
+   "poemId": "saixiaqu",
+   "sourceTrad": "唐·盧綸《塞下曲》",
+   "trad": "單于夜遁逃"
+  },
+  "单车欲问边": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "單車欲問邊"
+  },
+  "卖炭得钱何所营": {
+   "at": 0,
+   "line": 2,
+   "poemId": "maotanshangwu",
+   "sourceTrad": "唐·白居易《賣炭翁》",
+   "trad": "賣炭得錢何所營"
+  },
+  "南望王师又一年": {
+   "at": 7,
+   "line": 1,
+   "poemId": "qiuyejiangxiao",
+   "sourceTrad": "宋·陸遊《秋夜將曉出籬門迎涼有感》",
+   "trad": "南望王師又一年"
+  },
+  "南朝四百八十寺": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jiangnanchun",
+   "sourceTrad": "唐·杜牧《江南春》",
+   "trad": "南朝四百八十寺"
+  },
+  "危楼高百尺": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yesushansi",
+   "sourceTrad": "唐·李白《夜宿山寺》",
+   "trad": "危樓高百尺"
+  },
+  "即从巴峡穿巫峡": {
+   "at": 0,
+   "line": 3,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "即從巴峽穿巫峽"
+  },
+  "却看妻子愁何在": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "卻看妻子愁何在"
+  },
+  "却话巴山夜雨时": {
+   "at": 7,
+   "line": 1,
+   "poemId": "yeyujibei",
+   "sourceTrad": "唐·李商隱《夜雨寄北》",
+   "trad": "卻話巴山夜雨時"
+  },
+  "卷地风来忽吹散": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wanghulou",
+   "sourceTrad": "宋·蘇軾《六月二十七日望湖樓醉書》",
+   "trad": "卷地風來忽吹散"
+  },
+  "去时雪满天山路": {
+   "at": 7,
+   "line": 7,
+   "poemId": "baixuege",
+   "sourceTrad": "唐·岑參《白雪歌送武判官歸京》",
+   "trad": "去時雪滿天山路"
+  },
+  "又疑瑶台镜": {
+   "at": 0,
+   "line": 1,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "又疑瑤臺鏡"
+  },
+  "又送王孙去": {
+   "at": 0,
+   "line": 3,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "又送王孫去"
+  },
+  "双袖龙钟泪不干": {
+   "at": 7,
+   "line": 0,
+   "poemId": "fengrujinshi",
+   "sourceTrad": "唐·岑參《逢入京使》",
+   "trad": "雙袖龍鍾淚不乾"
+  },
+  "古来征战几人回": {
+   "at": 7,
+   "line": 1,
+   "poemId": "liangzhouci-wanghan",
+   "sourceTrad": "唐·王翰《涼州詞》",
+   "trad": "古來征戰幾人回"
+  },
+  "只在此山中": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xunyinzhe",
+   "sourceTrad": "唐·賈島《尋隱者不遇》",
+   "trad": "只在此山中"
+  },
+  "只是当时已惘然": {
+   "at": 7,
+   "line": 2,
+   "poemId": "jinse",
+   "sourceTrad": "唐·李商隱《錦瑟》",
+   "trad": "只是當時已惘然"
+  },
+  "只有敬亭山": {
+   "at": 5,
+   "line": 1,
+   "poemId": "duzuojingting",
+   "sourceTrad": "唐·李白《獨坐敬亭山》",
+   "trad": "只有敬亭山"
+  },
+  "只留清气满乾坤": {
+   "at": 7,
+   "line": 1,
+   "poemId": "momei",
+   "sourceTrad": "元·王冕《墨梅》",
+   "trad": "只留清氣滿乾坤"
+  },
+  "只缘身在此山中": {
+   "at": 7,
+   "line": 1,
+   "poemId": "longpo",
+   "sourceTrad": "宋·蘇軾《題西林壁》",
+   "trad": "只緣身在此山中"
+  },
+  "可怜九月初三夜": {
+   "at": 0,
+   "line": 1,
+   "poemId": "mujiangyin",
+   "sourceTrad": "唐·白居易《暮江吟》",
+   "trad": "可憐九月初三夜"
+  },
+  "可怜身上衣正单": {
+   "at": 0,
+   "line": 3,
+   "poemId": "maotanshangwu",
+   "sourceTrad": "唐·白居易《賣炭翁》",
+   "trad": "可憐身上衣正單"
+  },
+  "可爱深红爱浅红": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jiangpan",
+   "sourceTrad": "唐·杜甫《江畔獨步尋花》",
+   "trad": "可愛深紅愛淺紅"
+  },
+  "同是宦游人": {
+   "at": 5,
+   "line": 1,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "同是宦遊人"
+  },
+  "君看一叶舟": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jiangshangyuzhe",
+   "sourceTrad": "宋·範仲淹《江上漁者》",
+   "trad": "君看一葉舟"
+  },
+  "君问归期未有期": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yeyujibei",
+   "sourceTrad": "唐·李商隱《夜雨寄北》",
+   "trad": "君問歸期未有期"
+  },
+  "吟鞭东指即天涯": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jihai-jimao",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "吟鞭東指即天涯"
+  },
+  "吴楚东南坼": {
+   "at": 0,
+   "line": 1,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "吳楚東南坼"
+  },
+  "呼作白玉盘": {
+   "at": 5,
+   "line": 0,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "呼作白玉盤"
+  },
+  "咬定青山不放松": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zhushi",
+   "sourceTrad": "清·鄭燮《竹石》",
+   "trad": "咬定青山不放松"
+  },
+  "唯见长江天际流": {
+   "at": 7,
+   "line": 1,
+   "poemId": "huanghelou",
+   "sourceTrad": "唐·李白《黃鶴樓送孟浩然之廣陵》",
+   "trad": "唯見長江天際流"
+  },
+  "商女不知亡国恨": {
+   "at": 0,
+   "line": 1,
+   "poemId": "boqinhuai",
+   "sourceTrad": "唐·杜牧《泊秦淮》",
+   "trad": "商女不知亡國恨"
+  },
+  "四海无闲田": {
+   "at": 0,
+   "line": 1,
+   "poemId": "minnong1",
+   "sourceTrad": "唐·李紳《憫農其一》",
+   "trad": "四海無閒田"
+  },
+  "国破山河在": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "國破山河在"
+  },
+  "城春草木深": {
+   "at": 5,
+   "line": 0,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "城春草木深"
+  },
+  "城阙辅三秦": {
+   "at": 0,
+   "line": 0,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "城闕輔三秦"
+  },
+  "塞上燕脂凝夜紫": {
+   "at": 7,
+   "line": 1,
+   "poemId": "yanmenshiweixing",
+   "sourceTrad": "唐·李賀《雁門太守行》",
+   "trad": "塞上燕脂凝夜紫"
+  },
+  "墙角数枝梅": {
+   "at": 0,
+   "line": 0,
+   "poemId": "meihua",
+   "sourceTrad": "宋·王安石《梅花》",
+   "trad": "牆角數枝梅"
+  },
+  "处处闻啼鸟": {
+   "at": 5,
+   "line": 0,
+   "poemId": "chunxiao",
+   "sourceTrad": "唐·孟浩然《春曉》",
+   "trad": "處處聞啼鳥"
+  },
+  "复照青苔上": {
+   "at": 5,
+   "line": 1,
+   "poemId": "luchai",
+   "sourceTrad": "唐·王維《鹿柴》",
+   "trad": "復照青苔上"
+  },
+  "多少楼台烟雨中": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jiangnanchun",
+   "sourceTrad": "唐·杜牧《江南春》",
+   "trad": "多少樓臺煙雨中"
+  },
+  "夜半钟声到客船": {
+   "at": 7,
+   "line": 1,
+   "poemId": "fengqiaoyebo",
+   "sourceTrad": "唐·張繼《楓橋夜泊》",
+   "trad": "夜半鐘聲到客船"
+  },
+  "夜来风雨声": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chunxiao",
+   "sourceTrad": "唐·孟浩然《春曉》",
+   "trad": "夜來風雨聲"
+  },
+  "夜泊秦淮近酒家": {
+   "at": 7,
+   "line": 0,
+   "poemId": "boqinhuai",
+   "sourceTrad": "唐·杜牧《泊秦淮》",
+   "trad": "夜泊秦淮近酒家"
+  },
+  "夜深篱落一灯明": {
+   "at": 7,
+   "line": 1,
+   "poemId": "yeshusuojian",
+   "sourceTrad": "宋·葉紹翁《夜書所見》",
+   "trad": "夜深籬落一燈明"
+  },
+  "夜静春山空": {
+   "at": 5,
+   "line": 0,
+   "poemId": "niaomingjian",
+   "sourceTrad": "唐·王維《鳥鳴澗》",
+   "trad": "夜靜春山空"
+  },
+  "大漠孤烟直": {
+   "at": 0,
+   "line": 2,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "大漠孤煙直"
+  },
+  "大漠沙如雪": {
+   "at": 0,
+   "line": 0,
+   "poemId": "mashi",
+   "sourceTrad": "唐·李賀《馬詩》",
+   "trad": "大漠沙如雪"
+  },
+  "大雪满弓刀": {
+   "at": 5,
+   "line": 1,
+   "poemId": "saixiaqu",
+   "sourceTrad": "唐·盧綸《塞下曲》",
+   "trad": "大雪滿弓刀"
+  },
+  "天下谁人不识君": {
+   "at": 7,
+   "line": 1,
+   "poemId": "biedongda",
+   "sourceTrad": "唐·高適《別董大》",
+   "trad": "天下誰人不識君"
+  },
+  "天光云影共徘徊": {
+   "at": 7,
+   "line": 0,
+   "poemId": "guanshu",
+   "sourceTrad": "宋·朱熹《觀書有感》",
+   "trad": "天光雲影共徘徊"
+  },
+  "天气晚来秋": {
+   "at": 5,
+   "line": 0,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "天氣晚來秋"
+  },
+  "天涯若比邻": {
+   "at": 5,
+   "line": 2,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "天涯若比鄰"
+  },
+  "天街小雨润如酥": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zaochun",
+   "sourceTrad": "唐·韓愈《早春呈水部張十八員外》",
+   "trad": "天街小雨潤如酥"
+  },
+  "天门中断楚江开": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wangtianmenshan",
+   "sourceTrad": "唐·李白《望天門山》",
+   "trad": "天門中斷楚江開"
+  },
+  "头上红冠不用裁": {
+   "at": 0,
+   "line": 0,
+   "poemId": "huaji",
+   "sourceTrad": "明·唐寅《畫雞》",
+   "trad": "頭上紅冠不用裁"
+  },
+  "女娲炼石补天处": {
+   "at": 0,
+   "line": 4,
+   "poemId": "lipeng",
+   "sourceTrad": "唐·李賀《李憑箜篌引》",
+   "trad": "女媧煉石補天處"
+  },
+  "好雨知时节": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "好雨知時節"
+  },
+  "姑苏城外寒山寺": {
+   "at": 0,
+   "line": 1,
+   "poemId": "fengqiaoyebo",
+   "sourceTrad": "唐·張繼《楓橋夜泊》",
+   "trad": "姑蘇城外寒山寺"
+  },
+  "嫦娥应悔偷灵药": {
+   "at": 0,
+   "line": 1,
+   "poemId": "change",
+   "sourceTrad": "唐·李商隱《嫦娥》",
+   "trad": "嫦娥應悔偷靈藥"
+  },
+  "子规声里雨如烟": {
+   "at": 7,
+   "line": 0,
+   "poemId": "xiangcunsiyue",
+   "sourceTrad": "宋·翁卷《鄉村四月》",
+   "trad": "子規聲里雨如煙"
+  },
+  "孤云独去闲": {
+   "at": 5,
+   "line": 0,
+   "poemId": "duzuojingting",
+   "sourceTrad": "唐·李白《獨坐敬亭山》",
+   "trad": "孤雲獨去閑"
+  },
+  "孤光一点萤": {
+   "at": 5,
+   "line": 0,
+   "poemId": "zhouyeshujian",
+   "sourceTrad": "清·查慎行《舟夜書所見》",
+   "trad": "孤光一點螢"
+  },
+  "孤城遥望玉门关": {
+   "at": 7,
+   "line": 0,
+   "poemId": "congjunxing",
+   "sourceTrad": "唐·王昌齡《從軍行》",
+   "trad": "孤城遙望玉門關"
+  },
+  "孤山寺北贾亭西": {
+   "at": 0,
+   "line": 0,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "孤山寺北賈亭西"
+  },
+  "孤帆一片日边来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wangtianmenshan",
+   "sourceTrad": "唐·李白《望天門山》",
+   "trad": "孤帆一片日邊來"
+  },
+  "孤帆远影碧空尽": {
+   "at": 0,
+   "line": 1,
+   "poemId": "huanghelou",
+   "sourceTrad": "唐·李白《黃鶴樓送孟浩然之廣陵》",
+   "trad": "孤帆遠影碧空盡"
+  },
+  "孤舟蓑笠翁": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jiangxue",
+   "sourceTrad": "唐·柳宗元《江雪》",
+   "trad": "孤舟蓑笠翁"
+  },
+  "守拙归园田": {
+   "at": 5,
+   "line": 3,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "守拙歸園田"
+  },
+  "客舍青青柳色新": {
+   "at": 7,
+   "line": 0,
+   "poemId": "songyuaner",
+   "sourceTrad": "唐·王維《送元二使安西》",
+   "trad": "客舍青青柳色新"
+  },
+  "客路青山外": {
+   "at": 0,
+   "line": 0,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "客路青山外"
+  },
+  "家书抵万金": {
+   "at": 5,
+   "line": 2,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "家書抵萬金"
+  },
+  "家家乞巧望秋月": {
+   "at": 0,
+   "line": 1,
+   "poemId": "qiqiao",
+   "sourceTrad": "唐·林傑《乞巧》",
+   "trad": "家家乞巧望秋月"
+  },
+  "家祭无忘告乃翁": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shier",
+   "sourceTrad": "宋·陸遊《示兒》",
+   "trad": "家祭無忘告乃翁"
+  },
+  "寒雨连江夜入吴": {
+   "at": 0,
+   "line": 0,
+   "poemId": "furonglou",
+   "sourceTrad": "唐·王昌齡《芙蓉樓送辛漸》",
+   "trad": "寒雨連江夜入吳"
+  },
+  "寒食东风御柳斜": {
+   "at": 7,
+   "line": 0,
+   "poemId": "hanshi",
+   "sourceTrad": "唐·韓翃《寒食》",
+   "trad": "寒食東風御柳斜"
+  },
+  "小娃撑小艇": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chishang",
+   "sourceTrad": "唐·白居易《池上》",
+   "trad": "小娃撐小艇"
+  },
+  "小扣柴扉久不开": {
+   "at": 7,
+   "line": 0,
+   "poemId": "youyuanbuzhi",
+   "sourceTrad": "宋·葉紹翁《遊園不值》",
+   "trad": "小扣柴扉久不開"
+  },
+  "小时不识月": {
+   "at": 0,
+   "line": 0,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "小時不識月"
+  },
+  "小楼一夜听春雨": {
+   "at": 0,
+   "line": 1,
+   "poemId": "linanchunyu",
+   "sourceTrad": "宋·陸遊《臨安春雨初霽》",
+   "trad": "小樓一夜聽春雨"
+  },
+  "小溪泛尽却山行": {
+   "at": 7,
+   "line": 0,
+   "poemId": "sanqudaozhong",
+   "sourceTrad": "宋·曾幾《三衢道中》",
+   "trad": "小溪泛盡卻山行"
+  },
+  "小荷才露尖尖角": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xiaochi",
+   "sourceTrad": "宋·楊萬里《小池》",
+   "trad": "小荷才露尖尖角"
+  },
+  "少小离家老大回": {
+   "at": 0,
+   "line": 0,
+   "poemId": "huixiangyoushu",
+   "sourceTrad": "唐·賀知章《回鄉偶書》",
+   "trad": "少小離家老大回"
+  },
+  "少无适俗韵": {
+   "at": 0,
+   "line": 0,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "少無適俗韻"
+  },
+  "属国过居延": {
+   "at": 5,
+   "line": 0,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "屬國過居延"
+  },
+  "山外青山楼外楼": {
+   "at": 0,
+   "line": 0,
+   "poemId": "tilinandi",
+   "sourceTrad": "宋·林升《題臨安邸》",
+   "trad": "山外青山樓外樓"
+  },
+  "山寺桃花始盛开": {
+   "at": 7,
+   "line": 0,
+   "poemId": "dalinsitaohua",
+   "sourceTrad": "唐·白居易《大林寺桃花》",
+   "trad": "山寺桃花始盛開"
+  },
+  "山山唯落晖": {
+   "at": 5,
+   "line": 1,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "山山唯落暉"
+  },
+  "山气日夕佳": {
+   "at": 0,
+   "line": 3,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "山氣日夕佳"
+  },
+  "山河破碎风飘絮": {
+   "at": 0,
+   "line": 1,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "山河破碎風飄絮"
+  },
+  "山色空蒙雨亦奇": {
+   "at": 7,
+   "line": 0,
+   "poemId": "yinhushang",
+   "sourceTrad": "宋·蘇軾《飲湖上初晴後雨》",
+   "trad": "山色空蒙雨亦奇"
+  },
+  "山衔落日浸寒漪": {
+   "at": 7,
+   "line": 0,
+   "poemId": "cunwan",
+   "sourceTrad": "宋·雷震《村晚》",
+   "trad": "山銜落日浸寒漪"
+  },
+  "山重水复疑无路": {
+   "at": 0,
+   "line": 1,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "山重水複疑無路"
+  },
+  "岱宗夫如何": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "岱宗夫如何"
+  },
+  "巴山夜雨涨秋池": {
+   "at": 7,
+   "line": 0,
+   "poemId": "yeyujibei",
+   "sourceTrad": "唐·李商隱《夜雨寄北》",
+   "trad": "巴山夜雨漲秋池"
+  },
+  "巴山楚水凄凉地": {
+   "at": 0,
+   "line": 0,
+   "poemId": "choulitian",
+   "sourceTrad": "唐·劉禹錫《酬樂天揚州初逢席上見贈》",
+   "trad": "巴山楚水淒涼地"
+  },
+  "干戈寥落四周星": {
+   "at": 7,
+   "line": 0,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "干戈寥落四周星"
+  },
+  "平明送客楚山孤": {
+   "at": 7,
+   "line": 0,
+   "poemId": "furonglou",
+   "sourceTrad": "唐·王昌齡《芙蓉樓送辛漸》",
+   "trad": "平明送客楚山孤"
+  },
+  "平生不敢轻言语": {
+   "at": 0,
+   "line": 1,
+   "poemId": "huaji",
+   "sourceTrad": "明·唐寅《畫雞》",
+   "trad": "平生不敢輕言語"
+  },
+  "庄生晓梦迷蝴蝶": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jinse",
+   "sourceTrad": "唐·李商隱《錦瑟》",
+   "trad": "莊生曉夢迷蝴蝶"
+  },
+  "床前明月光": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jingyesi",
+   "sourceTrad": "唐·李白《靜夜思》",
+   "trad": "牀前明月光"
+  },
+  "应怜屐齿印苍苔": {
+   "at": 0,
+   "line": 0,
+   "poemId": "youyuanbuzhi",
+   "sourceTrad": "宋·葉紹翁《遊園不值》",
+   "trad": "應憐屐齒印蒼苔"
+  },
+  "开荒南野际": {
+   "at": 0,
+   "line": 3,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "開荒南野際"
+  },
+  "开轩面场圃": {
+   "at": 0,
+   "line": 2,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "開軒面場圃"
+  },
+  "弹琴复长啸": {
+   "at": 5,
+   "line": 0,
+   "poemId": "zhuliguan",
+   "sourceTrad": "唐·王維《竹里館》",
+   "trad": "彈琴復長嘯"
+  },
+  "归雁入胡天": {
+   "at": 5,
+   "line": 1,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "歸雁入胡天"
+  },
+  "归雁洛阳边": {
+   "at": 5,
+   "line": 3,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "歸雁洛陽邊"
+  },
+  "当春乃发生": {
+   "at": 5,
+   "line": 0,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "當春乃發生"
+  },
+  "彩丝穿取当银钲": {
+   "at": 7,
+   "line": 0,
+   "poemId": "zhizibing",
+   "sourceTrad": "宋·楊萬里《稚子弄冰》",
+   "trad": "彩絲穿取當銀鉦"
+  },
+  "彩丝穿取当银铮": {
+   "at": -1,
+   "derive": "table",
+   "forks": [
+    {
+     "cands": [
+      "彩",
+      "綵"
+     ],
+     "decision": "identity",
+     "pick": null,
+     "simp": "彩"
+    },
+    {
+     "cands": [
+      "絲"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "丝"
+    },
+    {
+     "cands": [
+      "當",
+      "噹"
+     ],
+     "decision": "pending",
+     "pick": null,
+     "simp": "当"
+    },
+    {
+     "cands": [
+      "銀"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "银"
+    },
+    {
+     "cands": [
+      "錚"
+     ],
+     "decision": "table",
+     "pick": null,
+     "simp": "铮"
+    }
+   ],
+   "line": -1,
+   "poemId": "zhizibing",
+   "sourceTrad": "宋·楊萬里《稚子弄冰》",
+   "trad": "彩絲穿取當銀錚",
+   "why": "这一句是本篇的通行异文：内容仓《稚子弄冰》正文作「彩丝穿取当银钲」（教材版），词库里另有一条作「当银铮」。两句都保留为历史答案，繁体形按繁简表派生。"
+  },
+  "征蓬出汉塞": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "征蓬出漢塞"
+  },
+  "待到重阳日": {
+   "at": 0,
+   "line": 3,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "待到重陽日"
+  },
+  "徙倚欲何依": {
+   "at": 5,
+   "line": 0,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "徙倚欲何依"
+  },
+  "微微风簇浪": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zhouyeshujian",
+   "sourceTrad": "清·查慎行《舟夜書所見》",
+   "trad": "微微風簇浪"
+  },
+  "心忧炭贱愿天寒": {
+   "at": 7,
+   "line": 3,
+   "poemId": "maotanshangwu",
+   "sourceTrad": "唐·白居易《賣炭翁》",
+   "trad": "心憂炭賤願天寒"
+  },
+  "心远地自偏": {
+   "at": 5,
+   "line": 1,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "心遠地自偏"
+  },
+  "忙趁东风放纸鸢": {
+   "at": 7,
+   "line": 1,
+   "poemId": "cunju",
+   "sourceTrad": "清·高鼎《村居》",
+   "trad": "忙趁東風放紙鳶"
+  },
+  "快走踏清秋": {
+   "at": 5,
+   "line": 1,
+   "poemId": "mashi",
+   "sourceTrad": "唐·李賀《馬詩》",
+   "trad": "快走踏清秋"
+  },
+  "快阁东西倚晚晴": {
+   "at": 7,
+   "line": 0,
+   "poemId": "dengkuai-ge",
+   "sourceTrad": "宋·黃庭堅《登快閣》",
+   "trad": "快閣東西倚晚晴"
+  },
+  "忽作玻璃碎地声": {
+   "at": 7,
+   "line": 1,
+   "poemId": "zhizibing",
+   "sourceTrad": "宋·楊萬里《稚子弄冰》",
+   "trad": "忽作玻璃碎地聲"
+  },
+  "忽如一夜春风来": {
+   "at": 0,
+   "line": 1,
+   "poemId": "baixuege",
+   "sourceTrad": "唐·岑參《白雪歌送武判官歸京》",
+   "trad": "忽如一夜春風來"
+  },
+  "忽然闭口立": {
+   "at": 5,
+   "line": 1,
+   "poemId": "suojian",
+   "sourceTrad": "清·袁枚《所見》",
+   "trad": "忽然閉口立"
+  },
+  "忽闻岸上踏歌声": {
+   "at": 7,
+   "line": 0,
+   "poemId": "zengwanglun",
+   "sourceTrad": "唐·李白《贈汪倫》",
+   "trad": "忽聞岸上踏歌聲"
+  },
+  "怀旧空吟闻笛赋": {
+   "at": 0,
+   "line": 1,
+   "poemId": "choulitian",
+   "sourceTrad": "唐·劉禹錫《酬樂天揚州初逢席上見贈》",
+   "trad": "懷舊空吟聞笛賦"
+  },
+  "怕得鱼惊不应人": {
+   "at": 7,
+   "line": 1,
+   "poemId": "xiaoerchuidiao",
+   "sourceTrad": "唐·胡令能《小兒垂釣》",
+   "trad": "怕得魚驚不應人"
+  },
+  "性本爱丘山": {
+   "at": 5,
+   "line": 0,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "性本愛丘山"
+  },
+  "总把新桃换旧符": {
+   "at": 7,
+   "line": 1,
+   "poemId": "yuanri",
+   "sourceTrad": "宋·王安石《元日》",
+   "trad": "總把新桃換舊符"
+  },
+  "恐惊天上人": {
+   "at": 5,
+   "line": 1,
+   "poemId": "yesushansi",
+   "sourceTrad": "唐·李白《夜宿山寺》",
+   "trad": "恐驚天上人"
+  },
+  "恨别鸟惊心": {
+   "at": 5,
+   "line": 1,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "恨別鳥驚心"
+  },
+  "悠然见南山": {
+   "at": 5,
+   "line": 2,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "悠然見南山"
+  },
+  "惟有蜻蜓蛱蝶飞": {
+   "at": 7,
+   "line": 1,
+   "poemId": "sishitianyuan-25",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "惟有蜻蜓蛺蝶飛"
+  },
+  "惟解漫天作雪飞": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wanchun",
+   "sourceTrad": "唐·韓愈《晚春》",
+   "trad": "惟解漫天作雪飛"
+  },
+  "惶恐滩头说惶恐": {
+   "at": 0,
+   "line": 2,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "惶恐灘頭說惶恐"
+  },
+  "意欲捕鸣蝉": {
+   "at": 0,
+   "line": 1,
+   "poemId": "suojian",
+   "sourceTrad": "清·袁枚《所見》",
+   "trad": "意欲捕鳴蟬"
+  },
+  "感时花溅泪": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "感時花濺淚"
+  },
+  "愿君多采撷": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xiangsi",
+   "sourceTrad": "唐·王維《相思》",
+   "trad": "願君多采擷"
+  },
+  "戎马关山北": {
+   "at": 0,
+   "line": 3,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "戎馬關山北"
+  },
+  "我劝天公重抖擞": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jihai",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "我勸天公重抖擻"
+  },
+  "我家洗砚池头树": {
+   "at": 0,
+   "line": 0,
+   "poemId": "momei",
+   "sourceTrad": "元·王冕《墨梅》",
+   "trad": "我家洗硯池頭樹"
+  },
+  "我寄愁心与明月": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wenwangchangling",
+   "sourceTrad": "唐·李白《聞王昌齡左遷龍標遙有此寄》",
+   "trad": "我寄愁心與明月"
+  },
+  "手可摘星辰": {
+   "at": 5,
+   "line": 0,
+   "poemId": "yesushansi",
+   "sourceTrad": "唐·李白《夜宿山寺》",
+   "trad": "手可摘星辰"
+  },
+  "才了蚕桑又插田": {
+   "at": 7,
+   "line": 1,
+   "poemId": "xiangcunsiyue",
+   "sourceTrad": "宋·翁卷《鄉村四月》",
+   "trad": "才了蠶桑又插田"
+  },
+  "把酒话桑麻": {
+   "at": 5,
+   "line": 2,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "把酒話桑麻"
+  },
+  "折戟沉沙铁未销": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chibi-du",
+   "sourceTrad": "唐·杜牧《赤壁》",
+   "trad": "折戟沉沙鐵未銷"
+  },
+  "拂堤杨柳醉春烟": {
+   "at": 7,
+   "line": 0,
+   "poemId": "cunju",
+   "sourceTrad": "清·高鼎《村居》",
+   "trad": "拂堤楊柳醉春煙"
+  },
+  "拄杖无时夜叩门": {
+   "at": 7,
+   "line": 3,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "拄杖無時夜叩門"
+  },
+  "接天莲叶无穷碧": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jingcisi",
+   "sourceTrad": "宋·楊萬里《曉出淨慈寺送林子方》",
+   "trad": "接天蓮叶無窮碧"
+  },
+  "故人具鸡黍": {
+   "at": 0,
+   "line": 0,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "故人具雞黍"
+  },
+  "故人西辞黄鹤楼": {
+   "at": 0,
+   "line": 0,
+   "poemId": "huanghelou",
+   "sourceTrad": "唐·李白《黃鶴樓送孟浩然之廣陵》",
+   "trad": "故人西辭黃鶴樓"
+  },
+  "故园东望路漫漫": {
+   "at": 0,
+   "line": 0,
+   "poemId": "fengrujinshi",
+   "sourceTrad": "唐·岑參《逢入京使》",
+   "trad": "故園東望路漫漫"
+  },
+  "散作满河星": {
+   "at": 5,
+   "line": 1,
+   "poemId": "zhouyeshujian",
+   "sourceTrad": "清·查慎行《舟夜書所見》",
+   "trad": "散作滿河星"
+  },
+  "散入春风满洛城": {
+   "at": 7,
+   "line": 0,
+   "poemId": "chunyeluocheng",
+   "sourceTrad": "唐·李白《春夜洛城聞笛》",
+   "trad": "散入春風滿洛城"
+  },
+  "敲成玉磬穿林响": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zhizibing",
+   "sourceTrad": "宋·楊萬里《稚子弄冰》",
+   "trad": "敲成玉磬穿林響"
+  },
+  "无为在歧路": {
+   "at": 0,
+   "line": 3,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "無爲在歧路"
+  },
+  "无边光景一时新": {
+   "at": 7,
+   "line": 0,
+   "poemId": "chunri",
+   "sourceTrad": "宋·朱熹《春日》",
+   "trad": "無邊光景一時新"
+  },
+  "无边落木萧萧下": {
+   "at": 0,
+   "line": 1,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "無邊落木蕭蕭下"
+  },
+  "无限风光尽被占": {
+   "at": 7,
+   "line": 0,
+   "poemId": "feng-mi",
+   "sourceTrad": "唐·羅隱《蜂》",
+   "trad": "無限風光盡被占"
+  },
+  "日暮乡关何处是": {
+   "at": 0,
+   "line": 3,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "日暮鄉關何處是"
+  },
+  "日暮客愁新": {
+   "at": 5,
+   "line": 0,
+   "poemId": "sujiandejiang",
+   "sourceTrad": "唐·孟浩然《宿建德江》",
+   "trad": "日暮客愁新"
+  },
+  "日暮汉宫传蜡烛": {
+   "at": 0,
+   "line": 1,
+   "poemId": "hanshi",
+   "sourceTrad": "唐·韓翃《寒食》",
+   "trad": "日暮漢宮傳蠟燭"
+  },
+  "日照香炉生紫烟": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wanglushanpubu",
+   "sourceTrad": "唐·李白《望廬山瀑布》",
+   "trad": "日照香爐生紫煙"
+  },
+  "日长篱落无人过": {
+   "at": 0,
+   "line": 1,
+   "poemId": "sishitianyuan-25",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "日長籬落無人過"
+  },
+  "早岁那知世事艰": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shufen",
+   "sourceTrad": "宋·陸遊《書憤》",
+   "trad": "早歲那知世事艱"
+  },
+  "早有蜻蜓立上头": {
+   "at": 7,
+   "line": 1,
+   "poemId": "xiaochi",
+   "sourceTrad": "宋·楊萬里《小池》",
+   "trad": "早有蜻蜓立上頭"
+  },
+  "时鸣春涧中": {
+   "at": 5,
+   "line": 1,
+   "poemId": "niaomingjian",
+   "sourceTrad": "唐·王維《鳥鳴澗》",
+   "trad": "時鳴春澗中"
+  },
+  "昆山玉碎凤凰叫": {
+   "at": 0,
+   "line": 2,
+   "poemId": "lipeng",
+   "sourceTrad": "唐·李賀《李憑箜篌引》",
+   "trad": "昆山玉碎鳳凰叫"
+  },
+  "明月何时照我还": {
+   "at": 7,
+   "line": 1,
+   "poemId": "bochuanguazhou",
+   "sourceTrad": "宋·王安石《泊船瓜洲》",
+   "trad": "明月何時照我還"
+  },
+  "明月来相照": {
+   "at": 5,
+   "line": 1,
+   "poemId": "zhuliguan",
+   "sourceTrad": "唐·王維《竹里館》",
+   "trad": "明月來相照"
+  },
+  "明月松间照": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "明月松間照"
+  },
+  "昔人已乘黄鹤去": {
+   "at": 0,
+   "line": 0,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "昔人已乘黃鶴去"
+  },
+  "昔闻洞庭水": {
+   "at": 0,
+   "line": 0,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "昔聞洞庭水"
+  },
+  "映日荷花别样红": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jingcisi",
+   "sourceTrad": "宋·楊萬里《曉出淨慈寺送林子方》",
+   "trad": "映日荷花別樣紅"
+  },
+  "春光懒困倚微风": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jiangpan",
+   "sourceTrad": "唐·杜甫《江畔獨步尋花》",
+   "trad": "春光懶困倚微風"
+  },
+  "春去花还在": {
+   "at": 0,
+   "line": 1,
+   "poemId": "hua",
+   "sourceTrad": "唐·王維《畫》",
+   "trad": "春去花還在"
+  },
+  "春城无处不飞花": {
+   "at": 0,
+   "line": 0,
+   "poemId": "hanshi",
+   "sourceTrad": "唐·韓翃《寒食》",
+   "trad": "春城無處不飛花"
+  },
+  "春来发几枝": {
+   "at": 5,
+   "line": 0,
+   "poemId": "xiangsi",
+   "sourceTrad": "唐·王維《相思》",
+   "trad": "春來發幾枝"
+  },
+  "春江水暖鸭先知": {
+   "at": 7,
+   "line": 0,
+   "poemId": "huichongchunjiang",
+   "sourceTrad": "宋·蘇軾《惠崇春江晚景》",
+   "trad": "春江水暖鴨先知"
+  },
+  "春江潮水连海平": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chunjianghuayue",
+   "sourceTrad": "唐·張若虛《春江花月夜》",
+   "trad": "春江潮水連海平"
+  },
+  "春潮带雨晚来急": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chuzhouxijian",
+   "sourceTrad": "唐·韋應物《滁州西澗》",
+   "trad": "春潮帶雨晚來急"
+  },
+  "春眠不觉晓": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chunxiao",
+   "sourceTrad": "唐·孟浩然《春曉》",
+   "trad": "春眠不覺曉"
+  },
+  "春种一粒粟": {
+   "at": 0,
+   "line": 0,
+   "poemId": "minnong1",
+   "sourceTrad": "唐·李紳《憫農其一》",
+   "trad": "春種一粒粟"
+  },
+  "春色满园关不住": {
+   "at": 0,
+   "line": 1,
+   "poemId": "youyuanbuzhi",
+   "sourceTrad": "宋·葉紹翁《遊園不值》",
+   "trad": "春色滿園關不住"
+  },
+  "春蚕到死丝方尽": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wuti",
+   "sourceTrad": "唐·李商隱《無題》",
+   "trad": "春蠶到死絲方盡"
+  },
+  "春风不度玉门关": {
+   "at": 7,
+   "line": 1,
+   "poemId": "liangzhouci-wangzhihuan",
+   "sourceTrad": "唐·王之渙《涼州詞》",
+   "trad": "春風不度玉門關"
+  },
+  "春风又绿江南岸": {
+   "at": 0,
+   "line": 1,
+   "poemId": "bochuanguazhou",
+   "sourceTrad": "宋·王安石《泊船瓜洲》",
+   "trad": "春風又綠江南岸"
+  },
+  "春风吹又生": {
+   "at": 5,
+   "line": 1,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "春風吹又生"
+  },
+  "春风花草香": {
+   "at": 5,
+   "line": 0,
+   "poemId": "jueju-chiri",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "春風花草香"
+  },
+  "春风送暖入屠苏": {
+   "at": 7,
+   "line": 0,
+   "poemId": "yuanri",
+   "sourceTrad": "宋·王安石《元日》",
+   "trad": "春風送暖入屠蘇"
+  },
+  "昼出耘田夜绩麻": {
+   "at": 0,
+   "line": 0,
+   "poemId": "sishitianyuan-31",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "晝出耘田夜績麻"
+  },
+  "晓看红湿处": {
+   "at": 0,
+   "line": 3,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "曉看紅溼處"
+  },
+  "晴川历历汉阳树": {
+   "at": 0,
+   "line": 2,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "晴川歷歷漢陽樹"
+  },
+  "晴翠接荒城": {
+   "at": 5,
+   "line": 2,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "晴翠接荒城"
+  },
+  "暖风熏得游人醉": {
+   "at": 0,
+   "line": 1,
+   "poemId": "tilinandi",
+   "sourceTrad": "宋·林升《題臨安邸》",
+   "trad": "暖風熏得遊人醉"
+  },
+  "更上一层楼": {
+   "at": 5,
+   "line": 1,
+   "poemId": "dengguanquelou",
+   "sourceTrad": "唐·王之渙《登鸛雀樓》",
+   "trad": "更上一層樓"
+  },
+  "最是一年春好处": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zaochun",
+   "sourceTrad": "唐·韓愈《早春呈水部張十八員外》",
+   "trad": "最是一年春好處"
+  },
+  "最爱湖东行不足": {
+   "at": 0,
+   "line": 3,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "最愛湖東行不足"
+  },
+  "月出惊山鸟": {
+   "at": 0,
+   "line": 1,
+   "poemId": "niaomingjian",
+   "sourceTrad": "唐·王維《鳥鳴澗》",
+   "trad": "月出驚山鳥"
+  },
+  "月落乌啼霜满天": {
+   "at": 0,
+   "line": 0,
+   "poemId": "fengqiaoyebo",
+   "sourceTrad": "唐·張繼《楓橋夜泊》",
+   "trad": "月落烏啼霜滿天"
+  },
+  "月黑见渔灯": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zhouyeshujian",
+   "sourceTrad": "清·查慎行《舟夜書所見》",
+   "trad": "月黑見漁燈"
+  },
+  "月黑雁飞高": {
+   "at": 0,
+   "line": 0,
+   "poemId": "saixiaqu",
+   "sourceTrad": "唐·盧綸《塞下曲》",
+   "trad": "月黑雁飛高"
+  },
+  "望帝春心托杜鹃": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jinse",
+   "sourceTrad": "唐·李商隱《錦瑟》",
+   "trad": "望帝春心托杜鵑"
+  },
+  "望湖楼下水如天": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wanghulou",
+   "sourceTrad": "宋·蘇軾《六月二十七日望湖樓醉書》",
+   "trad": "望湖樓下水如天"
+  },
+  "朝辞白帝彩云间": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zaofabaidicheng",
+   "sourceTrad": "唐·李白《早發白帝城》",
+   "trad": "朝辭白帝彩雲間"
+  },
+  "札札弄机杼": {
+   "at": 5,
+   "line": 1,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "札札弄機杼"
+  },
+  "朱弦已为佳人绝": {
+   "at": 0,
+   "line": 2,
+   "poemId": "dengkuai-ge",
+   "sourceTrad": "宋·黃庭堅《登快閣》",
+   "trad": "朱弦已爲佳人絕"
+  },
+  "朵朵花开淡墨痕": {
+   "at": 7,
+   "line": 0,
+   "poemId": "momei",
+   "sourceTrad": "元·王冕《墨梅》",
+   "trad": "朵朵花開淡墨痕"
+  },
+  "李白乘舟将欲行": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zengwanglun",
+   "sourceTrad": "唐·李白《贈汪倫》",
+   "trad": "李白乘舟將欲行"
+  },
+  "村庄儿女各当家": {
+   "at": 7,
+   "line": 0,
+   "poemId": "sishitianyuan-31",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "村莊兒女各當家"
+  },
+  "杨花榆荚无才思": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wanchun",
+   "sourceTrad": "唐·韓愈《晚春》",
+   "trad": "楊花榆莢無才思"
+  },
+  "杨花落尽子规啼": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wenwangchangling",
+   "sourceTrad": "唐·李白《聞王昌齡左遷龍標遙有此寄》",
+   "trad": "楊花落盡子規啼"
+  },
+  "松下问童子": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xunyinzhe",
+   "sourceTrad": "唐·賈島《尋隱者不遇》",
+   "trad": "松下問童子"
+  },
+  "柳暗花明又一村": {
+   "at": 7,
+   "line": 1,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "柳暗花明又一村"
+  },
+  "树头新绿未成阴": {
+   "at": 7,
+   "line": 0,
+   "poemId": "suxinshi",
+   "sourceTrad": "宋·楊萬里《宿新市徐公店》",
+   "trad": "樹頭新綠未成陰"
+  },
+  "树树皆秋色": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "樹樹皆秋色"
+  },
+  "树阴照水爱晴柔": {
+   "at": 7,
+   "line": 0,
+   "poemId": "xiaochi",
+   "sourceTrad": "宋·楊萬里《小池》",
+   "trad": "樹陰照水愛晴柔"
+  },
+  "桂树何团团": {
+   "at": 5,
+   "line": 2,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "桂樹何團團"
+  },
+  "桃花一簇开无主": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jiangpan",
+   "sourceTrad": "唐·杜甫《江畔獨步尋花》",
+   "trad": "桃花一簇開無主"
+  },
+  "桃花潭水深千尺": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zengwanglun",
+   "sourceTrad": "唐·李白《贈汪倫》",
+   "trad": "桃花潭水深千尺"
+  },
+  "梅子金黄杏子肥": {
+   "at": 0,
+   "line": 0,
+   "poemId": "sishitianyuan-25",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "梅子金黃杏子肥"
+  },
+  "梅子黄时日日晴": {
+   "at": 0,
+   "line": 0,
+   "poemId": "sanqudaozhong",
+   "sourceTrad": "宋·曾幾《三衢道中》",
+   "trad": "梅子黃時日日晴"
+  },
+  "梅雪争春未肯降": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xuemei",
+   "sourceTrad": "宋·盧梅坡《雪梅》",
+   "trad": "梅雪爭春未肯降"
+  },
+  "梅须逊雪三分白": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xuemei",
+   "sourceTrad": "宋·盧梅坡《雪梅》",
+   "trad": "梅須遜雪三分白"
+  },
+  "楼船夜雪瓜洲渡": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shufen",
+   "sourceTrad": "宋·陸遊《書憤》",
+   "trad": "樓船夜雪瓜洲渡"
+  },
+  "横看成岭侧成峰": {
+   "at": 0,
+   "line": 0,
+   "poemId": "longpo",
+   "sourceTrad": "宋·蘇軾《題西林壁》",
+   "trad": "橫看成嶺側成峯"
+  },
+  "欲将轻骑逐": {
+   "at": 0,
+   "line": 1,
+   "poemId": "saixiaqu",
+   "sourceTrad": "唐·盧綸《塞下曲》",
+   "trad": "欲將輕騎逐"
+  },
+  "欲把西湖比西子": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yinhushang",
+   "sourceTrad": "宋·蘇軾《飲湖上初晴後雨》",
+   "trad": "欲把西湖比西子"
+  },
+  "欲穷千里目": {
+   "at": 0,
+   "line": 1,
+   "poemId": "dengguanquelou",
+   "sourceTrad": "唐·王之渙《登鸛雀樓》",
+   "trad": "欲窮千里目"
+  },
+  "欲辨已忘言": {
+   "at": 5,
+   "line": 4,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "欲辨已忘言"
+  },
+  "欲饮琵琶马上催": {
+   "at": 7,
+   "line": 0,
+   "poemId": "liangzhouci-wanghan",
+   "sourceTrad": "唐·王翰《涼州詞》",
+   "trad": "欲飲琵琶馬上催"
+  },
+  "歌声振林樾": {
+   "at": 5,
+   "line": 0,
+   "poemId": "suojian",
+   "sourceTrad": "清·袁枚《所見》",
+   "trad": "歌聲振林樾"
+  },
+  "正是橙黄橘绿时": {
+   "at": 7,
+   "line": 1,
+   "poemId": "zengliujingwen",
+   "sourceTrad": "宋·蘇軾《贈劉景文》",
+   "trad": "正是橙黃橘綠時"
+  },
+  "正是河豚欲上时": {
+   "at": 7,
+   "line": 1,
+   "poemId": "huichongchunjiang",
+   "sourceTrad": "宋·蘇軾《惠崇春江晚景》",
+   "trad": "正是河豚欲上時"
+  },
+  "此中有真意": {
+   "at": 0,
+   "line": 4,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "此中有真意"
+  },
+  "此地空余黄鹤楼": {
+   "at": 7,
+   "line": 0,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "此地空餘黃鶴樓"
+  },
+  "此夜曲中闻折柳": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chunyeluocheng",
+   "sourceTrad": "唐·李白《春夜洛城聞笛》",
+   "trad": "此夜曲中聞折柳"
+  },
+  "此情可待成追忆": {
+   "at": 0,
+   "line": 2,
+   "poemId": "jinse",
+   "sourceTrad": "唐·李商隱《錦瑟》",
+   "trad": "此情可待成追憶"
+  },
+  "此物最相思": {
+   "at": 5,
+   "line": 1,
+   "poemId": "xiangsi",
+   "sourceTrad": "唐·王維《相思》",
+   "trad": "此物最相思"
+  },
+  "死亦为鬼雄": {
+   "at": 5,
+   "line": 0,
+   "poemId": "xiarijueju",
+   "sourceTrad": "宋·李清照《夏日絕句》",
+   "trad": "死亦爲鬼雄"
+  },
+  "死去元知万事空": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shier",
+   "sourceTrad": "宋·陸遊《示兒》",
+   "trad": "死去元知萬事空"
+  },
+  "每逢佳节倍思亲": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jiuyuejiuri",
+   "sourceTrad": "唐·王維《九月九日憶山東兄弟》",
+   "trad": "每逢佳節倍思親"
+  },
+  "毕竟西湖六月中": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jingcisi",
+   "sourceTrad": "宋·楊萬里《曉出淨慈寺送林子方》",
+   "trad": "畢竟西湖六月中"
+  },
+  "水光潋滟晴方好": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yinhushang",
+   "sourceTrad": "宋·蘇軾《飲湖上初晴後雨》",
+   "trad": "水光瀲灧晴方好"
+  },
+  "水村山郭酒旗风": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jiangnanchun",
+   "sourceTrad": "唐·杜牧《江南春》",
+   "trad": "水村山郭酒旗風"
+  },
+  "水面初平云脚低": {
+   "at": 7,
+   "line": 0,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "水面初平雲腳低"
+  },
+  "汗滴禾下土": {
+   "at": 5,
+   "line": 0,
+   "poemId": "minnong2",
+   "sourceTrad": "唐·李紳《憫農其二》",
+   "trad": "汗滴禾下土"
+  },
+  "江上往来人": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jiangshangyuzhe",
+   "sourceTrad": "宋·範仲淹《江上漁者》",
+   "trad": "江上往來人"
+  },
+  "江上秋风动客情": {
+   "at": 7,
+   "line": 0,
+   "poemId": "yeshusuojian",
+   "sourceTrad": "宋·葉紹翁《夜書所見》",
+   "trad": "江上秋風動客情"
+  },
+  "江春入旧年": {
+   "at": 5,
+   "line": 2,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "江春入舊年"
+  },
+  "江月何年初照人": {
+   "at": 7,
+   "line": 5,
+   "poemId": "chunjianghuayue",
+   "sourceTrad": "唐·張若虛《春江花月夜》",
+   "trad": "江月何年初照人"
+  },
+  "江枫渔火对愁眠": {
+   "at": 7,
+   "line": 0,
+   "poemId": "fengqiaoyebo",
+   "sourceTrad": "唐·張繼《楓橋夜泊》",
+   "trad": "江楓漁火對愁眠"
+  },
+  "江清月近人": {
+   "at": 5,
+   "line": 1,
+   "poemId": "sujiandejiang",
+   "sourceTrad": "唐·孟浩然《宿建德江》",
+   "trad": "江清月近人"
+  },
+  "江畔何人初见月": {
+   "at": 0,
+   "line": 5,
+   "poemId": "chunjianghuayue",
+   "sourceTrad": "唐·張若虛《春江花月夜》",
+   "trad": "江畔何人初見月"
+  },
+  "江船火独明": {
+   "at": 5,
+   "line": 2,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "江船火獨明"
+  },
+  "池鱼思故渊": {
+   "at": 5,
+   "line": 2,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "池魚思故淵"
+  },
+  "沉舟侧畔千帆过": {
+   "at": 0,
+   "line": 2,
+   "poemId": "choulitian",
+   "sourceTrad": "唐·劉禹錫《酬樂天揚州初逢席上見贈》",
+   "trad": "沉舟側畔千帆過"
+  },
+  "沙暖睡鸳鸯": {
+   "at": 5,
+   "line": 1,
+   "poemId": "jueju-chiri",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "沙暖睡鴛鴦"
+  },
+  "沧海月明珠有泪": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jinse",
+   "sourceTrad": "唐·李商隱《錦瑟》",
+   "trad": "滄海月明珠有淚"
+  },
+  "河汉清且浅": {
+   "at": 0,
+   "line": 3,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "河漢清且淺"
+  },
+  "泉眼无声惜细流": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xiaochi",
+   "sourceTrad": "宋·楊萬里《小池》",
+   "trad": "泉眼無聲惜細流"
+  },
+  "泣涕零如雨": {
+   "at": 5,
+   "line": 2,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "泣涕零如雨"
+  },
+  "泥融飞燕子": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jueju-chiri",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "泥融飛燕子"
+  },
+  "洛阳亲友如相问": {
+   "at": 0,
+   "line": 1,
+   "poemId": "furonglou",
+   "sourceTrad": "唐·王昌齡《芙蓉樓送辛漸》",
+   "trad": "洛陽親友如相問"
+  },
+  "浅草才能没马蹄": {
+   "at": 7,
+   "line": 2,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "淺草才能沒馬蹄"
+  },
+  "浑欲不胜簪": {
+   "at": 5,
+   "line": 3,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "渾欲不勝簪"
+  },
+  "浩荡离愁白日斜": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jihai-jimao",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "浩蕩離愁白日斜"
+  },
+  "浮萍一道开": {
+   "at": 5,
+   "line": 1,
+   "poemId": "chishang",
+   "sourceTrad": "唐·白居易《池上》",
+   "trad": "浮萍一道開"
+  },
+  "海上明月共潮生": {
+   "at": 7,
+   "line": 0,
+   "poemId": "chunjianghuayue",
+   "sourceTrad": "唐·張若虛《春江花月夜》",
+   "trad": "海上明月共潮生"
+  },
+  "海内存知己": {
+   "at": 0,
+   "line": 2,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "海內存知己"
+  },
+  "海日生残夜": {
+   "at": 0,
+   "line": 2,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "海日生殘夜"
+  },
+  "润物细无声": {
+   "at": 5,
+   "line": 1,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "潤物細無聲"
+  },
+  "淡妆浓抹总相宜": {
+   "at": 7,
+   "line": 1,
+   "poemId": "yinhushang",
+   "sourceTrad": "宋·蘇軾《飲湖上初晴後雨》",
+   "trad": "淡妝濃抹總相宜"
+  },
+  "深巷明朝卖杏花": {
+   "at": 7,
+   "line": 1,
+   "poemId": "linanchunyu",
+   "sourceTrad": "宋·陸遊《臨安春雨初霽》",
+   "trad": "深巷明朝賣杏花"
+  },
+  "深林人不知": {
+   "at": 0,
+   "line": 1,
+   "poemId": "zhuliguan",
+   "sourceTrad": "唐·王維《竹里館》",
+   "trad": "深林人不知"
+  },
+  "添得黄鹂四五声": {
+   "at": 7,
+   "line": 1,
+   "poemId": "sanqudaozhong",
+   "sourceTrad": "宋·曾幾《三衢道中》",
+   "trad": "添得黃鸝四五聲"
+  },
+  "清明时节雨纷纷": {
+   "at": 0,
+   "line": 0,
+   "poemId": "qingming",
+   "sourceTrad": "唐·杜牧《清明》",
+   "trad": "清明時節雨紛紛"
+  },
+  "清泉石上流": {
+   "at": 5,
+   "line": 1,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "清泉石上流"
+  },
+  "渚清沙白鸟飞回": {
+   "at": 7,
+   "line": 0,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "渚清沙白鳥飛回"
+  },
+  "渭城朝雨浥轻尘": {
+   "at": 0,
+   "line": 0,
+   "poemId": "songyuaner",
+   "sourceTrad": "唐·王維《送元二使安西》",
+   "trad": "渭城朝雨浥輕塵"
+  },
+  "湖光秋月两相和": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wangdongting",
+   "sourceTrad": "唐·劉禹錫《望洞庭》",
+   "trad": "湖光秋月兩相和"
+  },
+  "滟滟随波千万里": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chunjianghuayue",
+   "sourceTrad": "唐·張若虛《春江花月夜》",
+   "trad": "灩灩隨波千萬里"
+  },
+  "满身雪白走将来": {
+   "at": 7,
+   "line": 0,
+   "poemId": "huaji",
+   "sourceTrad": "明·唐寅《畫雞》",
+   "trad": "滿身雪白走將來"
+  },
+  "漫卷诗书喜欲狂": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "漫卷詩書喜欲狂"
+  },
+  "潦倒新停浊酒杯": {
+   "at": 7,
+   "line": 3,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "潦倒新停濁酒杯"
+  },
+  "潭面无风镜未磨": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wangdongting",
+   "sourceTrad": "唐·劉禹錫《望洞庭》",
+   "trad": "潭面無風鏡未磨"
+  },
+  "潮平两岸阔": {
+   "at": 0,
+   "line": 1,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "潮平兩岸闊"
+  },
+  "澄江一道月分明": {
+   "at": 7,
+   "line": 1,
+   "poemId": "dengkuai-ge",
+   "sourceTrad": "宋·黃庭堅《登快閣》",
+   "trad": "澄江一道月分明"
+  },
+  "烈火焚烧若等闲": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shihuiyin",
+   "sourceTrad": "明·于謙《石灰吟》",
+   "trad": "烈火焚燒若等閒"
+  },
+  "烟波江上使人愁": {
+   "at": 7,
+   "line": 3,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "煙波江上使人愁"
+  },
+  "烟笼寒水月笼沙": {
+   "at": 0,
+   "line": 0,
+   "poemId": "boqinhuai",
+   "sourceTrad": "唐·杜牧《泊秦淮》",
+   "trad": "煙籠寒水月籠沙"
+  },
+  "烟花三月下扬州": {
+   "at": 7,
+   "line": 0,
+   "poemId": "huanghelou",
+   "sourceTrad": "唐·李白《黃鶴樓送孟浩然之廣陵》",
+   "trad": "煙花三月下揚州"
+  },
+  "烽火连三月": {
+   "at": 0,
+   "line": 2,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "烽火連三月"
+  },
+  "燕山月似钩": {
+   "at": 5,
+   "line": 0,
+   "poemId": "mashi",
+   "sourceTrad": "唐·李賀《馬詩》",
+   "trad": "燕山月似鉤"
+  },
+  "爆竹声中一岁除": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yuanri",
+   "sourceTrad": "宋·王安石《元日》",
+   "trad": "爆竹聲中一歲除"
+  },
+  "牧人驱犊返": {
+   "at": 0,
+   "line": 2,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "牧人驅犢返"
+  },
+  "牧童归去横牛背": {
+   "at": 0,
+   "line": 1,
+   "poemId": "cunwan",
+   "sourceTrad": "宋·雷震《村晚》",
+   "trad": "牧童歸去橫牛背"
+  },
+  "牧童遥指杏花村": {
+   "at": 7,
+   "line": 1,
+   "poemId": "qingming",
+   "sourceTrad": "唐·杜牧《清明》",
+   "trad": "牧童遙指杏花村"
+  },
+  "牧童骑黄牛": {
+   "at": 0,
+   "line": 0,
+   "poemId": "suojian",
+   "sourceTrad": "清·袁枚《所見》",
+   "trad": "牧童騎黃牛"
+  },
+  "牵牛织女渡河桥": {
+   "at": 7,
+   "line": 0,
+   "poemId": "qiqiao",
+   "sourceTrad": "唐·林傑《乞巧》",
+   "trad": "牽牛織女渡河橋"
+  },
+  "犹及清明可到家": {
+   "at": 7,
+   "line": 3,
+   "poemId": "linanchunyu",
+   "sourceTrad": "宋·陸遊《臨安春雨初霽》",
+   "trad": "猶及清明可到家"
+  },
+  "独在异乡为异客": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jiuyuejiuri",
+   "sourceTrad": "唐·王維《九月九日憶山東兄弟》",
+   "trad": "獨在異鄉爲異客"
+  },
+  "独坐幽篁里": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zhuliguan",
+   "sourceTrad": "唐·王維《竹里館》",
+   "trad": "獨坐幽篁裏"
+  },
+  "独怜幽草涧边生": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chuzhouxijian",
+   "sourceTrad": "唐·韋應物《滁州西澗》",
+   "trad": "獨憐幽草澗邊生"
+  },
+  "独钓寒江雪": {
+   "at": 5,
+   "line": 1,
+   "poemId": "jiangxue",
+   "sourceTrad": "唐·柳宗元《江雪》",
+   "trad": "獨釣寒江雪"
+  },
+  "猎马带禽归": {
+   "at": 5,
+   "line": 2,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "獵馬帶禽歸"
+  },
+  "王孙自可留": {
+   "at": 5,
+   "line": 3,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "王孫自可留"
+  },
+  "王师北定中原日": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shier",
+   "sourceTrad": "宋·陸遊《示兒》",
+   "trad": "王師北定中原日"
+  },
+  "生当作人杰": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xiarijueju",
+   "sourceTrad": "宋·李清照《夏日絕句》",
+   "trad": "生當作人傑"
+  },
+  "甲光向日金鳞开": {
+   "at": 7,
+   "line": 0,
+   "poemId": "yanmenshiweixing",
+   "sourceTrad": "唐·李賀《雁門太守行》",
+   "trad": "甲光向日金鱗開"
+  },
+  "留取丹心照汗青": {
+   "at": 7,
+   "line": 3,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "留取丹心照汗青"
+  },
+  "疑是地上霜": {
+   "at": 5,
+   "line": 0,
+   "poemId": "jingyesi",
+   "sourceTrad": "唐·李白《靜夜思》",
+   "trad": "疑是地上霜"
+  },
+  "疑是银河落九天": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wanglushanpubu",
+   "sourceTrad": "唐·李白《望廬山瀑布》",
+   "trad": "疑是銀河落九天"
+  },
+  "病树前头万木春": {
+   "at": 7,
+   "line": 2,
+   "poemId": "choulitian",
+   "sourceTrad": "唐·劉禹錫《酬樂天揚州初逢席上見贈》",
+   "trad": "病樹前頭萬木春"
+  },
+  "痴儿了却公家事": {
+   "at": 0,
+   "line": 0,
+   "poemId": "dengkuai-ge",
+   "sourceTrad": "宋·黃庭堅《登快閣》",
+   "trad": "癡兒了卻公家事"
+  },
+  "白云千载空悠悠": {
+   "at": 7,
+   "line": 1,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "白雲千載空悠悠"
+  },
+  "白云生处有人家": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shanxing",
+   "sourceTrad": "唐·杜牧《山行》",
+   "trad": "白雲生處有人家"
+  },
+  "白兔捣药成": {
+   "at": 0,
+   "line": 3,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "白兔搗藥成"
+  },
+  "白头搔更短": {
+   "at": 0,
+   "line": 3,
+   "poemId": "chunwang",
+   "sourceTrad": "唐·杜甫《春望》",
+   "trad": "白頭搔更短"
+  },
+  "白日依山尽": {
+   "at": 0,
+   "line": 0,
+   "poemId": "dengguanquelou",
+   "sourceTrad": "唐·王之渙《登鸛雀樓》",
+   "trad": "白日依山盡"
+  },
+  "白日放歌须纵酒": {
+   "at": 0,
+   "line": 2,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "白日放歌須縱酒"
+  },
+  "白毛浮绿水": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yonge",
+   "sourceTrad": "唐·駱賓王《詠鵝》",
+   "trad": "白毛浮綠水"
+  },
+  "白银盘里一青螺": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wangdongting",
+   "sourceTrad": "唐·劉禹錫《望洞庭》",
+   "trad": "白銀盤裏一青螺"
+  },
+  "白雨跳珠乱入船": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wanghulou",
+   "sourceTrad": "宋·蘇軾《六月二十七日望湖樓醉書》",
+   "trad": "白雨跳珠亂入船"
+  },
+  "百年多病独登台": {
+   "at": 7,
+   "line": 2,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "百年多病獨登臺"
+  },
+  "百般红紫斗芳菲": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wanchun",
+   "sourceTrad": "唐·韓愈《晚春》",
+   "trad": "百般紅紫斗芳菲"
+  },
+  "皎皎河汉女": {
+   "at": 5,
+   "line": 0,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "皎皎河漢女"
+  },
+  "盈盈一水间": {
+   "at": 0,
+   "line": 4,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "盈盈一水間"
+  },
+  "直把杭州作汴州": {
+   "at": 7,
+   "line": 1,
+   "poemId": "tilinandi",
+   "sourceTrad": "宋·林升《題臨安邸》",
+   "trad": "直把杭州作汴州"
+  },
+  "相去复几许": {
+   "at": 5,
+   "line": 3,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "相去復幾許"
+  },
+  "相看两不厌": {
+   "at": 0,
+   "line": 1,
+   "poemId": "duzuojingting",
+   "sourceTrad": "唐·李白《獨坐敬亭山》",
+   "trad": "相看兩不厭"
+  },
+  "相见时难别亦难": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wuti",
+   "sourceTrad": "唐·李商隱《無題》",
+   "trad": "相見時難別亦難"
+  },
+  "相顾无相识": {
+   "at": 0,
+   "line": 3,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "相顧無相識"
+  },
+  "知有儿童挑促织": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yeshusuojian",
+   "sourceTrad": "宋·葉紹翁《夜書所見》",
+   "trad": "知有兒童挑促織"
+  },
+  "短笛无腔信口吹": {
+   "at": 7,
+   "line": 1,
+   "poemId": "cunwan",
+   "sourceTrad": "宋·雷震《村晚》",
+   "trad": "短笛無腔信口吹"
+  },
+  "石破天惊逗秋雨": {
+   "at": 7,
+   "line": 4,
+   "poemId": "lipeng",
+   "sourceTrad": "唐·李賀《李憑箜篌引》",
+   "trad": "石破天驚逗秋雨"
+  },
+  "碧水东流至此回": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wangtianmenshan",
+   "sourceTrad": "唐·李白《望天門山》",
+   "trad": "碧水東流至此回"
+  },
+  "碧海青天夜夜心": {
+   "at": 7,
+   "line": 1,
+   "poemId": "change",
+   "sourceTrad": "唐·李商隱《嫦娥》",
+   "trad": "碧海青天夜夜心"
+  },
+  "碧玉妆成一树高": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yongliu",
+   "sourceTrad": "唐·賀知章《詠柳》",
+   "trad": "碧玉妝成一樹高"
+  },
+  "离离原上草": {
+   "at": 0,
+   "line": 0,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "離離原上草"
+  },
+  "秋收万颗子": {
+   "at": 5,
+   "line": 0,
+   "poemId": "minnong1",
+   "sourceTrad": "唐·李紳《憫農其一》",
+   "trad": "秋收萬顆子"
+  },
+  "秦时明月汉时关": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chusai",
+   "sourceTrad": "唐·王昌齡《出塞》",
+   "trad": "秦時明月漢時關"
+  },
+  "移舟泊烟渚": {
+   "at": 0,
+   "line": 0,
+   "poemId": "sujiandejiang",
+   "sourceTrad": "唐·孟浩然《宿建德江》",
+   "trad": "移舟泊煙渚"
+  },
+  "稚子金盆脱晓冰": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zhizibing",
+   "sourceTrad": "宋·楊萬里《稚子弄冰》",
+   "trad": "稚子金盆脫曉冰"
+  },
+  "空山不见人": {
+   "at": 0,
+   "line": 0,
+   "poemId": "luchai",
+   "sourceTrad": "唐·王維《鹿柴》",
+   "trad": "空山不見人"
+  },
+  "空山新雨后": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "空山新雨後"
+  },
+  "穿尽红丝几万条": {
+   "at": 7,
+   "line": 1,
+   "poemId": "qiqiao",
+   "sourceTrad": "唐·林傑《乞巧》",
+   "trad": "穿盡紅絲幾萬條"
+  },
+  "窗含西岭千秋雪": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jueju-huangli",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "窗含西嶺千秋雪"
+  },
+  "立根原在破岩中": {
+   "at": 7,
+   "line": 0,
+   "poemId": "zhushi",
+   "sourceTrad": "清·鄭燮《竹石》",
+   "trad": "立根原在破巖中"
+  },
+  "童孙未解供耕织": {
+   "at": 0,
+   "line": 1,
+   "poemId": "sishitianyuan-31",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "童孫未解供耕織"
+  },
+  "竹喧归浣女": {
+   "at": 0,
+   "line": 2,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "竹喧歸浣女"
+  },
+  "竹外桃花三两枝": {
+   "at": 0,
+   "line": 0,
+   "poemId": "huichongchunjiang",
+   "sourceTrad": "宋·蘇軾《惠崇春江晚景》",
+   "trad": "竹外桃花三兩枝"
+  },
+  "笑问客从何处来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "huixiangyoushu",
+   "sourceTrad": "唐·賀知章《回鄉偶書》",
+   "trad": "笑問客從何處來"
+  },
+  "等闲识得东风面": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chunri",
+   "sourceTrad": "宋·朱熹《春日》",
+   "trad": "等閒識得東風面"
+  },
+  "箫鼓追随春社近": {
+   "at": 0,
+   "line": 2,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "簫鼓追隨春社近"
+  },
+  "篱落疏疏一径深": {
+   "at": 0,
+   "line": 0,
+   "poemId": "suxinshi",
+   "sourceTrad": "宋·楊萬里《宿新市徐公店》",
+   "trad": "籬落疏疏一逕深"
+  },
+  "粉骨碎身浑不怕": {
+   "at": 0,
+   "line": 1,
+   "poemId": "shihuiyin",
+   "sourceTrad": "明·于謙《石灰吟》",
+   "trad": "粉骨碎身渾不怕"
+  },
+  "粒粒皆辛苦": {
+   "at": 5,
+   "line": 1,
+   "poemId": "minnong2",
+   "sourceTrad": "唐·李紳《憫農其二》",
+   "trad": "粒粒皆辛苦"
+  },
+  "素衣莫起风尘叹": {
+   "at": 0,
+   "line": 3,
+   "poemId": "linanchunyu",
+   "sourceTrad": "宋·陸遊《臨安春雨初霽》",
+   "trad": "素衣莫起風塵歎"
+  },
+  "红掌拨清波": {
+   "at": 5,
+   "line": 1,
+   "poemId": "yonge",
+   "sourceTrad": "唐·駱賓王《詠鵝》",
+   "trad": "紅掌撥清波"
+  },
+  "红豆生南国": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xiangsi",
+   "sourceTrad": "唐·王維《相思》",
+   "trad": "紅豆生南國"
+  },
+  "纤纤擢素手": {
+   "at": 0,
+   "line": 1,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "纖纖擢素手"
+  },
+  "终日不成章": {
+   "at": 0,
+   "line": 2,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "終日不成章"
+  },
+  "结庐在人境": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "結廬在人境"
+  },
+  "绝胜烟柳满皇都": {
+   "at": 7,
+   "line": 1,
+   "poemId": "zaochun",
+   "sourceTrad": "唐·韓愈《早春呈水部張十八員外》",
+   "trad": "絕勝煙柳滿皇都"
+  },
+  "绿杨阴里白沙堤": {
+   "at": 7,
+   "line": 3,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "綠楊陰裏白沙堤"
+  },
+  "绿树村边合": {
+   "at": 0,
+   "line": 1,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "綠樹村邊合"
+  },
+  "绿遍山原白满川": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xiangcunsiyue",
+   "sourceTrad": "宋·翁卷《鄉村四月》",
+   "trad": "綠遍山原白滿川"
+  },
+  "绿阴不减来时路": {
+   "at": 0,
+   "line": 1,
+   "poemId": "sanqudaozhong",
+   "sourceTrad": "宋·曾幾《三衢道中》",
+   "trad": "綠陰不減來時路"
+  },
+  "羁鸟恋旧林": {
+   "at": 0,
+   "line": 2,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "羈鳥戀舊林"
+  },
+  "羌笛何须怨杨柳": {
+   "at": 0,
+   "line": 1,
+   "poemId": "liangzhouci-wangzhihuan",
+   "sourceTrad": "唐·王之渙《涼州詞》",
+   "trad": "羌笛何須怨楊柳"
+  },
+  "老病有孤舟": {
+   "at": 5,
+   "line": 2,
+   "poemId": "dengyueyanglou",
+   "sourceTrad": "唐·杜甫《登嶽陽樓》",
+   "trad": "老病有孤舟"
+  },
+  "而无车马喧": {
+   "at": 5,
+   "line": 0,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "而無車馬喧"
+  },
+  "肯与邻翁相对饮": {
+   "at": 0,
+   "line": 6,
+   "poemId": "kezhi",
+   "sourceTrad": "唐·杜甫《客至》",
+   "trad": "肯與鄰翁相對飲"
+  },
+  "胜日寻芳泗水滨": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chunri",
+   "sourceTrad": "宋·朱熹《春日》",
+   "trad": "勝日尋芳泗水濱"
+  },
+  "胡天八月即飞雪": {
+   "at": 7,
+   "line": 0,
+   "poemId": "baixuege",
+   "sourceTrad": "唐·岑參《白雪歌送武判官歸京》",
+   "trad": "胡天八月即飛雪"
+  },
+  "能开二月花": {
+   "at": 5,
+   "line": 0,
+   "poemId": "feng",
+   "sourceTrad": "唐·李嶠《風》",
+   "trad": "能開二月花"
+  },
+  "脉脉不得语": {
+   "at": 5,
+   "line": 4,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "脈脈不得語"
+  },
+  "自将磨洗认前朝": {
+   "at": 7,
+   "line": 0,
+   "poemId": "chibi-du",
+   "sourceTrad": "唐·杜牧《赤壁》",
+   "trad": "自將磨洗認前朝"
+  },
+  "自缘身在最高层": {
+   "at": 7,
+   "line": 1,
+   "poemId": "dengfeilaifeng",
+   "sourceTrad": "宋·王安石《登飛來峯》",
+   "trad": "自緣身在最高層"
+  },
+  "至今思项羽": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xiarijueju",
+   "sourceTrad": "宋·李清照《夏日絕句》",
+   "trad": "至今思項羽"
+  },
+  "舍南舍北皆春水": {
+   "at": 0,
+   "line": 0,
+   "poemId": "kezhi",
+   "sourceTrad": "唐·杜甫《客至》",
+   "trad": "舍南舍北皆春水"
+  },
+  "艰难苦恨繁霜鬓": {
+   "at": 0,
+   "line": 3,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "艱難苦恨繁霜鬢"
+  },
+  "芙蓉向脸两边开": {
+   "at": 7,
+   "line": 0,
+   "poemId": "cailianqu",
+   "sourceTrad": "唐·王昌齡《采蓮曲》",
+   "trad": "芙蓉向臉兩邊開"
+  },
+  "芙蓉泣露香兰笑": {
+   "at": 7,
+   "line": 2,
+   "poemId": "lipeng",
+   "sourceTrad": "唐·李賀《李憑箜篌引》",
+   "trad": "芙蓉泣露香蘭笑"
+  },
+  "花径不曾缘客扫": {
+   "at": 0,
+   "line": 2,
+   "poemId": "kezhi",
+   "sourceTrad": "唐·杜甫《客至》",
+   "trad": "花徑不曾緣客掃"
+  },
+  "花木成畦手自栽": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shuhuyin",
+   "sourceTrad": "宋·王安石《書湖陰先生壁》",
+   "trad": "花木成畦手自栽"
+  },
+  "花落知多少": {
+   "at": 5,
+   "line": 1,
+   "poemId": "chunxiao",
+   "sourceTrad": "唐·孟浩然《春曉》",
+   "trad": "花落知多少"
+  },
+  "花重锦官城": {
+   "at": 5,
+   "line": 3,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "花重錦官城"
+  },
+  "芳草萋萋鹦鹉洲": {
+   "at": 7,
+   "line": 2,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "芳草萋萋鸚鵡洲"
+  },
+  "茅檐长扫净无苔": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shuhuyin",
+   "sourceTrad": "宋·王安石《書湖陰先生壁》",
+   "trad": "茅檐長掃淨無苔"
+  },
+  "草树知春不久归": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wanchun",
+   "sourceTrad": "唐·韓愈《晚春》",
+   "trad": "草樹知春不久歸"
+  },
+  "草满池塘水满陂": {
+   "at": 0,
+   "line": 0,
+   "poemId": "cunwan",
+   "sourceTrad": "宋·雷震《村晚》",
+   "trad": "草滿池塘水滿陂"
+  },
+  "草色遥看近却无": {
+   "at": 7,
+   "line": 0,
+   "poemId": "zaochun",
+   "sourceTrad": "唐·韓愈《早春呈水部張十八員外》",
+   "trad": "草色遙看近卻無"
+  },
+  "草长莺飞二月天": {
+   "at": 0,
+   "line": 0,
+   "poemId": "cunju",
+   "sourceTrad": "清·高鼎《村居》",
+   "trad": "草長鶯飛二月天"
+  },
+  "荡胸生曾云": {
+   "at": 0,
+   "line": 2,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "盪胸生曾雲"
+  },
+  "荷叶罗裙一色裁": {
+   "at": 0,
+   "line": 0,
+   "poemId": "cailianqu",
+   "sourceTrad": "唐·王昌齡《采蓮曲》",
+   "trad": "荷葉羅裙一色裁"
+  },
+  "荷尽已无擎雨盖": {
+   "at": 0,
+   "line": 0,
+   "poemId": "zengliujingwen",
+   "sourceTrad": "宋·蘇軾《贈劉景文》",
+   "trad": "荷盡已無擎雨蓋"
+  },
+  "莫愁前路无知己": {
+   "at": 0,
+   "line": 1,
+   "poemId": "biedongda",
+   "sourceTrad": "唐·高適《別董大》",
+   "trad": "莫愁前路無知己"
+  },
+  "莫笑农家腊酒浑": {
+   "at": 0,
+   "line": 0,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "莫笑農家臘酒渾"
+  },
+  "莲动下渔舟": {
+   "at": 5,
+   "line": 2,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "蓮動下漁舟"
+  },
+  "菊残犹有傲霜枝": {
+   "at": 7,
+   "line": 0,
+   "poemId": "zengliujingwen",
+   "sourceTrad": "宋·蘇軾《贈劉景文》",
+   "trad": "菊殘猶有傲霜枝"
+  },
+  "萋萋满别情": {
+   "at": 5,
+   "line": 3,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "萋萋滿別情"
+  },
+  "萧关逢候骑": {
+   "at": 0,
+   "line": 3,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "蕭關逢候騎"
+  },
+  "萧萧梧叶送寒声": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yeshusuojian",
+   "sourceTrad": "宋·葉紹翁《夜書所見》",
+   "trad": "蕭蕭梧葉送寒聲"
+  },
+  "落木千山天远大": {
+   "at": 0,
+   "line": 1,
+   "poemId": "dengkuai-ge",
+   "sourceTrad": "宋·黃庭堅《登快閣》",
+   "trad": "落木千山天遠大"
+  },
+  "落红不是无情物": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jihai-jimao",
+   "sourceTrad": "清·龔自珍《己亥雜詩》",
+   "trad": "落紅不是無情物"
+  },
+  "葡萄美酒夜光杯": {
+   "at": 0,
+   "line": 0,
+   "poemId": "liangzhouci-wanghan",
+   "sourceTrad": "唐·王翰《涼州詞》",
+   "trad": "葡萄美酒夜光杯"
+  },
+  "蒌蒿满地芦芽短": {
+   "at": 0,
+   "line": 1,
+   "poemId": "huichongchunjiang",
+   "sourceTrad": "宋·蘇軾《惠崇春江晚景》",
+   "trad": "蔞蒿滿地蘆芽短"
+  },
+  "蓝田日暖玉生烟": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jinse",
+   "sourceTrad": "唐·李商隱《錦瑟》",
+   "trad": "藍田日暖玉生煙"
+  },
+  "蓬头稚子学垂纶": {
+   "at": 0,
+   "line": 0,
+   "poemId": "xiaoerchuidiao",
+   "sourceTrad": "唐·胡令能《小兒垂釣》",
+   "trad": "蓬頭稚子學垂綸"
+  },
+  "蓬门今始为君开": {
+   "at": 0,
+   "line": 3,
+   "poemId": "kezhi",
+   "sourceTrad": "唐·杜甫《客至》",
+   "trad": "蓬門今始爲君開"
+  },
+  "蜡炬成灰泪始干": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wuti",
+   "sourceTrad": "唐·李商隱《無題》",
+   "trad": "蠟炬成灰淚始乾"
+  },
+  "行舟绿水前": {
+   "at": 5,
+   "line": 0,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "行舟綠水前"
+  },
+  "衣冠简朴古风存": {
+   "at": 7,
+   "line": 2,
+   "poemId": "youshanxincun",
+   "sourceTrad": "宋·陸遊《遊山西村》",
+   "trad": "衣冠簡樸古風存"
+  },
+  "西出阳关无故人": {
+   "at": 7,
+   "line": 1,
+   "poemId": "songyuaner",
+   "sourceTrad": "唐·王維《送元二使安西》",
+   "trad": "西出陽關無故人"
+  },
+  "西湖歌舞几时休": {
+   "at": 7,
+   "line": 0,
+   "poemId": "tilinandi",
+   "sourceTrad": "宋·林升《題臨安邸》",
+   "trad": "西湖歌舞幾時休"
+  },
+  "要留清白在人间": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shihuiyin",
+   "sourceTrad": "明·于謙《石灰吟》",
+   "trad": "要留清白在人間"
+  },
+  "角声满天秋色里": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yanmenshiweixing",
+   "sourceTrad": "唐·李賀《雁門太守行》",
+   "trad": "角聲滿天秋色裏"
+  },
+  "解落三秋叶": {
+   "at": 0,
+   "line": 0,
+   "poemId": "feng",
+   "sourceTrad": "唐·李嶠《風》",
+   "trad": "解落三秋葉"
+  },
+  "言师采药去": {
+   "at": 5,
+   "line": 0,
+   "poemId": "xunyinzhe",
+   "sourceTrad": "唐·賈島《尋隱者不遇》",
+   "trad": "言師採藥去"
+  },
+  "误落尘网中": {
+   "at": 0,
+   "line": 1,
+   "poemId": "guiyuantianju",
+   "sourceTrad": "晋·陶潛《歸園田居》",
+   "trad": "誤落塵網中"
+  },
+  "谁令骑马客京华": {
+   "at": 7,
+   "line": 0,
+   "poemId": "linanchunyu",
+   "sourceTrad": "宋·陸遊《臨安春雨初霽》",
+   "trad": "誰令騎馬客京華"
+  },
+  "谁家新燕啄春泥": {
+   "at": 7,
+   "line": 1,
+   "poemId": "qiantanghuchunxing",
+   "sourceTrad": "唐·白居易《錢塘湖春行》",
+   "trad": "誰家新燕啄春泥"
+  },
+  "谁家玉笛暗飞声": {
+   "at": 0,
+   "line": 0,
+   "poemId": "chunyeluocheng",
+   "sourceTrad": "唐·李白《春夜洛城聞笛》",
+   "trad": "誰家玉笛暗飛聲"
+  },
+  "谁知盘中餐": {
+   "at": 0,
+   "line": 1,
+   "poemId": "minnong2",
+   "sourceTrad": "唐·李紳《憫農其二》",
+   "trad": "誰知盤中餐"
+  },
+  "路上行人欲断魂": {
+   "at": 7,
+   "line": 0,
+   "poemId": "qingming",
+   "sourceTrad": "唐·杜牧《清明》",
+   "trad": "路上行人欲斷魂"
+  },
+  "路人借问遥招手": {
+   "at": 0,
+   "line": 1,
+   "poemId": "xiaoerchuidiao",
+   "sourceTrad": "唐·胡令能《小兒垂釣》",
+   "trad": "路人借問遙招手"
+  },
+  "身上衣裳口中食": {
+   "at": 7,
+   "line": 2,
+   "poemId": "maotanshangwu",
+   "sourceTrad": "唐·白居易《賣炭翁》",
+   "trad": "身上衣裳口中食"
+  },
+  "身世浮沉雨打萍": {
+   "at": 7,
+   "line": 1,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "身世浮沉雨打萍"
+  },
+  "轮台东门送君去": {
+   "at": 0,
+   "line": 7,
+   "poemId": "baixuege",
+   "sourceTrad": "唐·岑參《白雪歌送武判官歸京》",
+   "trad": "輪臺東門送君去"
+  },
+  "轻烟散入五侯家": {
+   "at": 7,
+   "line": 1,
+   "poemId": "hanshi",
+   "sourceTrad": "唐·韓翃《寒食》",
+   "trad": "輕煙散入五侯家"
+  },
+  "轻舟已过万重山": {
+   "at": 7,
+   "line": 1,
+   "poemId": "zaofabaidicheng",
+   "sourceTrad": "唐·李白《早發白帝城》",
+   "trad": "輕舟已過萬重山"
+  },
+  "辛苦遭逢起一经": {
+   "at": 0,
+   "line": 0,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "辛苦遭逢起一經"
+  },
+  "过江千尺浪": {
+   "at": 0,
+   "line": 1,
+   "poemId": "feng",
+   "sourceTrad": "唐·李嶠《風》",
+   "trad": "過江千尺浪"
+  },
+  "近听水无声": {
+   "at": 5,
+   "line": 0,
+   "poemId": "hua",
+   "sourceTrad": "唐·王維《畫》",
+   "trad": "近聽水無聲"
+  },
+  "返景入深林": {
+   "at": 0,
+   "line": 1,
+   "poemId": "luchai",
+   "sourceTrad": "唐·王維《鹿柴》",
+   "trad": "返景入深林"
+  },
+  "还来就菊花": {
+   "at": 5,
+   "line": 3,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "還來就菊花"
+  },
+  "远上寒山石径斜": {
+   "at": 0,
+   "line": 0,
+   "poemId": "shanxing",
+   "sourceTrad": "唐·杜牧《山行》",
+   "trad": "遠上寒山石徑斜"
+  },
+  "远看山有色": {
+   "at": 0,
+   "line": 0,
+   "poemId": "hua",
+   "sourceTrad": "唐·王維《畫》",
+   "trad": "遠看山有色"
+  },
+  "远芳侵古道": {
+   "at": 0,
+   "line": 2,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "遠芳侵古道"
+  },
+  "远近高低各不同": {
+   "at": 7,
+   "line": 0,
+   "poemId": "longpo",
+   "sourceTrad": "宋·蘇軾《題西林壁》",
+   "trad": "遠近高低各不同"
+  },
+  "迟日江山丽": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jueju-chiri",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "遲日江山麗"
+  },
+  "迢迢牵牛星": {
+   "at": 0,
+   "line": 0,
+   "poemId": "tiaotiaoqianniuxing",
+   "sourceTrad": "汉·佚名《迢迢牽牛星》",
+   "trad": "迢迢牽牛星"
+  },
+  "造化钟神秀": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "造化鍾神秀"
+  },
+  "遍插茱萸少一人": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jiuyuejiuri",
+   "sourceTrad": "唐·王維《九月九日憶山東兄弟》",
+   "trad": "遍插茱萸少一人"
+  },
+  "遗民泪尽胡尘里": {
+   "at": 0,
+   "line": 1,
+   "poemId": "qiuyejiangxiao",
+   "sourceTrad": "宋·陸遊《秋夜將曉出籬門迎涼有感》",
+   "trad": "遺民淚盡胡塵裏"
+  },
+  "遥望洞庭山水翠": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wangdongting",
+   "sourceTrad": "唐·劉禹錫《望洞庭》",
+   "trad": "遙望洞庭山水翠"
+  },
+  "遥看瀑布挂前川": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wanglushanpubu",
+   "sourceTrad": "唐·李白《望廬山瀑布》",
+   "trad": "遙看瀑布挂前川"
+  },
+  "遥知不是雪": {
+   "at": 0,
+   "line": 1,
+   "poemId": "meihua",
+   "sourceTrad": "宋·王安石《梅花》",
+   "trad": "遙知不是雪"
+  },
+  "遥知兄弟登高处": {
+   "at": 0,
+   "line": 1,
+   "poemId": "jiuyuejiuri",
+   "sourceTrad": "唐·王維《九月九日憶山東兄弟》",
+   "trad": "遙知兄弟登高處"
+  },
+  "邀我至田家": {
+   "at": 5,
+   "line": 0,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "邀我至田家"
+  },
+  "都护在燕然": {
+   "at": 5,
+   "line": 3,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "都護在燕然"
+  },
+  "醉卧沙场君莫笑": {
+   "at": 0,
+   "line": 1,
+   "poemId": "liangzhouci-wanghan",
+   "sourceTrad": "唐·王翰《涼州詞》",
+   "trad": "醉臥沙場君莫笑"
+  },
+  "采得百花成蜜后": {
+   "at": 0,
+   "line": 1,
+   "poemId": "feng-mi",
+   "sourceTrad": "唐·羅隱《蜂》",
+   "trad": "採得百花成蜜後"
+  },
+  "采菊东篱下": {
+   "at": 0,
+   "line": 2,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "採菊東籬下"
+  },
+  "野径云俱黑": {
+   "at": 0,
+   "line": 2,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "野徑雲俱黑"
+  },
+  "野旷天低树": {
+   "at": 0,
+   "line": 1,
+   "poemId": "sujiandejiang",
+   "sourceTrad": "唐·孟浩然《宿建德江》",
+   "trad": "野曠天低樹"
+  },
+  "野渡无人舟自横": {
+   "at": 7,
+   "line": 1,
+   "poemId": "chuzhouxijian",
+   "sourceTrad": "唐·韋應物《滁州西澗》",
+   "trad": "野渡無人舟自橫"
+  },
+  "野火烧不尽": {
+   "at": 0,
+   "line": 1,
+   "poemId": "guyuancao",
+   "sourceTrad": "唐·白居易《賦得古原草送別》",
+   "trad": "野火燒不盡"
+  },
+  "钟山只隔数重山": {
+   "at": 7,
+   "line": 0,
+   "poemId": "bochuanguazhou",
+   "sourceTrad": "宋·王安石《泊船瓜洲》",
+   "trad": "鐘山只隔數重山"
+  },
+  "铁马秋风大散关": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shufen",
+   "sourceTrad": "宋·陸遊《書憤》",
+   "trad": "鐵馬秋風大散關"
+  },
+  "铜雀春深锁二乔": {
+   "at": 7,
+   "line": 1,
+   "poemId": "chibi-du",
+   "sourceTrad": "唐·杜牧《赤壁》",
+   "trad": "銅雀春深鎖二喬"
+  },
+  "锄禾日当午": {
+   "at": 0,
+   "line": 0,
+   "poemId": "minnong2",
+   "sourceTrad": "唐·李紳《憫農其二》",
+   "trad": "鋤禾日當午"
+  },
+  "锦官城外柏森森": {
+   "at": 7,
+   "line": 0,
+   "poemId": "shuxiang",
+   "sourceTrad": "唐·杜甫《蜀相》",
+   "trad": "錦官城外柏森森"
+  },
+  "长使英雄泪满襟": {
+   "at": 7,
+   "line": 2,
+   "poemId": "shuxiang",
+   "sourceTrad": "唐·杜甫《蜀相》",
+   "trad": "長使英雄淚滿襟"
+  },
+  "长恨春归无觅处": {
+   "at": 0,
+   "line": 1,
+   "poemId": "dalinsitaohua",
+   "sourceTrad": "唐·白居易《大林寺桃花》",
+   "trad": "長恨春歸無覓處"
+  },
+  "长歌怀采薇": {
+   "at": 5,
+   "line": 3,
+   "poemId": "yewang",
+   "sourceTrad": "唐·王績《野望》",
+   "trad": "長歌懷采薇"
+  },
+  "长河渐落晓星沉": {
+   "at": 7,
+   "line": 0,
+   "poemId": "change",
+   "sourceTrad": "唐·李商隱《嫦娥》",
+   "trad": "長河漸落曉星沉"
+  },
+  "长河落日圆": {
+   "at": 5,
+   "line": 2,
+   "poemId": "shizhuisai",
+   "sourceTrad": "唐·王維《使至塞上》",
+   "trad": "長河落日圓"
+  },
+  "门泊东吴万里船": {
+   "at": 7,
+   "line": 1,
+   "poemId": "jueju-huangli",
+   "sourceTrad": "唐·杜甫《絕句》",
+   "trad": "門泊東吳萬里船"
+  },
+  "问君何能尔": {
+   "at": 0,
+   "line": 1,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "問君何能爾"
+  },
+  "问渠那得清如许": {
+   "at": 0,
+   "line": 1,
+   "poemId": "guanshu",
+   "sourceTrad": "宋·朱熹《觀書有感》",
+   "trad": "問渠那得清如許"
+  },
+  "问言与谁餐": {
+   "at": 5,
+   "line": 3,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "問言與誰餐"
+  },
+  "闻歌始觉有人来": {
+   "at": 7,
+   "line": 1,
+   "poemId": "cailianqu",
+   "sourceTrad": "唐·王昌齡《采蓮曲》",
+   "trad": "聞歌始覺有人來"
+  },
+  "闻说鸡鸣见日升": {
+   "at": 7,
+   "line": 0,
+   "poemId": "dengfeilaifeng",
+   "sourceTrad": "宋·王安石《登飛來峯》",
+   "trad": "聞說雞鳴見日升"
+  },
+  "闻道龙标过五溪": {
+   "at": 7,
+   "line": 0,
+   "poemId": "wenwangchangling",
+   "sourceTrad": "唐·李白《聞王昌齡左遷龍標遙有此寄》",
+   "trad": "聞道龍標過五溪"
+  },
+  "阴阳割昏晓": {
+   "at": 5,
+   "line": 1,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "陰陽割昏曉"
+  },
+  "随君直到夜郎西": {
+   "at": 7,
+   "line": 1,
+   "poemId": "wenwangchangling",
+   "sourceTrad": "唐·李白《聞王昌齡左遷龍標遙有此寄》",
+   "trad": "隨君直到夜郎西"
+  },
+  "随意春芳歇": {
+   "at": 0,
+   "line": 3,
+   "poemId": "shanjuqiuming",
+   "sourceTrad": "唐·王維《山居秋暝》",
+   "trad": "隨意春芳歇"
+  },
+  "随风潜入夜": {
+   "at": 0,
+   "line": 1,
+   "poemId": "chunyexiyu",
+   "sourceTrad": "唐·杜甫《春夜喜雨》",
+   "trad": "隨風潛入夜"
+  },
+  "隔江犹唱后庭花": {
+   "at": 7,
+   "line": 1,
+   "poemId": "boqinhuai",
+   "sourceTrad": "唐·杜牧《泊秦淮》",
+   "trad": "隔江猶唱後庭花"
+  },
+  "隔篱呼取尽余杯": {
+   "at": 0,
+   "line": 7,
+   "poemId": "kezhi",
+   "sourceTrad": "唐·杜甫《客至》",
+   "trad": "隔籬呼取盡餘杯"
+  },
+  "雪却输梅一段香": {
+   "at": 7,
+   "line": 1,
+   "poemId": "xuemei",
+   "sourceTrad": "宋·盧梅坡《雪梅》",
+   "trad": "雪卻輸梅一段香"
+  },
+  "零丁洋里叹零丁": {
+   "at": 7,
+   "line": 2,
+   "poemId": "guolingyang",
+   "sourceTrad": "宋·文天祥《過零丁洋》",
+   "trad": "零丁洋裏歎零丁"
+  },
+  "霜叶红于二月花": {
+   "at": 7,
+   "line": 1,
+   "poemId": "shanxing",
+   "sourceTrad": "唐·杜牧《山行》",
+   "trad": "霜葉紅於二月花"
+  },
+  "霜重鼓寒声不起": {
+   "at": 7,
+   "line": 2,
+   "poemId": "yanmenshiweixing",
+   "sourceTrad": "唐·李賀《雁門太守行》",
+   "trad": "霜重鼓寒聲不起"
+  },
+  "露似真珠月似弓": {
+   "at": 7,
+   "line": 1,
+   "poemId": "mujiangyin",
+   "sourceTrad": "唐·白居易《暮江吟》",
+   "trad": "露似真珠月似弓"
+  },
+  "青山郭外斜": {
+   "at": 5,
+   "line": 1,
+   "poemId": "guogurenzhuang",
+   "sourceTrad": "唐·孟浩然《過故人莊》",
+   "trad": "青山郭外斜"
+  },
+  "青春作伴好还乡": {
+   "at": 7,
+   "line": 2,
+   "poemId": "wenguanjun",
+   "sourceTrad": "唐·杜甫《聞官軍收河南河北》",
+   "trad": "青春作伴好還鄉"
+  },
+  "青海长云暗雪山": {
+   "at": 0,
+   "line": 0,
+   "poemId": "congjunxing",
+   "sourceTrad": "唐·王昌齡《從軍行》",
+   "trad": "青海長雲暗雪山"
+  },
+  "青眼聊因美酒横": {
+   "at": 7,
+   "line": 2,
+   "poemId": "dengkuai-ge",
+   "sourceTrad": "宋·黃庭堅《登快閣》",
+   "trad": "青眼聊因美酒橫"
+  },
+  "风光不与四时同": {
+   "at": 7,
+   "line": 0,
+   "poemId": "jingcisi",
+   "sourceTrad": "宋·楊萬里《曉出淨慈寺送林子方》",
+   "trad": "風光不與四時同"
+  },
+  "风急天高猿啸哀": {
+   "at": 0,
+   "line": 0,
+   "poemId": "denggao",
+   "sourceTrad": "唐·杜甫《登高》",
+   "trad": "風急天高猿嘯哀"
+  },
+  "风正一帆悬": {
+   "at": 5,
+   "line": 1,
+   "poemId": "cibeigushanxia",
+   "sourceTrad": "唐·王灣《次北固山下》",
+   "trad": "風正一帆懸"
+  },
+  "风烟望五津": {
+   "at": 5,
+   "line": 0,
+   "poemId": "songshaoshu-wai",
+   "sourceTrad": "唐·王勃《送杜少府之任蜀州》",
+   "trad": "風煙望五津"
+  },
+  "飞入菜花无处寻": {
+   "at": 7,
+   "line": 1,
+   "poemId": "suxinshi",
+   "sourceTrad": "宋·楊萬里《宿新市徐公店》",
+   "trad": "飛入菜花無處尋"
+  },
+  "飞在青云端": {
+   "at": 5,
+   "line": 1,
+   "poemId": "gulangyuexing",
+   "sourceTrad": "唐·李白《古朗月行》",
+   "trad": "飛在青雲端"
+  },
+  "飞来山上千寻塔": {
+   "at": 0,
+   "line": 0,
+   "poemId": "dengfeilaifeng",
+   "sourceTrad": "宋·王安石《登飛來峯》",
+   "trad": "飛來山上千尋塔"
+  },
+  "飞流直下三千尺": {
+   "at": 0,
+   "line": 1,
+   "poemId": "wanglushanpubu",
+   "sourceTrad": "唐·李白《望廬山瀑布》",
+   "trad": "飛流直下三千尺"
+  },
+  "飞鸟相与还": {
+   "at": 5,
+   "line": 3,
+   "poemId": "yinjiujiusan",
+   "sourceTrad": "晋·陶潛《飲酒》",
+   "trad": "飛鳥相與還"
+  },
+  "马上相逢无纸笔": {
+   "at": 0,
+   "line": 1,
+   "poemId": "fengrujinshi",
+   "sourceTrad": "唐·岑參《逢入京使》",
+   "trad": "馬上相逢無紙筆"
+  },
+  "骚人搁笔费评章": {
+   "at": 7,
+   "line": 0,
+   "poemId": "xuemei",
+   "sourceTrad": "宋·盧梅坡《雪梅》",
+   "trad": "騷人擱筆費評章"
+  },
+  "麦花雪白菜花稀": {
+   "at": 7,
+   "line": 0,
+   "poemId": "sishitianyuan-25",
+   "sourceTrad": "宋·範成大《四時田園雜興》",
+   "trad": "麥花雪白菜花稀"
+  },
+  "黄师塔前江水东": {
+   "at": 0,
+   "line": 0,
+   "poemId": "jiangpan",
+   "sourceTrad": "唐·杜甫《江畔獨步尋花》",
+   "trad": "黃師塔前江水東"
+  },
+  "黄沙百战穿金甲": {
+   "at": 0,
+   "line": 1,
+   "poemId": "congjunxing",
+   "sourceTrad": "唐·王昌齡《從軍行》",
+   "trad": "黃沙百戰穿金甲"
+  },
+  "黄河入海流": {
+   "at": 5,
+   "line": 0,
+   "poemId": "dengguanquelou",
+   "sourceTrad": "唐·王之渙《登鸛雀樓》",
+   "trad": "黃河入海流"
+  },
+  "黄河远上白云间": {
+   "at": 0,
+   "line": 0,
+   "poemId": "liangzhouci-wangzhihuan",
+   "sourceTrad": "唐·王之渙《涼州詞》",
+   "trad": "黃河遠上白雲間"
+  },
+  "黄鹤一去不复返": {
+   "at": 0,
+   "line": 1,
+   "poemId": "huanghelou-cuiheng",
+   "sourceTrad": "唐·崔顥《黃鶴樓》",
+   "trad": "黃鶴一去不復返"
+  },
+  "黑云压城城欲摧": {
+   "at": 0,
+   "line": 0,
+   "poemId": "yanmenshiweixing",
+   "sourceTrad": "唐·李賀《雁門太守行》",
+   "trad": "黑雲壓城城欲摧"
+  },
+  "黑云翻墨未遮山": {
+   "at": 0,
+   "line": 0,
+   "poemId": "wanghulou",
+   "sourceTrad": "宋·蘇軾《六月二十七日望湖樓醉書》",
+   "trad": "黑雲翻墨未遮山"
+  },
+  "齐鲁青未了": {
+   "at": 5,
+   "line": 0,
+   "poemId": "wangyue",
+   "sourceTrad": "唐·杜甫《望嶽》",
+   "trad": "齊魯青未了"
+  }
+ }
+}

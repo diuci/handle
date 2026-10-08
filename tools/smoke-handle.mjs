@@ -128,6 +128,59 @@ async function playRound(page, logs, base, spec, problems, day) {
     problems.push(spec.kind + '：猜完之后没看到「出处」，诗句来源没显示')
 }
 
+/**
+ * 繁体模式：切到 hant 之后，用繁体字形猜当天这一句。
+ * 一次同时验两件事——繁体输入必须仍然算对（匹配走简体归一化），
+ * 并且看板与出处显示的是繁体形（字形来自内容仓那份派生产物）。
+ */
+async function playTraditional(page, logs, base, problems) {
+  const tradDoc = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'traditional.json'), 'utf8'))
+  const pool = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'verse-pool.json'), 'utf8')).qiyan
+  const idx = pool.findIndex(e => tradDoc.verse[e.word] && tradDoc.verse[e.word].sourceTrad !== e.source)
+  if (idx < 0) {
+    problems.push('繁体侧：词库里找不到一句出处会变的七言，这一项没法验')
+    return
+  }
+  const entry = pool[idx]
+  const t = tradDoc.verse[entry.word]
+  await page.evaluate(() => localStorage.setItem('handle-locale', 'hant'))
+  await page.goto(base + '/?dev=hey&mode=qiyan&d=' + idx, { waitUntil: 'networkidle2', timeout: 60000 })
+  await new Promise(r => setTimeout(r, 400))
+  const { word } = parseDevLog(logs, 'qiyan') || {}
+  if (!word) {
+    problems.push('繁体侧：拿不到第 ' + idx + ' 期七言的答案（dev 开关失效？）')
+  }
+  else if (word !== entry.word) {
+    problems.push('繁体侧：第 ' + idx + ' 期七言答案是「' + word + '」，与词库第 ' + (idx + 1) + ' 句「' + entry.word + '」不一致（词库顺序变了？）')
+  }
+  else if (!await page.$('input')) {
+    problems.push('繁体侧：第 ' + idx + ' 期页面上没有输入框')
+  }
+  else {
+    await page.click('input')
+    await page.type('input', t.trad, { delay: 30 })
+    await page.keyboard.press('Enter')
+    await new Promise(r => setTimeout(r, 2000))
+    const body = await page.evaluate(() => document.body.innerText)
+    if (!body.includes('分享'))
+      problems.push('繁体侧：输入繁体形「' + t.trad + '」没有通关——繁体输入没被认成「' + word + '」')
+    // 每个格子有正反两面（翻牌动画），两面都写着同一个字——按格子取，一个格子一个字。
+    const rows = await page.$$eval('.row', els => els
+      .filter(e => !e.closest('.dc-modal'))
+      .map(e => Array.from(e.querySelectorAll('.tile')).map((x) => {
+        const h = x.querySelector('.hanzi')
+        return h ? h.textContent.trim() : ''
+      }).join('')))
+    if (!rows.includes(t.trad))
+      problems.push('繁体侧：看板上没有一行显示繁体形「' + t.trad + '」，实际是 ' + JSON.stringify(rows))
+    if (!body.includes(t.sourceTrad))
+      problems.push('繁体侧：出处没换成繁体「' + t.sourceTrad + '」')
+    if (body.includes(entry.source))
+      problems.push('繁体侧：出处还留着简体「' + entry.source + '」')
+  }
+  await page.evaluate(() => localStorage.setItem('handle-locale', 'hans'))
+}
+
 export async function runSmoke(puppeteer, url) {
   const problems = []
   const browser = await puppeteer.launch({
@@ -232,6 +285,10 @@ export async function runSmoke(puppeteer, url) {
     for (const spec of KINDS)
       await playRound(page, logs, base, spec, problems, 1001)
 
+    // 繁体模式：用繁体字形猜一遍（第 1002 期，与上面两轮不重复）
+    await page.setViewport({ width: 900, height: 900, deviceScaleFactor: 1 })
+    await playTraditional(page, logs, base, problems)
+
     // 主题开关：必须同时改 html.dark、data-theme、localStorage['dc-theme']
     await page.setViewport({ width: 900, height: 900, deviceScaleFactor: 1 })
     await page.goto(base + '/?dev=hey', { waitUntil: 'networkidle2', timeout: 60000 })
@@ -286,7 +343,7 @@ async function selftest(puppeteer) {
   const port = server.address().port
   try {
     const problems = await runSmoke(puppeteer, 'http://127.0.0.1:' + port)
-    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮']
+    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮', '繁体侧']
     const hit = want.filter(w => problems.some(x => x.includes(w)))
     if (hit.length < want.length) {
       console.log('[!!] 自检失败：坏页面只抓到 ' + hit.length + '/' + want.length + ' 类问题')
@@ -328,7 +385,7 @@ async function main() {
     for (const q of problems) console.log('  - ' + q)
     return 1
   }
-  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏入口 ' + (NAV_LINKS.length + 2) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
+  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、繁体字形也猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏入口 ' + (NAV_LINKS.length + 2) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
   return 0
 }
 

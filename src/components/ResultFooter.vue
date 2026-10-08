@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { formatDuration, meta } from '~/storage'
-import { t } from '~/i18n'
+import { locale, t } from '~/i18n'
 import { answer, dayNoHanzi, kind } from '~/state'
 
 defineProps<{
@@ -17,7 +17,12 @@ const hintText = computed(() => {
 })
 
 // 出处只在猜完之后再出现：提前给等于泄题。
-const source = computed(() => kind.value === 'idiom' ? undefined : answer.value.source)
+// 繁体模式给繁体出处（与 k12.diuci.com 繁体版同一份字）；没有繁体形就退回简体。
+const source = computed(() => {
+  if (kind.value === 'idiom')
+    return undefined
+  return (locale.value === 'hant' && answer.value.sourceTrad) || answer.value.source
+})
 </script>
 
 <template>

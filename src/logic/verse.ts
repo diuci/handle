@@ -14,6 +14,7 @@
 
 import { toSimplified } from '@hankit/tools'
 import poolRaw from '../data/verse-pool.json'
+import sourceFixesRaw from '../data/verse-source-fixes.json'
 import readingsRaw from '../data/verse-readings.json'
 import type { Kind } from './kinds'
 
@@ -31,7 +32,29 @@ interface VersePoolFile {
 }
 
 export const VersePool = poolRaw as VersePoolFile
+/**
+ * 出处勘误表。词库前缀的哈希是「历史答案不变」的唯一凭据，
+ * 所以勘误不在构建时改写 verse-pool.json，而是在读取时合并：
+ * 词库字节不动，用户在结果页看到的出处是认对的那一个。
+ */
+export const VerseSourceFixes = sourceFixesRaw as Record<string, { source?: string, poemId?: string, derive?: string, why: string }>
 export const VerseReadings = readingsRaw as Record<string, string>
+
+// 勘误合并成一张「认过出处」的视图，不改 verse-pool.json 的对象本身：
+// 那个对象是从 JSON 模块直接来的，改了它等于改了所有 import 它的地方（包括体检）。
+const corrected = new Map<string, VerseEntry>()
+for (const kind of ['wuyan', 'qiyan'] as const) {
+  for (const entry of VersePool[kind] || []) {
+    const fix = VerseSourceFixes[entry.word]
+    corrected.set(entry.word, fix
+      ? {
+          ...entry,
+          poemId: fix.poemId || entry.poemId,
+          source: fix.source || entry.source,
+        }
+      : entry)
+  }
+}
 
 const index = new Map<string, VerseEntry>()
 for (const kind of ['wuyan', 'qiyan'] as const) {
@@ -42,7 +65,7 @@ for (const kind of ['wuyan', 'qiyan'] as const) {
 export function verseList(kind: Kind): VerseEntry[] {
   if (kind === 'idiom')
     return []
-  return VersePool[kind] || []
+  return (VersePool[kind] || []).map(e => corrected.get(e.word) ?? e)
 }
 
 /** 这个词组是不是本玩法词库里的句子（繁体输入回退到简体）。 */

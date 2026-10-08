@@ -12,6 +12,10 @@
     "NOTICE",
     "README.md",
     "docs/",
+    "index.html",
+    "src/App.vue",
+    "src/components/",
+    "src/locales/",
     "src/data/README.md"
   ]
 }

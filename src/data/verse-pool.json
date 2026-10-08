@@ -6,8 +6,8 @@
       "sha256": "a2e22e34a45dfdf4e1f523cd0bef3db280b623b7788222ed7d0154efac571f84"
     },
     "qiyan": {
-      "count": 410,
-      "sha256": "edfa1cf5d891a04009a7b1ffbf30a94c09951445ac6f2007426cb56c8d066ac5"
+      "count": 418,
+      "sha256": "45edd7fb71ee4a8bdf5063a6f5ce2c848753d465ef98536009a17fc71c03db28"
     }
   },
   "wuyan": [
@@ -754,42 +754,42 @@
     {
       "word": "城阙辅三秦",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "风烟望五津",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "与君离别意",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "同是宦游人",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "海内存知己",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "天涯若比邻",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "无为在歧路",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "儿女共沾巾",
       "source": "唐·王勃《送杜少府之任蜀州》",
-      "poemId": "songshaoshu"
+      "poemId": "songshaoshu-wai"
     },
     {
       "word": "移舟泊烟渚",
@@ -1276,22 +1276,22 @@
     {
       "word": "折戟沉沙铁未销",
       "source": "唐·杜牧《赤壁》",
-      "poemId": "chibi"
+      "poemId": "chibi-du"
     },
     {
       "word": "自将磨洗认前朝",
       "source": "唐·杜牧《赤壁》",
-      "poemId": "chibi"
+      "poemId": "chibi-du"
     },
     {
       "word": "东风不与周郎便",
       "source": "唐·杜牧《赤壁》",
-      "poemId": "chibi"
+      "poemId": "chibi-du"
     },
     {
       "word": "铜雀春深锁二乔",
       "source": "唐·杜牧《赤壁》",
-      "poemId": "chibi"
+      "poemId": "chibi-du"
     },
     {
       "word": "巴山楚水凄凉地",
@@ -2086,22 +2086,22 @@
     {
       "word": "葡萄美酒夜光杯",
       "source": "唐·王翰《凉州词》",
-      "poemId": "liangzhou-wanghan"
+      "poemId": "liangzhouci-wanghan"
     },
     {
       "word": "欲饮琵琶马上催",
       "source": "唐·王翰《凉州词》",
-      "poemId": "liangzhou-wanghan"
+      "poemId": "liangzhouci-wanghan"
     },
     {
       "word": "醉卧沙场君莫笑",
       "source": "唐·王翰《凉州词》",
-      "poemId": "liangzhou-wanghan"
+      "poemId": "liangzhouci-wanghan"
     },
     {
       "word": "古来征战几人回",
       "source": "唐·王翰《凉州词》",
-      "poemId": "liangzhou-wanghan"
+      "poemId": "liangzhouci-wanghan"
     },
     {
       "word": "世味年来薄似纱",
@@ -3192,6 +3192,46 @@
       "word": "任尔东西南北风",
       "source": "清·郑燮《竹石》",
       "poemId": "zhushi"
+    },
+    {
+      "word": "江畔何人初见月",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "江月何年初照人",
+      "source": "唐·张若虚《春江花月夜》",
+      "poemId": "chunjianghuayue"
+    },
+    {
+      "word": "不拘一格降人材",
+      "source": "清·龚自珍《己亥杂诗》",
+      "poemId": "jihai"
+    },
+    {
+      "word": "黄河远上白云间",
+      "source": "唐·王之涣《凉州词》",
+      "poemId": "liangzhouci-wangzhihuan"
+    },
+    {
+      "word": "一片孤城万仞山",
+      "source": "唐·王之涣《凉州词》",
+      "poemId": "liangzhouci-wangzhihuan"
+    },
+    {
+      "word": "羌笛何须怨杨柳",
+      "source": "唐·王之涣《凉州词》",
+      "poemId": "liangzhouci-wangzhihuan"
+    },
+    {
+      "word": "春风不度玉门关",
+      "source": "唐·王之涣《凉州词》",
+      "poemId": "liangzhouci-wangzhihuan"
+    },
+    {
+      "word": "彩丝穿取当银钲",
+      "source": "宋·杨万里《稚子弄冰》",
+      "poemId": "zhizibing"
     }
   ]
 }

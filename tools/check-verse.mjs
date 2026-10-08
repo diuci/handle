@@ -38,7 +38,7 @@ function loadJson(file, label) {
  * 全部体检项。返回问题列表，空列表 = 通过。
  * 每一项都要能在 --selftest 里被人为触发，否则等于没写。
  */
-export function inspect({ source, snapshot, pool, readings, fix }) {
+export function inspect({ source, snapshot, pool, readings, fix, sourceFixes }) {
   const problems = []
   const bad = msg => problems.push(msg)
 
@@ -143,6 +143,25 @@ export function inspect({ source, snapshot, pool, readings, fix }) {
   for (const item of result.mismatch)
     bad('勘误与读音表不一致：' + item.word + '：' + item.why)
 
+  // 7. 出处勘误表：每一条都要说得出凭什么，且必须指向词库里真的有的句子
+  const inPool = new Map()
+  for (const k of KINDS) {
+    for (const e of pool[k] || [])
+      inPool.set(e.word, e)
+  }
+  for (const [word, entry] of Object.entries(sourceFixes || {})) {
+    if (!inPool.has(word))
+      bad('出处勘误「' + word + '」指向的词库里没有这一句')
+    if (!entry || typeof entry !== 'object') {
+      bad('出处勘误「' + word + '」不是一条记录')
+      continue
+    }
+    if (!(entry.why || '').trim())
+      bad('出处勘误「' + word + '」没写凭什么')
+    if (entry.derive && entry.derive !== 'table')
+      bad('出处勘误「' + word + '」的 derive 只认 table，写的是 ' + entry.derive)
+  }
+
   return problems
 }
 
@@ -170,14 +189,15 @@ if (isEntry && args.includes('--selftest')) {
   const baseSnapshot = { contentVersion: 'v1', forms: ['五言', '七言'], poems: 2, lines: 2, splittable: 2 }
   // 键序与真实产物一致（按码位排序），且含多音字的句子都带勘误——好样本必须真的干净
   const baseReadings = { '一行白鹭上青天': 'yi1 hang2 bai2 lu4 shang4 qing1 tian1', '大漠孤烟直': 'da4 mo4 gu1 yan1 zhi2' }
+  const baseSourceFixes = {}
   const baseFix = { '一行白鹭上青天': 'yi1 hang2 bai2 lu4 shang4 qing1 tian1', '大漠孤烟直': 'da4 mo4 gu1 yan1 zhi2' }
   const clone = o => JSON.parse(JSON.stringify(o))
   const good = inspect({ source: clone(baseSource), snapshot: clone(baseSnapshot), pool: clone(basePool), readings: clone(baseReadings), fix: clone(baseFix) })
   const cases = []
   const run = (name, mutate, expectFragment) => {
-    const s = clone(baseSource); const sn = clone(baseSnapshot); const p = clone(basePool); const rd = clone(baseReadings); const fx = clone(baseFix)
-    mutate(s, sn, p, rd, fx)
-    const problems = inspect({ source: s, snapshot: sn, pool: p, readings: rd, fix: fx })
+    const s = clone(baseSource); const sn = clone(baseSnapshot); const p = clone(basePool); const rd = clone(baseReadings); const fx = clone(baseFix); const sf = clone(baseSourceFixes)
+    mutate(s, sn, p, rd, fx, sf)
+    const problems = inspect({ source: s, snapshot: sn, pool: p, readings: rd, fix: fx, sourceFixes: sf })
     const hit = problems.some(x => x.includes(expectFragment))
     cases.push({ name, fired: problems.length > 0, hit, problems })
   }
@@ -201,6 +221,9 @@ if (isEntry && args.includes('--selftest')) {
   run('勘误没重 build', (s, sn, p, rd, fx) => { fx['大漠孤烟直'] = 'da4 mo4 gu1 yan1 zhi4' }, '没重新 build')
   run('键没排序', (s, sn, p, rd) => { const v = rd['一行白鹭上青天']; delete rd['一行白鹭上青天']; rd['一行白鹭上青天'] = v }, '没有排序')
   run('多音字未裁决', (s, sn, p, rd, fx) => { delete fx['大漠孤烟直'] }, '没裁决')
+  run('出处勘误没写理由', (s, sn, p, rd, fx, sf) => { sf['大漠孤烟直'] = { source: '唐·王维《使至塞上》' } }, '没写凭什么')
+  run('出处勘误指向词库外的句子', (s, sn, p, rd, fx, sf) => { sf['词库里没有这句'] = { source: '唐·某人《某诗》', why: '试' } }, '词库里没有这一句')
+  run('出处勘误的 derive 写错', (s, sn, p, rd, fx, sf) => { sf['大漠孤烟直'] = { derive: 'guess', why: '试' } }, 'derive 只认 table')
 
   const failures = []
   if (good.length)
@@ -221,20 +244,23 @@ if (isEntry && args.includes('--selftest')) {
 }
 
 if (isEntry) {
-let source, snapshot, pool, readings, fix
+let source, snapshot, pool, readings, fix, sourceFixes
 try {
   source = loadJson(SOURCE_PATH, '诗库抽取结果（先跑 node tools/sync-poems.mjs）')
   snapshot = loadJson(SNAPSHOT_PATH, '诗库快照')
   pool = loadJson(POOL_PATH, '诗句词库（先跑 node tools/build-verse.mjs）')
   readings = loadJson(READINGS_PATH, '钉死读音表')
   fix = fs.existsSync(FIX_PATH) ? JSON.parse(fs.readFileSync(FIX_PATH, 'utf8')) : {}
+  sourceFixes = fs.existsSync(path.join(DATA, 'verse-source-fixes.json'))
+    ? JSON.parse(fs.readFileSync(path.join(DATA, 'verse-source-fixes.json'), 'utf8'))
+    : {}
 }
 catch (e) {
   console.error('[check] ERROR: ' + e.message)
   process.exit(1)
 }
 
-const problems = inspect({ source, snapshot, pool, readings, fix })
+const problems = inspect({ source, snapshot, pool, readings, fix, sourceFixes })
 if (problems.length) {
   console.error('[check] 五言 / 七言产物有问题（' + problems.length + ' 处）：')
   for (const p of problems.slice(0, 40)) console.error('  - ' + p)

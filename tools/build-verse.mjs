@@ -81,6 +81,52 @@ export function verifyFrozen(kind, entries, frozen) {
     throw new VerseError(kind + '：词库前 ' + prev.count + ' 条与上次构建不一致（' + now.slice(0, 12) + ' vs ' + prev.sha256.slice(0, 12) + '），历史答案会变，拒绝构建')
 }
 
+/**
+ * 出处 id 失效的修复。
+ *
+ * 内容仓改过篇目 id（「赤壁」→「chibi-du」、「凉州词」→「liangzhouci-wanghan」），
+ * 词库里那些旧 id 就指不到任何一篇了——出处说不清，繁体形也没法按位置取。
+ * 这里按「这一句在快照里唯一命中哪一篇」重新认出处：
+ * 命中零篇或命中多篇都停下，因为那等于这句的出处其实说不清。
+ * 出处文字（朝代·作者《篇名》）若在冻结前缀里变了，也停下——那是历史答案的出处变了。
+ */
+export function repairSources(entries, source, kind, frozenCount = 0) {
+  const ids = new Set(source.poems.map(p => p.id))
+  const stale = entries.filter(e => !ids.has(e.poemId))
+  if (!stale.length)
+    return 0
+  const hits = new Map()
+  for (const poem of source.poems) {
+    for (const line of poem.lines) {
+      for (const e of stale) {
+        if (!line.includes(e.word))
+          continue
+        const arr = hits.get(e.word) || []
+        if (!arr.includes(poem.id))
+          arr.push(poem.id)
+        hits.set(e.word, arr)
+      }
+    }
+  }
+  for (const [i, e] of entries.entries()) {
+    if (ids.has(e.poemId))
+      continue
+    const found = hits.get(e.word) || []
+    if (found.length === 0)
+      throw new VerseError(kind + '：「' + e.word + '」在诗库快照里找不到任何一篇有这一句的诗，出处说不清')
+    if (found.length > 1)
+      throw new VerseError(kind + '：「' + e.word + '」同时出现在 ' + found.join('、') + ' 几篇里，认不出该算哪一篇')
+    const poem = source.poems.find(x => x.id === found[0])
+    const src = sourceOf(poem)
+    if (i < frozenCount && src !== e.source)
+      throw new VerseError(kind + '：「' + e.word + '」的出处从「' + e.source + '」变成「' + src + '」，'
+        + '这一句在冻结前缀里，历史答案的出处不许变')
+    e.poemId = found[0]
+    e.source = src
+  }
+  return stale.length
+}
+
 /** 追加到已有词库：已有的顺序原样保留，新句只能加到尾部。 */
 export function appendOnly(existing, fresh, kind) {
   const known = new Set(existing.map(e => e.word))
@@ -115,6 +161,9 @@ function run() {
   const result = {}
   for (const kind of KINDS) {
     verifyFrozen(kind, existing[kind], frozen)
+    const repaired = repairSources(existing[kind], source, kind, (frozen[kind] || {}).count || 0)
+    if (repaired)
+      console.log('[build] ' + kind + '：' + repaired + ' 句的出处 id 在内容仓里已失效，按句子唯一命中重新认了出处')
     const { merged, appended } = appendOnly(existing[kind], pools[kind], kind)
     result[kind] = merged
     frozen[kind] = { count: merged.length, sha256: hashEntries(merged) }
@@ -196,6 +245,25 @@ if (isEntry && process.argv.includes('--selftest')) {
   try { verifyFrozen('wuyan', afterAppend, frozen) }
   catch (e) { problems.push('追加之后前缀校验反而失败：' + e.message) }
 
+  // 出处 id 失效：唯一命中要修好，零命中与多命中必须停
+  const srcDoc = { poems: [{ id: 'a', title: '甲', author: '某甲', dynasty: '唐', form: '五言', lines: ['大漠孤烟直长河落日圆'] }, { id: 'b', title: '乙', author: '某乙', dynasty: '唐', form: '五言', lines: ['大漠孤烟直长河落日圆'] }] }
+  const one = { poems: [{ id: 'a', title: '甲', author: '某甲', dynasty: '唐', form: '五言', lines: ['大漠孤烟直长河落日圆'] }] }
+  const e1 = [{ word: '大漠孤烟直', source: '唐·某甲《甲》', poemId: '旧id' }]
+  const fixed = repairSources(e1, one, 'wuyan', 1)
+  if (fixed !== 1 || e1[0].poemId !== 'a') problems.push('失效出处没被修好：' + JSON.stringify(e1[0]))
+  let threwR = false
+  try { repairSources([{ word: '大漠孤烟直', source: 'x', poemId: '旧id' }], { poems: [] }, 'wuyan', 0) }
+  catch (err) { threwR = err instanceof VerseError }
+  if (!threwR) problems.push('句子在快照里一篇都找不到时没有停')
+  let threwR2 = false
+  try { repairSources([{ word: '大漠孤烟直', source: 'x', poemId: '旧id' }], srcDoc, 'wuyan', 0) }
+  catch (err) { threwR2 = err instanceof VerseError }
+  if (!threwR2) problems.push('句子同时命中两篇时没有停')
+  let threwR3 = false
+  try { repairSources([{ word: '大漠孤烟直', source: '唐·某乙《乙》', poemId: '旧id' }], one, 'wuyan', 1) }
+  catch (err) { threwR3 = err instanceof VerseError }
+  if (!threwR3) problems.push('冻结前缀里的出处被换了却没停')
+
   // 读音：勘误整行覆盖，且必须能被 parseChar 拆
   const fix = { '都护在燕然': 'du1 hu4 zai4 yan1 ran2' }
   const rd = buildReadings(['都护在燕然', '大漠孤烟直'], fix)
@@ -219,7 +287,7 @@ if (isEntry && process.argv.includes('--selftest')) {
     for (const p of problems) console.error('  - ' + p)
     process.exit(1)
   }
-  console.log('[ok] build-verse --selftest 通过（拆联、去重、跳过异形行、只追加、前缀篡改拒绝、读音勘误与形式）')
+  console.log('[ok] build-verse --selftest 通过（拆联、去重、跳过异形行、只追加、前缀篡改拒绝、出处 id 失效的三种情形、读音勘误与形式）')
   process.exit(0)
 }
 
