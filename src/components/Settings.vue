@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { colorblind, inputMode, meta, spMode, useCheckAssist, useNoHint, useNumberTone as useNumberToneRaw, useStrictMode } from '~/storage'
 import { useNumberTone } from '~/state'
-import { locale, t } from '~/i18n'
+import { t } from '~/i18n'
 
 defineProps<{
   lite?: boolean
@@ -11,15 +11,8 @@ defineProps<{
 <template>
   <div flex="~ col">
     <div flex="~ center wrap">
-      <div square-btn m2>
-        <button :class="locale === 'hans' ? 'text-primary' : 'op80' " @click="locale = 'hans'">
-          简体
-        </button>
-        <div w-1px h-4 border="r base" />
-        <button :class="locale === 'hant' ? 'text-primary' : 'op80' " @click="locale = 'hant'">
-          繁體
-        </button>
-      </div>
+      <!-- 繁简切换不在设置里了：顶栏那枚圆钮是唯一入口（规范 §3）。
+           两处开关 = 孩子找不到、大人改不完。 -->
       <button
         square-btn m2
         :class="colorblind ? 'text-primary' : 'op80' "

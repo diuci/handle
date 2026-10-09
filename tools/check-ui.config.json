@@ -1,0 +1,58 @@
+{
+  "tokens": "src/styles/tokens.css",
+  "tokensSha256": "75984d334e4fc6d2107bc9ed12a770fbad74c6f643bdb014c2cc33786120453b",
+  "css": [
+    "src/styles/main.css"
+  ],
+  "nav": [
+    {
+      "file": "src/components/Navbar.vue",
+      "start": "<nav class=\"dc-nav\">",
+      "end": "</nav>"
+    }
+  ],
+  "footer": [
+    {
+      "file": "src/components/SiteFooter.vue",
+      "start": "<footer class=\"dc-foot\">",
+      "end": "</footer>"
+    }
+  ],
+  "sidebar": [],
+  "parkOrder": [
+    {
+      "file": "src/components/Navbar.vue",
+      "start": "<nav class=\"dc-nav\">",
+      "end": "</nav>"
+    },
+    {
+      "file": "src/components/SiteFooter.vue",
+      "start": "<footer class=\"dc-foot\">",
+      "end": "</footer>"
+    },
+    {
+      "file": "src/components/TabBar.vue",
+      "start": "<nav class=\"dc-tabbar\" aria-label=\"快捷导航\">",
+      "end": "</nav>"
+    }
+  ],
+  "legalLinks": [
+    "/sources",
+    "/accuracy",
+    "/legal"
+  ],
+  "parks": [
+    "首页",
+    "学古诗",
+    "连词成句",
+    "汉兜",
+    "遗失月冕",
+    "丢词大作战"
+  ],
+  "langBtnClass": "dc-lang-btn",
+  "themeBtnClass": "dc-theme-btn",
+  "sidebarSelectors": [
+    ".dc-sidebar",
+    ".VPSidebar"
+  ]
+}

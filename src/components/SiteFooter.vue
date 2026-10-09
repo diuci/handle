@@ -22,7 +22,9 @@ const PARKS = [
       <div class="dc-foot-l">
         <a href="https://diuci.com/">丢词夺理 diuci.com</a> · 每天一个成语，也能猜五言、七言<br>
         诗句取自内容仓 253 篇课标必背课文 · 成语库沿用上游<br>
-        <a href="https://k12.diuci.com/legal/" target="_blank">原文公有领域 · 注释 CC BY 4.0 · 代码 MIT · 版权与免责</a>
+        <a href="https://k12.diuci.com/legal/" target="_blank">原文公有领域 · 注释 CC BY 4.0 · 代码 MIT · 版权与免责</a><br>
+        <a href="https://k12.diuci.com/accuracy" target="_blank">内容准确性与台账</a> · 
+        <a href="https://k12.diuci.com/sources" target="_blank">数据来源与版权</a>
       </div>
       <nav aria-label="六个乐园">
         <a v-for="p in PARKS" :key="p.href" :href="p.href">{{ p.label }}</a>

@@ -13,26 +13,33 @@ import { fileURLToPath } from 'node:url'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
-// 逐值抄自 _deploy/index.html 的 :root 与 :root[data-theme="dark"]。
-// 要改配色，先改主站，再改这里，最后改本站——顺序反了就是四个站长得不一样。
-const LIGHT = [
-  '--paper:#f4ede0',
-  '--ink:#241f1a',
-  '--cinnabar:#c8442e',
-  '--celadon:#5f8d7d',
-  '--gold:#c08a2e',
-  '--line:#d8cbb4',
-  '--on-accent:#fdf8ee',
-]
-const DARK = [
-  '--paper:#17140f',
-  '--ink:#f0e7d6',
-  '--cinnabar:#e2694c',
-  '--celadon:#7fae9c',
-  '--gold:#d3a44a',
-  '--line:#3b342a',
-  '--on-accent:#1a1610',
-]
+// 盯哪几个色、值是多少，不在这里写死：从本站那份令牌副本（src/styles/tokens.css）当场读。
+// 写死的色值会与正本各说各话——正本改了，这道闸门还在替旧配色说话。
+const WATCH = ['--paper', '--ink', '--cinnabar', '--celadon', '--gold', '--line', '--on-accent']
+function blockOf(raw, sel) {
+  const i = raw.indexOf(sel)
+  if (i < 0) return null
+  const o = raw.indexOf('{', i)
+  let d = 1, k = o + 1
+  while (k < raw.length && d > 0) { if (raw[k] === '{') d++; else if (raw[k] === '}') d--; k++ }
+  return raw.slice(o + 1, k - 1)
+}
+function readTokens() {
+  const p = path.join(ROOT, 'src', 'styles', 'tokens.css')
+  if (!fs.existsSync(p)) return { light: null, dark: null, problems: ['本站没有 src/styles/tokens.css：四站共用一套令牌，副本没了这道闸门就没依据'] }
+  const raw = fs.readFileSync(p, 'utf8')
+  const light = blockOf(raw, ':root{')
+  const dark = blockOf(raw, ':root[data-theme="dark"]')
+  const problems = []
+  if (light === null) problems.push('令牌副本里没有 :root{ 块')
+  if (dark === null) problems.push('令牌副本里没有 :root[data-theme="dark"] 块')
+  const pick = (block) => WATCH.map(n => {
+    const m = block && block.match(new RegExp('\\' + n + '\\s*:\\s*([^;]+);'))
+    if (!m) { problems.push('令牌副本里找不到 ' + n); return null }
+    return n + ':' + m[1].trim()
+  }).filter(Boolean)
+  return { light: light ? pick(light) : [], dark: dark ? pick(dark) : [], problems }
+}
 const MAPS = [
   '--c-ok:var(--celadon)',
   '--c-mis:var(--gold)',
@@ -54,19 +61,31 @@ export function checkTheme(dist) {
   }
   const css = cssFiles.map(f => fs.readFileSync(path.join(assets, f), 'utf8')).join('\n')
 
-  const media = (css.match(/prefers-color-scheme/g) || []).length
-  if (media)
-    problems.push('CSS 里有 ' + media + ' 处 prefers-color-scheme：暗色必须只由 html.dark / [data-theme=dark] 驱动')
+  const tokens = readTokens()
+  problems.push(...tokens.problems)
+
+  // 暗色必须只由 html.dark / [data-theme=dark] 驱动（当年 UnoCSS 退回 prefers-color-scheme，
+  // 站内暗色跟系统偏好跑，与 dc-theme 开关各判一次，真拍出过两张一模一样的暗图）。
+  // 唯一允许的例外：首帧兜底 —— @media (prefers-color-scheme: dark){ :root:not([data-theme]){…} }，
+  // 一旦脚本写了 data-theme 就失效；没有 :not([data-theme]) 这层护栏的写法一律算违规。
+  for (const m of css.matchAll(/prefers-color-scheme/g)) {
+    const after = css.slice(m.index, m.index + 160)
+    const b1 = after.indexOf('{')
+    const b2 = after.indexOf('{', b1 + 1)
+    const sel = b1 < 0 ? '' : after.slice(b1 + 1, b2 < 0 ? after.length : b2).trim()
+    if (!/^:root:not\(\[data-theme\]\)/.test(sel))
+      problems.push('prefers-color-scheme 没有 :root:not([data-theme]) 这层护栏：暗色会跟系统偏好跑，与 dc-theme 开关各判一次（写法「' + sel.slice(0, 40) + '」）')
+  }
 
   const darkSel = (css.match(/\.dark/g) || []).length
   if (darkSel < 5)
     problems.push('.dark 选择器只有 ' + darkSel + ' 处，UnoCSS 的 dark: 变体可能没生效（presetWind3 的 dark 选项）')
 
-  for (const q of LIGHT) {
+  for (const q of tokens.light) {
     if (!css.includes(q))
       problems.push('明色令牌缺失或值被改：' + q)
   }
-  for (const q of DARK) {
+  for (const q of tokens.dark) {
     if (!css.includes(q))
       problems.push('暗色令牌缺失或值被改：' + q)
   }
@@ -98,7 +117,10 @@ function selftest() {
   let ok = true
   try {
     fs.mkdirSync(path.join(dir, 'assets'), { recursive: true })
-    const goodCss = LIGHT.concat(DARK, MAPS, ['.dark{a:b}', '.dark{c:d}', '.dark{e:f}', '.dark{g:h}', '.dark{i:j}', '.colorblind{z:1}']).join(';')
+    const t = readTokens()
+    // 首帧兜底：带 :not([data-theme]) 护栏的那种写法必须放行，否则闸门会把正本自己判成违规
+    const GUARDED = '@media (prefers-color-scheme: dark){:root:not([data-theme]){--paper:#17140f}}'
+    const goodCss = t.light.concat(t.dark, MAPS, [GUARDED, '.dark{a:b}', '.dark{c:d}', '.dark{e:f}', '.dark{g:h}', '.dark{i:j}', '.colorblind{z:1}']).join(';')
     fs.writeFileSync(path.join(dir, 'assets/a.css'), goodCss)
     fs.writeFileSync(path.join(dir, 'index.html'), '<html lang="zh-CN"><meta id="metaTheme"><script>localStorage.getItem("dc-theme")</script></html>')
     fs.writeFileSync(path.join(dir, 'assets/a.js'), 'x("dc-tabbar")')

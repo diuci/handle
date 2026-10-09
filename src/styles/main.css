@@ -1,77 +1,20 @@
 /*
    汉兜 · 丢词夺理复刻站样式
-   语义色与主站 _deploy/index.html 的 :root / :root[data-theme="dark"] 逐值一致。
+   颜色一律取自本站那份令牌副本（与正本字节一致）；语义色怎么映射归本站决定（规范 §1）。
    改任何一个值之前先想清楚：这四个站共用一套视觉语言，不一致比难看更糟。
 */
 
-:root{
-  --paper:#f4ede0;
-  --paper-2:#eae0cd;
-  --ink:#241f1a;
-  --ink-soft:#5b5147;
-  --ink-faint:#8a7f72;
-  --cinnabar:#c8442e;
-  --cinnabar-deep:#a33524;
-  --celadon:#5f8d7d;
-  --indigo:#3c5a78;
-  --gold:#c08a2e;
-  --line:#d8cbb4;
-  --shadow:0 2px 0 rgba(36,31,26,.06), 0 12px 32px -12px rgba(36,31,26,.18);
-  --radius:14px;
-  --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun","STSong",serif;
-  --round:"ZCOOL KuaiLe","Noto Serif SC","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
-  --brush:"ZCOOL XiaoWei","Noto Serif SC","Kaiti SC","STKaiti","KaiTi",serif;
-  --card-grad:linear-gradient(168deg,#fdf8ec,#f3e9d5);
-  --card-grad-2:linear-gradient(168deg,#fdf9ef,#f2e8d4);
-  --surface:rgba(255,253,247,.62);
-  --surface-2:rgba(255,253,247,.55);
-  --surface-3:rgba(244,237,224,.66);
-  --surface-hi:#fdf9ef;
-  --nav-bg:rgba(244,237,224,.82);
-  --wash-1:rgba(192,138,46,.10);
-  --wash-2:rgba(200,68,46,.07);
-  --wash-3:rgba(60,90,120,.06);
-  --tag-bg:rgba(36,31,26,.07);
-  --grain-op:.5;
-  --on-accent:#fdf8ee;
-  color-scheme:light;
+/* 设计令牌正本：本站存一份字节一样的副本（tools/check-ui.mjs 比对 sha256）。
+   本站不得再定义同名令牌，也不得把正本色抄成字面量（规范 §1）。 */
+@import './tokens.css';
 
-  /* handle 自己的语义名，指向上面的主站色 */
+/* 本站语义色：名字是本站的，值一律 var() 指向正本（规范 §1：正本不替各站决定主色）。
+   汉兜主色朱砂；色彩增强模式那段（往下找 .colorblind）把主色与「对」色换成靛青。 */
+:root{
   --c-primary:var(--cinnabar);
   --c-primary-deep:var(--cinnabar-deep);
   --c-ok:var(--celadon);
   --c-mis:var(--gold);
-}
-
-/* 夜墨：宣纸翻到背面。双选择器是防首帧漏配：data-theme 由脚本写，html.dark 由 UnoCSS 的 dark: 变体用 */
-:root[data-theme="dark"],
-html.dark{
-  --paper:#17140f;
-  --paper-2:#241f18;
-  --ink:#f0e7d6;
-  --ink-soft:#c3b8a5;
-  --ink-faint:#948a79;
-  --cinnabar:#e2694c;
-  --cinnabar-deep:#f07f61;
-  --celadon:#7fae9c;
-  --indigo:#7d9dc0;
-  --gold:#d3a44a;
-  --line:#3b342a;
-  --shadow:0 2px 0 rgba(0,0,0,.2), 0 14px 36px -14px rgba(0,0,0,.6);
-  --card-grad:linear-gradient(168deg,#2b2519,#1d1811);
-  --card-grad-2:linear-gradient(168deg,#292319,#1b1610);
-  --surface:rgba(52,45,35,.5);
-  --surface-2:rgba(48,42,33,.55);
-  --surface-3:rgba(38,33,26,.6);
-  --surface-hi:#28221a;
-  --nav-bg:rgba(23,20,15,.86);
-  --wash-1:rgba(211,164,74,.09);
-  --wash-2:rgba(226,105,76,.08);
-  --wash-3:rgba(125,157,192,.07);
-  --tag-bg:rgba(240,231,214,.09);
-  --grain-op:.24;
-  --on-accent:#1a1610;
-  color-scheme:dark;
 }
 
 html,body,#app{height:100%;margin:0;padding:0}
@@ -151,17 +94,27 @@ body::after{
 .dc-nav-links a.on::after{width:100%}
 
 /* 主题按钮：主站同款太阳/月亮互换 */
-.theme-btn{
-  width:38px;height:38px;flex:0 0 38px;border-radius:50%;cursor:pointer;padding:0;
+.dc-theme-btn{
+  width:var(--btn-round);height:var(--btn-round);flex:0 0 var(--btn-round);border-radius:50%;cursor:pointer;padding:0;
   background:var(--surface);border:1px solid var(--line);
   color:var(--ink);display:grid;place-items:center;
   transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .25s,border-color .25s,color .25s;
 }
-.theme-btn:hover{color:var(--cinnabar);border-color:var(--cinnabar);transform:rotate(18deg) scale(1.08)}
-.theme-btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.theme-btn .moon{display:none}
-html.dark .theme-btn .sun{display:none}
-html.dark .theme-btn .moon{display:block}
+.dc-theme-btn:hover{color:var(--cinnabar);border-color:var(--cinnabar);transform:rotate(18deg) scale(1.08)}
+.dc-theme-btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.dc-theme-btn .moon{display:none}
+html.dark .dc-theme-btn .sun{display:none}
+html.dark .dc-theme-btn .moon{display:block}
+
+/* 繁简钮：顶栏右侧、明暗钮左边，同尺寸同描边（规范 §2、§3） */
+.dc-lang-btn{
+  width:var(--btn-round);height:var(--btn-round);flex:0 0 var(--btn-round);border-radius:50%;cursor:pointer;padding:0;
+  background:var(--surface);border:1px solid var(--line);
+  color:var(--ink);font-family:var(--round);font-size:15px;display:grid;place-items:center;
+  transition:background .25s,border-color .25s,color .25s;
+}
+.dc-lang-btn:hover{color:var(--cinnabar);border-color:var(--cinnabar)}
+
 
 /* ── 底部标签栏：参数与主站 / K12 完全一致 ── */
 .dc-tabbar{display:none}
@@ -171,8 +124,8 @@ html.dark .theme-btn .moon{display:block}
   .seal{width:34px;height:34px;flex:0 0 34px;font-size:20px;border-radius:8px}
   .brand-t{font-size:18px}
   .brand-s{font-size:9px;letter-spacing:.2em}
-  .theme-btn{width:34px;height:34px;flex:0 0 34px}
-  .theme-btn svg{width:17px;height:17px}
+  .dc-theme-btn,.dc-lang-btn{width:var(--btn-round-sm);height:var(--btn-round-sm);flex:0 0 var(--btn-round-sm)}
+  .dc-theme-btn svg{width:17px;height:17px}
 
   /* 注意 top:auto —— 没有它，fixed 元素同时带 top 与 bottom 会被拉到页面顶部 */
   .dc-tabbar{

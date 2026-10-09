@@ -92,7 +92,8 @@ const verseDemo = computed(() => kind.value === 'qiyan'
     <button btn p="x4 y2" @click="start()">
       <span tracking-1 pl1>{{ t('start') }}</span>
     </button>
-    <div op50>
+    <!-- 辅助说明只有一档字号：这句与上面那句副标题同为 op50 text-sm（规范 §5） -->
+    <div op50 text-sm>
       {{ t('update-tip') }}
     </div>
 

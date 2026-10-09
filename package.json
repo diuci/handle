@@ -18,9 +18,10 @@
     "check:theme": "node tools/check-theme.mjs",
     "smoke": "node tools/smoke-handle.mjs",
     "check:legal": "node tools/check-legal.mjs",
+    "check:ui": "node tools/check-ui.mjs",
     "build:trad": "python tools/build-traditional.py",
     "check:trad": "node tools/check-trad.mjs",
-    "selftest": "node tools/check-legal.mjs --selftest && node tools/check-build.mjs --selftest && node tools/check-theme.mjs --selftest && node tools/smoke-handle.mjs --selftest && node tools/verse-lib.mjs --selftest && node tools/sync-poems.mjs --selftest && node tools/build-verse.mjs --selftest && node tools/audit-verse.mjs --selftest && node tools/check-verse.mjs --selftest && python tools/build-traditional.py --selftest && node tools/check-trad.mjs --selftest"
+    "selftest": "node tools/check-legal.mjs --selftest && node tools/check-build.mjs --selftest && node tools/check-theme.mjs --selftest && node tools/smoke-handle.mjs --selftest && node tools/verse-lib.mjs --selftest && node tools/sync-poems.mjs --selftest && node tools/build-verse.mjs --selftest && node tools/audit-verse.mjs --selftest && node tools/check-verse.mjs --selftest && python tools/build-traditional.py --selftest && node tools/check-trad.mjs --selftest && node tools/check-ui.mjs --selftest"
   },
   "dependencies": {
     "@vueuse/core": "^15.0.0",

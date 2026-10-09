@@ -58,6 +58,11 @@ jobs:
       - name: 法律护栏
         run: npm run check:legal
 
+      - name: 四站 UI 闸门
+        # 令牌副本与正本字节一致、不得重复定义令牌、不得写死正本色、
+        # 顶栏两枚圆钮（繁简在明暗左边）、说明页只在页脚、乐园顺序（规范 §1—§8）。
+        run: npm run check:ui
+
       - name: 产物体检
         run: npm run check:build
 
