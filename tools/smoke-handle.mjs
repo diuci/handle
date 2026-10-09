@@ -297,11 +297,17 @@ export async function runSmoke(puppeteer, url) {
       data: document.documentElement.dataset.theme,
       store: localStorage.getItem('dc-theme'),
     }))
-    if (!await page.$('.theme-btn')) {
-      problems.push('顶栏没有主题按钮 .theme-btn')
+    const geo = {}
+    for (const [key, sel] of [['lang', '.dc-lang-btn'], ['theme', '.dc-theme-btn']]) {
+      const el = await page.$(sel)
+      if (!el) continue
+      const box = await el.boundingBox()
+      if (!box) continue
+      geo[key] = { x: box.x, w: box.width, h: box.height, text: (await el.evaluate(n => n.textContent)) || '' }
     }
-    else {
-      await page.click('.theme-btn')
+    problems.push(...buttonProblems(geo))
+    if (geo.theme) {
+      await page.click('.dc-theme-btn')
       await new Promise(r => setTimeout(r, 400))
     }
     const afterTheme = await page.evaluate(() => ({
@@ -338,12 +344,30 @@ function serveFixture() {
   })
 }
 
+// 顶栏两枚圆钮（规范 §2 §3）：判定做成纯函数，坏例子不必先开浏览器。
+export function buttonProblems(geo) {
+  const problems = []
+  if (!geo) { problems.push('顶栏没有量到圆钮'); return problems }
+  if (!geo.lang) problems.push('顶栏没有繁简按钮 .dc-lang-btn（规范 §3：繁简钮必须在顶栏）')
+  if (!geo.theme) problems.push('顶栏没有主题按钮 .dc-theme-btn')
+  if (geo.lang && geo.theme) {
+    if (geo.lang.x >= geo.theme.x)
+      problems.push('繁简钮不在明暗钮左边：繁简 x=' + Math.round(geo.lang.x) + ' / 明暗 x=' + Math.round(geo.theme.x))
+    if (Math.abs(geo.lang.w - geo.theme.w) > 0.5 || Math.abs(geo.lang.h - geo.theme.h) > 0.5)
+      problems.push('两枚圆钮尺寸不同：繁简 ' + geo.lang.w + '×' + geo.lang.h + ' / 明暗 ' + geo.theme.w + '×' + geo.theme.h)
+  }
+  const label = (geo.lang && geo.lang.text || '').trim()
+  if (geo.lang && label !== '繁' && label !== '简')
+    problems.push('繁简钮的文案必须是单字「繁」或「简」，现在是「' + label + '」')
+  return problems
+}
+
 async function selftest(puppeteer) {
   const server = await serveFixture()
   const port = server.address().port
   try {
     const problems = await runSmoke(puppeteer, 'http://127.0.0.1:' + port)
-    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮', '繁体侧']
+    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮', '繁简按钮', '繁体侧']
     const hit = want.filter(w => problems.some(x => x.includes(w)))
     if (hit.length < want.length) {
       console.log('[!!] 自检失败：坏页面只抓到 ' + hit.length + '/' + want.length + ' 类问题')
@@ -351,6 +375,24 @@ async function selftest(puppeteer) {
       return false
     }
     console.log('[ok] 坏页面被抓到 ' + problems.length + ' 条，覆盖 ' + want.length + ' 类')
+    // 两枚圆钮的坏例子：不必开浏览器，直接喂量出来的盒子
+    const good = { lang: { x: 900, w: 38, h: 38, text: '繁' }, theme: { x: 940, w: 38, h: 38, text: '' } }
+    const cases = [
+      ['繁简钮跑到明暗钮右边', { lang: { x: 980, w: 38, h: 38, text: '繁' }, theme: { x: 940, w: 38, h: 38, text: '' } }],
+      ['两枚钮尺寸不一样', { lang: { x: 900, w: 30, h: 30, text: '繁' }, theme: { x: 940, w: 38, h: 38, text: '' } }],
+      ['文案写成「繁體」两个字', { lang: { x: 900, w: 38, h: 38, text: '繁體' }, theme: { x: 940, w: 38, h: 38, text: '' } }],
+      ['繁简钮干脆没有', { theme: { x: 940, w: 38, h: 38, text: '' } }],
+      ['明暗钮干脆没有', { lang: { x: 900, w: 38, h: 38, text: '繁' } }],
+    ]
+    let tried = 0, caught = 0
+    for (const [why, g] of cases) {
+      tried++
+      if (buttonProblems(g).length) caught++
+      else console.log('     坏例子没抓住：' + why)
+    }
+    if (buttonProblems(good).length) { tried++; console.log('     好例子被误报 → ' + buttonProblems(good)[0]) }
+    if (caught !== tried) { console.log('[!!] 自检失败：圆钮坏例子试了 ' + tried + ' 例，抓住 ' + caught + ' 例'); return false }
+    console.log('[ok] 圆钮坏例子当场数到 ' + tried + ' 个，全部试到')
     return true
   }
   finally {
