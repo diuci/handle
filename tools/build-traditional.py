@@ -291,6 +291,7 @@ def build(content_root):
 
 def selftest():
     bad = 0
+    tried = [0]   # 当场数的坏例子个数：不许从源码文本里数，那个数会把计数那一行自己也数进去
     engine = load_engine(LOCAL_CONTENT)
     s2c = engine.read_table(engine.STC)
     s2p = engine.read_table(engine.STP)
@@ -305,11 +306,16 @@ def selftest():
     fixes = load_source_fixes()
 
     def expect(pool_, rows_, label):
+        tried[0] += 1
         try:
             verse_trad(pool_, rows_, poems, s2c, engine, s2p, rules, fixes)
         except TradError:
             return
         print('坏例：%s 没被发现' % label)
+        # 先前这一处只 print 不计数：坏例 1–5 永远不可能让自检失败，
+        # 护栏哪天塌了，自检照样打印「通」——空过的检查比没有检查更危险。
+        nonlocal bad
+        bad += 1
 
     # 1) 诗句在出处正文里根本找不到
     p1 = {k: [dict(e) for e in v] for k, v in good.items()}
@@ -342,12 +348,14 @@ def selftest():
     p6['qiyan'][0]['poemId'] = None
     expect(p6, trad_rows, '词库里有一句没有出处 id')
     # 7) 裁定没写理由
+    tried[0] += 1
     try:
         answer_trad(['万事如意'], engine, s2p, s2c, [{'simp': '万事如意', 'pick': '萬事如意'}])
         print('坏例：裁定没写理由却没被拦'); bad += 1
     except TradError:
         pass
     # 8) 裁定挑了候选里没有的字
+    tried[0] += 1
     try:
         answer_trad(['不寒而栗'], engine, s2p, s2c,
                     [{'simp': '不寒而栗', 'pick': '不寒而凜', 'why': '凭空造的字'}])
@@ -355,6 +363,7 @@ def selftest():
     except TradError:
         pass
     # 9) 分歧没留在产物里：把词组表里那条整条删掉，转换就只剩逐字照抄
+    tried[0] += 1
     try:
         s2p2 = dict(s2p)
         s2p2.pop('不寒而栗', None)
@@ -371,6 +380,7 @@ def selftest():
         b1 = {k: dict(v) for k, v in good.items()}
         next(iter(b1.values()))['derive'] = 'guess'
         tmp.write_text(json.dumps(b1, ensure_ascii=False), encoding='utf-8')
+        tried[0] += 1
         try:
             load_source_fixes(tmp)
             print('坏例：出处勘误的 derive 写错了却没被拦'); bad += 1
@@ -379,6 +389,7 @@ def selftest():
         b2 = {k: dict(v) for k, v in good.items()}
         next(iter(b2.values()))['why'] = ''
         tmp.write_text(json.dumps(b2, ensure_ascii=False), encoding='utf-8')
+        tried[0] += 1
         try:
             load_source_fixes(tmp)
             print('坏例：出处勘误没写理由却没被拦'); bad += 1
@@ -387,6 +398,7 @@ def selftest():
     finally:
         tmp.unlink(missing_ok=True)
     # 11) 答案列表解析塌了
+    tried[0] += 1
     try:
         src = (ROOT / 'src' / 'answers' / 'list.ts').read_text(encoding='utf-8')
         n = len({p[0] for p in re.findall(r"\['([^'\\\[\]]{2,10})',\s*'([^']*)'\]", src)})
@@ -396,10 +408,7 @@ def selftest():
     except TradError:
         pass
     if bad == 0:
-        import inspect
-        src = inspect.getsource(selftest)
-        print('[ok] build-traditional --selftest 通（%d 处断言全部试到）'
-              % (src.count('expect(') + src.count('bad += 1')))
+        print('[ok] build-traditional --selftest 通（当场数到 %d 个坏例子，全部试到）' % tried[0])
         return 0
     print('[!] build-traditional --selftest 失败 %d 项' % bad)
     return 1
