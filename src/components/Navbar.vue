@@ -30,14 +30,16 @@ function openHelp() {
         </button>
       </div>
       <!-- 乐园那一排与主题钮一起靠右：主站是「牌子 | 乐园 | 圆钮」，
-           站内工具摆在牌子后面，这样六个乐园的起点 x 与主站逐像素一致。 -->
-      <div class="dc-nav-links" aria-label="六个乐园">
+           站内工具摆在牌子后面，这样八项乐园的起点 x 与主站逐像素一致。 -->
+      <div class="dc-nav-links" aria-label="八个乐园">
         <a href="https://diuci.com/" target="_blank">首页</a>
         <a href="https://k12.diuci.com/" target="_blank">学古诗</a>
-        <a href="https://lian.diuci.com/" target="_blank">连词成句</a>
+        <a href="https://jiagu.diuci.com/" target="_blank">画甲骨</a>
+        <a href="https://lian.diuci.com/" target="_blank">连词</a>
+        <a href="https://zimi.diuci.com/" target="_blank">猜谜</a>
         <a href="/" aria-current="page" class="on">汉兜</a>
-        <a href="https://moon.diuci.com/" target="_blank">遗失月冕</a>
-        <a href="https://ink.diuci.com/" target="_blank">丢词大作战</a>
+        <a href="https://moon.diuci.com/" target="_blank">月冕</a>
+        <a href="https://ink.diuci.com/" target="_blank">大作战</a>
       </div>
       <!-- 繁简钮：与明暗钮同形状，摆在明暗钮左边（规范 §2、§3），文案是一个字。 -->
       <button class="dc-lang-btn" type="button" aria-label="繁简切换" title="繁简切换"

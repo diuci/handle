@@ -34,8 +34,9 @@ const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diu
 // 顶栏第一项是回主站的「首页」，href 必须精确等于这个，不能用 includes 判
 // ——k12.diuci.com 里也含着 diuci.com，includes 会假通过。
 const HOME_LINK = 'https://diuci.com/'
-// 六个乐园的名字与顺序：主站、学古诗、连词成句、汉兜四站的顶栏与页脚都该是这一串。
-const PARK_LABELS = ['学古诗', '连词成句', '汉兜', '遗失月冕', '丢词大作战', '内容仓库']
+// 八项乐园的名字与顺序：主站、学古诗、画甲骨、连词、猜谜、汉兜六站的顶栏与页脚都该是这一串。
+// （页脚那一组不含「首页」是规范；内容仓库是页脚独有的末位，不是乐园。）
+const PARK_LABELS = ['学古诗', '画甲骨', '连词', '猜谜', '汉兜', '月冕', '大作战', '内容仓库']
 
 function findChrome() {
   const cands = process.platform === 'win32'

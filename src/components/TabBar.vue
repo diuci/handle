@@ -20,6 +20,13 @@
       </svg>
       <span class="tx">学古诗</span>
     </a>
+    <a class="dc-tab" href="https://jiagu.diuci.com/">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4.6" y="4.6" width="14.8" height="14.8" rx="1.6"/>
+        <path d="M12 8.4v7.2M9.6 12h4.8"/>
+      </svg>
+      <span class="tx">画甲骨</span>
+    </a>
     <a class="dc-tab" href="https://lian.diuci.com/">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
         <circle cx="5.4" cy="6.6" r="2.3"/>
@@ -28,6 +35,13 @@
         <path d="M7.1 8.3l3.5 2.4M13.4 13.3l3.5 2.4"/>
       </svg>
       <span class="tx">连句</span>
+    </a>
+    <a class="dc-tab" href="https://zimi.diuci.com/">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.2 5.4h15.6M7.2 5.4v13.2M16.8 5.4v13.2M9.4 18.6h5.2"/>
+        <path d="M9.8 9.6a2.4 2.4 0 1 1 3.3 2.2c-.7.35-1.1.95-1.1 1.7v.5"/>
+      </svg>
+      <span class="tx">猜谜</span>
     </a>
     <a class="dc-tab on" href="https://handle.diuci.com/" aria-current="page">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">

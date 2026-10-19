@@ -124,11 +124,15 @@ const verseDemo = computed(() => kind.value === 'qiyan'
       <span op40>同一批课文的其他玩法：</span>
       <a op50 hover:op80 href="https://k12.diuci.com/" target="_blank">学古诗</a>
       <span op40> · </span>
-      <a op50 hover:op80 href="https://lian.diuci.com/" target="_blank">连词成句</a>
+      <a op50 hover:op80 href="https://jiagu.diuci.com/" target="_blank">画甲骨</a>
       <span op40> · </span>
-      <a op50 hover:op80 href="https://ink.diuci.com/" target="_blank">丢词大作战</a>
+      <a op50 hover:op80 href="https://lian.diuci.com/" target="_blank">连词</a>
       <span op40> · </span>
-      <a op50 hover:op80 href="https://moon.diuci.com/" target="_blank">遗失月冕</a>
+      <a op50 hover:op80 href="https://zimi.diuci.com/" target="_blank">猜谜</a>
+      <span op40> · </span>
+      <a op50 hover:op80 href="https://ink.diuci.com/" target="_blank">大作战</a>
+      <span op40> · </span>
+      <a op50 hover:op80 href="https://moon.diuci.com/" target="_blank">月冕</a>
     </div>
     <div>
       <a op50 hover:op80 href="https://k12.diuci.com/legal/" target="_blank">{{ t('legal-link') }}</a>

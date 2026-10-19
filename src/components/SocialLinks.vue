@@ -21,7 +21,7 @@ import { t } from '~/i18n'
       target="_blank"
     >
       <div i-carbon-flow-activity />
-      连词成句
+      连词
     </a>
     <a
       square-btn mx2 flex-gap-1
