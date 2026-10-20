@@ -49,7 +49,7 @@ body::after{
 
 /* ── 顶栏/底部标签栏：样式单源 core/chrome.css（PLAN-全站统一-v3）──
    dc-nav / dc-nav-in / seal / brand-* / dc-nav-links / dc-theme-btn /
-   dc-lang-btn / dc-tabbar 全部由 chrome.css 提供。这里只留本站特有的
+   dc-tabbar 全部由 chrome.css 提供。这里只留本站特有的
    工具钮组（说明/战绩/设置），它不在六站契约里。 */
 .dc-nav-btns{display:flex;align-items:center}
 

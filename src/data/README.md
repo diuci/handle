@@ -42,13 +42,7 @@ From users' input
 
 | 文件 | 是什么 | 谁生成 |
 | --- | --- | --- |
-| `traditional.json` | 每日答案与诗句的繁体形：644 句诗句 + 407 条成语，带来源指纹与每一处「表给了别的写法」的记录 | `python tools/build-traditional.py` |
-| `trad-rules.json` | 本站自己的繁简裁定（必须带理由），目前 1 条 | 人工维护 |
-
-派生机只有一台：内容仓 `diuci/k12-chinese-poetry/tools/build-traditional.py`。本站这一支 import 它，
-不写第二套繁简转换——否则本站的「繁体」与 k12.diuci.com 繁体版会长成分叉的两套字。
-644 句里 640 句的繁体形不查表，从内容仓派生好的繁体正文里按「第几行第几字」取切片；
-只有 4 句走繁简表（两句出处不在台账里、两句是教材正文之外的通行异文，理由见 `verse-source-fixes.json`）。
+| `t2s.json` | 繁→简输入归一化（用户打繁体字照样判对；v4 起仅作输入兼容，不再是内容形态） | 手工维护 |
 
 ### 许可
 

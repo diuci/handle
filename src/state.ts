@@ -9,13 +9,31 @@ export const isMobile = isIOS || /iPad|iPhone|iPod|Android|Phone|webOS/i.test(na
 export const breakpoints = useBreakpoints(breakpointsTailwind)
 
 export const now = useNow({ interval: 1000 })
-// 主题与主站共用 localStorage['dc-theme']：在主站切到暗色，进汉兜仍是暗色。
-// 上游用 useDark()，它读写的是 'vueuse-color-scheme'，与 index.html 首帧脚本的键都不是一个。
+// 主题存 cookie（domain=.diuci.com）：主站切到暗色，进汉兜仍是暗色（v4 跨站一致）。
+// 上游用 useDark()，它读写的是 'vueuse-color-scheme'，与本站首帧脚本的键不是一个。
+// localStorage 子域不共享，只读一次作老用户迁移。
 const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false
-export const theme = useStorage<'light' | 'dark'>('dc-theme', prefersDark ? 'dark' : 'light')
+function writeThemeCookie(v: 'light' | 'dark') {
+  document.cookie = 'dc-theme=' + v + ';domain=.diuci.com;path=/;max-age=31536000;SameSite=Lax'
+}
+function readThemeCookie(): 'light' | 'dark' {
+  const hit = document.cookie.split(/;\s*/).find(c => c.startsWith('dc-theme='))
+  const v = hit ? hit.slice('dc-theme='.length) : null
+  if (v === 'dark' || v === 'light') return v
+  try {
+    const s = localStorage.getItem('dc-theme')
+    if (s === 'dark' || s === 'light') { writeThemeCookie(s); return s }
+  }
+  catch {}
+  const d: 'light' | 'dark' = prefersDark ? 'dark' : 'light'
+  writeThemeCookie(d)
+  return d
+}
+export const theme = ref<'light' | 'dark'>(readThemeCookie())
 export const isDark = computed(() => theme.value === 'dark')
 export function toggleTheme() {
   theme.value = isDark.value ? 'light' : 'dark'
+  writeThemeCookie(theme.value)
 }
 watchEffect(() => {
   const dark = isDark.value

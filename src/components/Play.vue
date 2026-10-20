@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { answer, dayNo, isDev, isFailed, isFinished, kind, showCheatSheet, showFailed, showHelp, showHint, triesLimit, wordLength } from '~/state'
 import { markStart, meta, tries, useNoHint, useStrictMode } from '~/storage'
-import { locale, t } from '~/i18n'
+import { t } from '~/i18n'
 import { checkValidIdiom, checkValidVerse, filterNonChineseChars } from '~/logic'
 
 const el = ref<HTMLInputElement>()
@@ -13,14 +13,10 @@ const shake = autoResetRef(false, 500)
 const isFinishedDelay = debouncedRef(isFinished, 800)
 
 /**
- * 答案那一行显示的字形：繁体模式显示繁体形，其余一律简体。
- * 只改显示——猜的匹配、拼音、词库校验都走简体归一化，繁体输入照样对得上。
+ * 答案那一行显示的字形：v4 起全站仅简体，一律简体。
+ * 猜的匹配、拼音、词库校验都走简体归一化，繁体输入照样对得上（t2s 归一化保留）。
  */
-const answerShown = computed(() =>
-  locale.value === 'hant' && answer.value.wordTrad
-    ? answer.value.wordTrad
-    : answer.value.word,
-)
+const answerShown = computed(() => answer.value.word)
 
 /** 校验按玩法分：成语查成语库，诗句查诗句库，宽松模式下都只查字数。 */
 function valid(word: string) {

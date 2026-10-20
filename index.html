@@ -19,24 +19,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
   <script>
-    /* 首次绘制前定色：与 _deploy/core/theme.mjs 的 BOOTSTRAP 同源（check-core R4 钉特征）。
-       键与主站 / K12 一致：dc-theme；MutationObserver 让切主题时地址栏色同步。 */
-    ;(function () {
-      var t = document.documentElement
-      var m = document.querySelector('meta[name="theme-color"]')
-      var saved = null
-      try { saved = localStorage.getItem('dc-theme') } catch (e) {}
-      var mode = saved === 'dark' || saved === 'light'
-        ? saved
-        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-      t.setAttribute('data-theme', mode)
-      t.classList.toggle('dark', mode === 'dark')
-      t.classList.toggle('light', mode === 'light')
-      var sync = function () { if (m) m.setAttribute('content', t.getAttribute('data-theme') === 'dark' ? '#17140f' : '#f4ede0') }
-      sync()
-      if (m && window.MutationObserver) new MutationObserver(sync).observe(t, { attributes: true, attributeFilter: ['data-theme'] })
-    })();
-  </script>
+/* 首帧定色：主题存 cookie（domain=.diuci.com），主站与分站共享，切一次全站跟变；
+   localStorage 只读一次作老用户迁移。与 core/theme.mjs 的 BOOTSTRAP 同源。 */
+(function(){
+  var t=document.documentElement;
+  function rc(n){var h=document.cookie.split(/;\s*/).find(function(c){return c.indexOf(n+'=')===0});return h?h.slice(n.length+1):null}
+  function wc(v){document.cookie='dc-theme='+v+';domain=.diuci.com;path=/;max-age=31536000;SameSite=Lax'}
+  var mode=rc('dc-theme');
+  if(mode!=='dark'&&mode!=='light'){
+    try{mode=localStorage.getItem('dc-theme')}catch(e){}
+    if(mode==='dark'||mode==='light'){try{wc(mode)}catch(e){}}
+    else mode=null;
+  }
+  if(mode!=='dark'&&mode!=='light')
+    mode=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  t.setAttribute('data-theme',mode);
+  t.classList.toggle('dark',mode==='dark');
+  t.classList.toggle('light',mode==='light');
+  var m=document.querySelector('meta[name="theme-color"]');
+  if(m)m.setAttribute('content',mode==='dark'?'#17140f':'#f4ede0');
+  if(m&&window.MutationObserver)new MutationObserver(function(){m.setAttribute('content',t.getAttribute('data-theme')==='dark'?'#17140f':'#f4ede0')}).observe(t,{attributes:true,attributeFilter:['data-theme']});
+})();
+</script>
 </head>
 <body>
   <div id="app"></div>

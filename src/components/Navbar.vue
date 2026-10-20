@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { showDashboard, showHelp, showSettings, toggleTheme, useMask } from '~/state'
 import { gamesCount } from '~/storage'
-import { locale } from '~/i18n'
 
 const toggleSettings = useToggle(showSettings)
 const toggleDashboard = useToggle(showDashboard)
@@ -42,11 +41,6 @@ function openHelp() {
         <a href="https://moon.diuci.com/">月冕</a>
         <a href="https://ink.diuci.com/">大作战</a>
       </div>
-      <!-- 繁简钮：与明暗钮同形状，摆在明暗钮左边（规范 §2、§3），文案是一个字。 -->
-      <button class="dc-lang-btn" type="button" aria-label="繁简切换" title="繁简切换"
-        @click="locale = locale === 'hans' ? 'hant' : 'hans'">
-        {{ locale === 'hans' ? '繁' : '简' }}
-      </button>
       <button class="dc-theme-btn" type="button" aria-label="切换深色模式" title="切换深色模式" @click="toggleTheme()">
           <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="4.2"/>

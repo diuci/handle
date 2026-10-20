@@ -36,7 +36,7 @@ const NAV_LINKS = ['k12.diuci.com', 'jiagu.diuci.com', 'lian.diuci.com', 'zimi.d
 const HOME_LINK = 'https://diuci.com/'
 // 八项乐园的名字与顺序：六站顶栏与页脚都该是这一串（core/parks.json 单源）。
 // v3 起页脚也含「首页」；内容仓库是页脚独有的末位，不是乐园。
-const PARK_LABELS = ['首页', '学古诗', '画甲骨', '连词', '猜谜', '汉兜', '月冕', '大作战', '内容仓库']
+const PARK_LABELS = ['首页', '学古诗', '画甲骨', '连词', '猜谜', '汉兜', '月冕', '大作战', 'hi@diuci.com']
 
 function findChrome() {
   const cands = process.platform === 'win32'
@@ -129,58 +129,6 @@ async function playRound(page, logs, base, spec, problems, day) {
     problems.push(spec.kind + '：猜完之后没看到「出处」，诗句来源没显示')
 }
 
-/**
- * 繁体模式：切到 hant 之后，用繁体字形猜当天这一句。
- * 一次同时验两件事——繁体输入必须仍然算对（匹配走简体归一化），
- * 并且看板与出处显示的是繁体形（字形来自内容仓那份派生产物）。
- */
-async function playTraditional(page, logs, base, problems) {
-  const tradDoc = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'traditional.json'), 'utf8'))
-  const pool = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'verse-pool.json'), 'utf8')).qiyan
-  const idx = pool.findIndex(e => tradDoc.verse[e.word] && tradDoc.verse[e.word].sourceTrad !== e.source)
-  if (idx < 0) {
-    problems.push('繁体侧：词库里找不到一句出处会变的七言，这一项没法验')
-    return
-  }
-  const entry = pool[idx]
-  const t = tradDoc.verse[entry.word]
-  await page.evaluate(() => localStorage.setItem('handle-locale', 'hant'))
-  await page.goto(base + '/?dev=hey&mode=qiyan&d=' + idx, { waitUntil: 'networkidle2', timeout: 60000 })
-  await new Promise(r => setTimeout(r, 400))
-  const { word } = parseDevLog(logs, 'qiyan') || {}
-  if (!word) {
-    problems.push('繁体侧：拿不到第 ' + idx + ' 期七言的答案（dev 开关失效？）')
-  }
-  else if (word !== entry.word) {
-    problems.push('繁体侧：第 ' + idx + ' 期七言答案是「' + word + '」，与词库第 ' + (idx + 1) + ' 句「' + entry.word + '」不一致（词库顺序变了？）')
-  }
-  else if (!await page.$('input')) {
-    problems.push('繁体侧：第 ' + idx + ' 期页面上没有输入框')
-  }
-  else {
-    await page.click('input')
-    await page.type('input', t.trad, { delay: 30 })
-    await page.keyboard.press('Enter')
-    await new Promise(r => setTimeout(r, 2000))
-    const body = await page.evaluate(() => document.body.innerText)
-    if (!body.includes('分享'))
-      problems.push('繁体侧：输入繁体形「' + t.trad + '」没有通关——繁体输入没被认成「' + word + '」')
-    // 每个格子有正反两面（翻牌动画），两面都写着同一个字——按格子取，一个格子一个字。
-    const rows = await page.$$eval('.row', els => els
-      .filter(e => !e.closest('.dc-modal'))
-      .map(e => Array.from(e.querySelectorAll('.tile')).map((x) => {
-        const h = x.querySelector('.hanzi')
-        return h ? h.textContent.trim() : ''
-      }).join('')))
-    if (!rows.includes(t.trad))
-      problems.push('繁体侧：看板上没有一行显示繁体形「' + t.trad + '」，实际是 ' + JSON.stringify(rows))
-    if (!body.includes(t.sourceTrad))
-      problems.push('繁体侧：出处没换成繁体「' + t.sourceTrad + '」')
-    if (body.includes(entry.source))
-      problems.push('繁体侧：出处还留着简体「' + entry.source + '」')
-  }
-  await page.evaluate(() => localStorage.setItem('handle-locale', 'hans'))
-}
 
 export async function runSmoke(puppeteer, url) {
   const problems = []
@@ -286,10 +234,6 @@ export async function runSmoke(puppeteer, url) {
     for (const spec of KINDS)
       await playRound(page, logs, base, spec, problems, 1001)
 
-    // 繁体模式：用繁体字形猜一遍（第 1002 期，与上面两轮不重复）
-    await page.setViewport({ width: 900, height: 900, deviceScaleFactor: 1 })
-    await playTraditional(page, logs, base, problems)
-
     // 主题开关：必须同时改 html.dark、data-theme、localStorage['dc-theme']
     await page.setViewport({ width: 900, height: 900, deviceScaleFactor: 1 })
     await page.goto(base + '/?dev=hey', { waitUntil: 'networkidle2', timeout: 60000 })
@@ -299,12 +243,10 @@ export async function runSmoke(puppeteer, url) {
       store: localStorage.getItem('dc-theme'),
     }))
     const geo = {}
-    for (const [key, sel] of [['lang', '.dc-lang-btn'], ['theme', '.dc-theme-btn']]) {
-      const el = await page.$(sel)
-      if (!el) continue
-      const box = await el.boundingBox()
-      if (!box) continue
-      geo[key] = { x: box.x, w: box.width, h: box.height, text: (await el.evaluate(n => n.textContent)) || '' }
+    const themeBtn = await page.$('.dc-theme-btn')
+    if (themeBtn) {
+      const box = await themeBtn.boundingBox()
+      if (box) geo.theme = { x: box.x, w: box.width, h: box.height, text: '' }
     }
     problems.push(...buttonProblems(geo))
     if (geo.theme) {
@@ -320,8 +262,11 @@ export async function runSmoke(puppeteer, url) {
       problems.push('点主题按钮后 html.dark 没变')
     if (before.data === afterTheme.data)
       problems.push('点主题按钮后 html[data-theme] 没变')
-    if (afterTheme.store !== (afterTheme.data))
-      problems.push("localStorage['dc-theme'] 与 html[data-theme] 不一致（主站之间就不互通了）")
+    const cookieAfter = await page.evaluate(() => (document.cookie.match(/dc-theme=([a-z]+)/) || [])[1] || null)
+    // cookie 带 domain=.diuci.com 才跨站共享；localhost 冒烟写不进这种 cookie，
+    // 所以只在 cookie 真存在时校验它与 data-theme 一致（生产域上必存在）。
+    if (cookieAfter && cookieAfter !== afterTheme.data)
+      problems.push('cookie[dc-theme] 与 html[data-theme] 不一致——主站与分站就不互通了')
 
     if (errors.length)
       problems.push('浏览器里有 ' + errors.length + ' 条错误：' + errors.slice(0, 3).join(' | '))
@@ -345,21 +290,12 @@ function serveFixture() {
   })
 }
 
-// 顶栏两枚圆钮（规范 §2 §3）：判定做成纯函数，坏例子不必先开浏览器。
+// 顶栏圆钮（规范 §2）：判定做成纯函数，坏例子不必先开浏览器。
+// v4 起全站仅简体，顶栏只有明暗钮一枚。
 export function buttonProblems(geo) {
   const problems = []
   if (!geo) { problems.push('顶栏没有量到圆钮'); return problems }
-  if (!geo.lang) problems.push('顶栏没有繁简按钮 .dc-lang-btn（规范 §3：繁简钮必须在顶栏）')
   if (!geo.theme) problems.push('顶栏没有主题按钮 .dc-theme-btn')
-  if (geo.lang && geo.theme) {
-    if (geo.lang.x >= geo.theme.x)
-      problems.push('繁简钮不在明暗钮左边：繁简 x=' + Math.round(geo.lang.x) + ' / 明暗 x=' + Math.round(geo.theme.x))
-    if (Math.abs(geo.lang.w - geo.theme.w) > 0.5 || Math.abs(geo.lang.h - geo.theme.h) > 0.5)
-      problems.push('两枚圆钮尺寸不同：繁简 ' + geo.lang.w + '×' + geo.lang.h + ' / 明暗 ' + geo.theme.w + '×' + geo.theme.h)
-  }
-  const label = (geo.lang && geo.lang.text || '').trim()
-  if (geo.lang && label !== '繁' && label !== '简')
-    problems.push('繁简钮的文案必须是单字「繁」或「简」，现在是「' + label + '」')
   return problems
 }
 
@@ -368,7 +304,7 @@ async function selftest(puppeteer) {
   const port = server.address().port
   try {
     const problems = await runSmoke(puppeteer, 'http://127.0.0.1:' + port)
-    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮', '繁简按钮', '繁体侧']
+    const want = ['正文是空', '没有输入框', '标签栏', '顶栏入口', '当前页', '页脚乐园', '页脚没有指向法律页', '署名', '玩法切换', 'dev 开关', '主题按钮']
     const hit = want.filter(w => problems.some(x => x.includes(w)))
     if (hit.length < want.length) {
       console.log('[!!] 自检失败：坏页面只抓到 ' + hit.length + '/' + want.length + ' 类问题')
@@ -376,14 +312,10 @@ async function selftest(puppeteer) {
       return false
     }
     console.log('[ok] 坏页面被抓到 ' + problems.length + ' 条，覆盖 ' + want.length + ' 类')
-    // 两枚圆钮的坏例子：不必开浏览器，直接喂量出来的盒子
-    const good = { lang: { x: 900, w: 38, h: 38, text: '繁' }, theme: { x: 940, w: 38, h: 38, text: '' } }
+    // 圆钮的坏例子：不必开浏览器，直接喂量出来的盒子
+    const good = { theme: { x: 940, w: 38, h: 38 } }
     const cases = [
-      ['繁简钮跑到明暗钮右边', { lang: { x: 980, w: 38, h: 38, text: '繁' }, theme: { x: 940, w: 38, h: 38, text: '' } }],
-      ['两枚钮尺寸不一样', { lang: { x: 900, w: 30, h: 30, text: '繁' }, theme: { x: 940, w: 38, h: 38, text: '' } }],
-      ['文案写成「繁體」两个字', { lang: { x: 900, w: 38, h: 38, text: '繁體' }, theme: { x: 940, w: 38, h: 38, text: '' } }],
-      ['繁简钮干脆没有', { theme: { x: 940, w: 38, h: 38, text: '' } }],
-      ['明暗钮干脆没有', { lang: { x: 900, w: 38, h: 38, text: '繁' } }],
+      ['明暗钮干脆没有', {}],
     ]
     let tried = 0, caught = 0
     for (const [why, g] of cases) {
@@ -428,7 +360,7 @@ async function main() {
     for (const q of problems) console.log('  - ' + q)
     return 1
   }
-  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、繁体字形也猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏入口 ' + (NAV_LINKS.length + 2) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
+  console.log('[ok] 冒烟通过（' + url + '）：三种玩法各猜对一遍、900px 与 375px 都不溢出、标签栏 ' + TAB_COUNT + ' 项、顶栏入口 ' + (NAV_LINKS.length + 2) + ' 项、页脚乐园 ' + PARK_LABELS.length + ' 项、署名在、主题开关三处同步')
   return 0
 }
 

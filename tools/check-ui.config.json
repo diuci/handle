@@ -1,82 +1,84 @@
 {
-  "tokens": "src/styles/tokens.css",
-  "tokensSha256": "1dc7fa43afa870c3fde8b52f9e2b90b23d819d37dadde3dc79e1bdb6d5ae1985",
-  "css": [
-    "src/styles/main.css"
-  ],
-  "nav": [
-    {
-      "file": "src/components/Navbar.vue",
-      "start": "<nav class=\"dc-nav\">",
-      "end": "</nav>"
-    }
-  ],
-  "footer": [
-    {
-      "file": "src/components/SiteFooter.vue",
-      "start": "<footer class=\"dc-foot\">",
-      "end": "</footer>"
-    }
-  ],
-  "sidebar": [],
-  "parkOrder": [
-    {
-      "file": "src/components/Navbar.vue",
-      "start": "<nav class=\"dc-nav\">",
-      "end": "</nav>"
-    },
-    {
-      "file": "src/components/SiteFooter.vue",
-      "start": "<footer class=\"dc-foot\">",
-      "end": "</footer>"
-    },
-    {
-      "file": "src/components/TabBar.vue",
-      "start": "<nav class=\"dc-tabbar\" aria-label=\"快捷导航\">",
-      "end": "</nav>"
-    }
-  ],
-  "legalLinks": [
-    "/sources",
-    "/accuracy",
-    "/legal"
-  ],
-  "parks": [
-    "首页",
-    "学古诗",
-    "画甲骨",
-    "连词",
-    "猜谜",
-    "汉兜",
-    "月冕",
-    "大作战"
-  ],
-  "langBtnClass": "dc-lang-btn",
-  "themeBtnClass": "dc-theme-btn",
-  "sidebarSelectors": [
-    ".dc-sidebar",
-    ".VPSidebar"
-  ],
-  "tabbarFiles": [
-    "core/tabbar.json"
-  ],
-  "chrome": {
-    "noBlankLinks": [
-      "src/components/Navbar.vue",
-      "src/components/SiteFooter.vue",
-      "src/components/WelcomePage.vue",
-      "src/components/AppName.vue",
-      "src/components/TabBar.vue"
-    ],
-    "mustContain": [
-      {
-        "file": "src/components/Navbar.vue",
-        "needle": "dc-nav-in"
-      },
-      {
-        "file": "src/components/AppName.vue",
-        "needle": ["dc-brand-tx", "dc-brand-s"]
-      }
-    ]
-  }
+    "tokens":  "src/styles/tokens.css",
+    "tokensSha256":  "1dc7fa43afa870c3fde8b52f9e2b90b23d819d37dadde3dc79e1bdb6d5ae1985",
+    "css":  [
+                "src/styles/main.css"
+            ],
+    "nav":  [
+                {
+                    "file":  "src/components/Navbar.vue",
+                    "start":  "\u003cnav class=\"dc-nav\"\u003e",
+                    "end":  "\u003c/nav\u003e"
+                }
+            ],
+    "footer":  [
+                   {
+                       "file":  "src/components/SiteFooter.vue",
+                       "start":  "\u003cfooter class=\"dc-foot\"\u003e",
+                       "end":  "\u003c/footer\u003e"
+                   }
+               ],
+    "sidebar":  [
+
+                ],
+    "parkOrder":  [
+                      {
+                          "file":  "src/components/Navbar.vue",
+                          "start":  "\u003cnav class=\"dc-nav\"\u003e",
+                          "end":  "\u003c/nav\u003e"
+                      },
+                      {
+                          "file":  "src/components/SiteFooter.vue",
+                          "start":  "\u003cfooter class=\"dc-foot\"\u003e",
+                          "end":  "\u003c/footer\u003e"
+                      },
+                      {
+                          "file":  "src/components/TabBar.vue",
+                          "start":  "\u003cnav class=\"dc-tabbar\" aria-label=\"快捷导航\"\u003e",
+                          "end":  "\u003c/nav\u003e"
+                      }
+                  ],
+    "legalLinks":  [
+                       "/legal"
+                   ],
+    "parks":  [
+                  "首页",
+                  "学古诗",
+                  "画甲骨",
+                  "连词",
+                  "猜谜",
+                  "汉兜",
+                  "月冕",
+                  "大作战"
+              ],
+    "themeBtnClass":  "dc-theme-btn",
+    "sidebarSelectors":  [
+                             ".dc-sidebar",
+                             ".VPSidebar"
+                         ],
+    "tabbarFiles":  [
+                        "core/tabbar.json"
+                    ],
+    "chrome":  {
+                   "noBlankLinks":  [
+                                        "src/components/Navbar.vue",
+                                        "src/components/SiteFooter.vue",
+                                        "src/components/WelcomePage.vue",
+                                        "src/components/AppName.vue",
+                                        "src/components/TabBar.vue"
+                                    ],
+                   "mustContain":  [
+                                       {
+                                           "file":  "src/components/Navbar.vue",
+                                           "needle":  "dc-nav-in"
+                                       },
+                                       {
+                                           "file":  "src/components/AppName.vue",
+                                           "needle":  [
+                                                          "dc-brand-tx",
+                                                          "dc-brand-s"
+                                                      ]
+                                       }
+                                   ]
+               }
 }

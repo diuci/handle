@@ -16,15 +16,12 @@ import parksData from '../../core/parks.json'
   <footer class="dc-foot">
     <div class="dc-foot-in">
       <div class="dc-foot-l">
-        <a href="https://diuci.com/">丢词夺理 diuci.com</a> · 每天一个成语，也能猜五言、七言<br>
-        诗句取自内容仓 253 篇课标必背课文 · 成语库沿用上游<br>
-        <a href="https://k12.diuci.com/legal/">原文公有领域 · 注释 CC BY 4.0 · 代码 MIT · 版权与免责</a><br>
-        <a href="https://k12.diuci.com/accuracy">内容准确性与台账</a> ·
-        <a href="https://k12.diuci.com/sources">数据来源与版权</a>
+        <a href="https://diuci.com/">丢词夺理 diuci.com</a> · 诗句取自内容仓课文 · 成语库沿用上游 · 注释 CC BY 4.0 · 代码 MIT ·
+        <a href="https://k12.diuci.com/legal/">版权与免责</a>
       </div>
       <nav aria-label="八个乐园">
         <a v-for="p in parksData.parks" :key="p.href" :href="p.href">{{ p.label }}</a>
-        <a href="https://github.com/diuci/k12-chinese-poetry">内容仓库</a>
+        <a href="mailto:hi@diuci.com">hi@diuci.com</a>
       </nav>
     </div>
   </footer>

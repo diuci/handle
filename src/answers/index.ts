@@ -1,7 +1,6 @@
 import seedrandom from 'seedrandom'
 import { getHint } from '../logic'
 import type { Kind } from '../logic/kinds'
-import { getAnswerTrad, getVerseTrad } from '../logic/trad'
 import { verseList } from '../logic/verse'
 import { answers } from './list'
 
@@ -10,9 +9,6 @@ export interface DayAnswer {
   hint: string
   /** 五言 / 七言的出处，如「唐·王维《使至塞上》」；成语玩法没有。 */
   source?: string
-  /** 繁体模式下的答案字形与出处；没有就不显示繁体（宁可退回简体，也不猜一个字）。 */
-  wordTrad?: string
-  sourceTrad?: string
 }
 
 /**
@@ -33,11 +29,9 @@ export function getAnswerOfDay(day: number, kind: Kind = 'idiom'): DayAnswer {
       answer = answers[day]
     }
     const [word = '', hint = ''] = answer
-    const trad = getAnswerTrad(word)
     return {
       word,
       hint: hint || getHint(word),
-      wordTrad: trad?.trad,
     }
   }
 
@@ -48,12 +42,9 @@ export function getAnswerOfDay(day: number, kind: Kind = 'idiom'): DayAnswer {
     ? pool[Math.floor(seedrandom(`kind-day-` + day)() * pool.length)]
     : pool[day]
   const word = entry?.word || ''
-  const trad = getVerseTrad(word)
   return {
     word,
     hint: getHint(word),
     source: entry?.source,
-    sourceTrad: trad?.sourceTrad,
-    wordTrad: trad?.trad,
   }
 }
