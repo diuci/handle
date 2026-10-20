@@ -234,6 +234,11 @@ export async function runSmoke(puppeteer, url) {
     for (const spec of KINDS)
       await playRound(page, logs, base, spec, problems, 1001)
 
+    // v4 步4：手机视口下整页不许横向溢出（.row 级检查在 playRound 里，这里是整页级）
+    const docOverflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+    if (docOverflow > 1)
+      problems.push('375px 视口下整页横向溢出 ' + docOverflow + 'px')
+
     // 主题开关：必须同时改 html.dark、data-theme、localStorage['dc-theme']
     await page.setViewport({ width: 900, height: 900, deviceScaleFactor: 1 })
     await page.goto(base + '/?dev=hey', { waitUntil: 'networkidle2', timeout: 60000 })
