@@ -23,11 +23,11 @@ const KINDS = [
 
 // 底部标签栏应有几项：断言与成功文案读同一个数。
 // 之前成功文案里硬写着「5 项」，加了一项后检查改成 6、文案还在说 5 ——
-// 「通过」这句话本身在撒谎。加入口时只改这一处。（v3 起八站全量）
-const TAB_COUNT = 8
+// 「通过」这句话本身在撒谎。加入口时只改这一处。（v4.1 起六项：月冕/大作战只在顶部菜单）
+const TAB_COUNT = 6
 
-// 全站互相链接的域名：底部标签栏八项（core/tabbar.json 单源）
-const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'jiagu.diuci.com', 'lian.diuci.com', 'zimi.diuci.com', 'handle.diuci.com', 'moon.diuci.com', 'ink.diuci.com']
+// 全站互相链接的域名：底部标签栏六项（core/tabbar.json 单源；moon/ink 走顶部菜单，不在底栏）
+const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'jiagu.diuci.com', 'lian.diuci.com', 'zimi.diuci.com', 'handle.diuci.com']
 // 顶栏八个乐园：六个外链 + 回主站的「首页」+ 本站那一项（汉兜，href 是 /，带 aria-current）。
 // 顶栏不再挂开源仓库：那是给开发者找源码的，孩子用不上，页脚里有。
 const NAV_LINKS = ['k12.diuci.com', 'jiagu.diuci.com', 'lian.diuci.com', 'zimi.diuci.com', 'moon.diuci.com', 'ink.diuci.com']
