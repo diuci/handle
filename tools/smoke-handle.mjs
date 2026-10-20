@@ -23,20 +23,20 @@ const KINDS = [
 
 // 底部标签栏应有几项：断言与成功文案读同一个数。
 // 之前成功文案里硬写着「5 项」，加了一项后检查改成 6、文案还在说 5 ——
-// 「通过」这句话本身在撒谎。加入口时只改这一处。
-const TAB_COUNT = 6
+// 「通过」这句话本身在撒谎。加入口时只改这一处。（v3 起八站全量）
+const TAB_COUNT = 8
 
-// 全站互相链接的域名：底部标签栏六项、顶栏四项（本站自己不必再链自己）
-const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com', 'handle.diuci.com']
-// 顶栏六个乐园：五个外链 + 本站那一项（汉兜，href 是 /，带 aria-current）。
+// 全站互相链接的域名：底部标签栏八项（core/tabbar.json 单源）
+const SITE_LINKS = ['diuci.com', 'k12.diuci.com', 'jiagu.diuci.com', 'lian.diuci.com', 'zimi.diuci.com', 'handle.diuci.com', 'moon.diuci.com', 'ink.diuci.com']
+// 顶栏八个乐园：六个外链 + 回主站的「首页」+ 本站那一项（汉兜，href 是 /，带 aria-current）。
 // 顶栏不再挂开源仓库：那是给开发者找源码的，孩子用不上，页脚里有。
-const NAV_LINKS = ['k12.diuci.com', 'lian.diuci.com', 'ink.diuci.com', 'moon.diuci.com']
+const NAV_LINKS = ['k12.diuci.com', 'jiagu.diuci.com', 'lian.diuci.com', 'zimi.diuci.com', 'moon.diuci.com', 'ink.diuci.com']
 // 顶栏第一项是回主站的「首页」，href 必须精确等于这个，不能用 includes 判
 // ——k12.diuci.com 里也含着 diuci.com，includes 会假通过。
 const HOME_LINK = 'https://diuci.com/'
-// 八项乐园的名字与顺序：主站、学古诗、画甲骨、连词、猜谜、汉兜六站的顶栏与页脚都该是这一串。
-// （页脚那一组不含「首页」是规范；内容仓库是页脚独有的末位，不是乐园。）
-const PARK_LABELS = ['学古诗', '画甲骨', '连词', '猜谜', '汉兜', '月冕', '大作战', '内容仓库']
+// 八项乐园的名字与顺序：六站顶栏与页脚都该是这一串（core/parks.json 单源）。
+// v3 起页脚也含「首页」；内容仓库是页脚独有的末位，不是乐园。
+const PARK_LABELS = ['首页', '学古诗', '画甲骨', '连词', '猜谜', '汉兜', '月冕', '大作战', '内容仓库']
 
 function findChrome() {
   const cands = process.platform === 'win32'
@@ -250,7 +250,7 @@ export async function runSmoke(puppeteer, url) {
     else if (current[0] !== '汉兜')
       problems.push('顶栏当前页标的是「' + current[0] + '」，本站应为「汉兜」')
 
-    // 页脚：主站那两块——六个乐园一排 + 指向法律页的链接
+    // 页脚：主站那两块——八个乐园一排 + 指向法律页的链接
     const footLinks = await page.$$eval('.dc-foot nav a', els => els.map(e => (e.textContent || '').trim()))
       .catch(() => [])
     if (footLinks.length !== PARK_LABELS.length)
