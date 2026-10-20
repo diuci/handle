@@ -68,12 +68,15 @@ const transform = computed(() => {
   >
     <div
       v-if="mask"
-      class="bg-[var(--ink)] left-0 right-0 top-0 bottom-0 absolute transition-opacity duration-500 ease-out"
+      class="bg-[#241f1a] left-0 right-0 top-0 bottom-0 absolute transition-opacity duration-500 ease-out"
       :class="modelValue ? 'opacity-40' : 'opacity-0'"
       @click="$emit('update:modelValue', false)"
     />
+    <!-- scrim 用固定暗色：之前 bg-[var(--ink)] 在暗色主题下是浅色——40% 白雾盖住游戏，
+         内容看着「浮」在页面上（实抓）。暗 scrim 亮暗两主题都成立。
+         面板 padding-top 让位顶栏：top sheet 从 top-0 铺起，首屏印章曾被 sticky 顶栏拦腰盖住。 -->
     <div
-      class="dc-modal bg-base border-base absolute transition-all duration-200 ease-out max-w-screen max-h-screen overflow-auto scrolls shadow-[var(--shadow)]"
+      class="dc-modal bg-base border-base absolute transition-all duration-200 ease-out max-w-screen max-h-screen overflow-auto scrolls shadow-[var(--shadow)] pt-[var(--dc-nav-h)]"
       :class="[positionClass]"
       :style="modelValue ? {} : { transform }"
     >
