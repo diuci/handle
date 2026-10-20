@@ -1,0 +1,11 @@
+{
+  "core": {
+    "daily.mjs": "a2588e6ba11696207f2a0841f129d1805d58b73f42c734929bb96f238800b2ed",
+    "theme.mjs": "9f54f11c66fa860bd70e41a820f4820de8e64343622ce11ac9b1d8fbb528e20c",
+    "store.mjs": "6d605618eb6b4a91413400099f3ec1df07b10afa1f97467be8997d04497ae478",
+    "tabbar.json": "4e247a1959e4163bea8838751b637dc32b7288eedeca6f4469c12828d45b100a"
+  },
+  "entries": [
+    "index.html"
+  ]
+}

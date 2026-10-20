@@ -19,14 +19,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
   <script>
-    /* 首次绘制前定色，避免暗色用户看到白色闪屏。键与主站 / K12 一致：dc-theme */
-    (function(){
-      try{
-        var s=localStorage.getItem('dc-theme');
-        var t=s||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-        document.documentElement.dataset.theme=t;
-        if(t==='dark')document.documentElement.classList.add('dark');
-      }catch(e){}
+    /* 首次绘制前定色：与 _deploy/core/theme.mjs 的 BOOTSTRAP 同源（check-core R4 钉特征）。
+       键与主站 / K12 一致：dc-theme；MutationObserver 让切主题时地址栏色同步。 */
+    ;(function () {
+      var t = document.documentElement
+      var m = document.querySelector('meta[name="theme-color"]')
+      var saved = null
+      try { saved = localStorage.getItem('dc-theme') } catch (e) {}
+      var mode = saved === 'dark' || saved === 'light'
+        ? saved
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      t.setAttribute('data-theme', mode)
+      t.classList.toggle('dark', mode === 'dark')
+      t.classList.toggle('light', mode === 'light')
+      var sync = function () { if (m) m.setAttribute('content', t.getAttribute('data-theme') === 'dark' ? '#17140f' : '#f4ede0') }
+      sync()
+      if (m && window.MutationObserver) new MutationObserver(sync).observe(t, { attributes: true, attributeFilter: ['data-theme'] })
     })();
   </script>
 </head>
